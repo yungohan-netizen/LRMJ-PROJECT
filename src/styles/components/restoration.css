@@ -31,9 +31,9 @@
   flex-shrink: 0;
 }
 
-/* Prime card — sur fond bg-1 (s--lift), la card utilise bg (un cran plus sombre) */
+/* Prime card — sur fond bg (s--dark), la card utilise bg-1 pour contraster */
 .resto__prime {
-  background: var(--bg);
+  background: var(--bg-1);
   border: 1px solid var(--border);
   border-radius: 16px;
   padding: 1.75rem;
@@ -87,7 +87,7 @@
   align-items: center;
   text-align: center;
   gap: .25rem;
-  background: var(--bg);
+  background: var(--bg-2);
   border: 1px solid var(--border);
   border-radius: 10px;
   padding: .9rem .6rem;

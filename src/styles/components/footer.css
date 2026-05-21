@@ -1,6 +1,6 @@
 /* ── FOOTER ── */
 .footer { background: var(--bg); border-top: 1px solid var(--border); color: var(--tx-3); padding: clamp(4rem,6vw,6rem) 0 2rem; }
-.footer-grid { display:grid; grid-template-columns:2fr 1fr 1fr 1fr; gap:3rem; padding-bottom:3rem; }
+.footer-grid { display:grid; grid-template-columns:2fr 1fr 1fr 1fr; gap:3rem; padding-bottom:3rem; align-items:start; }
 .footer-brand-wrap { display: flex; flex-direction: column; gap: .25rem; }
 .footer-logo { display: block; width: clamp(140px, 18vw, 220px); height: auto; margin-bottom: 1rem; opacity: .92; object-fit: contain; }
 .footer-brand { font-family:var(--f-display); font-size:1.6rem; font-weight:400; letter-spacing:.08em; color:var(--tx); margin-bottom:.5rem; }
