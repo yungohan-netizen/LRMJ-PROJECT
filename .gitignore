@@ -12,4 +12,3 @@ dist
 .parcel-cache
 .tmp
 .claude/
-.wrangler/

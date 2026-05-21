@@ -20,33 +20,16 @@ export const GALLERY_FOLDERS = [
   'marquises', 'escaliers', 'meubles',
 ];
 
-/** Detection "Featured" cross-mechanism, case-insensitive :
- *  - tag "Featured" / "featured" / "lrmj-featured"
- *  - context custom { Featured: "true" }
- *  - structured metadata { Featured: true } */
-const FEAT_KEYS = ['Featured', 'featured', 'FEATURED'];
-const TRUTHY = new Set([true, 'true', 'True', 'TRUE', '1', 1]);
-
-function pickCaseInsensitive(obj, keys) {
-  if (!obj || typeof obj !== 'object') return undefined;
-  for (const k of keys) if (k in obj) return obj[k];
-  // last resort : case-insensitive scan
-  const lower = Object.keys(obj).reduce((acc, k) => (acc[k.toLowerCase()] = obj[k], acc), {});
-  return lower['featured'];
-}
-
+/** Detection "featured" cross-mechanism :
+ *  - tag classique "featured" ou "lrmj-featured"
+ *  - context custom { featured: "true" }
+ *  - structured metadata { featured: true } */
 export function isFeatured(r) {
-  if (Array.isArray(r.tags)) {
-    for (const t of r.tags) {
-      if (typeof t === 'string' && /^(lrmj-)?featured$/i.test(t)) return true;
-    }
-  }
-  const ctxRoot = r.context || {};
-  const ctxCustom = ctxRoot.custom || {};
-  const ctxVal = pickCaseInsensitive(ctxCustom, FEAT_KEYS) ?? pickCaseInsensitive(ctxRoot, FEAT_KEYS);
-  if (TRUTHY.has(ctxVal)) return true;
-  const metaVal = pickCaseInsensitive(r.metadata, FEAT_KEYS);
-  if (TRUTHY.has(metaVal)) return true;
+  if (Array.isArray(r.tags) && (r.tags.includes('featured') || r.tags.includes('lrmj-featured'))) return true;
+  const ctx = r.context?.custom?.featured ?? r.context?.featured;
+  if (ctx === true || ctx === 'true' || ctx === '1') return true;
+  const meta = r.metadata?.featured;
+  if (meta === true || meta === 'true' || meta === '1') return true;
   return false;
 }
 
