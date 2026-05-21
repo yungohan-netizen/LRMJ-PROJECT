@@ -1,20 +1,20 @@
-import { TAGS, fetchByTag, parseResource } from './cloudinary.js';
+import { fetchGallery, parseResource } from './cloudinary.js';
 import { revealNewFi } from './reveal.js';
 
-/** Populate masonry-grid from Cloudinary tag VITE_CLD_TAG_GALLERY.
+/** Populate masonry-grid from union of all category folders.
  *  If empty / unreachable → keep static fallback markup. */
 export async function initMasonry() {
   const grid = document.getElementById('masonryGrid');
   if (!grid) return;
 
-  const resources = await fetchByTag(TAGS.gallery);
-  if (!resources.length) return; // fallback HTML conservé
+  const resources = await fetchGallery();
+  if (!resources.length) return; // garde fallback HTML
 
+  // Featured first via tag "lrmj-featured" si présent, sinon ordre Cloudinary
   const featured = new Set(resources
-    .filter(r => (r.tags || []).includes(TAGS.featured))
+    .filter(r => (r.tags || []).includes('lrmj-featured'))
     .map(r => r.public_id));
 
-  // Featured d'abord, sinon order Cloudinary (date desc)
   resources.sort((a, b) => {
     const af = featured.has(a.public_id) ? 0 : 1;
     const bf = featured.has(b.public_id) ? 0 : 1;
@@ -50,6 +50,4 @@ function escapeHtml(s) {
     '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
   })[c]);
 }
-function escapeAttr(s) {
-  return escapeHtml(s);
-}
+const escapeAttr = escapeHtml;

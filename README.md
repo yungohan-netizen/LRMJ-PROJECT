@@ -32,29 +32,59 @@ npm run preview   # → http://localhost:4173 (test build local)
 
 ## Cloudinary — Setup assets
 
-### Pré-requis (une fois)
-Console Cloudinary → ⚙️ Settings → onglet **Security** → section "Restricted media types" → **décocher** "Resource list" → Save.
+### Approche : Admin API via proxy serveur
 
-Sans ça, l'endpoint `image/list/<tag>.json` renvoie 401 et le site fallback sur placeholders.
+Plus de tags à mettre. Le site lit directement les **dossiers Cloudinary**. Auth Admin API gérée côté serveur via :
+- **Dev** : middleware Vite (`vite.config.js`) lit `.env`
+- **Prod** : Cloudflare Pages Function (`functions/api/cloudinary/[folder].js`) lit env vars CF dashboard
 
-### Tags à appliquer (Media Library Console)
+Le secret n'est JAMAIS bundlé côté client.
 
-| Tag | Cible | Folder source |
-|---|---|---|
-| `lrmj-realisation` | Galerie masonry (toutes images mélangées) | Tous dossiers |
-| `lrmj-featured` | Image héros par catégorie | + tag catégorie |
-| `lrmj-portails` | svc-card Portails | Portails et Clotures/ |
-| `lrmj-gardecorps` | svc-card Garde-corps | Garde-Corps/ |
-| `lrmj-baies` | svc-card Serres & baies | Baies Vitrées/ |
-| `lrmj-verrieres` | (réservé) | Verrières/ |
-| `lrmj-marquises` | svc-card Marquises | Marquises/ |
-| `lrmj-escaliers` | (réservé) | Escaliers/ |
-| `lrmj-meubles` | (réservé) | Meubles-Déco/ |
-| `lrmj-atelier` | about-img | Atelier/ |
+### Setup local (1 fois)
 
-**Workflow tag bulk** : Media Library → ouvre dossier → Ctrl+A → menu "..." → Add Tag → entre tag → Save.
+1. Cloudinary Console → ⚙️ Settings → **API Keys** → garde `API Key` + `API Secret` sous la main
+2. Édite `.env` (gitignored) :
+   ```
+   CLOUDINARY_CLOUD=dbugcatig
+   CLOUDINARY_API_KEY=518354472536939
+   CLOUDINARY_API_SECRET=<ton_secret>
+   ```
+3. `npm run dev` → masonry + svc-cards + about-img se peuplent depuis Cloudinary
 
-**Note** : tag les `signature` images aussi avec `lrmj-featured` (= elle apparaît en haut de la svc-card de sa catégorie).
+### Setup CF Pages prod (1 fois au deploy)
+
+Cloudflare Pages → projet → **Settings** → **Environment variables** → ajouter (Production + Preview) :
+- `CLOUDINARY_CLOUD` = `dbugcatig`
+- `CLOUDINARY_API_KEY` = `518354472536939`
+- `CLOUDINARY_API_SECRET` = `<le secret>`
+
+**Important** : ces 3 vars n'ont **pas** le préfixe `VITE_` → CF Pages les passe seulement aux Functions, jamais au bundle client.
+
+### Workflow Romeo (ajout/remove images)
+
+1. Cloudinary Console → Media Library → ouvre le bon dossier (ex `LMRJ PROJECT/Portails et Clotures`)
+2. Upload nouvelle image (drag & drop)
+3. Rename si besoin (le nom du fichier devient le titre affiché sur le site, ex `Portail_Monogramme` → "Portail Monogramme")
+4. Refresh le site → l'image apparaît automatiquement
+
+**Featured image par catégorie** (optionnel, sert pour les svc-cards) :
+Tag l'image avec `lrmj-featured` → elle remontera en premier sur la card de sa catégorie.
+
+### Dossiers attendus (Media Library)
+
+```
+LMRJ PROJECT/
+├── Portails et Clotures/    → svc-card Portails (featured) + galerie
+├── Garde-Corps/             → svc-card Garde-corps + galerie
+├── Baies Vitrées/           → svc-card Serres & Baies + galerie
+├── Verrières/               → galerie
+├── Marquises/               → svc-card Marquises + galerie
+├── Escaliers/               → galerie
+├── Meubles-Déco/            → galerie
+└── Atelier/                 → about-img
+```
+
+Mapping configurable dans `src/js/cloudinary.js` → `FOLDERS`.
 
 ## Structure
 

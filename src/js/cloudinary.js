@@ -1,31 +1,31 @@
-/** Cloudinary delivery helpers + image/list fetch by tag. */
+/** Cloudinary delivery helpers + folder fetch (via /api/cloudinary proxy). */
 
 const CLOUD = import.meta.env.VITE_CLOUDINARY_CLOUD || '';
 
-export const TAGS = {
-  gallery:     import.meta.env.VITE_CLD_TAG_GALLERY     || 'lrmj-realisation',
-  featured:    import.meta.env.VITE_CLD_TAG_FEATURED    || 'lrmj-featured',
-  portails:    import.meta.env.VITE_CLD_TAG_PORTAILS    || 'lrmj-portails',
-  gardecorps:  import.meta.env.VITE_CLD_TAG_GARDECORPS  || 'lrmj-gardecorps',
-  baies:       import.meta.env.VITE_CLD_TAG_BAIES       || 'lrmj-baies',
-  verrieres:   import.meta.env.VITE_CLD_TAG_VERRIERES   || 'lrmj-verrieres',
-  marquises:   import.meta.env.VITE_CLD_TAG_MARQUISES   || 'lrmj-marquises',
-  escaliers:   import.meta.env.VITE_CLD_TAG_ESCALIERS   || 'lrmj-escaliers',
-  meubles:     import.meta.env.VITE_CLD_TAG_MEUBLES     || 'lrmj-meubles',
-  atelier:     import.meta.env.VITE_CLD_TAG_ATELIER     || 'lrmj-atelier',
+/** Mapping logique → vrais dossiers Cloudinary.
+ *  Ajuste si tu renommes dossiers Console. */
+export const FOLDERS = {
+  portails:   'LMRJ PROJECT/Portails et Clotures',
+  gardecorps: 'LMRJ PROJECT/Garde-Corps',
+  baies:      'LMRJ PROJECT/Baies Vitrées',
+  verrieres:  'LMRJ PROJECT/Verrières',
+  marquises:  'LMRJ PROJECT/Marquises',
+  escaliers:  'LMRJ PROJECT/Escaliers',
+  meubles:    'LMRJ PROJECT/Meubles-Déco',
+  atelier:    'LMRJ PROJECT/Atelier',
 };
+
+/** Liste utilisée pour la galerie masonry = union de toutes catégories. */
+export const GALLERY_FOLDERS = [
+  'portails', 'gardecorps', 'baies', 'verrieres',
+  'marquises', 'escaliers', 'meubles',
+];
 
 export const HERO_VIDEO_ID  = import.meta.env.VITE_HERO_VIDEO_ID  || '';
 export const HERO_POSTER_ID = import.meta.env.VITE_HERO_POSTER_ID || '';
 export const LOGO_ID        = import.meta.env.VITE_LOGO_ID        || '';
 
-/** Build delivery URL with transformations.
- *  @param {string} publicId  ex "LMRJ PROJECT/Portails et Clotures/portail_xyz"
- *  @param {number} version
- *  @param {string} format    "jpg" | "png" | "webp"
- *  @param {number} w         target width px
- *  @param {string} extra     additional transforms (e.g. "c_fill,g_auto")
- */
+/** Build delivery URL with transformations. */
 export function cldUrl(publicId, version, format = 'jpg', w = 1200, extra = 'c_limit') {
   if (!CLOUD) return '';
   const v = version ? `/v${version}` : '';
@@ -34,14 +34,12 @@ export function cldUrl(publicId, version, format = 'jpg', w = 1200, extra = 'c_l
   return `https://res.cloudinary.com/${CLOUD}/image/upload/${t}${v}/${id}.${format}`;
 }
 
-/** Responsive srcset. */
 export function cldSrcset(publicId, version, format, extra = 'c_limit') {
   return [400, 800, 1200, 1600, 2000]
     .map(w => `${cldUrl(publicId, version, format, w, extra)} ${w}w`)
     .join(', ');
 }
 
-/** Public ID basename → human title (replace _ - with space). */
 export function titleFromPublicId(publicId) {
   return publicId.split('/').pop()
     .replace(/[_-]+/g, ' ')
@@ -49,35 +47,50 @@ export function titleFromPublicId(publicId) {
     .trim();
 }
 
-/** Cache for fetched tag lists. */
 const cache = new Map();
 
-/** Fetch resources for a Cloudinary tag.
- *  Requires "Resource list" enabled in Cloudinary Console → Security.
- *  Returns array of { public_id, version, format, width, height } or empty array on error. */
-export async function fetchByTag(tag) {
-  if (!CLOUD || !tag) return [];
-  if (cache.has(tag)) return cache.get(tag);
+/** Fetch resources for a Cloudinary asset folder (via /api/cloudinary proxy).
+ *  Proxy gère l'auth Admin API server-side (secret jamais expédié au client). */
+export async function fetchByFolder(folder) {
+  if (!folder) return [];
+  if (cache.has(folder)) return cache.get(folder);
 
   try {
-    const res = await fetch(
-      `https://res.cloudinary.com/${CLOUD}/image/list/${encodeURIComponent(tag)}.json`,
-      { cache: 'no-store' }
-    );
-    if (!res.ok) throw new Error(`Cloudinary list ${tag}: ${res.status}`);
+    const res = await fetch(`/api/cloudinary/${encodeURIComponent(folder)}`, { cache: 'default' });
+    if (!res.ok) throw new Error(`Folder ${folder}: ${res.status}`);
     const data = await res.json();
     const resources = data.resources || [];
     resources.sort((a, b) => new Date(b.created_at || 0) - new Date(a.created_at || 0));
-    cache.set(tag, resources);
+    cache.set(folder, resources);
     return resources;
   } catch (err) {
-    console.warn(`[LRMJ] Cloudinary tag "${tag}" indisponible — fallback.`, err);
-    cache.set(tag, []);
+    console.warn(`[LRMJ] Cloudinary folder "${folder}" failed — fallback.`, err);
+    cache.set(folder, []);
     return [];
   }
 }
 
-/** Map a Cloudinary resource to view-model {title, src, srcHd, srcset}. */
+/** Fetch one category by logical key. */
+export function fetchCategory(key) {
+  return fetchByFolder(FOLDERS[key]);
+}
+
+/** Aggregate all gallery folders, dedupe by public_id. */
+export async function fetchGallery() {
+  const arrays = await Promise.all(GALLERY_FOLDERS.map(k => fetchCategory(k)));
+  const seen = new Set();
+  const merged = [];
+  arrays.flat().forEach(r => {
+    if (!seen.has(r.public_id)) {
+      seen.add(r.public_id);
+      merged.push(r);
+    }
+  });
+  // Shuffle légèrement pour variété visuelle : group by category but interleave
+  return merged;
+}
+
+/** Map a Cloudinary resource to view-model. */
 export function parseResource(r, opts = {}) {
   const { extra = 'c_fill,g_auto', w = 800, wHd = 1600 } = opts;
   return {
@@ -89,5 +102,6 @@ export function parseResource(r, opts = {}) {
     srcset: cldSrcset(r.public_id, r.version, r.format, extra),
     width:  r.width,
     height: r.height,
+    createdAt: r.created_at,
   };
 }
