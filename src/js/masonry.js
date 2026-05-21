@@ -1,4 +1,4 @@
-import { fetchGallery, parseResource } from './cloudinary.js';
+import { fetchGallery, parseResource, isFeatured } from './cloudinary.js';
 import { revealNewFi } from './reveal.js';
 
 /** Populate masonry-grid from union of all category folders.
@@ -10,14 +10,10 @@ export async function initMasonry() {
   const resources = await fetchGallery();
   if (!resources.length) return; // garde fallback HTML
 
-  // Featured first via tag "lrmj-featured" si présent, sinon ordre Cloudinary
-  const featured = new Set(resources
-    .filter(r => (r.tags || []).includes('lrmj-featured'))
-    .map(r => r.public_id));
-
+  // Featured d'abord (tag OU metadata), ensuite ordre Cloudinary date desc
   resources.sort((a, b) => {
-    const af = featured.has(a.public_id) ? 0 : 1;
-    const bf = featured.has(b.public_id) ? 0 : 1;
+    const af = isFeatured(a) ? 0 : 1;
+    const bf = isFeatured(b) ? 0 : 1;
     if (af !== bf) return af - bf;
     return new Date(b.created_at || 0) - new Date(a.created_at || 0);
   });

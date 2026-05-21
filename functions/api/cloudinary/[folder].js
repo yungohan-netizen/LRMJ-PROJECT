@@ -27,7 +27,8 @@ export async function onRequest(context) {
   }
 
   const auth = btoa(`${CLOUDINARY_API_KEY}:${CLOUDINARY_API_SECRET}`);
-  const apiUrl = `https://api.cloudinary.com/v1_1/${CLOUDINARY_CLOUD}/resources/by_asset_folder?asset_folder=${encodeURIComponent(folder)}&max_results=500`;
+  // tags + context + metadata : needed pour detection "featured"
+  const apiUrl = `https://api.cloudinary.com/v1_1/${CLOUDINARY_CLOUD}/resources/by_asset_folder?asset_folder=${encodeURIComponent(folder)}&max_results=500&tags=true&context=true&metadata=true`;
 
   try {
     const r = await fetch(apiUrl, { headers: { Authorization: `Basic ${auth}` } });
@@ -36,7 +37,8 @@ export async function onRequest(context) {
       status: r.status,
       headers: {
         'Content-Type': 'application/json',
-        'Cache-Control': 'public, max-age=300, s-maxage=300',
+        // 60s CDN cache : compromis entre perf et propagation rapide des changes Cloudinary
+        'Cache-Control': 'public, max-age=60, s-maxage=60',
       },
     });
   } catch (err) {

@@ -27,14 +27,15 @@ function cloudinaryProxy(env) {
         }
 
         const auth = Buffer.from(`${key}:${secret}`).toString('base64');
-        const apiUrl = `https://api.cloudinary.com/v1_1/${cloud}/resources/by_asset_folder?asset_folder=${encodeURIComponent(folder)}&max_results=500`;
+        // tags + context + metadata: needed pour detection "featured" (tag ou metadata)
+        const apiUrl = `https://api.cloudinary.com/v1_1/${cloud}/resources/by_asset_folder?asset_folder=${encodeURIComponent(folder)}&max_results=500&tags=true&context=true&metadata=true`;
 
         try {
           const r = await fetch(apiUrl, { headers: { Authorization: `Basic ${auth}` } });
           const body = await r.text();
           res.statusCode = r.status;
           res.setHeader('Content-Type', 'application/json');
-          res.setHeader('Cache-Control', 'public, max-age=60');
+          res.setHeader('Cache-Control', 'public, max-age=30');
           res.end(body);
         } catch (err) {
           res.statusCode = 502;

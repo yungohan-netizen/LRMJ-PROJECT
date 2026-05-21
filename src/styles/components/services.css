@@ -5,8 +5,20 @@
 .svc-card:hover { background: var(--bg-2); }
 .svc-card--feat { grid-column: span 3; flex-direction: row; }
 .svc-img-wrap { overflow: hidden; flex-shrink: 0; position: relative; }
-.svc-img { width: 100%; height: 200px; object-fit: cover; display: block; transition: transform .8s cubic-bezier(.25,.46,.45,.94), filter .8s ease; filter: brightness(.75) saturate(.7); will-change: transform; }
+.svc-img { width: 100%; height: 200px; object-fit: cover; display: block; transition: transform .8s cubic-bezier(.25,.46,.45,.94), filter .8s ease, opacity .4s var(--ease); filter: brightness(.75) saturate(.7); will-change: transform; }
 .svc-card--feat .svc-img { width: 480px; height: 100%; }
+/* Skeleton state — masque image quand pas encore loadée par JS Cloudinary */
+.svc-card--loading .svc-img-wrap {
+  background: linear-gradient(110deg, var(--bg-2) 0%, var(--bg-3) 45%, var(--bg-2) 100%);
+  background-size: 250% 100%;
+  animation: skeleton-shimmer 1.6s linear infinite;
+  min-height: 200px;
+}
+.svc-card--loading .svc-img { opacity: 0; }
+@keyframes skeleton-shimmer {
+  0%   { background-position: 100% 0; }
+  100% { background-position: -100% 0; }
+}
 .svc-card:hover .svc-img { transform: scale(1.06); filter: brightness(.92) saturate(.92); }
 .svc-body { padding: 1.75rem; display: flex; flex-direction: column; gap: .35rem; flex: 1; }
 .svc-tag  { font-size: .6rem; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; color: var(--red); margin-bottom: .25rem; }

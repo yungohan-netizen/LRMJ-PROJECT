@@ -7,19 +7,31 @@ const CLOUD = import.meta.env.VITE_CLOUDINARY_CLOUD || '';
 export const FOLDERS = {
   portails:   'LMRJ PROJECT/Portails et Clotures',
   gardecorps: 'LMRJ PROJECT/Garde-Corps',
-  baies:      'LMRJ PROJECT/Baies Vitrées',
-  verrieres:  'LMRJ PROJECT/Verrières',
+  verrieres:  'LMRJ PROJECT/Verrièrres',  // typo Cloudinary (2 R) — baies mergées dedans
   marquises:  'LMRJ PROJECT/Marquises',
   escaliers:  'LMRJ PROJECT/Escaliers',
   meubles:    'LMRJ PROJECT/Meubles-Déco',
   atelier:    'LMRJ PROJECT/Atelier',
 };
 
-/** Liste utilisée pour la galerie masonry = union de toutes catégories. */
+/** Liste utilisée pour la galerie masonry = union de toutes catégories métier. */
 export const GALLERY_FOLDERS = [
-  'portails', 'gardecorps', 'baies', 'verrieres',
+  'portails', 'gardecorps', 'verrieres',
   'marquises', 'escaliers', 'meubles',
 ];
+
+/** Detection "featured" cross-mechanism :
+ *  - tag classique "featured" ou "lrmj-featured"
+ *  - context custom { featured: "true" }
+ *  - structured metadata { featured: true } */
+export function isFeatured(r) {
+  if (Array.isArray(r.tags) && (r.tags.includes('featured') || r.tags.includes('lrmj-featured'))) return true;
+  const ctx = r.context?.custom?.featured ?? r.context?.featured;
+  if (ctx === true || ctx === 'true' || ctx === '1') return true;
+  const meta = r.metadata?.featured;
+  if (meta === true || meta === 'true' || meta === '1') return true;
+  return false;
+}
 
 export const HERO_VIDEO_ID  = import.meta.env.VITE_HERO_VIDEO_ID  || '';
 export const HERO_POSTER_ID = import.meta.env.VITE_HERO_POSTER_ID || '';

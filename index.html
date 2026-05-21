@@ -95,12 +95,12 @@
 <!-- NAV -->
 <header class="nav" id="siteNav">
   <div class="nav__inner">
-    <a href="#" class="nav__logo" aria-label="LRMJ Project">
-      <svg class="nav__logo-mark" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <path d="M8 10 L8 32 L20 32" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-        <path d="M22 10 L30 10 Q37 10 37 17 Q37 24 30 24 L22 24 M28 24 L37 34" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/>
-      </svg>
-      <span class="nav__logo-text">LRMJ</span>
+    <a href="#" class="nav__logo" aria-label="LRMJ Project — Accueil">
+      <img class="nav__logo-img"
+           src="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_320,c_limit/v1779382283/LRMJ_PROJECT_LOGO_xzm1yq.png"
+           alt="LRMJ Project"
+           width="160" height="48"
+           fetchpriority="high"/>
     </a>
     <ul class="nav__links" role="list">
       <li><a href="#realisations">Réalisations</a></li>
@@ -219,10 +219,9 @@
 
     <!-- Fallback statique. JS Cloudinary remplace si tag "lrmj-realisation" trouvé. -->
     <div class="masonry-grid" id="masonryGrid" role="list">
-      <div class="masonry-item fi" role="listitem">
-        <img src="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_fill,g_auto,w_800/LRMJ_PROJECT_LOGO_xzm1yq.png" alt="LRMJ Project" loading="lazy" decoding="async" width="1024" height="1280"/>
-        <div class="masonry-item__label">Chargement…</div>
-      </div>
+      <div class="masonry-item masonry-item--skeleton" role="listitem" aria-hidden="true"></div>
+      <div class="masonry-item masonry-item--skeleton" role="listitem" aria-hidden="true"></div>
+      <div class="masonry-item masonry-item--skeleton" role="listitem" aria-hidden="true"></div>
     </div>
 
     <div class="masonry-footer">
@@ -287,9 +286,9 @@
         <a href="#contact" class="btn btn--red">Devis Gratuit →</a>
       </div>
       <div class="svc-grid">
-        <div class="svc-card svc-card--feat fi" data-svc="portails">
+        <div class="svc-card svc-card--feat svc-card--loading fi" data-svc="portails">
           <div class="svc-img-wrap">
-            <img class="svc-img" src="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_fill,g_auto,w_1200/LRMJ_PROJECT_LOGO_xzm1yq.png" alt="Portail en fer forgé" loading="lazy" decoding="async"/>
+            <img class="svc-img" src="" alt="Portail en fer forgé" loading="lazy" decoding="async"/>
           </div>
           <div class="svc-body">
             <span class="svc-tag">Signature</span>
@@ -298,16 +297,16 @@
             <a href="#contact" class="btn btn--ghost mt-auto" style="width:fit-content;">Commander →</a>
           </div>
         </div>
-        <div class="svc-card fi" data-svc="gardecorps">
-          <div class="svc-img-wrap"><img class="svc-img" src="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_fill,g_auto,w_800/LRMJ_PROJECT_LOGO_xzm1yq.png" alt="Garde-corps en fer forgé" loading="lazy" decoding="async"/></div>
+        <div class="svc-card svc-card--loading fi" data-svc="gardecorps">
+          <div class="svc-img-wrap"><img class="svc-img" src="" alt="Garde-corps en fer forgé" loading="lazy" decoding="async"/></div>
           <div class="svc-body"><span class="svc-tag">Intérieur &amp; Extérieur</span><h3 class="svc-title">Garde-Corps &amp; Rampes</h3><p class="svc-desc">Escaliers, balcons, mezzanines. Sécurité et esthétique au service de votre espace.</p></div>
         </div>
-        <div class="svc-card fi" data-svc="baies">
-          <div class="svc-img-wrap"><img class="svc-img" src="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_fill,g_auto,w_800/LRMJ_PROJECT_LOGO_xzm1yq.png" alt="Serre de jardin" loading="lazy" decoding="async"/></div>
-          <div class="svc-body"><span class="svc-tag">Jardin</span><h3 class="svc-title">Serres &amp; Baies Vitrées</h3><p class="svc-desc">Jardins d'hiver, vérandas, extensions vitrées. Structures légères et résistantes.</p></div>
+        <div class="svc-card svc-card--loading fi" data-svc="verrieres">
+          <div class="svc-img-wrap"><img class="svc-img" src="" alt="Verrière et baie vitrée" loading="lazy" decoding="async"/></div>
+          <div class="svc-body"><span class="svc-tag">Jardin &amp; Extension</span><h3 class="svc-title">Verrières &amp; Baies Vitrées</h3><p class="svc-desc">Jardins d'hiver, vérandas, extensions vitrées. Structures légères et résistantes.</p></div>
         </div>
-        <div class="svc-card fi" data-svc="marquises">
-          <div class="svc-img-wrap"><img class="svc-img" src="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_fill,g_auto,w_800/LRMJ_PROJECT_LOGO_xzm1yq.png" alt="Marquise en fer forgé" loading="lazy" decoding="async"/></div>
+        <div class="svc-card svc-card--loading fi" data-svc="marquises">
+          <div class="svc-img-wrap"><img class="svc-img" src="" alt="Marquise en fer forgé" loading="lazy" decoding="async"/></div>
           <div class="svc-body"><span class="svc-tag">Protection</span><h3 class="svc-title">Marquises &amp; Auvents</h3><p class="svc-desc">Protection élégante pour entrées et terrasses. Châssis fer forgé, verre feuilleté.</p></div>
         </div>
       </div>
@@ -401,8 +400,8 @@
   <section id="about" class="s s--dark glow-red-br" aria-labelledby="about-title">
     <div class="wrap">
       <div class="about-grid">
-        <div class="about-img fi">
-          <img src="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_fill,g_auto,ar_4:5,w_800/LRMJ_PROJECT_LOGO_xzm1yq.png" alt="Artisan ferronnier au travail" width="480" height="640" loading="lazy" decoding="async"/>
+        <div class="about-img about-img--loading fi">
+          <img src="" alt="Artisan ferronnier au travail" width="480" height="640" loading="lazy" decoding="async"/>
           <div class="about-img__caption" aria-hidden="true">Atelier LRMJ — Belgique</div>
         </div>
         <div class="about-content fi">
@@ -442,6 +441,11 @@
     <div class="wrap">
       <div class="contact-grid">
         <div class="fi">
+          <img class="contact-logo"
+               src="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_520,c_limit/v1779382283/LRMJ_PROJECT_LOGO_xzm1yq.png"
+               alt="LRMJ Project"
+               width="260" height="78"
+               loading="lazy"/>
           <span class="eyebrow">Contact</span>
           <h2 class="h-large" id="contact-title">Parlons de<br><em>votre projet</em></h2>
           <p class="lead" style="margin-top:.75rem;">Devis entièrement gratuit, sans engagement. Réponse sous 24h.</p>
@@ -513,8 +517,8 @@
   <div class="wrap">
     <div class="footer-grid">
       <div class="footer-brand-wrap">
-        <img class="footer-logo" src="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_360/LRMJ_PROJECT_LOGO_xzm1yq.png" alt="LRMJ Project" width="180" height="180" loading="lazy"/>
-        <p class="footer-desc">Artisan ferronnier sur mesure en Belgique. Portails, garde-corps, serres, marquises.</p>
+        <div class="footer-brand">LRMJ Project</div>
+        <p class="footer-desc">Artisan ferronnier sur mesure en Belgique. Portails, garde-corps, verrières, marquises.</p>
       </div>
       <div>
         <p class="footer-hdg">Navigation</p>
