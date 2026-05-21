@@ -1,0 +1,13 @@
+name = "lrmj-project"
+compatibility_date = "2025-05-01"
+pages_build_output_dir = "dist"
+
+# Functions (functions/api/cloudinary/[folder].js) lisent ces secrets.
+# NE PAS mettre les valeurs ici (fichier versionné). Setup via :
+#   npm run cf:secrets         (pipe depuis .env, une fois le projet créé)
+# ou Dashboard CF → Pages → lrmj-project → Settings → Environment variables.
+#
+# Secrets requis (Production + Preview) :
+#   CLOUDINARY_CLOUD
+#   CLOUDINARY_API_KEY
+#   CLOUDINARY_API_SECRET
