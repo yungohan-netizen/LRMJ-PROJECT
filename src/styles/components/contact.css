@@ -1,16 +1,5 @@
 /* ── CONTACT ── */
 .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(3rem,6vw,5rem); align-items: start; }
-.contact-logo {
-  display: block;
-  width: clamp(180px, 22vw, 260px);
-  height: auto;
-  margin-bottom: 1.75rem;
-  opacity: .95;
-  transition: filter .35s var(--ease);
-}
-html[data-theme="dark"] .contact-logo {
-  filter: invert(1) hue-rotate(180deg) brightness(1.05) saturate(1.2);
-}
 .contact-info-list { list-style:none; display:flex; flex-direction:column; gap:1.25rem; margin-top:2.5rem; }
 .contact-info-item {
   display:flex; align-items:flex-start; gap:1rem;

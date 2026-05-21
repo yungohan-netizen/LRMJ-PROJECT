@@ -1,11 +1,13 @@
 /* ── MASONRY GALLERY ── */
 .masonry-hdr { display: flex; align-items: flex-end; justify-content: space-between; padding: clamp(3rem,5vw,5rem) clamp(1.5rem,5vw,4rem) 2rem; gap: 2rem; max-width: 1360px; margin: 0 auto; }
 .masonry-grid {
-  columns: 3 260px;
+  /* Cap 7 colonnes, min ~180px each → 5/6/7 par ligne selon viewport, dense portfolio */
+  columns: 7 180px;
   column-gap: 2px;
   padding: 0 2px;
   position: relative;
 }
+@media (max-width: 600px) { .masonry-grid { columns: 2 140px; } }
 .masonry-grid::before {
   content: '';
   position: absolute;
