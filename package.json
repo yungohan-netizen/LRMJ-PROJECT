@@ -1,0 +1,18 @@
+{
+  "name": "lrmj-project",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "LRMJ Project — Artisan ferronnier Bruxelles/Opwijk. Site vitrine sur mesure.",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --port 4173"
+  },
+  "devDependencies": {
+    "vite": "^5.4.10"
+  },
+  "dependencies": {
+    "lenis": "^1.1.13"
+  }
+}

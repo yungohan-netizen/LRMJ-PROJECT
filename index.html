@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Anti-FOUC : marque html.js + applique theme avant first paint -->
+  <script>
+    (function() {
+      var html = document.documentElement;
+      html.classList.add('js');
+      try {
+        var stored = localStorage.getItem('lrmj-theme');
+        var theme;
+        if (stored === 'dark' || stored === 'light') {
+          theme = stored;
+        } else {
+          theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+        if (theme === 'dark') html.setAttribute('data-theme', 'dark');
+      } catch (_) {}
+    })();
+  </script>
+
+  <title>LRMJ Project — Ferronnerie &amp; Menuiserie Sur Mesure</title>
+  <meta name="description" content="LRMJ Project — Artisan ferronnier spécialisé dans la création sur mesure : portails, garde-corps, clôtures, serres, marquises en fer forgé." />
+  <meta name="author" content="LRMJ Project" />
+  <meta name="theme-color" content="#f5f3ee" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#07080c" media="(prefers-color-scheme: dark)" />
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><style>rect{fill:%23f5f3ee}.m{fill:%231a1d24;font:600 13px/1 system-ui,sans-serif;letter-spacing:.5px}.a{fill:%23c4432f}@media(prefers-color-scheme:dark){rect{fill:%2307080c}.m{fill:%23f2f0ec}.a{fill:%23d94f3b}}</style><rect width='32' height='32' rx='4'/><text x='5' y='22' class='m'>LR</text><circle cx='27' cy='7' r='2.5' class='a'/></svg>" />
+  <link rel="apple-touch-icon" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'><rect width='180' height='180' rx='20' fill='%2307080c'/><text x='28' y='115' fill='%23f2f0ec' font-family='Georgia,serif' font-size='72' font-weight='400' letter-spacing='2'>LR</text><circle cx='148' cy='42' r='12' fill='%23d94f3b'/></svg>" />
+
+  <meta property="og:title" content="LRMJ Project — Ferronnerie sur mesure" />
+  <meta property="og:description" content="Portails, garde-corps, serres, marquises. Atelier en Belgique." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="fr_BE" />
+  <meta property="og:url" content="https://lrmjproject.be/" />
+  <meta property="og:site_name" content="LRMJ Project" />
+  <meta property="og:image" content="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_fill,g_auto,w_1200,h_630/LRMJ_PROJECT_LOGO_xzm1yq.png" />
+  <meta property="og:image:alt" content="LRMJ Project — Artisan ferronnier" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="LRMJ Project — Ferronnerie sur mesure" />
+  <meta name="twitter:description" content="Portails, garde-corps, serres, marquises. Atelier en Belgique." />
+  <meta name="twitter:image" content="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_fill,g_auto,w_1200,h_630/LRMJ_PROJECT_LOGO_xzm1yq.png" />
+  <meta name="robots" content="index, follow" />
+  <meta name="geo.region" content="BE-VBR" />
+  <meta name="geo.placename" content="Opwijk" />
+  <link rel="canonical" href="https://lrmjproject.be/" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "LRMJ Project",
+    "image": "https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_1200/LRMJ_PROJECT_LOGO_xzm1yq.png",
+    "@id": "https://lrmjproject.be/",
+    "url": "https://lrmjproject.be/",
+    "telephone": "+32475399909",
+    "priceRange": "€€€",
+    "description": "Artisan ferronnier spécialisé en création sur mesure : portails, garde-corps, clôtures, serres, marquises en fer forgé.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Opwijk",
+      "addressRegion": "Vlaams-Brabant",
+      "addressCountry": "BE"
+    },
+    "areaServed": [
+      { "@type": "City", "name": "Bruxelles" },
+      { "@type": "City", "name": "Opwijk" },
+      { "@type": "AdministrativeArea", "name": "Belgique" }
+    ],
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "08:00",
+      "closes": "18:00"
+    },
+    "sameAs": []
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://res.cloudinary.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
+
+  <script type="module" src="/src/main.js"></script>
+</head>
+<body>
+<a href="#main" class="skip-link">Aller au contenu</a>
+
+<!-- NAV -->
+<header class="nav" id="siteNav">
+  <div class="nav__inner">
+    <a href="#" class="nav__logo" aria-label="LRMJ Project">
+      <svg class="nav__logo-mark" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M8 10 L8 32 L20 32" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <path d="M22 10 L30 10 Q37 10 37 17 Q37 24 30 24 L22 24 M28 24 L37 34" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+      </svg>
+      <span class="nav__logo-text">LRMJ</span>
+    </a>
+    <ul class="nav__links" role="list">
+      <li><a href="#realisations">Réalisations</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">À Propos</a></li>
+    </ul>
+    <div class="nav__actions">
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Basculer entre mode clair et sombre">
+        <svg class="theme-toggle__sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="4"/>
+          <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+        </svg>
+        <svg class="theme-toggle__moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
+        </svg>
+      </button>
+      <a href="tel:0475399909" class="nav__phone" aria-label="Appeler">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.9z"/></svg>
+        <span>0475 39 99 09</span>
+      </a>
+      <a href="#contact" class="nav__cta-pill">Devis Gratuit</a>
+      <button class="nav__hamburger" id="navHamburger" aria-expanded="false" aria-controls="navMobile" aria-label="Menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div class="nav__progress" aria-hidden="true"></div>
+</header>
+
+<div class="nav__mobile" id="navMobile" role="dialog" aria-modal="true" aria-label="Menu" hidden>
+  <nav class="nav__mobile-links">
+    <a href="#realisations" class="mobile-link">Réalisations</a>
+    <a href="#services" class="mobile-link">Services</a>
+    <a href="#about" class="mobile-link">À Propos</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+  </nav>
+  <div class="nav__mobile-bottom">
+    <a href="tel:0475399909" class="nav__mobile-phone">0475 39 99 09</a>
+    <a href="#contact" class="nav__mobile-cta">Demander un devis →</a>
+  </div>
+</div>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero" aria-label="LRMJ Project — Ferronnerie artisanale">
+    <h1 class="sr-only">LRMJ Project — Artisan Ferronnier Belgique</h1>
+    <video class="hero__video"
+      src="https://res.cloudinary.com/dbugcatig/video/upload/v1779380472/aa79faff86284dd9b28f307dbfc81a8a_4K_kpnw8a.mp4"
+      autoplay muted loop playsinline aria-hidden="true"
+      preload="auto"
+      poster="https://res.cloudinary.com/dbugcatig/video/upload/so_0/aa79faff86284dd9b28f307dbfc81a8a_4K_kpnw8a.jpg">
+    </video>
+    <div class="hero__vignette" aria-hidden="true"></div>
+    <div class="hero__merge"   aria-hidden="true"></div>
+    <div class="hero__grain"   aria-hidden="true"></div>
+    <a href="#realisations" class="hero__scroll" aria-label="Défiler vers les réalisations">
+      <span class="hero__scroll-label">Découvrir</span>
+      <span class="hero__scroll-line" aria-hidden="true"></span>
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+    </a>
+  </section>
+
+  <!-- TICKER -->
+  <section class="ticker" aria-label="LRMJ Project en chiffres">
+    <div class="ticker__track" aria-hidden="true">
+      <div class="ticker__item"><strong>30 ans</strong><span>d'artisanat</span></div>
+      <span class="ticker__sep" aria-hidden="true"></span>
+      <div class="ticker__item"><strong>Bruxelles</strong><span>/ Opwijk</span></div>
+      <span class="ticker__sep" aria-hidden="true"></span>
+      <div class="ticker__item"><strong>Fer &amp; verre</strong><span>sur mesure</span></div>
+      <span class="ticker__sep" aria-hidden="true"></span>
+      <div class="ticker__item"><strong>Devis</strong><span>gratuit</span></div>
+      <span class="ticker__sep" aria-hidden="true"></span>
+      <div class="ticker__item"><strong>Portails</strong><span>&amp; clôtures</span></div>
+      <span class="ticker__sep" aria-hidden="true"></span>
+      <div class="ticker__item"><strong>Garde-corps</strong><span>&amp; escaliers</span></div>
+      <span class="ticker__sep" aria-hidden="true"></span>
+      <div class="ticker__item"><strong>Verrières</strong><span>&amp; serres</span></div>
+      <span class="ticker__sep" aria-hidden="true"></span>
+      <div class="ticker__item"><strong>100%</strong><span>sur mesure</span></div>
+      <span class="ticker__sep" aria-hidden="true"></span>
+      <div class="ticker__item"><strong>Atelier</strong><span>familial</span></div>
+      <span class="ticker__sep" aria-hidden="true"></span>
+      <!-- Loop 2 -->
+      <div class="ticker__item"><strong>30 ans</strong><span>d'artisanat</span></div>
+      <span class="ticker__sep" aria-hidden="true"></span>
+      <div class="ticker__item"><strong>Bruxelles</strong><span>/ Opwijk</span></div>
+      <span class="ticker__sep" aria-hidden="true"></span>
+      <div class="ticker__item"><strong>Fer &amp; verre</strong><span>sur mesure</span></div>
+      <span class="ticker__sep" aria-hidden="true"></span>
+      <div class="ticker__item"><strong>Devis</strong><span>gratuit</span></div>
+      <span class="ticker__sep" aria-hidden="true"></span>
+      <div class="ticker__item"><strong>Portails</strong><span>&amp; clôtures</span></div>
+      <span class="ticker__sep" aria-hidden="true"></span>
+      <div class="ticker__item"><strong>Garde-corps</strong><span>&amp; escaliers</span></div>
+      <span class="ticker__sep" aria-hidden="true"></span>
+      <div class="ticker__item"><strong>Verrières</strong><span>&amp; serres</span></div>
+      <span class="ticker__sep" aria-hidden="true"></span>
+      <div class="ticker__item"><strong>100%</strong><span>sur mesure</span></div>
+      <span class="ticker__sep" aria-hidden="true"></span>
+      <div class="ticker__item"><strong>Atelier</strong><span>familial</span></div>
+      <span class="ticker__sep" aria-hidden="true"></span>
+    </div>
+  </section>
+
+  <!-- RÉALISATIONS -->
+  <section id="realisations" class="s s--dark" aria-labelledby="gal-title">
+    <div class="masonry-hdr fi">
+      <div>
+        <span class="eyebrow">Réalisations</span>
+        <h2 class="h-large" id="gal-title">Le Travail<br><em>Parle Pour Lui-Même</em></h2>
+      </div>
+      <a href="#contact" class="btn btn--ghost">Votre Projet →</a>
+    </div>
+
+    <!-- Fallback statique. JS Cloudinary remplace si tag "lrmj-realisation" trouvé. -->
+    <div class="masonry-grid" id="masonryGrid" role="list">
+      <div class="masonry-item fi" role="listitem">
+        <img src="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_fill,g_auto,w_800/LRMJ_PROJECT_LOGO_xzm1yq.png" alt="LRMJ Project" loading="lazy" decoding="async" width="1024" height="1280"/>
+        <div class="masonry-item__label">Chargement…</div>
+      </div>
+    </div>
+
+    <div class="masonry-footer">
+      <button class="masonry-load-btn" id="loadMoreBtn">Voir plus de réalisations</button>
+    </div>
+  </section>
+
+  <div class="sdiv sdiv--01" aria-hidden="true"></div>
+
+  <!-- TÉMOIGNAGES -->
+  <section class="s s--lift glow-center" aria-labelledby="testi-title">
+    <div class="wrap">
+      <div class="fi text-center mb-10">
+        <span class="eyebrow">Témoignages</span>
+        <h2 class="h-large" id="testi-title" style="margin-inline:auto;max-width:18ch;">Ce que disent<br><em>nos clients</em></h2>
+      </div>
+      <div class="testi-grid" id="testiGrid">
+        <div class="testi-card fi">
+          <div class="testi-stars" aria-label="5 étoiles">
+            <svg width="72" height="11" viewBox="0 0 72 11" fill="none" aria-hidden="true"><path d="M5.5 1l1.2 3.7H10L7.3 6.8l1.2 3.7L5.5 8.6 2.5 10.5l1.2-3.7L1 4.7h3.3L5.5 1z" fill="#d94f3b"/><path d="M20 1l1.2 3.7H25l-2.7 2.1 1.2 3.7L20 8.6 17 10.5l1.2-3.7-2.7-2.1H19L20 1z" fill="#d94f3b"/><path d="M34.5 1l1.2 3.7H39l-2.7 2.1 1.2 3.7-2.9-1.9-3 1.9 1.2-3.7-2.7-2.1h3.3L34.5 1z" fill="#d94f3b"/><path d="M49 1l1.2 3.7H54l-2.7 2.1 1.2 3.7L49 8.6 46 10.5l1.2-3.7-2.7-2.1h3.3L49 1z" fill="#d94f3b"/><path d="M63.5 1l1.2 3.7H68l-2.7 2.1 1.2 3.7-2.9-1.9-3 1.9 1.2-3.7-2.7-2.1h3.3L63.5 1z" fill="#d94f3b"/></svg>
+          </div>
+          <blockquote class="testi-quote">Notre portail d'entrée est magnifique. Travail soigné, délais respectés, équipe très à l'écoute. Je recommande vivement.</blockquote>
+          <div class="testi-author">
+            <div class="testi-av" aria-hidden="true">M</div>
+            <div><div class="testi-name">Marie-Claire D.</div><div class="testi-loc">Liège</div></div>
+          </div>
+        </div>
+        <div class="testi-card fi">
+          <div class="testi-stars" aria-label="5 étoiles">
+            <svg width="72" height="11" viewBox="0 0 72 11" fill="none" aria-hidden="true"><path d="M5.5 1l1.2 3.7H10L7.3 6.8l1.2 3.7L5.5 8.6 2.5 10.5l1.2-3.7L1 4.7h3.3L5.5 1z" fill="#d94f3b"/><path d="M20 1l1.2 3.7H25l-2.7 2.1 1.2 3.7L20 8.6 17 10.5l1.2-3.7-2.7-2.1H19L20 1z" fill="#d94f3b"/><path d="M34.5 1l1.2 3.7H39l-2.7 2.1 1.2 3.7-2.9-1.9-3 1.9 1.2-3.7-2.7-2.1h3.3L34.5 1z" fill="#d94f3b"/><path d="M49 1l1.2 3.7H54l-2.7 2.1 1.2 3.7L49 8.6 46 10.5l1.2-3.7-2.7-2.1h3.3L49 1z" fill="#d94f3b"/><path d="M63.5 1l1.2 3.7H68l-2.7 2.1 1.2 3.7-2.9-1.9-3 1.9 1.2-3.7-2.7-2.1h3.3L63.5 1z" fill="#d94f3b"/></svg>
+          </div>
+          <blockquote class="testi-quote">La serre de jardin dépasse toutes nos attentes. Qualité exceptionnelle, finitions parfaites. Un vrai artisan de passion.</blockquote>
+          <div class="testi-author">
+            <div class="testi-av" aria-hidden="true">P</div>
+            <div><div class="testi-name">Pierre V.</div><div class="testi-loc">Bruxelles</div></div>
+          </div>
+        </div>
+        <div class="testi-card fi">
+          <div class="testi-stars" aria-label="5 étoiles">
+            <svg width="72" height="11" viewBox="0 0 72 11" fill="none" aria-hidden="true"><path d="M5.5 1l1.2 3.7H10L7.3 6.8l1.2 3.7L5.5 8.6 2.5 10.5l1.2-3.7L1 4.7h3.3L5.5 1z" fill="#d94f3b"/><path d="M20 1l1.2 3.7H25l-2.7 2.1 1.2 3.7L20 8.6 17 10.5l1.2-3.7-2.7-2.1H19L20 1z" fill="#d94f3b"/><path d="M34.5 1l1.2 3.7H39l-2.7 2.1 1.2 3.7-2.9-1.9-3 1.9 1.2-3.7-2.7-2.1h3.3L34.5 1z" fill="#d94f3b"/><path d="M49 1l1.2 3.7H54l-2.7 2.1 1.2 3.7L49 8.6 46 10.5l1.2-3.7-2.7-2.1h3.3L49 1z" fill="#d94f3b"/><path d="M63.5 1l1.2 3.7H68l-2.7 2.1 1.2 3.7-2.9-1.9-3 1.9 1.2-3.7-2.7-2.1h3.3L63.5 1z" fill="#d94f3b"/></svg>
+          </div>
+          <blockquote class="testi-quote">Garde-corps d'escalier réalisé avec une précision remarquable. On voit que c'est un vrai métier, pas du travail en série.</blockquote>
+          <div class="testi-author">
+            <div class="testi-av" aria-hidden="true">S</div>
+            <div><div class="testi-name">Sophie N.</div><div class="testi-loc">Namur</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="sdiv sdiv--12" aria-hidden="true"></div>
+
+  <!-- SERVICES -->
+  <section id="services" class="s s--card" aria-labelledby="svc-title">
+    <div class="wrap">
+      <div class="svc-hdr fi">
+        <div>
+          <span class="eyebrow">Prestations</span>
+          <h2 class="h-large" id="svc-title">Tout ce que<br><em>nous fabriquons</em></h2>
+        </div>
+        <a href="#contact" class="btn btn--red">Devis Gratuit →</a>
+      </div>
+      <div class="svc-grid">
+        <div class="svc-card svc-card--feat fi" data-svc="portails">
+          <div class="svc-img-wrap">
+            <img class="svc-img" src="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_fill,g_auto,w_1200/LRMJ_PROJECT_LOGO_xzm1yq.png" alt="Portail en fer forgé" loading="lazy" decoding="async"/>
+          </div>
+          <div class="svc-body">
+            <span class="svc-tag">Signature</span>
+            <h3 class="svc-title">Portails &amp; Clôtures</h3>
+            <p class="svc-desc">Entrées monumentales ou clôtures élégantes. Finitions époxy ou galvanisées pour une durabilité maximale. Conçu sur mesure pour votre propriété.</p>
+            <a href="#contact" class="btn btn--ghost mt-auto" style="width:fit-content;">Commander →</a>
+          </div>
+        </div>
+        <div class="svc-card fi" data-svc="gardecorps">
+          <div class="svc-img-wrap"><img class="svc-img" src="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_fill,g_auto,w_800/LRMJ_PROJECT_LOGO_xzm1yq.png" alt="Garde-corps en fer forgé" loading="lazy" decoding="async"/></div>
+          <div class="svc-body"><span class="svc-tag">Intérieur &amp; Extérieur</span><h3 class="svc-title">Garde-Corps &amp; Rampes</h3><p class="svc-desc">Escaliers, balcons, mezzanines. Sécurité et esthétique au service de votre espace.</p></div>
+        </div>
+        <div class="svc-card fi" data-svc="baies">
+          <div class="svc-img-wrap"><img class="svc-img" src="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_fill,g_auto,w_800/LRMJ_PROJECT_LOGO_xzm1yq.png" alt="Serre de jardin" loading="lazy" decoding="async"/></div>
+          <div class="svc-body"><span class="svc-tag">Jardin</span><h3 class="svc-title">Serres &amp; Baies Vitrées</h3><p class="svc-desc">Jardins d'hiver, vérandas, extensions vitrées. Structures légères et résistantes.</p></div>
+        </div>
+        <div class="svc-card fi" data-svc="marquises">
+          <div class="svc-img-wrap"><img class="svc-img" src="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_fill,g_auto,w_800/LRMJ_PROJECT_LOGO_xzm1yq.png" alt="Marquise en fer forgé" loading="lazy" decoding="async"/></div>
+          <div class="svc-body"><span class="svc-tag">Protection</span><h3 class="svc-title">Marquises &amp; Auvents</h3><p class="svc-desc">Protection élégante pour entrées et terrasses. Châssis fer forgé, verre feuilleté.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="sdiv sdiv--21" aria-hidden="true"></div>
+
+  <!-- PROCESS -->
+  <section class="s s--lift proc" aria-labelledby="proc-title">
+    <div class="wrap wrap--sm">
+      <div class="fi text-center mb-10">
+        <span class="eyebrow">Comment ça marche</span>
+        <h2 class="h-large" id="proc-title">De votre idée<br><em>à la pose finale</em></h2>
+      </div>
+    </div>
+    <div class="wrap">
+      <div class="proc-timeline">
+        <div class="proc-rail" aria-hidden="true">
+          <div class="proc-rail__bg"></div>
+          <div class="proc-rail__fg"></div>
+        </div>
+
+        <article class="proc-step fi" data-step="1">
+          <span class="proc-num" aria-hidden="true">01</span>
+          <div class="proc-icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="7" width="26" height="18" rx="1"/>
+              <path d="M3 9 L16 18 L29 9"/>
+              <path d="M3 23 L11 16 M29 23 L21 16"/>
+            </svg>
+          </div>
+          <div class="proc-body">
+            <h3 class="proc-ttl">Contact</h3>
+            <p class="proc-desc">Appelez ou écrivez. On comprend votre projet et vos contraintes sans jargon.</p>
+          </div>
+        </article>
+
+        <article class="proc-step fi" data-step="2">
+          <span class="proc-num" aria-hidden="true">02</span>
+          <div class="proc-icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 27 L5 5 L23 5 L27 9 L27 27 Z"/>
+              <path d="M23 5 L23 9 L27 9"/>
+              <path d="M9 13 L21 13 M9 17 L21 17 M9 21 L17 21"/>
+            </svg>
+          </div>
+          <div class="proc-body">
+            <h3 class="proc-ttl">Visite &amp; Devis</h3>
+            <p class="proc-desc">On se déplace, on mesure, devis détaillé et gratuit sous 48h.</p>
+          </div>
+        </article>
+
+        <article class="proc-step fi" data-step="3">
+          <span class="proc-num" aria-hidden="true">03</span>
+          <div class="proc-icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 26 L26 26"/>
+              <path d="M9 26 L11 18 L21 18 L23 26"/>
+              <path d="M10 18 L10 14 Q10 9 16 9 Q22 9 22 14 L22 18"/>
+              <circle cx="16" cy="13" r="1" fill="currentColor"/>
+            </svg>
+          </div>
+          <div class="proc-body">
+            <h3 class="proc-ttl">Fabrication</h3>
+            <p class="proc-desc">Chaque pièce façonnée dans notre atelier. Finition époxy, galva ou thermolaqué.</p>
+          </div>
+        </article>
+
+        <article class="proc-step fi" data-step="4">
+          <span class="proc-num" aria-hidden="true">04</span>
+          <div class="proc-icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 27 L4 13 L16 4 L28 13 L28 27 Z"/>
+              <path d="M12 27 L12 18 L20 18 L20 27"/>
+              <circle cx="18" cy="22" r=".8" fill="currentColor"/>
+            </svg>
+          </div>
+          <div class="proc-body">
+            <h3 class="proc-ttl">Pose &amp; Réception</h3>
+            <p class="proc-desc">Installation soignée par notre équipe, finitions impeccables, remise des clés.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <div class="sdiv sdiv--10" aria-hidden="true"></div>
+
+  <!-- À PROPOS -->
+  <section id="about" class="s s--dark glow-red-br" aria-labelledby="about-title">
+    <div class="wrap">
+      <div class="about-grid">
+        <div class="about-img fi">
+          <img src="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_fill,g_auto,ar_4:5,w_800/LRMJ_PROJECT_LOGO_xzm1yq.png" alt="Artisan ferronnier au travail" width="480" height="640" loading="lazy" decoding="async"/>
+          <div class="about-img__caption" aria-hidden="true">Atelier LRMJ — Belgique</div>
+        </div>
+        <div class="about-content fi">
+          <span class="eyebrow">À Propos</span>
+          <h2 class="about-tagline" id="about-title">L'artisanat comme vocation,<br>le terrain comme passion</h2>
+          <div class="about-body">
+            <p class="about-lede"><span class="about-dropcap" aria-hidden="true">L</span>RMJ Project est né de la passion d'un artisan ferronnier installé en Belgique. Chaque pièce est conçue et fabriquée en atelier, posée par nos propres mains.</p>
+            <p>Aucune sous-traitance. De la première esquisse au dernier boulon, vous avez notre parole — et un seul interlocuteur, du devis à la pose.</p>
+          </div>
+          <div class="about-hl-grid">
+            <div class="about-hl">
+              <div class="about-hl-val"><span class="counter" data-target="30" data-prefix="+">+30</span></div>
+              <div class="about-hl-lbl">Années d'expérience</div>
+            </div>
+            <div class="about-hl">
+              <div class="about-hl-val"><span class="counter" data-target="500" data-prefix="+">+500</span></div>
+              <div class="about-hl-lbl">Projets livrés</div>
+            </div>
+            <div class="about-hl">
+              <div class="about-hl-val"><span class="counter" data-target="100" data-suffix="%">100%</span></div>
+              <div class="about-hl-lbl">Fabrication propre</div>
+            </div>
+            <div class="about-hl">
+              <div class="about-hl-val"><span class="counter" data-target="48" data-suffix="h">48h</span></div>
+              <div class="about-hl-lbl">Délai devis</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="sdiv sdiv--01" aria-hidden="true"></div>
+
+  <!-- CONTACT -->
+  <section id="contact" class="s s--lift" aria-labelledby="contact-title">
+    <div class="wrap">
+      <div class="contact-grid">
+        <div class="fi">
+          <span class="eyebrow">Contact</span>
+          <h2 class="h-large" id="contact-title">Parlons de<br><em>votre projet</em></h2>
+          <p class="lead" style="margin-top:.75rem;">Devis entièrement gratuit, sans engagement. Réponse sous 24h.</p>
+          <ul class="contact-info-list" role="list">
+            <li class="contact-info-item">
+              <div class="contact-info-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.9z"/></svg></div>
+              <div><div class="contact-info-lbl">Téléphone</div><div class="contact-info-val"><a href="tel:0475399909">0475 39 99 09</a></div></div>
+            </li>
+            <li class="contact-info-item">
+              <div class="contact-info-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+              <div><div class="contact-info-lbl">Email</div><div class="contact-info-val"><a href="mailto:contact@lrmjproject.be">contact@lrmjproject.be</a></div></div>
+            </li>
+            <li class="contact-info-item">
+              <div class="contact-info-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+              <div><div class="contact-info-lbl">Disponibilité</div><div class="contact-info-val">Lun – Sam · 8h – 18h</div></div>
+            </li>
+          </ul>
+        </div>
+        <div class="fi">
+          <form class="contact-form" id="contactForm" novalidate>
+            <input type="hidden" name="access_key" id="formAccessKey" value="" />
+            <input type="hidden" name="subject" value="Nouvelle demande de devis — lrmjproject.be" />
+            <input type="hidden" name="from_name" value="Site LRMJ Project" />
+            <input type="checkbox" name="botcheck" class="sr-only" tabindex="-1" autocomplete="off" aria-hidden="true" />
+            <p class="form-eye">Demande de devis</p>
+            <div class="form-grid">
+              <div class="form-field"><label class="form-lbl" for="prenom">Prénom *</label><input class="form-inp" type="text" id="prenom" name="prenom" placeholder="Jean" required autocomplete="given-name"/></div>
+              <div class="form-field"><label class="form-lbl" for="nom">Nom *</label><input class="form-inp" type="text" id="nom" name="nom" placeholder="Dupont" required autocomplete="family-name"/></div>
+              <div class="form-field"><label class="form-lbl" for="tel">Téléphone *</label><input class="form-inp" type="tel" id="tel" name="tel" placeholder="04XX XXX XXX" required autocomplete="tel"/></div>
+              <div class="form-field"><label class="form-lbl" for="email">Email</label><input class="form-inp" type="email" id="email" name="email" placeholder="jean@email.be" autocomplete="email"/></div>
+              <div class="form-field form-field--full"><label class="form-lbl" for="service">Type de projet</label><select class="form-sel" id="service" name="service"><option value="">Sélectionnez…</option><option value="portail">Portail / Clôture</option><option value="gardecorps">Garde-corps / Rampe</option><option value="serre">Serre / Baie vitrée</option><option value="marquise">Marquise / Auvent</option><option value="autre">Autre projet</option></select></div>
+              <div class="form-field form-field--full"><label class="form-lbl" for="message">Décrivez votre projet</label><textarea class="form-txt" id="message" name="message" placeholder="Dimensions, style, délai, localisation…"></textarea></div>
+            </div>
+            <button type="submit" class="form-submit">Envoyer ma demande</button>
+            <div class="form-success" id="formSuccess" role="status" aria-live="polite">✓ Message bien reçu — nous vous recontactons sous 24h.</div>
+            <div class="form-error" id="formError" role="status" aria-live="polite">Une erreur est survenue. Réessayez ou appelez le 0475 39 99 09.</div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- LIGHTBOX -->
+<div class="lb" id="lightbox" role="dialog" aria-modal="true" aria-label="Aperçu de la réalisation" aria-hidden="true">
+  <button class="lb__close" id="lbClose" type="button" aria-label="Fermer">
+    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" aria-hidden="true"><path d="M2 2 L12 12 M12 2 L2 12"/></svg>
+  </button>
+  <div class="lb__stage">
+    <img class="lb__img" id="lbImg" src="" alt="" />
+    <div class="lb__caption">
+      <span class="lb__num" id="lbNum">01 / 16</span>
+      <span class="lb__title" id="lbTitle">—</span>
+    </div>
+  </div>
+  <div class="lb__nav">
+    <button class="lb__btn" id="lbPrev" type="button" aria-label="Précédent">
+      <svg width="14" height="10" viewBox="0 0 14 10" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13.5 5 H1 M5 1 L1 5 L5 9"/></svg>
+    </button>
+    <button class="lb__btn" id="lbNext" type="button" aria-label="Suivant">
+      <svg width="14" height="10" viewBox="0 0 14 10" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M0.5 5 H13 M9 1 L13 5 L9 9"/></svg>
+    </button>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand-wrap">
+        <img class="footer-logo" src="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_360/LRMJ_PROJECT_LOGO_xzm1yq.png" alt="LRMJ Project" width="180" height="180" loading="lazy"/>
+        <p class="footer-desc">Artisan ferronnier sur mesure en Belgique. Portails, garde-corps, serres, marquises.</p>
+      </div>
+      <div>
+        <p class="footer-hdg">Navigation</p>
+        <ul class="footer-links" role="list">
+          <li><a href="#realisations">Réalisations</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">À Propos</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-hdg">Services</p>
+        <ul class="footer-links" role="list">
+          <li><a href="#services">Portails</a></li>
+          <li><a href="#services">Garde-corps</a></li>
+          <li><a href="#services">Serres</a></li>
+          <li><a href="#services">Marquises</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-hdg">Contact</p>
+        <ul class="footer-links" role="list">
+          <li><a href="tel:0475399909">0475 39 99 09</a></li>
+          <li><a href="mailto:contact@lrmjproject.be">contact@lrmjproject.be</a></li>
+          <li>Lun – Sam · 8h–18h</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-btm">
+      <p class="footer-copy">© <span id="footYear">2026</span> LRMJ Project ·
+        <button type="button" class="footer-link-btn" data-open-legal="mentions">Mentions légales</button> ·
+        <button type="button" class="footer-link-btn" data-open-legal="privacy">Confidentialité</button>
+      </p>
+      <p class="footer-copy">Ferronnerie artisanale · Belgique</p>
+    </div>
+  </div>
+</footer>
+
+<!-- COOKIE BANNER -->
+<div class="cookie-banner" id="cookieBanner" role="dialog" aria-labelledby="cookieTitle" aria-describedby="cookieText" hidden>
+  <h2 class="cookie-banner__title" id="cookieTitle">Vos cookies</h2>
+  <p class="cookie-banner__text" id="cookieText">
+    Nous utilisons uniquement des cookies <strong>strictement nécessaires</strong> au fonctionnement du site
+    (préférence thème, mémoire de session). Aucun traceur publicitaire, aucune revente de données.
+    <button type="button" class="footer-link-btn" data-open-legal="privacy">En savoir plus</button>
+  </p>
+  <div class="cookie-banner__actions">
+    <button type="button" class="cookie-banner__btn cookie-banner__btn--accept" id="cookieAccept">J'ai compris</button>
+    <button type="button" class="cookie-banner__btn cookie-banner__btn--decline" id="cookieDecline">Refuser tout</button>
+  </div>
+</div>
+
+<!-- MODAL MENTIONS LÉGALES -->
+<div class="modal-legal" id="modalMentions" role="dialog" aria-modal="true" aria-labelledby="mentionsTitle" aria-hidden="true">
+  <div class="modal-legal__panel" role="document">
+    <button type="button" class="modal-legal__close" data-close-legal aria-label="Fermer">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" aria-hidden="true"><path d="M2 2 L12 12 M12 2 L2 12"/></svg>
+    </button>
+    <span class="modal-legal__eyebrow">Légal</span>
+    <h3 class="modal-legal__title" id="mentionsTitle">Mentions légales</h3>
+    <div class="modal-legal__body">
+      <h4>Éditeur du site</h4>
+      <p>
+        <strong>LRMJ Project</strong><br>
+        Artisan ferronnier — Belgique<br>
+        Atelier : Opwijk, Vlaams-Brabant<br>
+        Téléphone : <a href="tel:0475399909">+32 475 39 99 09</a><br>
+        Email : <a href="mailto:contact@lrmjproject.be">contact@lrmjproject.be</a>
+      </p>
+      <p>Numéro d'entreprise (BCE / TVA) : <strong>BE 0000.000.000</strong> <em>(à remplacer)</em></p>
+
+      <h4>Directeur de la publication</h4>
+      <p>Romeo — gérant de LRMJ Project.</p>
+
+      <h4>Hébergement</h4>
+      <p>Le site est hébergé par <strong>Cloudflare Pages</strong> (Cloudflare, Inc., 101 Townsend St., San Francisco, CA 94107, USA). Les médias (photos, vidéos) sont distribués via <strong>Cloudinary</strong>.</p>
+
+      <h4>Propriété intellectuelle</h4>
+      <p>L'ensemble du site (textes, photographies, logo, charte graphique) est la propriété exclusive de LRMJ Project, sauf mention contraire. Toute reproduction, même partielle, sans autorisation écrite préalable est interdite.</p>
+
+      <h4>Limitation de responsabilité</h4>
+      <p>Les informations affichées sur ce site sont fournies à titre indicatif. LRMJ Project ne saurait être tenu responsable d'éventuelles erreurs ou omissions. Les visuels et descriptions de réalisations sont propres à chaque projet et ne constituent pas un engagement contractuel.</p>
+
+      <h4>Litiges</h4>
+      <p>Le présent site est régi par le droit belge. En cas de litige, les tribunaux belges sont seuls compétents.</p>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL CONFIDENTIALITÉ -->
+<div class="modal-legal" id="modalPrivacy" role="dialog" aria-modal="true" aria-labelledby="privacyTitle" aria-hidden="true">
+  <div class="modal-legal__panel" role="document">
+    <button type="button" class="modal-legal__close" data-close-legal aria-label="Fermer">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" aria-hidden="true"><path d="M2 2 L12 12 M12 2 L2 12"/></svg>
+    </button>
+    <span class="modal-legal__eyebrow">Légal</span>
+    <h3 class="modal-legal__title" id="privacyTitle">Politique de confidentialité</h3>
+    <div class="modal-legal__body">
+      <h4>Données personnelles collectées</h4>
+      <p>Seuls les champs que vous remplissez volontairement dans le formulaire de contact (nom, email, téléphone, message, type de projet) sont collectés. Ils servent <strong>uniquement</strong> à vous recontacter au sujet de votre demande.</p>
+
+      <h4>Conservation</h4>
+      <p>Vos données sont conservées le temps strictement nécessaire au traitement de votre demande, puis archivées ou supprimées sous 24 mois maximum.</p>
+
+      <h4>Partage avec des tiers</h4>
+      <p>Vos données ne sont jamais vendues, louées ni cédées à des tiers à des fins commerciales. Elles sont uniquement traitées par LRMJ Project et son prestataire d'envoi de formulaire.</p>
+
+      <h4>Cookies utilisés</h4>
+      <ul>
+        <li><strong>Cookies strictement nécessaires</strong> : préférence de thème (clair/sombre), validation du bandeau cookies. Pas de tracking.</li>
+        <li><strong>Pas de cookies tiers publicitaires</strong>, pas de pixels Facebook ou Google Ads.</li>
+      </ul>
+      <p>Vous pouvez à tout moment supprimer ces cookies depuis les paramètres de votre navigateur.</p>
+
+      <h4>Vos droits (RGPD)</h4>
+      <p>Conformément au Règlement Général sur la Protection des Données, vous disposez d'un droit d'accès, de rectification, d'effacement, d'opposition et de portabilité sur vos données. Pour exercer ces droits, contactez-nous à <a href="mailto:contact@lrmjproject.be">contact@lrmjproject.be</a>.</p>
+
+      <h4>Autorité de contrôle</h4>
+      <p>En cas de litige non résolu, vous pouvez saisir l'Autorité de protection des données belge : <a href="https://www.autoriteprotectiondonnees.be" rel="noopener">autoriteprotectiondonnees.be</a>.</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

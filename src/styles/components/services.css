@@ -1,0 +1,32 @@
+/* ── SERVICES ── */
+.svc-hdr { display: flex; align-items: flex-end; justify-content: space-between; gap: 2rem; margin-bottom: 2.5rem; }
+.svc-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); }
+.svc-card { background: var(--bg-1); overflow: hidden; display: flex; flex-direction: column; transition: background .35s var(--ease); }
+.svc-card:hover { background: var(--bg-2); }
+.svc-card--feat { grid-column: span 3; flex-direction: row; }
+.svc-img-wrap { overflow: hidden; flex-shrink: 0; position: relative; }
+.svc-img { width: 100%; height: 200px; object-fit: cover; display: block; transition: transform .8s cubic-bezier(.25,.46,.45,.94), filter .8s ease; filter: brightness(.75) saturate(.7); will-change: transform; }
+.svc-card--feat .svc-img { width: 480px; height: 100%; }
+.svc-card:hover .svc-img { transform: scale(1.06); filter: brightness(.92) saturate(.92); }
+.svc-body { padding: 1.75rem; display: flex; flex-direction: column; gap: .35rem; flex: 1; }
+.svc-tag  { font-size: .6rem; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; color: var(--red); margin-bottom: .25rem; }
+.svc-title {
+  font-family: var(--f-display); font-size: 1.3rem; font-weight: 400;
+  color: var(--tx); line-height: 1.15;
+  position: relative;
+  display: inline-block;
+}
+.svc-title::after {
+  content: '';
+  position: absolute;
+  bottom: -4px; left: 0;
+  width: 100%; height: 1px;
+  background: var(--red);
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform .5s var(--ease);
+}
+.svc-card:hover .svc-title::after { transform: scaleX(.4); }
+.svc-desc  { font-size: .87rem; color: var(--tx-2); line-height: 1.75; flex: 1; margin-top: .25rem; }
+@media (max-width:900px) { .svc-grid { grid-template-columns:1fr 1fr; } .svc-card--feat { grid-column: span 2; flex-direction:column; } .svc-card--feat .svc-img { width:100%; height:220px; } }
+@media (max-width:560px) { .svc-grid { grid-template-columns:1fr; } .svc-card--feat { grid-column:1; } }

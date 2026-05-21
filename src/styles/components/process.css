@@ -1,0 +1,152 @@
+/* ── PROCESS — Timeline horizontale (desktop) / verticale (mobile) ── */
+.proc-timeline {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: clamp(1.5rem, 3vw, 3rem);
+  padding-top: clamp(2rem, 4vw, 3.5rem);
+}
+.proc-rail {
+  position: absolute;
+  top: calc(clamp(2rem, 4vw, 3.5rem) + 27px);
+  left: calc(100% / 8);
+  right: calc(100% / 8);
+  height: 1px;
+  pointer-events: none;
+  overflow: visible;
+}
+.proc-rail__bg,
+.proc-rail__fg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+.proc-rail__bg {
+  width: 100%;
+  background: var(--border-2);
+}
+.proc-rail__fg {
+  width: 0;
+  background: var(--red);
+  transition: width 1.2s var(--ease-out);
+}
+.proc-timeline[data-progress="1"] .proc-rail__fg { width: 12.5%; }
+.proc-timeline[data-progress="2"] .proc-rail__fg { width: 41.66%; }
+.proc-timeline[data-progress="3"] .proc-rail__fg { width: 70.83%; }
+.proc-timeline[data-progress="4"] .proc-rail__fg { width: 100%; }
+
+.proc-step {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 clamp(.5rem, 1.5vw, 1.5rem);
+  isolation: isolate;
+}
+.proc-num {
+  font-family: var(--f-display);
+  font-weight: 300;
+  font-size: clamp(2.4rem, 3.5vw, 3.4rem);
+  line-height: 1;
+  color: rgba(var(--tx-rgb), .12);
+  margin-bottom: .2rem;
+  transition: color .5s var(--ease);
+}
+.proc-step:hover .proc-num { color: var(--red); }
+.proc-icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px; height: 56px;
+  border-radius: 50%;
+  background: var(--bg-1);
+  border: 1px solid var(--border);
+  color: var(--tx-2);
+  margin-bottom: 1.5rem;
+  transition: border-color .4s var(--ease), color .4s var(--ease), background-color .4s var(--ease), transform .5s var(--ease), box-shadow .4s var(--ease);
+  z-index: 2;
+}
+.proc-icon svg { transition: transform .5s var(--ease); }
+.proc-step:hover .proc-icon {
+  background: var(--bg);
+  border-color: var(--red);
+  color: var(--red);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(var(--bg-rgb), .25), 0 0 0 6px rgba(196, 67, 47, .06);
+}
+html[data-theme="dark"] .proc-step:hover .proc-icon {
+  box-shadow: 0 12px 28px rgba(0,0,0,.4), 0 0 0 6px rgba(217, 79, 59, .08);
+}
+.proc-step:hover .proc-icon svg { transform: scale(1.08) rotate(-3deg); }
+
+.proc-body { max-width: 18ch; margin: 0 auto; }
+.proc-ttl  {
+  font-family: var(--f-display);
+  font-size: clamp(1.15rem, 1.6vw, 1.4rem);
+  font-weight: 400;
+  color: var(--tx);
+  margin: 0 0 .6rem;
+  letter-spacing: -.005em;
+}
+.proc-desc {
+  font-size: .87rem;
+  color: var(--tx-2);
+  line-height: 1.65;
+}
+
+html.js .fi.is-in.proc-step:nth-child(2) { animation-delay: .08s; }
+html.js .fi.is-in.proc-step:nth-child(3) { animation-delay: .16s; }
+html.js .fi.is-in.proc-step:nth-child(4) { animation-delay: .24s; }
+html.js .fi.is-in.proc-step:nth-child(5) { animation-delay: .32s; }
+
+@media (max-width: 760px) {
+  .proc-timeline {
+    grid-template-columns: 1fr;
+    gap: clamp(1.75rem, 4vw, 2.5rem);
+    padding-top: 1rem;
+    padding-left: clamp(1.5rem, 4vw, 2rem);
+  }
+  .proc-rail {
+    top: 28px;
+    bottom: 28px;
+    left: calc(clamp(1.5rem, 4vw, 2rem) + 27px);
+    right: auto;
+    width: 1px;
+    height: auto;
+  }
+  .proc-rail__bg,
+  .proc-rail__fg {
+    width: 100%;
+    left: 0;
+  }
+  .proc-rail__bg { height: 100%; }
+  .proc-rail__fg { height: 0; transition: height 1.2s var(--ease-out); }
+  .proc-timeline[data-progress="1"] .proc-rail__fg { width: 100%; height: 12.5%; }
+  .proc-timeline[data-progress="2"] .proc-rail__fg { width: 100%; height: 41.66%; }
+  .proc-timeline[data-progress="3"] .proc-rail__fg { width: 100%; height: 70.83%; }
+  .proc-timeline[data-progress="4"] .proc-rail__fg { width: 100%; height: 100%; }
+
+  .proc-step {
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+    gap: 1.25rem;
+    padding: 0;
+  }
+  .proc-num {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 2rem;
+    margin: 0;
+    opacity: .5;
+  }
+  .proc-icon {
+    flex-shrink: 0;
+    margin-bottom: 0;
+  }
+  .proc-body { max-width: none; margin: 0; flex: 1; padding-top: .35rem; }
+}

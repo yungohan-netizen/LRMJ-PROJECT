@@ -1,0 +1,99 @@
+/* ── DESIGN SYSTEM TOKENS ─────────────────────────────────────────
+   Theme LIGHT par défaut. Toggle via [data-theme="dark"] sur <html>.
+   Toutes les couleurs du site référencent ces variables.
+   ────────────────────────────────────────────────────────────── */
+:root {
+  /* Backgrounds */
+  --bg:          #f5f3ee;
+  --bg-1:        #ebe8e0;
+  --bg-2:        #dfdbd0;
+  --bg-3:        #d2cdc0;
+  --bg-rgb:      245, 243, 238;
+
+  /* Surfaces */
+  --surf:        rgba(7,8,12,0.04);
+  --surf-2:      rgba(7,8,12,0.07);
+  --border:      rgba(7,8,12,0.10);
+  --border-2:    rgba(7,8,12,0.18);
+
+  /* Text */
+  --tx:          #1a1d24;
+  --tx-2:        rgba(26,29,36,0.65);
+  --tx-3:        rgba(26,29,36,0.40);
+  --tx-rgb:      26, 29, 36;
+
+  /* Accent — Forge Red / Braise */
+  --red:         #c4432f;
+  --red-glow:    rgba(196,67,47,0.18);
+  --red-border:  rgba(196,67,47,0.32);
+
+  /* Shadows & glows */
+  --glow-red:    0 0 80px rgba(196,67,47,0.10);
+  --shadow-card: 0 12px 32px rgba(7,8,12,0.08);
+
+  /* Type scale */
+  --f-display: 'Cormorant Garamond', Georgia, serif;
+  --f-body:    'DM Sans', system-ui, sans-serif;
+
+  /* Spacing */
+  --gap: clamp(1.5rem, 4vw, 4rem);
+
+  /* Transitions */
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-flip: cubic-bezier(0.76, 0, 0.24, 1);
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+
+  /* Grain + hero video opacity */
+  --grain-opacity: 0;
+  --hero-video-opacity: .92;
+}
+
+html[data-theme="dark"] {
+  --bg:          #07080c;
+  --bg-1:        #0c0e14;
+  --bg-2:        #111420;
+  --bg-3:        #171b28;
+  --bg-rgb:      7, 8, 12;
+
+  --surf:        rgba(255,255,255,0.04);
+  --surf-2:      rgba(255,255,255,0.07);
+  --border:      rgba(255,255,255,0.07);
+  --border-2:    rgba(255,255,255,0.12);
+
+  --tx:          #f2f0ec;
+  --tx-2:        rgba(242,240,236,0.55);
+  --tx-3:        rgba(242,240,236,0.28);
+  --tx-rgb:      242, 240, 236;
+
+  --red:         #d94f3b;
+  --red-glow:    rgba(217,79,59,0.18);
+  --red-border:  rgba(217,79,59,0.30);
+
+  --glow-red:    0 0 80px rgba(217,79,59,0.12);
+  --shadow-card: 0 12px 32px rgba(0,0,0,0.4);
+
+  --grain-opacity: 0.045;
+  --hero-video-opacity: .68;
+}
+
+/* Theme swap transitions */
+html {
+  transition: background-color .35s var(--ease), color .35s var(--ease);
+}
+body, .nav, .ticker, .footer,
+.testi-card, .svc-card, .proc-step, .about-hl, .contact-form,
+.form-inp, .form-sel, .form-txt, .contact-info-ico {
+  transition: background-color .35s var(--ease), color .35s var(--ease), border-color .35s var(--ease);
+}
+
+/* Light mode : images natural saturation */
+html:not([data-theme="dark"]) .masonry-item img,
+html:not([data-theme="dark"]) .svc-img,
+html:not([data-theme="dark"]) .about-img img {
+  filter: brightness(1) saturate(1) !important;
+}
+html:not([data-theme="dark"]) .masonry-item:hover img,
+html:not([data-theme="dark"]) .svc-card:hover .svc-img,
+html:not([data-theme="dark"]) .about-img:hover img {
+  filter: brightness(1.02) saturate(1.05) !important;
+}

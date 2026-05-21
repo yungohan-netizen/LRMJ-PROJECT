@@ -1,0 +1,3001 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Anti-FOUC : marque html.js + applique le thème dès le premier byte -->
+  <script>
+    (function() {
+      var html = document.documentElement;
+      html.classList.add('js');
+      try {
+        var stored = localStorage.getItem('lrmj-theme');
+        var theme;
+        if (stored === 'dark' || stored === 'light') {
+          theme = stored;
+        } else {
+          // Pas de préférence stockée : on respecte l'OS si dark, sinon light
+          theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+        if (theme === 'dark') html.setAttribute('data-theme', 'dark');
+      } catch (_) { /* localStorage indisponible (private mode) → light default */ }
+    })();
+  </script>
+  <title>LRMJ Project — Ferronnerie &amp; Menuiserie Sur Mesure</title>
+  <meta name="description" content="LRMJ Project — Artisan ferronnier spécialisé dans la création sur mesure : portails, garde-corps, clôtures, serres, marquises en fer forgé." />
+  <meta name="author" content="LRMJ Project" />
+  <meta name="theme-color" content="#f5f3ee" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#07080c" media="(prefers-color-scheme: dark)" />
+
+  <!-- Favicon SVG inline (mode-aware via prefers-color-scheme) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><style>rect{fill:%23f5f3ee}.m{fill:%231a1d24;font:600 13px/1 system-ui,sans-serif;letter-spacing:.5px}.a{fill:%23c4432f}@media(prefers-color-scheme:dark){rect{fill:%2307080c}.m{fill:%23f2f0ec}.a{fill:%23d94f3b}}</style><rect width='32' height='32' rx='4'/><text x='5' y='22' class='m'>LR</text><circle cx='27' cy='7' r='2.5' class='a'/></svg>" />
+  <link rel="alternate icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAQMAAAAlPW0iAAAABlBMVEX//wD///8+RnTuAAAAAnRSTlP/AOW3MEoAAAAcSURBVAjXY/j///8/BgYG/v///wEEAAH//9P//wcAGqEEZjL2LWAAAAAASUVORK5CYII=" type="image/png" />
+  <link rel="apple-touch-icon" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'><rect width='180' height='180' rx='20' fill='%2307080c'/><text x='28' y='115' fill='%23f2f0ec' font-family='Georgia,serif' font-size='72' font-weight='400' letter-spacing='2'>LR</text><circle cx='148' cy='42' r='12' fill='%23d94f3b'/></svg>" />
+  <meta property="og:title" content="LRMJ Project — Ferronnerie sur mesure" />
+  <meta property="og:description" content="Portails, garde-corps, serres, marquises. Atelier en Belgique." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="fr_BE" />
+  <meta property="og:url" content="https://lrmjproject.be/" />
+  <meta property="og:site_name" content="LRMJ Project" />
+  <meta property="og:image" content="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/909a150405840e75ea8f4f352a9b8690798972a0.jpg" />
+  <meta property="og:image:alt" content="Portail en fer forgé LRMJ Project" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="LRMJ Project — Ferronnerie sur mesure" />
+  <meta name="twitter:description" content="Portails, garde-corps, serres, marquises. Atelier en Belgique." />
+  <meta name="twitter:image" content="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/909a150405840e75ea8f4f352a9b8690798972a0.jpg" />
+  <meta name="robots" content="index, follow" />
+  <meta name="geo.region" content="BE-VBR" />
+  <meta name="geo.placename" content="Opwijk" />
+  <link rel="canonical" href="https://lrmjproject.be/" />
+
+  <!-- JSON-LD : LocalBusiness pour rich results Google (étoiles, horaires, carte) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "LRMJ Project",
+    "image": "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/909a150405840e75ea8f4f352a9b8690798972a0.jpg",
+    "@id": "https://lrmjproject.be/",
+    "url": "https://lrmjproject.be/",
+    "telephone": "+32475399909",
+    "priceRange": "€€€",
+    "description": "Artisan ferronnier spécialisé en création sur mesure : portails, garde-corps, clôtures, serres, marquises en fer forgé.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Opwijk",
+      "addressRegion": "Vlaams-Brabant",
+      "addressCountry": "BE"
+    },
+    "areaServed": [
+      { "@type": "City", "name": "Bruxelles" },
+      { "@type": "City", "name": "Opwijk" },
+      { "@type": "AdministrativeArea", "name": "Belgique" }
+    ],
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "08:00",
+      "closes": "18:00"
+    },
+    "sameAs": []
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Preconnect au CDN images (LCP path) -->
+  <link rel="preconnect" href="https://pplx-res.cloudinary.com" crossorigin>
+  <!-- Preload du poster hero = LCP candidate principal -->
+  <link rel="preload" as="image"
+        href="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/909a150405840e75ea8f4f352a9b8690798972a0.jpg"
+        fetchpriority="high">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
+
+  <style>
+    /* ── DESIGN SYSTEM ─────────────────────────────────────────────── */
+    :root {
+      /* ────────────────────────────────────────────────────────────────
+         THEME : LIGHT par défaut
+         Toggle via [data-theme="dark"] sur <html> (cf bloc theme JS).
+         Toutes les couleurs du site référencent ces variables : aucune
+         valeur hardcodée n'est utilisée ailleurs dans le CSS (les
+         gradients du hero référencent --bg-rgb pour passer en rgba).
+         ──────────────────────────────────────────────────────────────── */
+
+      /* Backgrounds */
+      --bg:          #f5f3ee;
+      --bg-1:        #ebe8e0;
+      --bg-2:        #dfdbd0;
+      --bg-3:        #d2cdc0;
+      --bg-rgb:      245, 243, 238;          /* pour rgba() — synchro avec --bg */
+
+      /* Surfaces */
+      --surf:        rgba(7,8,12,0.04);
+      --surf-2:      rgba(7,8,12,0.07);
+      --border:      rgba(7,8,12,0.10);
+      --border-2:    rgba(7,8,12,0.18);
+
+      /* Text */
+      --tx:          #1a1d24;
+      --tx-2:        rgba(26,29,36,0.65);
+      --tx-3:        rgba(26,29,36,0.40);
+      --tx-rgb:      26, 29, 36;
+
+      /* Accent — Forge Red / Braise (légèrement assombri en light pour le contraste) */
+      --red:         #c4432f;
+      --red-glow:    rgba(196,67,47,0.18);
+      --red-border:  rgba(196,67,47,0.32);
+
+      /* Shadows & glows */
+      --glow-red:    0 0 80px rgba(196,67,47,0.10);
+      --shadow-card: 0 12px 32px rgba(7,8,12,0.08);
+
+      /* Type scale */
+      --f-display: 'Cormorant Garamond', Georgia, serif;
+      --f-body:    'DM Sans', system-ui, sans-serif;
+
+      /* Spacing */
+      --gap: clamp(1.5rem, 4vw, 4rem);
+
+      /* Transitions */
+      --ease: cubic-bezier(0.16, 1, 0.3, 1);
+      --ease-flip: cubic-bezier(0.76, 0, 0.24, 1);
+      --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+
+      /* Intensité du grain : invisible en light, présent en dark */
+      --grain-opacity: 0;
+      /* Opacité vidéo hero : presque pleine en light (vidéo contrastée), réduite en dark */
+      --hero-video-opacity: .92;
+    }
+
+    /* ── THEME DARK ── */
+    html[data-theme="dark"] {
+      --bg:          #07080c;
+      --bg-1:        #0c0e14;
+      --bg-2:        #111420;
+      --bg-3:        #171b28;
+      --bg-rgb:      7, 8, 12;
+
+      --surf:        rgba(255,255,255,0.04);
+      --surf-2:      rgba(255,255,255,0.07);
+      --border:      rgba(255,255,255,0.07);
+      --border-2:    rgba(255,255,255,0.12);
+
+      --tx:          #f2f0ec;
+      --tx-2:        rgba(242,240,236,0.55);
+      --tx-3:        rgba(242,240,236,0.28);
+      --tx-rgb:      242, 240, 236;
+
+      --red:         #d94f3b;
+      --red-glow:    rgba(217,79,59,0.18);
+      --red-border:  rgba(217,79,59,0.30);
+
+      --glow-red:    0 0 80px rgba(217,79,59,0.12);
+      --shadow-card: 0 12px 32px rgba(0,0,0,0.4);
+
+      --grain-opacity: 0.045;
+      --hero-video-opacity: .68;
+    }
+
+    /* Transitions douces lors du swap de thème */
+    html {
+      transition: background-color .35s var(--ease), color .35s var(--ease);
+    }
+    body, .nav, .ticker, .footer,
+    .testi-card, .svc-card, .proc-step, .about-hl, .contact-form,
+    .form-inp, .form-sel, .form-txt, .contact-info-ico {
+      transition: background-color .35s var(--ease), color .35s var(--ease), border-color .35s var(--ease);
+    }
+    /* En light mode : les images n'ont plus besoin d'être assombries (DA claire) */
+    html:not([data-theme="dark"]) .masonry-item img,
+    html:not([data-theme="dark"]) .svc-img,
+    html:not([data-theme="dark"]) .about-img img {
+      filter: brightness(1) saturate(1) !important;
+    }
+    html:not([data-theme="dark"]) .masonry-item:hover img,
+    html:not([data-theme="dark"]) .svc-card:hover .svc-img,
+    html:not([data-theme="dark"]) .about-img:hover img {
+      filter: brightness(1.02) saturate(1.05) !important;
+    }
+
+    /* ── RESET ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; scroll-padding-top: 80px; -webkit-font-smoothing: antialiased; }
+    body { background: var(--bg); color: var(--tx); font-family: var(--f-body); font-size: 1rem; line-height: 1.6; min-height: 100dvh; overflow-x: hidden; }
+    img, video { display: block; max-width: 100%; }
+    a { color: inherit; }
+    button { cursor: pointer; background: none; border: none; font: inherit; color: inherit; }
+    .sr-only { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
+    ::selection { background: var(--red); color: #fff; }
+    :focus-visible { outline: 2px solid var(--red); outline-offset: 3px; border-radius: 1px; }
+
+    /* ── SKIP LINK ── */
+    .skip-link { position: absolute; top: -100px; left: 1rem; background: var(--red); color: #fff; padding: .5rem 1rem; font-weight: 600; z-index: 9999; border-radius: 4px; }
+    .skip-link:focus { top: 1rem; }
+
+    /* ── NAV ── */
+    .nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 200;
+      transition: background 500ms ease, border-color 500ms ease;
+      border-bottom: 1px solid transparent;
+    }
+    .nav--solid {
+      background: rgba(var(--bg-rgb), 0.88);
+      backdrop-filter: blur(20px) saturate(1.4);
+      -webkit-backdrop-filter: blur(20px) saturate(1.4);
+      border-bottom-color: var(--border);
+    }
+    /* Scroll progress bar — fin trait rouge en bas du nav */
+    .nav__progress {
+      position: absolute; bottom: 0; left: 0;
+      height: 1px;
+      width: var(--scroll-pct, 0%);
+      background: linear-gradient(to right, var(--red) 0%, rgba(217,79,59,.2) 100%);
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity .4s var(--ease);
+      will-change: width;
+    }
+    .nav--solid .nav__progress { opacity: 1; }
+    .nav__inner {
+      display: flex; align-items: center; justify-content: space-between;
+      height: 68px; max-width: 1360px; margin: 0 auto;
+      padding: 0 clamp(1.5rem, 5vw, 4rem);
+    }
+    .nav__logo { display: flex; align-items: center; gap: 10px; text-decoration: none; transition: color .25s var(--ease); }
+    .nav__logo-mark { width: 26px; height: 26px; transition: transform .5s var(--ease); }
+    .nav__logo:hover .nav__logo-mark { transform: rotate(-8deg); }
+    .nav__logo-text { font-family: var(--f-display); font-size: 1.05rem; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: var(--tx); transition: color .25s var(--ease); }
+    .nav__logo:hover .nav__logo-text { color: var(--tx-2); }
+    .nav__links { position: absolute; left: 50%; transform: translateX(-50%); display: flex; align-items: center; gap: 2.5rem; list-style: none; }
+    .nav__links a { font-size: .68rem; font-weight: 500; letter-spacing: .18em; text-transform: uppercase; text-decoration: none; color: var(--tx-2); position: relative; padding-bottom: 3px; transition: color .25s; }
+    .nav__links a::after { content:''; position:absolute; bottom:0; left:0; right:0; height:1px; background: var(--red); transform:scaleX(0); transform-origin:left; transition:transform .3s var(--ease); }
+    .nav__links a:hover { color: var(--tx); }
+    .nav__links a:hover::after,
+    .nav__links a:focus-visible::after { transform: scaleX(1); }
+    .nav__links a:focus-visible { color: var(--tx); outline: none; }
+    .nav__actions { display: flex; align-items: center; gap: 1.25rem; }
+    .nav__phone { font-size: .7rem; letter-spacing: .08em; color: var(--tx-3); text-decoration: none; display: flex; align-items: center; gap: 7px; transition: color .25s; }
+    .nav__phone:hover { color: var(--tx-2); }
+
+    /* Theme toggle (light/dark) */
+    .theme-toggle {
+      position: relative;
+      width: 34px; height: 34px;
+      border: 1px solid var(--border-2);
+      background: transparent;
+      color: var(--tx-2);
+      border-radius: 999px;
+      display: flex; align-items: center; justify-content: center;
+      cursor: pointer;
+      transition: color .35s var(--ease), border-color .35s var(--ease), background-color .35s var(--ease);
+    }
+    .theme-toggle:hover { color: var(--red); border-color: var(--red); }
+    .theme-toggle svg { position: absolute; transition: opacity .35s var(--ease), transform .45s var(--ease); }
+    /* Light mode (default) : montre la lune (action = aller en dark) */
+    .theme-toggle__sun  { opacity: 0; transform: rotate(-90deg) scale(.6); }
+    .theme-toggle__moon { opacity: 1; transform: rotate(0)      scale(1);  }
+    /* Dark mode : montre le soleil (action = aller en light) */
+    html[data-theme="dark"] .theme-toggle__sun  { opacity: 1; transform: rotate(0)     scale(1);  }
+    html[data-theme="dark"] .theme-toggle__moon { opacity: 0; transform: rotate(90deg) scale(.6); }
+    .nav__cta-pill {
+      position: relative;
+      font-size: .68rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase;
+      color: var(--tx); border: 1px solid var(--border-2);
+      padding: 8px 20px; border-radius: 999px;
+      text-decoration: none;
+      overflow: hidden; isolation: isolate;
+      transition: background-color .35s var(--ease), border-color .35s var(--ease), color .35s var(--ease);
+      --shimmer-x: -120%;
+    }
+    .nav__cta-pill::before {
+      content: ''; position: absolute; inset: 0;
+      background: linear-gradient(
+        100deg,
+        transparent calc(var(--shimmer-x) + 0%),
+        rgba(255,255,255,.35) calc(var(--shimmer-x) + 35%),
+        rgba(255,255,255,.55) calc(var(--shimmer-x) + 50%),
+        rgba(255,255,255,.35) calc(var(--shimmer-x) + 65%),
+        transparent calc(var(--shimmer-x) + 100%)
+      );
+      mix-blend-mode: overlay;
+      pointer-events: none; opacity: 0;
+      transition: opacity .25s var(--ease);
+      z-index: 1;
+    }
+    .nav__cta-pill > * { position: relative; z-index: 2; }
+    .nav__cta-pill:hover { background: var(--red); border-color: var(--red); color: #fff; }
+    .nav__cta-pill:hover::before {
+      opacity: 1;
+      animation: btn-shimmer 900ms cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    }
+    .nav__hamburger { display: none; flex-direction: column; gap: 5px; width: 32px; height: 32px; align-items: center; justify-content: center; }
+    .nav__hamburger span { display: block; height: 1px; background: var(--tx); border-radius: 2px; transition: transform .3s var(--ease), width .3s var(--ease), align-self .3s var(--ease); }
+    .nav__hamburger span:first-child { width: 22px; }
+    .nav__hamburger span:last-child  { width: 14px; align-self: flex-start; }
+    .nav__hamburger[aria-expanded="true"] span:first-child { transform: translateY(3px) rotate(45deg); width: 20px; }
+    .nav__hamburger[aria-expanded="true"] span:last-child  { transform: translateY(-5px) rotate(-45deg); width: 20px; align-self: unset; }
+    @media (max-width: 860px) { .nav__links, .nav__phone { display: none; } .nav__hamburger { display: flex; } }
+
+    /* Mobile full-screen menu */
+    .nav__mobile { position: fixed; inset: 0; z-index: 190; background: rgba(var(--bg-rgb), .97); display: flex; flex-direction: column; justify-content: center; padding: 5rem clamp(2rem, 10vw, 6rem); opacity: 0; pointer-events: none; transition: opacity .35s ease; }
+    .nav__mobile:not([hidden]) { opacity: 1; pointer-events: all; }
+    .nav__mobile-links { display: flex; flex-direction: column; }
+    .mobile-link { font-family: var(--f-display); font-size: clamp(3rem, 9vw, 5.5rem); line-height: 1.1; font-weight: 300; color: rgba(var(--tx-rgb), .6); text-decoration: none; padding: .15em 0; transition: color .2s ease, transform .2s ease; }
+    .mobile-link:hover { color: var(--red); transform: translateX(10px); }
+    .nav__mobile-bottom { margin-top: auto; padding-top: 2rem; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: flex-end; }
+    .nav__mobile-phone { font-size: .85rem; color: var(--tx-3); letter-spacing: .08em; text-decoration: none; }
+    .nav__mobile-cta { font-size: .78rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--red); text-decoration: none; }
+
+    /* ── HERO ── */
+    .hero { position: relative; overflow: hidden; height: 100svh; min-height: 600px; background: var(--bg); }
+    .hero__video {
+      position: absolute; inset: 0; z-index: 0;
+      width: 100%; height: 100%;
+      object-fit: cover;
+      pointer-events: none;
+      opacity: var(--hero-video-opacity);
+      -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 55%, rgba(0,0,0,.7) 78%, transparent 100%);
+              mask-image: linear-gradient(to bottom, #000 0%, #000 55%, rgba(0,0,0,.7) 78%, transparent 100%);
+      animation: hero-zoom 18s var(--ease-out) forwards;
+      will-change: transform;
+      transition: opacity .35s var(--ease);
+    }
+    @keyframes hero-zoom {
+      from { transform: scale(1.06); }
+      to   { transform: scale(1); }
+    }
+    .hero__vignette {
+      position: absolute; inset: 0; z-index: 1; pointer-events: none;
+      background:
+        radial-gradient(ellipse 80% 60% at 50% 40%, transparent 0%, rgba(var(--bg-rgb), .35) 100%),
+        linear-gradient(to bottom,
+          rgba(var(--bg-rgb), .22) 0%,
+          transparent 15%,
+          transparent 55%,
+          rgba(var(--bg-rgb), .55) 78%,
+          rgba(var(--bg-rgb), .92) 92%,
+          var(--bg) 100%
+        );
+    }
+    /* Bottom merge : réduit pour laisser plus de vidéo visible */
+    .hero__merge {
+      position: absolute; bottom: -1px; left: 0; right: 0;
+      height: 30vh; z-index: 2; pointer-events: none;
+      background:
+        linear-gradient(to bottom,
+          transparent 0%,
+          rgba(var(--bg-rgb), .25) 30%,
+          rgba(var(--bg-rgb), .65) 60%,
+          rgba(var(--bg-rgb), .92) 85%,
+          var(--bg) 100%);
+    }
+    .hero__grain { position: absolute; inset: 0; z-index: 3; pointer-events: none; opacity: var(--grain-opacity); background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); background-size:200px; transition: opacity .35s var(--ease); }
+
+    /* scroll hint — collé en bas proche du ticker */
+    .hero__scroll {
+      position: absolute; bottom: 5vh; left: 50%;
+      transform: translateX(-50%); z-index: 4;
+      display: flex; flex-direction: column; align-items: center; gap: 10px;
+      color: var(--tx-2); text-decoration: none;
+      font-size: .56rem; letter-spacing: .3em; text-transform: uppercase;
+      transition: color .35s var(--ease);
+    }
+    .hero__scroll:hover { color: var(--tx); }
+    .hero__scroll-line {
+      width: 1px; height: 42px;
+      background: linear-gradient(to bottom, transparent, var(--tx-2));
+      transform-origin: top;
+      animation: scroll-line 2.8s ease-in-out infinite;
+    }
+    @keyframes scroll-line {
+      0%   { transform: scaleY(0); transform-origin: top; opacity: 1; }
+      48%  { transform: scaleY(1); transform-origin: top; opacity: 1; }
+      52%  { transform: scaleY(1); transform-origin: bottom; opacity: 1; }
+      100% { transform: scaleY(0); transform-origin: bottom; opacity: .25; }
+    }
+    .hero__scroll svg { transition: transform .35s var(--ease); }
+    .hero__scroll:hover svg { transform: translateY(3px); }
+
+    /* ── SECTION UTILITIES ── */
+    .s { padding-block: clamp(5rem, 9vw, 9rem); position: relative; }
+    .s--dark  { background: var(--bg); }
+    .s--lift  { background: var(--bg-1); }
+    .s--card  { background: var(--bg-2); }
+
+    /* Gradient fade dividers */
+    .sdiv { height: clamp(60px,7vw,100px); pointer-events: none; flex-shrink: 0; }
+    .sdiv--01 { background: linear-gradient(to bottom, var(--bg),   var(--bg-1)); }
+    .sdiv--10 { background: linear-gradient(to bottom, var(--bg-1), var(--bg));   }
+    .sdiv--12 { background: linear-gradient(to bottom, var(--bg-1), var(--bg-2)); }
+    .sdiv--21 { background: linear-gradient(to bottom, var(--bg-2), var(--bg-1)); }
+    .sdiv--20 { background: linear-gradient(to bottom, var(--bg-2), var(--bg));   }
+    .sdiv--02 { background: linear-gradient(to bottom, var(--bg),   var(--bg-2)); }
+
+    /* Glow backgrounds (radial) */
+    .glow-red-tl { position: relative; }
+    .glow-red-tl::before {
+      content:''; position:absolute; inset:0; pointer-events:none; z-index:0;
+      background: radial-gradient(ellipse 60% 50% at 15% 20%, rgba(217,79,59,.09) 0%, transparent 70%);
+    }
+    .glow-red-br::after  {
+      content:''; position:absolute; inset:0; pointer-events:none; z-index:0;
+      background: radial-gradient(ellipse 50% 40% at 85% 80%, rgba(217,79,59,.07) 0%, transparent 70%);
+    }
+    .glow-center::before {
+      content:''; position:absolute; inset:0; pointer-events:none; z-index:0;
+      background: radial-gradient(ellipse 70% 60% at 50% 50%, rgba(217,79,59,.08) 0%, transparent 70%);
+    }
+
+    /* ── CONTAINER ── */
+    .wrap  { max-width: 1280px; margin: 0 auto; padding: 0 clamp(1.5rem,5vw,4rem); }
+    .wrap--sm { max-width: 900px; }
+
+    /* ── TYPOGRAPHY ── */
+    .eyebrow { display: inline-flex; align-items: center; gap: 10px; font-size: .64rem; font-weight: 600; letter-spacing: .24em; text-transform: uppercase; color: var(--red); margin-bottom: 1.25rem; }
+    .eyebrow::before {
+      content: ''; display: block;
+      width: 20px; height: 1px;
+      background: var(--red);
+      transition: transform .8s var(--ease) .15s;
+    }
+    /* Avec JS : caché par défaut, se dessine quand le parent .fi devient .is-in */
+    html.js .eyebrow::before { transform: scaleX(0); transform-origin: left center; }
+    html.js .fi.is-in .eyebrow::before,
+    html.js .fi.is-in.eyebrow::before { transform: scaleX(1); }
+    @media (prefers-reduced-motion: reduce) {
+      html.js .eyebrow::before { transform: scaleX(1) !important; transition: none !important; }
+    }
+
+    .h-mega { font-family: var(--f-display); font-size: clamp(2.8rem,6vw,6rem); font-weight: 300; line-height: 1.02; letter-spacing: -.02em; color: var(--tx); }
+    .h-mega em { font-style: italic; color: rgba(var(--tx-rgb), .4); }
+    .h-large { font-family: var(--f-display); font-size: clamp(2rem,4vw,3.8rem); font-weight: 300; line-height: 1.06; letter-spacing: -.02em; color: var(--tx); }
+    .h-large em { font-style: italic; color: rgba(var(--tx-rgb), .5); }
+
+    /* Split-text reveal : chaque mot dans un .word qui monte avec stagger.
+       Le JS découpe les H2 marqués .h-large au load (cf bloc JS).
+       padding-bottom : marge pour les descendeurs (g, p, y, j) sans clipping.
+       margin-bottom négatif : compense le padding pour ne pas casser le rythme. */
+    .word {
+      display: inline-block;
+      overflow: hidden;
+      vertical-align: baseline;
+      padding-bottom: .12em;
+      margin-bottom: -.12em;
+    }
+    .word > span {
+      display: inline-block;
+      transform: translateY(115%);
+      transition: transform .9s var(--ease-out);
+      will-change: transform;
+    }
+    html.js .fi.is-in .word > span { transform: translateY(0); }
+    @media (prefers-reduced-motion: reduce) {
+      html.js .word > span { transform: none !important; }
+    }
+    /* Fallback no-JS */
+    html:not(.js) .word > span { transform: none; }
+    .h-mid   { font-family: var(--f-display); font-size: clamp(1.4rem,2.5vw,2rem); font-weight: 400; line-height: 1.2; color: var(--tx); }
+    .lead { font-size: clamp(.9rem,1.2vw,1.05rem); color: var(--tx-2); line-height: 1.8; max-width: 52ch; }
+
+    /* ── BUTTONS ── */
+    /* Variable animable pour le shimmer métallique (passe lumineuse) */
+    @property --shimmer-x {
+      syntax: '<percentage>';
+      initial-value: -120%;
+      inherits: false;
+    }
+
+    .btn {
+      position: relative;
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 13px 28px; border-radius: 999px;
+      font-size: .68rem; font-weight: 600; letter-spacing: .16em;
+      text-transform: uppercase; text-decoration: none;
+      border: 1px solid transparent; white-space: nowrap;
+      overflow: hidden; isolation: isolate;
+      transition:
+        background-color .35s var(--ease),
+        border-color .35s var(--ease),
+        color .35s var(--ease),
+        transform .35s var(--ease),
+        box-shadow .35s var(--ease);
+      cursor: pointer;
+      --shimmer-x: -120%;
+    }
+    /* Bande lumineuse qui balaye le bouton */
+    .btn::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        100deg,
+        transparent 0%,
+        transparent calc(var(--shimmer-x) + 0%),
+        rgba(255,255,255,.22) calc(var(--shimmer-x) + 25%),
+        rgba(255,255,255,.45) calc(var(--shimmer-x) + 38%),
+        rgba(255,255,255,.22) calc(var(--shimmer-x) + 50%),
+        transparent calc(var(--shimmer-x) + 75%),
+        transparent 100%
+      );
+      pointer-events: none;
+      z-index: 1;
+      mix-blend-mode: overlay;
+      opacity: 0;
+      transition: opacity .25s var(--ease);
+    }
+    .btn > * { position: relative; z-index: 2; }
+    .btn:hover::before {
+      opacity: 1;
+      animation: btn-shimmer 900ms cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    }
+    @keyframes btn-shimmer {
+      0%   { --shimmer-x: -120%; }
+      100% { --shimmer-x: 120%; }
+    }
+    .btn:active { transform: scale(.97) !important; transition-duration: 80ms; }
+
+    .btn--red { background: var(--red); color: #fff; border-color: var(--red); }
+    .btn--red:hover {
+      background: #c4432f; border-color: #c4432f;
+      transform: translateY(-2px);
+      box-shadow: 0 12px 32px rgba(217,79,59,.32), 0 0 0 1px rgba(255,255,255,.05) inset;
+    }
+
+    .btn--ghost { background: transparent; color: var(--tx-2); border-color: var(--border-2); }
+    .btn--ghost::before {
+      /* Sur fond sombre transparent, le mix-blend overlay ne marche pas comme sur rouge.
+         On utilise un gradient légèrement rougeâtre à la place. */
+      background: linear-gradient(
+        100deg,
+        transparent 0%,
+        transparent calc(var(--shimmer-x) + 0%),
+        rgba(217,79,59,.12) calc(var(--shimmer-x) + 25%),
+        rgba(255,255,255,.18) calc(var(--shimmer-x) + 38%),
+        rgba(217,79,59,.12) calc(var(--shimmer-x) + 50%),
+        transparent calc(var(--shimmer-x) + 75%),
+        transparent 100%
+      );
+      mix-blend-mode: normal;
+    }
+    .btn--ghost:hover {
+      color: var(--tx);
+      border-color: rgba(255,255,255,.32);
+      transform: translateY(-2px);
+      box-shadow: 0 12px 32px rgba(0,0,0,.35);
+    }
+
+    /* Fallback pour browsers sans @property (Firefox <128) : transition simple */
+    @supports not (background: paint(something)) {
+      .btn::before {
+        background: linear-gradient(100deg, transparent 0%, rgba(255,255,255,.3) 50%, transparent 100%);
+        transform: translateX(-120%);
+        transition: transform .9s cubic-bezier(0.4, 0, 0.2, 1), opacity .25s var(--ease);
+      }
+      .btn:hover::before { transform: translateX(120%); opacity: 1; animation: none; }
+    }
+
+    /* ── TICKER — Trust factors (entre hero et galerie) ── */
+    .ticker {
+      position: relative;
+      background: var(--bg);
+      border-top: 1px solid var(--red);
+      border-bottom: 1px solid var(--red);
+      overflow: hidden;
+      padding: 1.4rem 0;
+      z-index: 5;
+    }
+    /* Fade gauche/droite pour masquer le wrap */
+    .ticker::before,
+    .ticker::after {
+      content: '';
+      position: absolute; top: 0; bottom: 0;
+      width: clamp(80px, 14vw, 220px);
+      pointer-events: none;
+      z-index: 2;
+    }
+    .ticker::before { left: 0;  background: linear-gradient(to right, var(--bg) 20%, transparent); }
+    .ticker::after  { right: 0; background: linear-gradient(to left,  var(--bg) 20%, transparent); }
+
+    .ticker__track {
+      display: flex;
+      align-items: center;
+      gap: 0;
+      width: max-content;
+      animation: ticker-scroll 45s linear infinite;
+      will-change: transform;
+    }
+    .ticker:hover .ticker__track { animation-play-state: paused; }
+    @keyframes ticker-scroll {
+      from { transform: translate3d(0, 0, 0); }
+      to   { transform: translate3d(-50%, 0, 0); }
+    }
+
+    .ticker__item {
+      display: inline-flex;
+      align-items: baseline;
+      gap: .7rem;
+      padding: 0 clamp(1.8rem, 3.5vw, 3rem);
+      white-space: nowrap;
+    }
+    /* Chiffre / mot fort : Cormorant grand format */
+    .ticker__item strong {
+      font-family: var(--f-display);
+      font-weight: 300;
+      font-size: clamp(1.4rem, 2.2vw, 1.75rem);
+      color: var(--tx);
+      letter-spacing: -.02em;
+      line-height: 1;
+    }
+    /* Label : DM Sans uppercase tracking, bien contrasté */
+    .ticker__item span {
+      font-family: var(--f-body);
+      font-size: clamp(.58rem, .9vw, .7rem);
+      font-weight: 500;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+      color: rgba(var(--tx-rgb), .55);
+      line-height: 1;
+      align-self: center;
+    }
+    /* Séparateur slash rouge */
+    .ticker__sep {
+      display: inline-flex;
+      align-items: center;
+      font-family: var(--f-display);
+      font-size: clamp(1.2rem, 1.8vw, 1.5rem);
+      font-weight: 300;
+      color: var(--red);
+      opacity: .7;
+      line-height: 1;
+      user-select: none;
+    }
+    .ticker__sep::before { content: '/'; }
+
+    @media (prefers-reduced-motion: reduce) {
+      .ticker { overflow-x: auto; }
+      .ticker__track { animation: none; width: auto; }
+    }
+
+    /* ── MASONRY GALLERY ── */
+    .masonry-hdr { display: flex; align-items: flex-end; justify-content: space-between; padding: clamp(3rem,5vw,5rem) clamp(1.5rem,5vw,4rem) 2rem; gap: 2rem; max-width: 1360px; margin: 0 auto; }
+    .masonry-grid {
+      columns: 3 260px;
+      column-gap: 2px;
+      padding: 0 2px;
+      position: relative;
+    }
+    /* Voile noir qui couvre le top des images et se dissipe vers le bas.
+       Crée le raccord fluide depuis le bas du hero (fond uniforme var(--bg))
+       vers les premières rangées d'images. Hauteur calibrée pour couvrir
+       ~la moitié supérieure des thumbnails les plus hautes. */
+    .masonry-grid::before {
+      content: '';
+      position: absolute;
+      top: -1px; left: 0; right: 0;
+      height: 280px;
+      pointer-events: none;
+      z-index: 5;
+      background: linear-gradient(
+        to bottom,
+        var(--bg) 0%,
+        rgba(var(--bg-rgb), .85) 22%,
+        rgba(var(--bg-rgb), .55) 48%,
+        rgba(var(--bg-rgb), .22) 75%,
+        transparent 100%
+      );
+    }
+    @media (max-width: 700px) {
+      .masonry-grid::before { height: 180px; }
+    }
+    .masonry-item {
+      break-inside: avoid;
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 2px;
+      cursor: zoom-in;
+    }
+    .masonry-item.hidden { display: none; }
+    .masonry-item.reveal { animation: m-in 600ms var(--ease-out) both; }
+    @keyframes m-in {
+      from { opacity: 0; transform: translateY(18px) scale(.985); }
+      to   { opacity: 1; transform: translateY(0) scale(1); }
+    }
+    /* Stagger reveal — délais en cascade pour les 8 premiers items */
+    html.js .masonry-item.fi:nth-child(2).is-in { animation-delay: .05s; }
+    html.js .masonry-item.fi:nth-child(3).is-in { animation-delay: .10s; }
+    html.js .masonry-item.fi:nth-child(4).is-in { animation-delay: .15s; }
+    html.js .masonry-item.fi:nth-child(5).is-in { animation-delay: .04s; }
+    html.js .masonry-item.fi:nth-child(6).is-in { animation-delay: .09s; }
+    html.js .masonry-item.fi:nth-child(7).is-in { animation-delay: .14s; }
+    html.js .masonry-item.fi:nth-child(8).is-in { animation-delay: .19s; }
+    .masonry-item img {
+      width: 100%; height: auto; display: block;
+      transition: transform 1s cubic-bezier(.25,.46,.45,.94), filter .7s ease;
+      filter: brightness(.88) saturate(.85);
+      will-change: transform;
+    }
+    .masonry-item:hover img { transform: scale(1.07); filter: brightness(1) saturate(1); }
+    /* Indicateur loupe au hover (affordance click) */
+    .masonry-item::after {
+      content: '';
+      position: absolute;
+      top: 50%; left: 50%;
+      width: 44px; height: 44px;
+      border: 1px solid rgba(var(--tx-rgb), .7);
+      border-radius: 50%;
+      background:
+        linear-gradient(currentColor, currentColor) center/12px 1px no-repeat,
+        linear-gradient(currentColor, currentColor) center/1px 12px no-repeat,
+        rgba(var(--bg-rgb), .35);
+      color: rgba(var(--tx-rgb), .95);
+      transform: translate(-50%, -50%) scale(.85);
+      opacity: 0;
+      transition: opacity .35s var(--ease), transform .35s var(--ease);
+      pointer-events: none;
+      backdrop-filter: blur(2px);
+      -webkit-backdrop-filter: blur(2px);
+    }
+    .masonry-item:hover::after,
+    .masonry-item:focus-visible::after { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+    .masonry-item__label { position:absolute; bottom:0; left:0; right:0; padding: 3rem 1rem .75rem; background: linear-gradient(to top, rgba(var(--bg-rgb), .9), transparent); color: rgba(var(--tx-rgb), .85); font-size:.64rem; letter-spacing:.14em; text-transform:uppercase; font-weight:600; transform:translateY(100%); transition:transform .3s ease; z-index: 1; }
+    .masonry-item:hover .masonry-item__label { transform: translateY(0); }
+    .masonry-footer { padding: 2.5rem clamp(1.5rem,5vw,4rem) clamp(4rem,6vw,6rem); text-align: center; }
+    .masonry-load-btn {
+      position: relative;
+      font-size:.68rem; font-weight:600; letter-spacing:.18em; text-transform:uppercase;
+      color: var(--tx-3);
+      border: 1px solid var(--border);
+      background:none;
+      padding: 14px 40px; border-radius:999px;
+      overflow: hidden; isolation: isolate;
+      cursor:pointer;
+      transition: border-color .3s var(--ease), color .3s var(--ease), transform .3s var(--ease), opacity .3s var(--ease);
+      --shimmer-x: -120%;
+    }
+    .masonry-load-btn::before {
+      content: ''; position: absolute; inset: 0;
+      background: linear-gradient(
+        100deg,
+        transparent calc(var(--shimmer-x) + 0%),
+        rgba(217,79,59,.15) calc(var(--shimmer-x) + 35%),
+        rgba(255,255,255,.18) calc(var(--shimmer-x) + 50%),
+        rgba(217,79,59,.15) calc(var(--shimmer-x) + 65%),
+        transparent calc(var(--shimmer-x) + 100%)
+      );
+      pointer-events: none; opacity: 0;
+      transition: opacity .25s var(--ease);
+      z-index: 1;
+    }
+    .masonry-load-btn > * { position: relative; z-index: 2; }
+    .masonry-load-btn:hover { border-color: var(--red); color: var(--red); transform: translateY(-2px); }
+    .masonry-load-btn:hover::before { opacity: 1; animation: btn-shimmer 900ms cubic-bezier(0.4, 0, 0.2, 1) forwards; }
+    .masonry-load-btn.done { opacity:.3; pointer-events:none; }
+
+    /* ── TESTIMONIALS ── */
+    .testi-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; }
+    .testi-card {
+      background: var(--bg-1);
+      padding: 2.5rem 2rem;
+      position: relative;
+      transition: background-color .35s var(--ease), transform .4s var(--ease);
+    }
+    .testi-card:hover {
+      background: var(--bg-2);
+      transform: translateY(-2px);
+    }
+    /* Stagger reveal (animation-delay, pas transition-delay : on utilise @keyframes fi-in) */
+    html.js .testi-card.fi:nth-child(2).is-in { animation-delay: .12s; }
+    html.js .testi-card.fi:nth-child(3).is-in { animation-delay: .24s; }
+    .testi-stars { margin-bottom: 1.5rem; }
+    .testi-quote {
+      font-family: var(--f-display);
+      font-size: 1.1rem; font-style: italic;
+      line-height: 1.7;
+      color: rgba(var(--tx-rgb), .7);
+      margin-bottom: 2rem;
+      quotes: none;
+      position: relative;
+    }
+    /* Guillemet rouge décoratif (sobre, fits DA) */
+    .testi-quote::before {
+      content: '“';
+      position: absolute;
+      top: -1.3rem; left: -.1rem;
+      font-size: 3rem;
+      line-height: 1;
+      color: var(--red);
+      opacity: .35;
+      font-family: var(--f-display);
+    }
+    .testi-author { display: flex; align-items: center; gap: .75rem; padding-top: 1.5rem; border-top: 1px solid var(--border); }
+    .testi-av { width: 36px; height: 36px; border-radius: 50%; background: var(--red); display: flex; align-items: center; justify-content: center; color: #fff; font-family: var(--f-display); font-size: 1rem; font-weight: 600; flex-shrink: 0; box-shadow: 0 0 0 0 rgba(217,79,59,.4); transition: box-shadow .5s var(--ease); }
+    .testi-card:hover .testi-av { box-shadow: 0 0 0 4px rgba(217,79,59,.15); }
+    .testi-name { font-size: .88rem; font-weight: 500; color: var(--tx); }
+    .testi-loc  { font-size: .64rem; letter-spacing:.1em; text-transform:uppercase; color: var(--tx-3); margin-top: 2px; }
+    @media (max-width:900px) { .testi-grid { grid-template-columns:1fr 1fr; gap:.75rem; background:none; border:none; } .testi-card { border-radius:10px; border:1px solid var(--border); } }
+    @media (max-width:560px) { .testi-grid { grid-template-columns:1fr; } }
+
+    /* ── SERVICES ── */
+    .svc-hdr { display: flex; align-items: flex-end; justify-content: space-between; gap: 2rem; margin-bottom: 2.5rem; }
+    .svc-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); }
+    .svc-card { background: var(--bg-1); overflow: hidden; display: flex; flex-direction: column; transition: background .35s var(--ease); }
+    .svc-card:hover { background: var(--bg-2); }
+    .svc-card--feat { grid-column: span 3; flex-direction: row; }
+    .svc-img-wrap { overflow: hidden; flex-shrink: 0; position: relative; }
+    .svc-img { width: 100%; height: 200px; object-fit: cover; display: block; transition: transform .8s cubic-bezier(.25,.46,.45,.94), filter .8s ease; filter: brightness(.75) saturate(.7); will-change: transform; }
+    .svc-card--feat .svc-img { width: 480px; height: 100%; }
+    .svc-card:hover .svc-img { transform: scale(1.06); filter: brightness(.92) saturate(.92); }
+    .svc-body { padding: 1.75rem; display: flex; flex-direction: column; gap: .35rem; flex: 1; }
+    .svc-tag  { font-size: .6rem; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; color: var(--red); margin-bottom: .25rem; }
+    .svc-title {
+      font-family: var(--f-display); font-size: 1.3rem; font-weight: 400;
+      color: var(--tx); line-height: 1.15;
+      position: relative;
+      display: inline-block;
+    }
+    .svc-title::after {
+      content: '';
+      position: absolute;
+      bottom: -4px; left: 0;
+      width: 100%; height: 1px;
+      background: var(--red);
+      transform: scaleX(0);
+      transform-origin: left center;
+      transition: transform .5s var(--ease);
+    }
+    .svc-card:hover .svc-title::after { transform: scaleX(.4); }
+    .svc-desc  { font-size: .87rem; color: var(--tx-2); line-height: 1.75; flex: 1; margin-top: .25rem; }
+    @media (max-width:900px) { .svc-grid { grid-template-columns:1fr 1fr; } .svc-card--feat { grid-column: span 2; flex-direction:column; } .svc-card--feat .svc-img { width:100%; height:220px; } }
+    @media (max-width:560px) { .svc-grid { grid-template-columns:1fr; } .svc-card--feat { grid-column:1; } }
+
+    /* ── PROCESS — Timeline horizontale (desktop) / verticale (mobile) ── */
+    .proc-timeline {
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: clamp(1.5rem, 3vw, 3rem);
+      padding-top: clamp(2rem, 4vw, 3.5rem);
+    }
+    /* Rail (desktop = horizontal, mobile = vertical via media query)
+       2 divs absolus : bg fixe pleine longueur, fg qui grandit selon data-progress.
+       Plus de SVG = zéro problème de viewBox / preserveAspectRatio. */
+    .proc-rail {
+      position: absolute;
+      top: calc(clamp(2rem, 4vw, 3.5rem) + 27px);
+      left: calc(100% / 8);
+      right: calc(100% / 8);
+      height: 1px;
+      pointer-events: none;
+      overflow: visible;
+    }
+    .proc-rail__bg,
+    .proc-rail__fg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+    }
+    .proc-rail__bg {
+      width: 100%;
+      background: var(--border-2);
+    }
+    .proc-rail__fg {
+      width: 0;
+      background: var(--red);
+      transition: width 1.2s var(--ease-out);
+    }
+    /* Progression du rail rouge selon le nombre de steps entrées en vue */
+    .proc-timeline[data-progress="1"] .proc-rail__fg { width: 12.5%; }
+    .proc-timeline[data-progress="2"] .proc-rail__fg { width: 41.66%; }
+    .proc-timeline[data-progress="3"] .proc-rail__fg { width: 70.83%; }
+    .proc-timeline[data-progress="4"] .proc-rail__fg { width: 100%; }
+
+    .proc-step {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 0 clamp(.5rem, 1.5vw, 1.5rem);
+      isolation: isolate;
+    }
+
+    /* Grosse numérotation en haut, type Cormorant éditorial */
+    .proc-num {
+      font-family: var(--f-display);
+      font-weight: 300;
+      font-size: clamp(2.4rem, 3.5vw, 3.4rem);
+      line-height: 1;
+      color: rgba(var(--tx-rgb), .12);
+      margin-bottom: .2rem;
+      transition: color .5s var(--ease);
+    }
+    .proc-step:hover .proc-num { color: var(--red); }
+
+    /* Icône thématique dans un cercle qui repose sur le rail */
+    .proc-icon {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 56px; height: 56px;
+      border-radius: 50%;
+      background: var(--bg-1);
+      border: 1px solid var(--border);
+      color: var(--tx-2);
+      margin-bottom: 1.5rem;
+      transition: border-color .4s var(--ease), color .4s var(--ease), background-color .4s var(--ease), transform .5s var(--ease), box-shadow .4s var(--ease);
+      z-index: 2;
+    }
+    .proc-icon svg { transition: transform .5s var(--ease); }
+    .proc-step:hover .proc-icon {
+      background: var(--bg);
+      border-color: var(--red);
+      color: var(--red);
+      transform: translateY(-3px);
+      box-shadow: 0 12px 28px rgba(var(--bg-rgb), .25), 0 0 0 6px rgba(196, 67, 47, .06);
+    }
+    html[data-theme="dark"] .proc-step:hover .proc-icon {
+      box-shadow: 0 12px 28px rgba(0,0,0,.4), 0 0 0 6px rgba(217, 79, 59, .08);
+    }
+    .proc-step:hover .proc-icon svg { transform: scale(1.08) rotate(-3deg); }
+
+    .proc-body { max-width: 18ch; margin: 0 auto; }
+    .proc-ttl  {
+      font-family: var(--f-display);
+      font-size: clamp(1.15rem, 1.6vw, 1.4rem);
+      font-weight: 400;
+      color: var(--tx);
+      margin: 0 0 .6rem;
+      letter-spacing: -.005em;
+    }
+    .proc-desc {
+      font-size: .87rem;
+      color: var(--tx-2);
+      line-height: 1.65;
+    }
+
+    /* Reveal stagger : chaque step apparaît avec décalage */
+    html.js .fi.is-in.proc-step:nth-child(2) { animation-delay: .08s; }
+    html.js .fi.is-in.proc-step:nth-child(3) { animation-delay: .16s; }
+    html.js .fi.is-in.proc-step:nth-child(4) { animation-delay: .24s; }
+    html.js .fi.is-in.proc-step:nth-child(5) { animation-delay: .32s; }
+
+    /* ── Mobile : timeline verticale ── */
+    @media (max-width: 760px) {
+      .proc-timeline {
+        grid-template-columns: 1fr;
+        gap: clamp(1.75rem, 4vw, 2.5rem);
+        padding-top: 1rem;
+        padding-left: clamp(1.5rem, 4vw, 2rem);
+      }
+      /* Rail devient vertical : 1px de large, hauteur = toute la timeline */
+      .proc-rail {
+        top: 28px;
+        bottom: 28px;
+        left: calc(clamp(1.5rem, 4vw, 2rem) + 27px);
+        right: auto;
+        width: 1px;
+        height: auto;
+      }
+      .proc-rail__bg,
+      .proc-rail__fg {
+        width: 100%;
+        left: 0;
+      }
+      .proc-rail__bg { height: 100%; }
+      .proc-rail__fg { height: 0; transition: height 1.2s var(--ease-out); }
+      .proc-timeline[data-progress="1"] .proc-rail__fg { width: 100%; height: 12.5%; }
+      .proc-timeline[data-progress="2"] .proc-rail__fg { width: 100%; height: 41.66%; }
+      .proc-timeline[data-progress="3"] .proc-rail__fg { width: 100%; height: 70.83%; }
+      .proc-timeline[data-progress="4"] .proc-rail__fg { width: 100%; height: 100%; }
+
+      .proc-step {
+        flex-direction: row;
+        align-items: flex-start;
+        text-align: left;
+        gap: 1.25rem;
+        padding: 0;
+      }
+      .proc-num {
+        position: absolute;
+        right: 0;
+        top: 0;
+        font-size: 2rem;
+        margin: 0;
+        opacity: .5;
+      }
+      .proc-icon {
+        flex-shrink: 0;
+        margin-bottom: 0;
+      }
+      .proc-body { max-width: none; margin: 0; flex: 1; padding-top: .35rem; }
+    }
+
+    /* ── ABOUT — Grille éditoriale ── */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 5fr 7fr;
+      gap: clamp(2.5rem, 5vw, 5rem);
+      align-items: center;
+    }
+    .about-tagline {
+      font-family: var(--f-display);
+      font-size: clamp(1.6rem, 3vw, 2.4rem);
+      font-weight: 300;
+      font-style: italic;
+      color: var(--tx);
+      line-height: 1.25;
+      margin: .5rem 0 1.75rem;
+      max-width: 22ch;
+      letter-spacing: -.005em;
+    }
+    .about-body {
+      max-width: 52ch;
+      margin-bottom: 2.5rem;
+    }
+    .about-body p {
+      font-size: .95rem;
+      color: var(--tx-2);
+      line-height: 1.85;
+      margin: 0 0 1.1rem;
+      hyphens: auto;
+      -webkit-hyphens: auto;
+      text-align: justify;
+      text-justify: inter-word;
+    }
+    /* Lede : 1er paragraphe légèrement plus contrasté */
+    .about-lede {
+      color: var(--tx) !important;
+      font-size: 1rem !important;
+    }
+    /* Drop cap éditorial */
+    .about-dropcap {
+      float: left;
+      font-family: var(--f-display);
+      font-weight: 400;
+      font-size: 3.6rem;
+      line-height: .85;
+      color: var(--red);
+      margin: .15rem .7rem -.1rem 0;
+      padding: 0;
+      font-feature-settings: "salt" 1;
+    }
+    /* Highlights — 4 counters animés */
+    .about-hl-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 1px;
+      background: var(--border); border: 1px solid var(--border);
+      margin-top: 2.5rem;
+    }
+    .about-hl {
+      background: var(--bg-1);
+      padding: 1.4rem 1.25rem;
+      transition: background .35s var(--ease);
+      position: relative;
+      overflow: hidden;
+    }
+    .about-hl::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 0; height: 1px;
+      background: var(--red);
+      transition: width .6s var(--ease);
+    }
+    .about-hl:hover { background: var(--bg-2); }
+    .about-hl:hover::before { width: 100%; }
+    .about-hl-val {
+      font-family: var(--f-display);
+      font-size: clamp(1.6rem, 2.4vw, 2rem);
+      font-weight: 300;
+      color: var(--tx);
+      line-height: 1;
+      letter-spacing: -.01em;
+    }
+    .about-hl-val .counter { display: inline-block; }
+    .about-hl-lbl {
+      font-size: .62rem;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--tx-3);
+      margin-top: .55rem;
+      font-weight: 500;
+    }
+
+    /* Image éditoriale + caption */
+    .about-img {
+      position: relative;
+      border-radius: 4px;
+      overflow: hidden;
+      box-shadow: 0 24px 60px rgba(0,0,0,.18);
+    }
+    html[data-theme="dark"] .about-img { box-shadow: 0 24px 60px rgba(0,0,0,.5); }
+    .about-img img {
+      width: 100%; aspect-ratio: 4/5; object-fit: cover;
+      filter: brightness(.92) saturate(.92);
+      transition: transform 1.4s var(--ease), filter 1s var(--ease);
+      will-change: transform;
+    }
+    .about-img:hover img { transform: scale(1.03); filter: brightness(.98) saturate(1); }
+    .about-img__caption {
+      position: absolute;
+      bottom: 1rem;
+      left: 1rem;
+      padding: .45rem .85rem;
+      background: rgba(var(--bg-rgb), .85);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      color: var(--tx);
+      font-size: .58rem;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+      font-weight: 500;
+      border: 1px solid rgba(var(--tx-rgb), .08);
+    }
+
+    @media (max-width: 820px) {
+      .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+      .about-img { max-width: 420px; margin: 0 auto; }
+      .about-body p { text-align: left; }
+    }
+    @media (max-width: 480px) {
+      .about-hl-grid { grid-template-columns: 1fr; }
+      .about-dropcap { font-size: 3rem; }
+    }
+
+    /* ── CONTACT ── */
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(3rem,6vw,5rem); align-items: start; }
+    .contact-info-list { list-style:none; display:flex; flex-direction:column; gap:1.25rem; margin-top:2.5rem; }
+    .contact-info-item {
+      display:flex; align-items:flex-start; gap:1rem;
+      transition: transform .3s var(--ease);
+    }
+    .contact-info-item:hover { transform: translateX(4px); }
+    .contact-info-ico {
+      width:40px; height:40px; border-radius:8px;
+      background:var(--surf);
+      border:1px solid var(--border);
+      display:flex; align-items:center; justify-content:center;
+      flex-shrink:0;
+      transition: border-color .3s var(--ease), background-color .3s var(--ease), box-shadow .3s var(--ease);
+    }
+    .contact-info-item:hover .contact-info-ico {
+      border-color: var(--red-border);
+      background: rgba(217,79,59,.06);
+      box-shadow: 0 0 0 4px rgba(217,79,59,.08);
+    }
+    .contact-info-ico svg { width:15px; height:15px; color:var(--red); transition: transform .35s var(--ease); }
+    .contact-info-item:hover .contact-info-ico svg { transform: scale(1.1); }
+    .contact-info-lbl { font-size:.64rem; letter-spacing:.1em; text-transform:uppercase; color:var(--tx-3); margin-bottom:3px; }
+    .contact-info-val { font-size:.95rem; color:var(--tx); font-weight:500; }
+    .contact-info-val a { color:inherit; text-decoration:none; transition:color .25s var(--ease); }
+    .contact-info-val a:hover { color:var(--red); }
+    .contact-form {
+      background:var(--bg-1); border:1px solid var(--border);
+      border-radius:12px; padding:2.5rem;
+      position:relative; overflow:hidden;
+      transition: border-color .4s var(--ease), box-shadow .4s var(--ease);
+    }
+    .contact-form:focus-within {
+      border-color: var(--red-border);
+      box-shadow: 0 0 0 4px rgba(217,79,59,.06);
+    }
+    .contact-form::before { content:''; position:absolute; top:0; left:2rem; right:2rem; height:1px; background:linear-gradient(90deg,transparent,var(--red),transparent); opacity:.4; }
+    .form-eye { font-size:.64rem; font-weight:700; letter-spacing:.2em; text-transform:uppercase; color:var(--red); margin-bottom:1.5rem; display:inline-flex; align-items:center; gap:10px; }
+    .form-eye::before { content:''; display:block; width:20px; height:1px; background:var(--red); }
+    .form-grid { display:grid; grid-template-columns:1fr 1fr; gap:.875rem; }
+    .form-field { display:flex; flex-direction:column; gap:.4rem; }
+    .form-field--full { grid-column:1/-1; }
+    .form-lbl { font-size:.64rem; font-weight:600; letter-spacing:.12em; text-transform:uppercase; color:var(--tx-3); }
+    .form-inp, .form-sel, .form-txt { width:100%; padding:12px 1rem; border:1px solid var(--border); border-radius:6px; font-size:.9rem; font-family:var(--f-body); background:var(--bg); color:var(--tx); transition:border-color .25s var(--ease), box-shadow .25s var(--ease); appearance:none; -webkit-appearance:none; }
+    .form-inp::placeholder, .form-txt::placeholder { color:var(--tx-3); }
+    .form-inp:focus, .form-sel:focus, .form-txt:focus { outline:none; border-color:var(--red); box-shadow:0 0 0 3px rgba(217,79,59,.12); }
+    .form-txt { resize:vertical; min-height:100px; }
+    .form-sel {
+      cursor: pointer;
+      padding-right: 2.5rem;
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6' fill='none' stroke='%23d94f3b' stroke-width='1.4' stroke-linecap='round' stroke-linejoin='round'><path d='M1 1l4 4 4-4'/></svg>");
+      background-repeat: no-repeat;
+      background-position: right 1rem center;
+    }
+    .form-sel option { background:var(--bg-1); }
+    /* Neutralise l'autofill jaune Chrome sur fond sombre */
+    .form-inp:-webkit-autofill,
+    .form-inp:-webkit-autofill:hover,
+    .form-inp:-webkit-autofill:focus,
+    .form-txt:-webkit-autofill,
+    .form-sel:-webkit-autofill {
+      -webkit-text-fill-color: var(--tx);
+      -webkit-box-shadow: 0 0 0 1000px var(--bg) inset;
+      caret-color: var(--tx);
+      transition: background-color 9999s ease-out, color 9999s ease-out;
+    }
+    .form-submit {
+      position: relative;
+      width:100%; margin-top:.75rem;
+      background:var(--red); color:#fff; border:none; border-radius:999px;
+      padding:14px 2rem;
+      font-size:.68rem; font-weight:700; letter-spacing:.16em; text-transform:uppercase;
+      overflow: hidden; isolation: isolate;
+      cursor:pointer;
+      transition: background-color .35s var(--ease), transform .35s var(--ease), box-shadow .35s var(--ease);
+      --shimmer-x: -120%;
+    }
+    .form-submit::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: linear-gradient(
+        100deg,
+        transparent 0%,
+        transparent calc(var(--shimmer-x) + 0%),
+        rgba(255,255,255,.22) calc(var(--shimmer-x) + 25%),
+        rgba(255,255,255,.45) calc(var(--shimmer-x) + 38%),
+        rgba(255,255,255,.22) calc(var(--shimmer-x) + 50%),
+        transparent calc(var(--shimmer-x) + 75%),
+        transparent 100%
+      );
+      mix-blend-mode: overlay;
+      pointer-events: none;
+      z-index: 1;
+      opacity: 0;
+      transition: opacity .25s var(--ease);
+    }
+    .form-submit > * { position: relative; z-index: 2; }
+    .form-submit:hover {
+      background:#c4432f;
+      transform:translateY(-2px);
+      box-shadow:0 12px 32px rgba(217,79,59,.32), 0 0 0 1px rgba(255,255,255,.05) inset;
+    }
+    .form-submit:hover::before {
+      opacity: 1;
+      animation: btn-shimmer 900ms cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    }
+    .form-submit:active { transform: scale(.97); transition-duration: 80ms; }
+    .form-submit:disabled { opacity:.5; pointer-events:none; transform:none; box-shadow:none; }
+    @supports not (background: paint(something)) {
+      .form-submit::before {
+        background: linear-gradient(100deg, transparent 0%, rgba(255,255,255,.3) 50%, transparent 100%);
+        transform: translateX(-120%);
+        transition: transform .9s cubic-bezier(0.4, 0, 0.2, 1), opacity .25s var(--ease);
+      }
+      .form-submit:hover::before { transform: translateX(120%); opacity: 1; animation: none; }
+    }
+    .form-success { display:none; margin-top:1rem; padding:1rem; border-radius:6px; background:rgba(217,79,59,.1); border:1px solid var(--red-border); color:var(--red); font-size:.88rem; text-align:center; }
+    .form-success.visible { display:block; animation: form-success-in .45s var(--ease); }
+    @keyframes form-success-in { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: translateY(0); } }
+    .form-error { display:none; margin-top:1rem; padding:1rem; border-radius:6px; background:rgba(217,79,59,.06); border:1px solid var(--border-2); color:var(--tx-2); font-size:.85rem; text-align:center; }
+    .form-error.visible { display:block; }
+    @media (max-width:768px) { .contact-grid { grid-template-columns:1fr; } .form-grid { grid-template-columns:1fr; } }
+
+    /* ── FOOTER ── */
+    .footer { background: var(--bg); border-top: 1px solid var(--border); color: var(--tx-3); padding: clamp(4rem,6vw,6rem) 0 2rem; }
+    .footer-grid { display:grid; grid-template-columns:2fr 1fr 1fr 1fr; gap:3rem; padding-bottom:3rem; }
+    .footer-brand { font-family:var(--f-display); font-size:1.25rem; letter-spacing:.12em; color:var(--tx); margin-bottom:.75rem; }
+    .footer-desc { font-size:.85rem; line-height:1.7; max-width:32ch; }
+    .footer-hdg { font-size:.6rem; font-weight:700; letter-spacing:.2em; text-transform:uppercase; color:var(--tx-3); margin-bottom:1.25rem; }
+    .footer-links { list-style:none; display:flex; flex-direction:column; gap:.6rem; }
+    .footer-links a {
+      position: relative;
+      font-size:.88rem; color:var(--tx-3);
+      text-decoration:none;
+      display: inline-flex; align-items: center; gap: 0;
+      transition: color .25s var(--ease), gap .3s var(--ease), padding-left .3s var(--ease);
+    }
+    .footer-links a::after {
+      content: '→';
+      display: inline-block;
+      width: 0; overflow: hidden;
+      color: var(--red);
+      opacity: 0;
+      transform: translateX(-4px);
+      transition: width .3s var(--ease), opacity .3s var(--ease), transform .3s var(--ease);
+    }
+    .footer-links a:hover {
+      color: var(--red);
+      gap: 8px;
+    }
+    .footer-links a:hover::after {
+      width: 12px;
+      opacity: 1;
+      transform: translateX(0);
+    }
+    /* span (no link) ne doit pas avoir la flèche */
+    .footer-links li > span { color: var(--tx-3); font-size: .88rem; }
+    .footer-btm { border-top:1px solid var(--border); padding-top:1.5rem; display:flex; justify-content:space-between; align-items:center; gap:1rem; }
+    .footer-copy { font-size:.75rem; }
+    .footer-copy a { text-decoration:none; }
+    .footer-copy a:hover { color:var(--tx-2); }
+    /* Bouton qui ressemble à un link (pour les modals légaux : accessibilité > href="#") */
+    .footer-link-btn {
+      background: none;
+      border: none;
+      padding: 0;
+      font: inherit;
+      color: var(--tx-3);
+      cursor: pointer;
+      text-decoration: none;
+      transition: color .25s var(--ease);
+    }
+    .footer-link-btn:hover,
+    .footer-link-btn:focus-visible { color: var(--red); }
+    .footer-link-btn:focus-visible { outline: 2px solid var(--red); outline-offset: 3px; }
+    @media (max-width:768px) { .footer-grid { grid-template-columns:1fr 1fr; } }
+    @media (max-width:480px) { .footer-grid { grid-template-columns:1fr; } .footer-btm { flex-direction:column; align-items:flex-start; } }
+
+    /* ── FADE IN ── */
+    /* État initial caché si JS actif. Sans JS, tout reste visible normalement.
+       On utilise une animation @keyframes plutôt que 'transition' pour ne PAS
+       interférer avec les transitions hover natives des composants
+       (.testi-card, .svc-card, .masonry-item etc.). */
+    .fi { opacity: 1; transform: none; }
+    html.js .fi { opacity: 0; transform: translateY(18px); }
+    html.js .fi.is-in {
+      animation: fi-in .75s var(--ease-out) forwards;
+    }
+    @keyframes fi-in {
+      from { opacity: 0; transform: translateY(18px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html.js .fi { opacity: 1; transform: none; animation: none; }
+    }
+
+    /* ── MISC ── */
+    .text-center { text-align: center; }
+    .mb-10 { margin-bottom: 2.5rem; }
+    .mt-auto { margin-top: auto; }
+
+    /* ── LIGHTBOX (Réalisations) ── */
+    .lb {
+      position: fixed; inset: 0; z-index: 9999;
+      background: rgba(3,4,7,.96);
+      backdrop-filter: blur(20px) saturate(1.1);
+      -webkit-backdrop-filter: blur(20px) saturate(1.1);
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      padding: clamp(2rem, 5vw, 4rem);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity .35s var(--ease);
+    }
+    .lb[aria-hidden="false"] { opacity: 1; pointer-events: all; }
+
+    .lb__stage {
+      display: flex; flex-direction: column;
+      align-items: center;
+      gap: clamp(1rem, 2vw, 1.5rem);
+      width: 100%; max-width: min(1100px, 92vw);
+    }
+    .lb__img {
+      max-width: 100%;
+      max-height: 74vh;
+      width: auto; height: auto;
+      object-fit: contain;
+      box-shadow: 0 32px 80px rgba(0,0,0,.6);
+      transition: opacity .35s var(--ease), transform .6s var(--ease);
+      transform: scale(1.02);
+    }
+    .lb[aria-hidden="false"] .lb__img { transform: scale(1); }
+    .lb__img.is-swap { opacity: 0; }
+
+    .lb__caption {
+      display: flex; align-items: baseline;
+      gap: clamp(1rem, 2.5vw, 2rem);
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
+    }
+    .lb__num {
+      font-family: var(--f-body);
+      font-size: .58rem; font-weight: 600;
+      letter-spacing: .26em; text-transform: uppercase;
+      color: var(--red);
+      display: inline-flex; align-items: center; gap: .5rem;
+    }
+    .lb__num::before {
+      content: ''; display: block;
+      width: 18px; height: 1px; background: var(--red);
+    }
+    .lb__title {
+      font-family: var(--f-display);
+      font-weight: 400;
+      font-size: clamp(1.2rem, 2.2vw, 1.6rem);
+      color: var(--tx);
+    }
+
+    .lb__close {
+      position: absolute;
+      top: clamp(1rem, 2.5vw, 2rem);
+      right: clamp(1rem, 2.5vw, 2rem);
+      width: 44px; height: 44px;
+      display: flex; align-items: center; justify-content: center;
+      color: var(--tx-2);
+      border: 1px solid var(--border);
+      background: none;
+      cursor: pointer;
+      transition: color .25s var(--ease), border-color .25s var(--ease), transform .45s var(--ease);
+    }
+    .lb__close:hover {
+      color: var(--tx);
+      border-color: var(--red);
+      transform: rotate(90deg);
+    }
+
+    .lb__nav {
+      position: absolute;
+      bottom: clamp(1.25rem, 3vw, 2.4rem);
+      right: clamp(1.25rem, 3vw, 2.4rem);
+      display: flex; gap: .55rem;
+    }
+    .lb__btn {
+      width: 44px; height: 44px;
+      border: 1px solid var(--border-2);
+      background: none;
+      display: flex; align-items: center; justify-content: center;
+      color: var(--tx-2);
+      cursor: pointer;
+      transition: border-color .25s var(--ease), color .25s var(--ease), background-color .25s var(--ease);
+    }
+    .lb__btn:hover {
+      border-color: var(--red);
+      color: var(--tx);
+      background: rgba(217,79,59,.08);
+    }
+
+    @media (max-width: 640px) {
+      .lb { padding: 1rem; }
+      .lb__img { max-height: 62vh; }
+      .lb__close { top: 1rem; right: 1rem; }
+      .lb__nav { bottom: 1rem; right: 1rem; }
+    }
+
+    /* ── REDUCED MOTION ── */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important;
+        scroll-behavior: auto !important;
+      }
+      .hero__scroll { animation: none; }
+    }
+
+    /* ── PRINT STYLESHEET — noir sur blanc, sans déco ── */
+    @media print {
+      :root { --bg: #fff; --tx: #000; --tx-2: #333; --tx-3: #666; --red: #c4432f; }
+      html, body { background: #fff !important; color: #000 !important; }
+      .nav, .ticker, .hero__video, .hero__vignette, .hero__merge, .hero__grain,
+      .hero__scroll, .lb, .nav__progress,
+      .theme-toggle, .masonry-load-btn, .form-submit, .btn,
+      .cookie-banner, .modal-legal, .nav__mobile {
+        display: none !important;
+      }
+      .hero { height: auto !important; min-height: 0 !important; padding: 2rem 0; background: #fff !important; }
+      .hero::before, .hero::after { display: none !important; }
+      section, .s { padding: 1.5rem 0 !important; page-break-inside: avoid; background: #fff !important; box-shadow: none !important; }
+      img { max-width: 100% !important; filter: none !important; box-shadow: none !important; }
+      a { color: #000 !important; text-decoration: underline; }
+      a[href^="http"]::after { content: " (" attr(href) ")"; font-size: .8em; color: #555; }
+      a[href^="tel:"]::after, a[href^="mailto:"]::after,
+      a[href^="#"]::after { content: ""; }
+      .footer, .footer-btm { color: #333; }
+      h1, h2, h3, h4 { color: #000 !important; page-break-after: avoid; }
+      p { orphans: 3; widows: 3; }
+    }
+
+    /* ── COOKIE BANNER — discret, GDPR-aware ── */
+    .cookie-banner {
+      position: fixed;
+      bottom: 1.25rem;
+      left: 1.25rem;
+      right: 1.25rem;
+      max-width: 480px;
+      margin: 0 auto;
+      background: var(--bg-1);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.25rem 1.4rem;
+      box-shadow: 0 16px 48px rgba(0,0,0,.18);
+      z-index: 500;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity .4s var(--ease), transform .4s var(--ease);
+      pointer-events: none;
+    }
+    html[data-theme="dark"] .cookie-banner { box-shadow: 0 16px 48px rgba(0,0,0,.5); }
+    .cookie-banner.visible { opacity: 1; transform: translateY(0); pointer-events: auto; }
+    .cookie-banner__title {
+      font-family: var(--f-display);
+      font-size: 1.1rem;
+      font-weight: 400;
+      color: var(--tx);
+      margin: 0 0 .5rem;
+    }
+    .cookie-banner__text {
+      font-size: .82rem;
+      color: var(--tx-2);
+      line-height: 1.55;
+      margin: 0 0 1.1rem;
+    }
+    .cookie-banner__text a {
+      color: var(--red);
+      text-decoration: none;
+      border-bottom: 1px solid currentColor;
+      transition: opacity .2s var(--ease);
+    }
+    .cookie-banner__text a:hover { opacity: .7; }
+    .cookie-banner__actions {
+      display: flex;
+      gap: .6rem;
+      flex-wrap: wrap;
+    }
+    .cookie-banner__btn {
+      flex: 1;
+      min-width: 110px;
+      padding: 10px 14px;
+      border-radius: 999px;
+      font-family: var(--f-body);
+      font-size: .66rem;
+      font-weight: 600;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: background-color .25s var(--ease), border-color .25s var(--ease), color .25s var(--ease);
+    }
+    .cookie-banner__btn--accept {
+      background: var(--red);
+      border: 1px solid var(--red);
+      color: #fff;
+    }
+    .cookie-banner__btn--accept:hover { background: #b03a28; border-color: #b03a28; }
+    .cookie-banner__btn--decline {
+      background: transparent;
+      border: 1px solid var(--border-2);
+      color: var(--tx-2);
+    }
+    .cookie-banner__btn--decline:hover { border-color: var(--tx-2); color: var(--tx); }
+    @media (max-width: 480px) {
+      .cookie-banner { bottom: .75rem; left: .75rem; right: .75rem; padding: 1rem; }
+    }
+
+    /* ── MODALS LÉGAUX (Mentions + Confidentialité) ── */
+    .modal-legal {
+      position: fixed;
+      inset: 0;
+      z-index: 9998;
+      background: rgba(0,0,0,.65);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: clamp(1rem, 4vw, 3rem);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity .35s var(--ease);
+    }
+    .modal-legal[aria-hidden="false"] { opacity: 1; pointer-events: auto; }
+    .modal-legal__panel {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      max-width: 720px;
+      width: 100%;
+      max-height: 86vh;
+      overflow-y: auto;
+      padding: clamp(2rem, 4vw, 3rem);
+      position: relative;
+      transform: translateY(20px) scale(.98);
+      transition: transform .4s var(--ease);
+    }
+    .modal-legal[aria-hidden="false"] .modal-legal__panel { transform: translateY(0) scale(1); }
+    .modal-legal__close {
+      position: absolute;
+      top: 1rem; right: 1rem;
+      width: 36px; height: 36px;
+      border: 1px solid var(--border);
+      background: transparent;
+      color: var(--tx-2);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      cursor: pointer;
+      transition: color .25s var(--ease), border-color .25s var(--ease), transform .35s var(--ease);
+    }
+    .modal-legal__close:hover { color: var(--red); border-color: var(--red); transform: rotate(90deg); }
+    .modal-legal__eyebrow {
+      font-family: var(--f-body);
+      font-size: .6rem;
+      letter-spacing: .26em;
+      text-transform: uppercase;
+      color: var(--red);
+      font-weight: 600;
+      display: inline-flex; align-items: center; gap: 10px;
+    }
+    .modal-legal__eyebrow::before {
+      content: ''; display: block; width: 20px; height: 1px; background: var(--red);
+    }
+    .modal-legal__title {
+      font-family: var(--f-display);
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      font-weight: 300;
+      color: var(--tx);
+      letter-spacing: -.01em;
+      margin: 1rem 0 1.5rem;
+    }
+    .modal-legal__body h4 {
+      font-family: var(--f-display);
+      font-size: 1.05rem;
+      font-weight: 400;
+      color: var(--tx);
+      margin: 1.5rem 0 .5rem;
+    }
+    .modal-legal__body p,
+    .modal-legal__body li {
+      font-size: .87rem;
+      color: var(--tx-2);
+      line-height: 1.7;
+      margin: 0 0 .8rem;
+    }
+    .modal-legal__body ul {
+      list-style: none;
+      padding-left: 0;
+      margin: .5rem 0;
+    }
+    .modal-legal__body li {
+      padding-left: 1.25rem;
+      position: relative;
+    }
+    .modal-legal__body li::before {
+      content: '';
+      position: absolute;
+      left: 0; top: .65em;
+      width: 8px; height: 1px;
+      background: var(--red);
+    }
+    .modal-legal__body strong {
+      color: var(--tx);
+      font-weight: 500;
+    }
+    .modal-legal__body a {
+      color: var(--red);
+      text-decoration: none;
+      border-bottom: 1px solid currentColor;
+    }
+
+  </style>
+
+</head>
+<body>
+<a href="#main" class="skip-link">Aller au contenu</a>
+
+<!-- ── NAV ── -->
+<header class="nav" id="siteNav">
+  <div class="nav__inner">
+    <a href="#" class="nav__logo" aria-label="LRMJ Project">
+      <svg class="nav__logo-mark" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M8 10 L8 32 L20 32" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <path d="M22 10 L30 10 Q37 10 37 17 Q37 24 30 24 L22 24 M28 24 L37 34" stroke="white" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+      </svg>
+      <span class="nav__logo-text">LRMJ</span>
+    </a>
+    <ul class="nav__links" role="list">
+      <li><a href="#realisations">Réalisations</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">À Propos</a></li>
+    </ul>
+    <div class="nav__actions">
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Basculer entre mode clair et sombre">
+        <!-- Icon Sun (visible en mode dark : action = passer en light) -->
+        <svg class="theme-toggle__sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="4"/>
+          <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+        </svg>
+        <!-- Icon Moon (visible en mode light : action = passer en dark) -->
+        <svg class="theme-toggle__moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
+        </svg>
+      </button>
+      <a href="tel:0475399909" class="nav__phone" aria-label="Appeler">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.9z"/></svg>
+        <span>0475 39 99 09</span>
+      </a>
+      <a href="#contact" class="nav__cta-pill">Devis Gratuit</a>
+      <button class="nav__hamburger" id="navHamburger" aria-expanded="false" aria-controls="navMobile" aria-label="Menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div class="nav__progress" aria-hidden="true"></div>
+</header>
+
+<!-- Mobile menu -->
+<div class="nav__mobile" id="navMobile" role="dialog" aria-modal="true" aria-label="Menu" hidden>
+  <nav class="nav__mobile-links">
+    <a href="#realisations" class="mobile-link">Réalisations</a>
+    <a href="#services" class="mobile-link">Services</a>
+    <a href="#about" class="mobile-link">À Propos</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+  </nav>
+  <div class="nav__mobile-bottom">
+    <a href="tel:0475399909" class="nav__mobile-phone">0475 39 99 09</a>
+    <a href="#contact" class="nav__mobile-cta">Demander un devis →</a>
+  </div>
+</div>
+
+<main id="main">
+
+  <!-- ── HERO — Vidéo pure ── -->
+  <section class="hero" aria-label="LRMJ Project — Ferronnerie artisanale">
+    <h1 class="sr-only">LRMJ Project — Artisan Ferronnier Belgique</h1>
+    <video class="hero__video"
+      src="https://res.cloudinary.com/dbugcatig/video/upload/v1779380472/aa79faff86284dd9b28f307dbfc81a8a_4K_kpnw8a.mp4"
+      autoplay muted loop playsinline aria-hidden="true"
+      preload="metadata"
+      poster="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/909a150405840e75ea8f4f352a9b8690798972a0.jpg">
+    </video>
+    <div class="hero__vignette" aria-hidden="true"></div>
+    <div class="hero__merge"   aria-hidden="true"></div>
+    <div class="hero__grain"   aria-hidden="true"></div>
+    <a href="#realisations" class="hero__scroll" aria-label="Défiler vers les réalisations">
+      <span class="hero__scroll-label">Découvrir</span>
+      <span class="hero__scroll-line" aria-hidden="true"></span>
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+    </a>
+  </section>
+
+  <!-- ── TICKER — Trust factors ── -->
+  <section class="ticker" aria-label="LRMJ Project en chiffres">
+    <div class="ticker__track" aria-hidden="true">
+      <!-- Loop 1 -->
+      <div class="ticker__item"><strong>30 ans</strong><span>d'artisanat</span></div>
+      <span class="ticker__sep" aria-hidden="true"></span>
+      <div class="ticker__item"><strong>Bruxelles</strong><span>/ Opwijk</span></div>
+      <span class="ticker__sep" aria-hidden="true"></span>
+      <div class="ticker__item"><strong>Fer &amp; verre</strong><span>sur mesure</span></div>
+      <span class="ticker__sep" aria-hidden="true"></span>
+      <div class="ticker__item"><strong>Devis</strong><span>gratuit</span></div>
+      <span class="ticker__sep" aria-hidden="true"></span>
+      <div class="ticker__item"><strong>Portails</strong><span>&amp; clôtures</span></div>
+      <span class="ticker__sep" aria-hidden="true"></span>
+      <div class="ticker__item"><strong>Garde-corps</strong><span>&amp; escaliers</span></div>
+      <span class="ticker__sep" aria-hidden="true"></span>
+      <div class="ticker__item"><strong>Verrières</strong><span>&amp; serres</span></div>
+      <span class="ticker__sep" aria-hidden="true"></span>
+      <div class="ticker__item"><strong>100%</strong><span>sur mesure</span></div>
+      <span class="ticker__sep" aria-hidden="true"></span>
+      <div class="ticker__item"><strong>Atelier</strong><span>familial</span></div>
+      <span class="ticker__sep" aria-hidden="true"></span>
+      <!-- Loop 2 (dupliqué pour boucle infinie sans saut) -->
+      <div class="ticker__item"><strong>30 ans</strong><span>d'artisanat</span></div>
+      <span class="ticker__sep" aria-hidden="true"></span>
+      <div class="ticker__item"><strong>Bruxelles</strong><span>/ Opwijk</span></div>
+      <span class="ticker__sep" aria-hidden="true"></span>
+      <div class="ticker__item"><strong>Fer &amp; verre</strong><span>sur mesure</span></div>
+      <span class="ticker__sep" aria-hidden="true"></span>
+      <div class="ticker__item"><strong>Devis</strong><span>gratuit</span></div>
+      <span class="ticker__sep" aria-hidden="true"></span>
+      <div class="ticker__item"><strong>Portails</strong><span>&amp; clôtures</span></div>
+      <span class="ticker__sep" aria-hidden="true"></span>
+      <div class="ticker__item"><strong>Garde-corps</strong><span>&amp; escaliers</span></div>
+      <span class="ticker__sep" aria-hidden="true"></span>
+      <div class="ticker__item"><strong>Verrières</strong><span>&amp; serres</span></div>
+      <span class="ticker__sep" aria-hidden="true"></span>
+      <div class="ticker__item"><strong>100%</strong><span>sur mesure</span></div>
+      <span class="ticker__sep" aria-hidden="true"></span>
+      <div class="ticker__item"><strong>Atelier</strong><span>familial</span></div>
+      <span class="ticker__sep" aria-hidden="true"></span>
+    </div>
+  </section>
+
+  <!-- ── RÉALISATIONS ── -->
+  <section id="realisations" class="s s--dark" aria-labelledby="gal-title">
+    <div class="masonry-hdr fi">
+      <div>
+        <span class="eyebrow">Réalisations</span>
+        <h2 class="h-large" id="gal-title">Le Travail<br><em>Parle Pour Lui-Même</em></h2>
+      </div>
+      <a href="#contact" class="btn btn--ghost">Votre Projet →</a>
+    </div>
+
+    <div class="masonry-grid" id="masonryGrid" role="list">
+      <div class="masonry-item fi" role="listitem">
+        <img src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/909a150405840e75ea8f4f352a9b8690798972a0.jpg" alt="Portail en fer forgé monogramme entre piliers" loading="lazy" decoding="async" width="1024" height="1280"/>
+        <div class="masonry-item__label">Portail Monogramme</div>
+      </div>
+      <div class="masonry-item fi" role="listitem">
+        <img src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/c4c99ce59805473047d23942f8b1a5f77445aa90.jpg" alt="Portail double battant en fer forgé" loading="lazy" decoding="async" width="1024" height="1280"/>
+        <div class="masonry-item__label">Portail Double Battant</div>
+      </div>
+      <div class="masonry-item fi" role="listitem">
+        <img src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/c3fec15966e90c7666f56c83bd79ab1c42f2f174.jpg" alt="Garde-corps C-scroll fer forgé" loading="lazy" decoding="async" width="1024" height="1280"/>
+        <div class="masonry-item__label">Garde-corps C-Scroll</div>
+      </div>
+      <div class="masonry-item fi" role="listitem">
+        <img src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/9c76ebf8cf9aa60a2926cff3d3560612e1fffb04.jpg" alt="Serre de jardin fer et verre" loading="lazy" decoding="async" width="1024" height="1280"/>
+        <div class="masonry-item__label">Serre de Jardin</div>
+      </div>
+      <div class="masonry-item fi" role="listitem">
+        <img src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/dd5110df61257d4e4c05934c61a09442a9eb2544.jpg" alt="Portail de domaine en fer forgé" loading="lazy" decoding="async" width="1024" height="1280"/>
+        <div class="masonry-item__label">Entrée de Domaine</div>
+      </div>
+      <div class="masonry-item fi" role="listitem">
+        <img src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/f737604fb271ef236170b694a7b4663f096c504b.jpg" alt="Rampe de balcon ornementale" loading="lazy" decoding="async" width="1024" height="1280"/>
+        <div class="masonry-item__label">Balcon &amp; Rampe</div>
+      </div>
+      <div class="masonry-item fi" role="listitem">
+        <img src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/5d2ddb3ee3ff78886600ddcae50cdc95320a0dff.jpg" alt="Grand portail ornemental en fer forgé" loading="lazy" decoding="async" width="1024" height="1280"/>
+        <div class="masonry-item__label">Portail Ornemental</div>
+      </div>
+      <div class="masonry-item fi" role="listitem">
+        <img src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/2d2c4902c35390ff77defd9781eff6552285d2ec.jpg" alt="Artisan ferronnier en atelier" loading="lazy" decoding="async" width="1024" height="1280"/>
+        <div class="masonry-item__label">Fabrication Atelier</div>
+      </div>
+      <!-- Batch 2 — hidden -->
+      <div class="masonry-item hidden" role="listitem"><img src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/909a150405840e75ea8f4f352a9b8690798972a0.jpg" alt="Portail sculpté" loading="lazy" decoding="async" width="1024" height="1280"/><div class="masonry-item__label">Portail Sculpté</div></div>
+      <div class="masonry-item hidden" role="listitem"><img src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/c3fec15966e90c7666f56c83bd79ab1c42f2f174.jpg" alt="Garde-corps intérieur" loading="lazy" decoding="async" width="1024" height="1280"/><div class="masonry-item__label">Garde-corps Intérieur</div></div>
+      <div class="masonry-item hidden" role="listitem"><img src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/dd5110df61257d4e4c05934c61a09442a9eb2544.jpg" alt="Clôture ouvragée" loading="lazy" decoding="async" width="1024" height="1280"/><div class="masonry-item__label">Clôture Ouvragée</div></div>
+      <div class="masonry-item hidden" role="listitem"><img src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/9c76ebf8cf9aa60a2926cff3d3560612e1fffb04.jpg" alt="Véranda sur mesure" loading="lazy" decoding="async" width="1024" height="1280"/><div class="masonry-item__label">Véranda Sur Mesure</div></div>
+      <div class="masonry-item hidden" role="listitem"><img src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/f737604fb271ef236170b694a7b4663f096c504b.jpg" alt="Balustrade fer forgé" loading="lazy" decoding="async" width="1024" height="1280"/><div class="masonry-item__label">Balustrade</div></div>
+      <div class="masonry-item hidden" role="listitem"><img src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/5d2ddb3ee3ff78886600ddcae50cdc95320a0dff.jpg" alt="Portail monumental" loading="lazy" decoding="async" width="1024" height="1280"/><div class="masonry-item__label">Portail Monumental</div></div>
+      <div class="masonry-item hidden" role="listitem"><img src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/c4c99ce59805473047d23942f8b1a5f77445aa90.jpg" alt="Marquise en fer forgé" loading="lazy" decoding="async" width="1024" height="1280"/><div class="masonry-item__label">Marquise</div></div>
+      <div class="masonry-item hidden" role="listitem"><img src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/2d2c4902c35390ff77defd9781eff6552285d2ec.jpg" alt="Détail ferronnerie" loading="lazy" decoding="async" width="1024" height="1280"/><div class="masonry-item__label">Détail Artistique</div></div>
+    </div>
+
+    <div class="masonry-footer">
+      <button class="masonry-load-btn" id="loadMoreBtn">Voir plus de réalisations</button>
+    </div>
+  </section>
+
+  <div class="sdiv sdiv--01" aria-hidden="true"></div>
+
+  <!-- ── TÉMOIGNAGES ── -->
+  <section class="s s--lift glow-center" aria-labelledby="testi-title">
+    <div class="wrap">
+      <div class="fi text-center mb-10">
+        <span class="eyebrow">Témoignages</span>
+        <h2 class="h-large" id="testi-title" style="margin-inline:auto;max-width:18ch;">Ce que disent<br><em>nos clients</em></h2>
+      </div>
+      <div class="testi-grid" id="testiGrid">
+        <div class="testi-card fi">
+          <div class="testi-stars" aria-label="5 étoiles">
+            <svg width="72" height="11" viewBox="0 0 72 11" fill="none" aria-hidden="true"><path d="M5.5 1l1.2 3.7H10L7.3 6.8l1.2 3.7L5.5 8.6 2.5 10.5l1.2-3.7L1 4.7h3.3L5.5 1z" fill="#d94f3b"/><path d="M20 1l1.2 3.7H25l-2.7 2.1 1.2 3.7L20 8.6 17 10.5l1.2-3.7-2.7-2.1H19L20 1z" fill="#d94f3b"/><path d="M34.5 1l1.2 3.7H39l-2.7 2.1 1.2 3.7-2.9-1.9-3 1.9 1.2-3.7-2.7-2.1h3.3L34.5 1z" fill="#d94f3b"/><path d="M49 1l1.2 3.7H54l-2.7 2.1 1.2 3.7L49 8.6 46 10.5l1.2-3.7-2.7-2.1h3.3L49 1z" fill="#d94f3b"/><path d="M63.5 1l1.2 3.7H68l-2.7 2.1 1.2 3.7-2.9-1.9-3 1.9 1.2-3.7-2.7-2.1h3.3L63.5 1z" fill="#d94f3b"/></svg>
+          </div>
+          <blockquote class="testi-quote">Notre portail d'entrée est magnifique. Travail soigné, délais respectés, équipe très à l'écoute. Je recommande vivement.</blockquote>
+          <div class="testi-author">
+            <div class="testi-av" aria-hidden="true">M</div>
+            <div><div class="testi-name">Marie-Claire D.</div><div class="testi-loc">Liège</div></div>
+          </div>
+        </div>
+        <div class="testi-card fi">
+          <div class="testi-stars" aria-label="5 étoiles">
+            <svg width="72" height="11" viewBox="0 0 72 11" fill="none" aria-hidden="true"><path d="M5.5 1l1.2 3.7H10L7.3 6.8l1.2 3.7L5.5 8.6 2.5 10.5l1.2-3.7L1 4.7h3.3L5.5 1z" fill="#d94f3b"/><path d="M20 1l1.2 3.7H25l-2.7 2.1 1.2 3.7L20 8.6 17 10.5l1.2-3.7-2.7-2.1H19L20 1z" fill="#d94f3b"/><path d="M34.5 1l1.2 3.7H39l-2.7 2.1 1.2 3.7-2.9-1.9-3 1.9 1.2-3.7-2.7-2.1h3.3L34.5 1z" fill="#d94f3b"/><path d="M49 1l1.2 3.7H54l-2.7 2.1 1.2 3.7L49 8.6 46 10.5l1.2-3.7-2.7-2.1h3.3L49 1z" fill="#d94f3b"/><path d="M63.5 1l1.2 3.7H68l-2.7 2.1 1.2 3.7-2.9-1.9-3 1.9 1.2-3.7-2.7-2.1h3.3L63.5 1z" fill="#d94f3b"/></svg>
+          </div>
+          <blockquote class="testi-quote">La serre de jardin dépasse toutes nos attentes. Qualité exceptionnelle, finitions parfaites. Un vrai artisan de passion.</blockquote>
+          <div class="testi-author">
+            <div class="testi-av" aria-hidden="true">P</div>
+            <div><div class="testi-name">Pierre V.</div><div class="testi-loc">Bruxelles</div></div>
+          </div>
+        </div>
+        <div class="testi-card fi">
+          <div class="testi-stars" aria-label="5 étoiles">
+            <svg width="72" height="11" viewBox="0 0 72 11" fill="none" aria-hidden="true"><path d="M5.5 1l1.2 3.7H10L7.3 6.8l1.2 3.7L5.5 8.6 2.5 10.5l1.2-3.7L1 4.7h3.3L5.5 1z" fill="#d94f3b"/><path d="M20 1l1.2 3.7H25l-2.7 2.1 1.2 3.7L20 8.6 17 10.5l1.2-3.7-2.7-2.1H19L20 1z" fill="#d94f3b"/><path d="M34.5 1l1.2 3.7H39l-2.7 2.1 1.2 3.7-2.9-1.9-3 1.9 1.2-3.7-2.7-2.1h3.3L34.5 1z" fill="#d94f3b"/><path d="M49 1l1.2 3.7H54l-2.7 2.1 1.2 3.7L49 8.6 46 10.5l1.2-3.7-2.7-2.1h3.3L49 1z" fill="#d94f3b"/><path d="M63.5 1l1.2 3.7H68l-2.7 2.1 1.2 3.7-2.9-1.9-3 1.9 1.2-3.7-2.7-2.1h3.3L63.5 1z" fill="#d94f3b"/></svg>
+          </div>
+          <blockquote class="testi-quote">Garde-corps d'escalier réalisé avec une précision remarquable. On voit que c'est un vrai métier, pas du travail en série.</blockquote>
+          <div class="testi-author">
+            <div class="testi-av" aria-hidden="true">S</div>
+            <div><div class="testi-name">Sophie N.</div><div class="testi-loc">Namur</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="sdiv sdiv--12" aria-hidden="true"></div>
+
+  <!-- ── SERVICES ── -->
+  <section id="services" class="s s--card" aria-labelledby="svc-title">
+    <div class="wrap">
+      <div class="svc-hdr fi">
+        <div>
+          <span class="eyebrow">Prestations</span>
+          <h2 class="h-large" id="svc-title">Tout ce que<br><em>nous fabriquons</em></h2>
+        </div>
+        <a href="#contact" class="btn btn--red">Devis Gratuit →</a>
+      </div>
+      <div class="svc-grid">
+        <div class="svc-card svc-card--feat fi">
+          <div class="svc-img-wrap">
+            <img class="svc-img" src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/5d2ddb3ee3ff78886600ddcae50cdc95320a0dff.jpg" alt="Portail en fer forgé" loading="lazy" decoding="async"/>
+          </div>
+          <div class="svc-body">
+            <span class="svc-tag">Signature</span>
+            <h3 class="svc-title">Portails &amp; Clôtures</h3>
+            <p class="svc-desc">Entrées monumentales ou clôtures élégantes. Finitions époxy ou galvanisées pour une durabilité maximale. Conçu sur mesure pour votre propriété.</p>
+            <a href="#contact" class="btn btn--ghost mt-auto" style="width:fit-content;">Commander →</a>
+          </div>
+        </div>
+        <div class="svc-card fi">
+          <div class="svc-img-wrap"><img class="svc-img" src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/f737604fb271ef236170b694a7b4663f096c504b.jpg" alt="Garde-corps en fer forgé" loading="lazy" decoding="async"/></div>
+          <div class="svc-body"><span class="svc-tag">Intérieur &amp; Extérieur</span><h3 class="svc-title">Garde-Corps &amp; Rampes</h3><p class="svc-desc">Escaliers, balcons, mezzanines. Sécurité et esthétique au service de votre espace.</p></div>
+        </div>
+        <div class="svc-card fi">
+          <div class="svc-img-wrap"><img class="svc-img" src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/9c76ebf8cf9aa60a2926cff3d3560612e1fffb04.jpg" alt="Serre de jardin" loading="lazy" decoding="async"/></div>
+          <div class="svc-body"><span class="svc-tag">Jardin</span><h3 class="svc-title">Serres &amp; Baies Vitrées</h3><p class="svc-desc">Jardins d'hiver, vérandas, extensions vitrées. Structures légères et résistantes.</p></div>
+        </div>
+        <div class="svc-card fi">
+          <div class="svc-img-wrap"><img class="svc-img" src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/c3fec15966e90c7666f56c83bd79ab1c42f2f174.jpg" alt="Marquise en fer forgé" loading="lazy" decoding="async"/></div>
+          <div class="svc-body"><span class="svc-tag">Protection</span><h3 class="svc-title">Marquises &amp; Auvents</h3><p class="svc-desc">Protection élégante pour entrées et terrasses. Châssis fer forgé, verre feuilleté.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="sdiv sdiv--21" aria-hidden="true"></div>
+
+  <!-- ── PROCESS ── -->
+  <section class="s s--lift proc" aria-labelledby="proc-title">
+    <div class="wrap wrap--sm">
+      <div class="fi text-center mb-10">
+        <span class="eyebrow">Comment ça marche</span>
+        <h2 class="h-large" id="proc-title">De votre idée<br><em>à la pose finale</em></h2>
+      </div>
+    </div>
+    <div class="wrap">
+      <div class="proc-timeline">
+        <!-- Rail horizontal (desktop) / vertical (mobile) qui se dessine au scroll.
+             2 divs : une background fixe (line grise) + une foreground qui grandit (line rouge).
+             Plus robuste qu'un SVG : pas de viewBox, pas de preserveAspectRatio, marche partout. -->
+        <div class="proc-rail" aria-hidden="true">
+          <div class="proc-rail__bg"></div>
+          <div class="proc-rail__fg"></div>
+        </div>
+
+        <article class="proc-step fi" data-step="1">
+          <span class="proc-num" aria-hidden="true">01</span>
+          <div class="proc-icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="7" width="26" height="18" rx="1"/>
+              <path d="M3 9 L16 18 L29 9"/>
+              <path d="M3 23 L11 16 M29 23 L21 16"/>
+            </svg>
+          </div>
+          <div class="proc-body">
+            <h3 class="proc-ttl">Contact</h3>
+            <p class="proc-desc">Appelez ou écrivez. On comprend votre projet et vos contraintes sans jargon.</p>
+          </div>
+        </article>
+
+        <article class="proc-step fi" data-step="2">
+          <span class="proc-num" aria-hidden="true">02</span>
+          <div class="proc-icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 27 L5 5 L23 5 L27 9 L27 27 Z"/>
+              <path d="M23 5 L23 9 L27 9"/>
+              <path d="M9 13 L21 13 M9 17 L21 17 M9 21 L17 21"/>
+            </svg>
+          </div>
+          <div class="proc-body">
+            <h3 class="proc-ttl">Visite &amp; Devis</h3>
+            <p class="proc-desc">On se déplace, on mesure, devis détaillé et gratuit sous 48h.</p>
+          </div>
+        </article>
+
+        <article class="proc-step fi" data-step="3">
+          <span class="proc-num" aria-hidden="true">03</span>
+          <div class="proc-icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 26 L26 26"/>
+              <path d="M9 26 L11 18 L21 18 L23 26"/>
+              <path d="M10 18 L10 14 Q10 9 16 9 Q22 9 22 14 L22 18"/>
+              <circle cx="16" cy="13" r="1" fill="currentColor"/>
+            </svg>
+          </div>
+          <div class="proc-body">
+            <h3 class="proc-ttl">Fabrication</h3>
+            <p class="proc-desc">Chaque pièce façonnée dans notre atelier. Finition époxy, galva ou thermolaqué.</p>
+          </div>
+        </article>
+
+        <article class="proc-step fi" data-step="4">
+          <span class="proc-num" aria-hidden="true">04</span>
+          <div class="proc-icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 27 L4 13 L16 4 L28 13 L28 27 Z"/>
+              <path d="M12 27 L12 18 L20 18 L20 27"/>
+              <circle cx="18" cy="22" r=".8" fill="currentColor"/>
+            </svg>
+          </div>
+          <div class="proc-body">
+            <h3 class="proc-ttl">Pose &amp; Réception</h3>
+            <p class="proc-desc">Installation soignée par notre équipe, finitions impeccables, remise des clés.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <div class="sdiv sdiv--10" aria-hidden="true"></div>
+
+  <!-- ── À PROPOS ── -->
+  <section id="about" class="s s--dark glow-red-br" aria-labelledby="about-title">
+    <div class="wrap">
+      <div class="about-grid">
+        <div class="about-img fi">
+          <img src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/2d2c4902c35390ff77defd9781eff6552285d2ec.jpg" alt="Artisan ferronnier au travail" width="480" height="640" loading="lazy" decoding="async"/>
+          <div class="about-img__caption" aria-hidden="true">Atelier LRMJ — Belgique</div>
+        </div>
+        <div class="about-content fi">
+          <span class="eyebrow">À Propos</span>
+          <h2 class="about-tagline" id="about-title">L'artisanat comme vocation,<br>le terrain comme passion</h2>
+          <div class="about-body">
+            <p class="about-lede"><span class="about-dropcap" aria-hidden="true">L</span>RMJ Project est né de la passion d'un artisan ferronnier installé en Belgique. Chaque pièce est conçue et fabriquée en atelier, posée par nos propres mains.</p>
+            <p>Aucune sous-traitance. De la première esquisse au dernier boulon, vous avez notre parole — et un seul interlocuteur, du devis à la pose.</p>
+          </div>
+          <div class="about-hl-grid">
+            <div class="about-hl">
+              <div class="about-hl-val"><span class="counter" data-target="30" data-prefix="+">+30</span></div>
+              <div class="about-hl-lbl">Années d'expérience</div>
+            </div>
+            <div class="about-hl">
+              <div class="about-hl-val"><span class="counter" data-target="500" data-prefix="+">+500</span></div>
+              <div class="about-hl-lbl">Projets livrés</div>
+            </div>
+            <div class="about-hl">
+              <div class="about-hl-val"><span class="counter" data-target="100" data-suffix="%">100%</span></div>
+              <div class="about-hl-lbl">Fabrication propre</div>
+            </div>
+            <div class="about-hl">
+              <div class="about-hl-val"><span class="counter" data-target="48" data-suffix="h">48h</span></div>
+              <div class="about-hl-lbl">Délai devis</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="sdiv sdiv--01" aria-hidden="true"></div>
+
+  <!-- ── CONTACT ── -->
+  <section id="contact" class="s s--lift" aria-labelledby="contact-title">
+    <div class="wrap">
+      <div class="contact-grid">
+        <div class="fi">
+          <span class="eyebrow">Contact</span>
+          <h2 class="h-large" id="contact-title">Parlons de<br><em>votre projet</em></h2>
+          <p class="lead" style="margin-top:.75rem;">Devis entièrement gratuit, sans engagement. Réponse sous 24h.</p>
+          <ul class="contact-info-list" role="list">
+            <li class="contact-info-item">
+              <div class="contact-info-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.9z"/></svg></div>
+              <div><div class="contact-info-lbl">Téléphone</div><div class="contact-info-val"><a href="tel:0475399909">0475 39 99 09</a></div></div>
+            </li>
+            <li class="contact-info-item">
+              <div class="contact-info-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+              <div><div class="contact-info-lbl">Email</div><div class="contact-info-val"><a href="mailto:contact@lrmjproject.be">contact@lrmjproject.be</a></div></div>
+            </li>
+            <li class="contact-info-item">
+              <div class="contact-info-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+              <div><div class="contact-info-lbl">Disponibilité</div><div class="contact-info-val">Lun – Sam · 8h – 18h</div></div>
+            </li>
+          </ul>
+        </div>
+        <div class="fi">
+          <form class="contact-form" id="contactForm" novalidate>
+            <!-- Web3Forms : access key remplie via JS au runtime (WEB3FORMS_KEY) -->
+            <input type="hidden" name="access_key" id="formAccessKey" value="" />
+            <input type="hidden" name="subject" value="Nouvelle demande de devis — lrmjproject.be" />
+            <input type="hidden" name="from_name" value="Site LRMJ Project" />
+            <!-- Honeypot anti-spam : invisible aux humains, rempli par les bots -->
+            <input type="checkbox" name="botcheck" class="sr-only" tabindex="-1" autocomplete="off" aria-hidden="true" />
+            <p class="form-eye">Demande de devis</p>
+            <div class="form-grid">
+              <div class="form-field"><label class="form-lbl" for="prenom">Prénom *</label><input class="form-inp" type="text" id="prenom" name="prenom" placeholder="Jean" required autocomplete="given-name"/></div>
+              <div class="form-field"><label class="form-lbl" for="nom">Nom *</label><input class="form-inp" type="text" id="nom" name="nom" placeholder="Dupont" required autocomplete="family-name"/></div>
+              <div class="form-field"><label class="form-lbl" for="tel">Téléphone *</label><input class="form-inp" type="tel" id="tel" name="tel" placeholder="04XX XXX XXX" required autocomplete="tel"/></div>
+              <div class="form-field"><label class="form-lbl" for="email">Email</label><input class="form-inp" type="email" id="email" name="email" placeholder="jean@email.be" autocomplete="email"/></div>
+              <div class="form-field form-field--full"><label class="form-lbl" for="service">Type de projet</label><select class="form-sel" id="service" name="service"><option value="">Sélectionnez…</option><option value="portail">Portail / Clôture</option><option value="gardecorps">Garde-corps / Rampe</option><option value="serre">Serre / Baie vitrée</option><option value="marquise">Marquise / Auvent</option><option value="autre">Autre projet</option></select></div>
+              <div class="form-field form-field--full"><label class="form-lbl" for="message">Décrivez votre projet</label><textarea class="form-txt" id="message" name="message" placeholder="Dimensions, style, délai, localisation…"></textarea></div>
+            </div>
+            <button type="submit" class="form-submit">Envoyer ma demande</button>
+            <div class="form-success" id="formSuccess" role="status" aria-live="polite">✓ Message bien reçu — nous vous recontactons sous 24h.</div>
+            <div class="form-error" id="formError" role="status" aria-live="polite">Une erreur est survenue. Réessayez ou appelez le 0475 39 99 09.</div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ── LIGHTBOX (Réalisations) ── -->
+<div class="lb" id="lightbox" role="dialog" aria-modal="true" aria-label="Aperçu de la réalisation" aria-hidden="true">
+  <button class="lb__close" id="lbClose" type="button" aria-label="Fermer">
+    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" aria-hidden="true"><path d="M2 2 L12 12 M12 2 L2 12"/></svg>
+  </button>
+  <div class="lb__stage">
+    <img class="lb__img" id="lbImg" src="" alt="" />
+    <div class="lb__caption">
+      <span class="lb__num" id="lbNum">01 / 16</span>
+      <span class="lb__title" id="lbTitle">—</span>
+    </div>
+  </div>
+  <div class="lb__nav">
+    <button class="lb__btn" id="lbPrev" type="button" aria-label="Précédent">
+      <svg width="14" height="10" viewBox="0 0 14 10" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13.5 5 H1 M5 1 L1 5 L5 9"/></svg>
+    </button>
+    <button class="lb__btn" id="lbNext" type="button" aria-label="Suivant">
+      <svg width="14" height="10" viewBox="0 0 14 10" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M0.5 5 H13 M9 1 L13 5 L9 9"/></svg>
+    </button>
+  </div>
+</div>
+
+<!-- ── FOOTER ── -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">LRMJ Project</div>
+        <p class="footer-desc">Artisan ferronnier sur mesure en Belgique. Portails, garde-corps, serres, marquises.</p>
+      </div>
+      <div>
+        <p class="footer-hdg">Navigation</p>
+        <ul class="footer-links" role="list">
+          <li><a href="#realisations">Réalisations</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">À Propos</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-hdg">Services</p>
+        <ul class="footer-links" role="list">
+          <li><a href="#services">Portails</a></li>
+          <li><a href="#services">Garde-corps</a></li>
+          <li><a href="#services">Serres</a></li>
+          <li><a href="#services">Marquises</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-hdg">Contact</p>
+        <ul class="footer-links" role="list">
+          <li><a href="tel:0475399909">0475 39 99 09</a></li>
+          <li><a href="mailto:contact@lrmjproject.be">contact@lrmjproject.be</a></li>
+          <li>Lun – Sam · 8h–18h</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-btm">
+      <p class="footer-copy">© <span id="footYear">2025</span> LRMJ Project ·
+        <button type="button" class="footer-link-btn" data-open-legal="mentions">Mentions légales</button> ·
+        <button type="button" class="footer-link-btn" data-open-legal="privacy">Confidentialité</button>
+      </p>
+      <p class="footer-copy">Ferronnerie artisanale · Belgique</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ── COOKIE BANNER (GDPR) ── -->
+<div class="cookie-banner" id="cookieBanner" role="dialog" aria-labelledby="cookieTitle" aria-describedby="cookieText" hidden>
+  <h2 class="cookie-banner__title" id="cookieTitle">Vos cookies</h2>
+  <p class="cookie-banner__text" id="cookieText">
+    Nous utilisons uniquement des cookies <strong>strictement nécessaires</strong> au fonctionnement du site
+    (préférence thème, mémoire de session). Aucun traceur publicitaire, aucune revente de données.
+    <button type="button" class="footer-link-btn" data-open-legal="privacy">En savoir plus</button>
+  </p>
+  <div class="cookie-banner__actions">
+    <button type="button" class="cookie-banner__btn cookie-banner__btn--accept" id="cookieAccept">J'ai compris</button>
+    <button type="button" class="cookie-banner__btn cookie-banner__btn--decline" id="cookieDecline">Refuser tout</button>
+  </div>
+</div>
+
+<!-- ── MODAL MENTIONS LÉGALES ── -->
+<div class="modal-legal" id="modalMentions" role="dialog" aria-modal="true" aria-labelledby="mentionsTitle" aria-hidden="true">
+  <div class="modal-legal__panel" role="document">
+    <button type="button" class="modal-legal__close" data-close-legal aria-label="Fermer">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" aria-hidden="true"><path d="M2 2 L12 12 M12 2 L2 12"/></svg>
+    </button>
+    <span class="modal-legal__eyebrow">Légal</span>
+    <h3 class="modal-legal__title" id="mentionsTitle">Mentions légales</h3>
+    <div class="modal-legal__body">
+      <h4>Éditeur du site</h4>
+      <p>
+        <strong>LRMJ Project</strong><br>
+        Artisan ferronnier — Belgique<br>
+        Atelier : Opwijk, Vlaams-Brabant<br>
+        Téléphone : <a href="tel:0475399909">+32 475 39 99 09</a><br>
+        Email : <a href="mailto:contact@lrmjproject.be">contact@lrmjproject.be</a>
+      </p>
+      <p>Numéro d'entreprise (BCE / TVA) : <strong>BE 0000.000.000</strong> <em>(à remplacer)</em></p>
+
+      <h4>Directeur de la publication</h4>
+      <p>Romeo — gérant de LRMJ Project.</p>
+
+      <h4>Hébergement</h4>
+      <p>Le site est hébergé par <strong>Cloudflare Pages</strong> (Cloudflare, Inc., 101 Townsend St., San Francisco, CA 94107, USA). Les médias (photos, vidéos) sont distribués via <strong>Cloudinary</strong>.</p>
+
+      <h4>Propriété intellectuelle</h4>
+      <p>L'ensemble du site (textes, photographies, logo, charte graphique) est la propriété exclusive de LRMJ Project, sauf mention contraire. Toute reproduction, même partielle, sans autorisation écrite préalable est interdite.</p>
+
+      <h4>Limitation de responsabilité</h4>
+      <p>Les informations affichées sur ce site sont fournies à titre indicatif. LRMJ Project ne saurait être tenu responsable d'éventuelles erreurs ou omissions. Les visuels et descriptions de réalisations sont propres à chaque projet et ne constituent pas un engagement contractuel.</p>
+
+      <h4>Litiges</h4>
+      <p>Le présent site est régi par le droit belge. En cas de litige, les tribunaux belges sont seuls compétents.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ── MODAL CONFIDENTIALITÉ ── -->
+<div class="modal-legal" id="modalPrivacy" role="dialog" aria-modal="true" aria-labelledby="privacyTitle" aria-hidden="true">
+  <div class="modal-legal__panel" role="document">
+    <button type="button" class="modal-legal__close" data-close-legal aria-label="Fermer">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" aria-hidden="true"><path d="M2 2 L12 12 M12 2 L2 12"/></svg>
+    </button>
+    <span class="modal-legal__eyebrow">Légal</span>
+    <h3 class="modal-legal__title" id="privacyTitle">Politique de confidentialité</h3>
+    <div class="modal-legal__body">
+      <h4>Données personnelles collectées</h4>
+      <p>Seuls les champs que vous remplissez volontairement dans le formulaire de contact (nom, email, téléphone, message, type de projet) sont collectés. Ils servent <strong>uniquement</strong> à vous recontacter au sujet de votre demande.</p>
+
+      <h4>Conservation</h4>
+      <p>Vos données sont conservées le temps strictement nécessaire au traitement de votre demande, puis archivées ou supprimées sous 24 mois maximum.</p>
+
+      <h4>Partage avec des tiers</h4>
+      <p>Vos données ne sont jamais vendues, louées ni cédées à des tiers à des fins commerciales. Elles sont uniquement traitées par LRMJ Project et son prestataire d'envoi de formulaire.</p>
+
+      <h4>Cookies utilisés</h4>
+      <ul>
+        <li><strong>Cookies strictement nécessaires</strong> : préférence de thème (clair/sombre), validation du bandeau cookies. Pas de tracking.</li>
+        <li><strong>Pas de cookies tiers publicitaires</strong>, pas de pixels Facebook ou Google Ads.</li>
+      </ul>
+      <p>Vous pouvez à tout moment supprimer ces cookies depuis les paramètres de votre navigateur.</p>
+
+      <h4>Vos droits (RGPD)</h4>
+      <p>Conformément au Règlement Général sur la Protection des Données, vous disposez d'un droit d'accès, de rectification, d'effacement, d'opposition et de portabilité sur vos données. Pour exercer ces droits, contactez-nous à <a href="mailto:contact@lrmjproject.be">contact@lrmjproject.be</a>.</p>
+
+      <h4>Autorité de contrôle</h4>
+      <p>En cas de litige non résolu, vous pouvez saisir l'Autorité de protection des données belge : <a href="https://www.autoriteprotectiondonnees.be" rel="noopener">autoriteprotectiondonnees.be</a>.</p>
+    </div>
+  </div>
+</div>
+
+  <script>
+    'use strict';
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      /* ==================================================================
+         THEME — toggle light / dark + persist localStorage
+         (l'initialisation au load est faite par le snippet anti-FOUC en <head>)
+         ================================================================== */
+      {
+        const toggle = document.getElementById('themeToggle');
+        if (toggle) {
+          toggle.addEventListener('click', () => {
+            const html = document.documentElement;
+            const current = html.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+            const next = current === 'dark' ? 'light' : 'dark';
+            if (next === 'dark') html.setAttribute('data-theme', 'dark');
+            else                  html.removeAttribute('data-theme');
+            try { localStorage.setItem('lrmj-theme', next); } catch (_) {}
+          });
+        }
+      }
+
+      /* ==================================================================
+         NAV — scroll state + mobile menu + scroll progress
+         ================================================================== */
+      {
+        const nav = document.getElementById('siteNav');
+        const progress = nav ? nav.querySelector('.nav__progress') : null;
+
+        // Throttle via rAF
+        let ticking = false;
+        const updateNav = () => {
+          const y = window.scrollY;
+          nav.classList.toggle('nav--solid', y > 40);
+          if (progress) {
+            const max = document.documentElement.scrollHeight - window.innerHeight;
+            const pct = max > 0 ? Math.min((y / max) * 100, 100) : 0;
+            nav.style.setProperty('--scroll-pct', pct.toFixed(1) + '%');
+          }
+          ticking = false;
+        };
+        const onScroll = () => {
+          if (!ticking) {
+            requestAnimationFrame(updateNav);
+            ticking = true;
+          }
+        };
+        updateNav();
+        window.addEventListener('scroll', onScroll, { passive: true });
+
+        const hamburger  = document.getElementById('navHamburger');
+        const mobileMenu = document.getElementById('navMobile');
+        if (hamburger && mobileMenu) {
+          const closeMenu = () => {
+            mobileMenu.hidden = true;
+            hamburger.setAttribute('aria-expanded', 'false');
+            document.body.style.overflow = '';
+          };
+          const openMenu = () => {
+            mobileMenu.hidden = false;
+            hamburger.setAttribute('aria-expanded', 'true');
+            document.body.style.overflow = 'hidden';
+          };
+          hamburger.addEventListener('click', () => {
+            hamburger.getAttribute('aria-expanded') === 'true' ? closeMenu() : openMenu();
+          });
+          mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
+          document.addEventListener('keydown', e => {
+            if (e.key === 'Escape' && !mobileMenu.hidden) closeMenu();
+          });
+        }
+      }
+
+      /* ==================================================================
+         SMOOTH SCROLL ancres
+         ================================================================== */
+      document.querySelectorAll('a[href^="#"]').forEach(a => {
+        a.addEventListener('click', function(e) {
+          const id = this.getAttribute('href');
+          if (!id || id.length < 2) return;
+          const t = document.querySelector(id);
+          if (!t) return;
+          e.preventDefault();
+          t.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth', block: 'start' });
+        });
+      });
+
+      /* ==================================================================
+         SPLIT-TEXT — Découpe chaque H2 (.h-large) en mots animables
+         Chaque mot est wrappé dans .word > span (CSS gère la translation).
+         Préserve les <em>, <br>, les espaces typographiques (&nbsp;).
+         ================================================================== */
+      {
+        const splitInto = (el) => {
+          if (el.dataset.split === '1') return;
+          el.dataset.split = '1';
+
+          // Parcours récursif : on visite chaque text node et on découpe par mots,
+          // on garde les balises (em, br) intactes.
+          const out = document.createDocumentFragment();
+          const visit = (node, parent) => {
+            node.childNodes.forEach(child => {
+              if (child.nodeType === Node.TEXT_NODE) {
+                const text = child.nodeValue;
+                // découpe en tokens : mots et espaces séparés
+                const tokens = text.split(/(\s+)/);
+                tokens.forEach(tok => {
+                  if (tok === '') return;
+                  if (/^\s+$/.test(tok)) {
+                    parent.appendChild(document.createTextNode(tok));
+                  } else {
+                    const wrap = document.createElement('span');
+                    wrap.className = 'word';
+                    const inner = document.createElement('span');
+                    inner.textContent = tok;
+                    wrap.appendChild(inner);
+                    parent.appendChild(wrap);
+                  }
+                });
+              } else if (child.nodeName === 'BR') {
+                parent.appendChild(child.cloneNode());
+              } else {
+                // élément (em, etc.) : on clone l'élément et on récursive dedans
+                const clone = child.cloneNode(false);
+                visit(child, clone);
+                parent.appendChild(clone);
+              }
+            });
+          };
+          visit(el, out);
+          el.innerHTML = '';
+          el.appendChild(out);
+
+          // Stagger via inline transition-delay (chaque .word > span)
+          const inners = el.querySelectorAll('.word > span');
+          inners.forEach((sp, i) => {
+            sp.style.transitionDelay = (i * 0.07).toFixed(2) + 's';
+          });
+        };
+
+        if (!reduced) {
+          document.querySelectorAll('.h-large').forEach(splitInto);
+        }
+      }
+
+      /* ==================================================================
+         FADE-IN observer (.fi -> .is-in)
+         L'état initial est en CSS sous html.js. Le JS ne fait que flip.
+         ================================================================== */
+      {
+        const items = document.querySelectorAll('.fi');
+        if (reduced || !('IntersectionObserver' in window)) {
+          items.forEach(el => el.classList.add('is-in'));
+        } else {
+          const io = new IntersectionObserver(entries => {
+            entries.forEach(e => {
+              if (e.isIntersecting) {
+                e.target.classList.add('is-in');
+                io.unobserve(e.target);
+              }
+            });
+          }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+          items.forEach(el => io.observe(el));
+        }
+      }
+
+      /* ==================================================================
+         PROCESSUS — Rail SVG qui se dessine progressivement
+         Chaque step qui entre en vue incrémente data-progress sur le parent,
+         ce qui révèle le rail rouge par tranches de 25%.
+         ================================================================== */
+      {
+        const timeline = document.querySelector('.proc-timeline');
+        if (timeline && !reduced && 'IntersectionObserver' in window) {
+          const steps = timeline.querySelectorAll('.proc-step');
+          let progress = 0;
+          const obs = new IntersectionObserver(entries => {
+            entries.forEach(e => {
+              if (e.isIntersecting) {
+                progress++;
+                timeline.setAttribute('data-progress', String(progress));
+                obs.unobserve(e.target);
+              }
+            });
+          }, { threshold: 0.35, rootMargin: '0px 0px -10% 0px' });
+          steps.forEach(s => obs.observe(s));
+        } else if (timeline) {
+          // Reduced motion ou pas d'IO : rail plein direct
+          timeline.setAttribute('data-progress', '4');
+        }
+      }
+
+      /* ==================================================================
+         COUNTERS — Animation 0 → target sur les chiffres "À Propos"
+         (durée fixe 1.6s, ease-out, déclenché à l'entrée en vue)
+         ================================================================== */
+      {
+        const counters = document.querySelectorAll('.counter[data-target]');
+        if (counters.length) {
+          const easeOut = t => 1 - Math.pow(1 - t, 3);
+          const animate = (el) => {
+            const target = parseInt(el.dataset.target, 10) || 0;
+            const prefix = el.dataset.prefix || '';
+            const suffix = el.dataset.suffix || '';
+            const duration = 1600;
+            const start = performance.now();
+            const step = (now) => {
+              const t = Math.min((now - start) / duration, 1);
+              const val = Math.round(easeOut(t) * target);
+              el.textContent = prefix + val + suffix;
+              if (t < 1) requestAnimationFrame(step);
+            };
+            requestAnimationFrame(step);
+          };
+          if (reduced || !('IntersectionObserver' in window)) {
+            // Reduced motion : afficher directement la valeur finale
+            counters.forEach(el => {
+              const t = parseInt(el.dataset.target, 10) || 0;
+              el.textContent = (el.dataset.prefix || '') + t + (el.dataset.suffix || '');
+            });
+          } else {
+            // Au load : remettre à 0 puis observer
+            counters.forEach(el => { el.textContent = (el.dataset.prefix || '') + '0' + (el.dataset.suffix || ''); });
+            const obs = new IntersectionObserver(entries => {
+              entries.forEach(e => {
+                if (e.isIntersecting) {
+                  animate(e.target);
+                  obs.unobserve(e.target);
+                }
+              });
+            }, { threshold: 0.5 });
+            counters.forEach(el => obs.observe(el));
+          }
+        }
+      }
+
+      /* ==================================================================
+         ASSET MANAGEMENT — CLOUDINARY (FREE TIER, ZÉRO BACKEND)
+         ------------------------------------------------------------------
+         Objectif : Romeo (artisan, peu technique) doit pouvoir
+         ajouter / retirer / réordonner ses photos en autonomie totale,
+         sans intervention dev, gratuitement.
+
+         SOLUTION : Cloudinary free tier
+           · 25 GB stockage + 25 GB bande passante/mois
+           · q_auto + f_auto = compression & format auto (AVIF/WebP)
+           · Endpoint public "image/list/{tag}.json" : liste les ressources
+             d'un tag SANS clé API ni backend (parfait pour site statique)
+
+         WORKFLOW ROMEO (3 étapes) :
+           1. cloudinary.com → Media Library → "Upload"
+           2. Glisser la photo, la renommer avec le titre voulu
+              ex. public_id : "Portail monogramme"
+           3. Ajouter le tag "lrmj-realisation" → Save. En ligne au reload.
+
+         PRÉREQUIS COMPTE (une fois au delivery) :
+           Cloudinary → Settings → Security → décocher "Resource list"
+           dans "Restricted media types" (sinon /list/ renvoie 404).
+
+         ACTIVATION EN PROD :
+           1. Renseigner cloudName ci-dessous
+           2. Au reload, les photos remplacent les placeholders Pexels
+           Si non configuré ou injoignable → fallback HTML statique conservé.
+         ================================================================== */
+      const CLOUDINARY = {
+        cloudName: '',                             // ← à remplir au delivery
+        tag:       'lrmj-realisation',             // tag attendu sur les uploads
+      };
+
+      const cldUrl = (publicId, version, format, w) =>
+        `https://res.cloudinary.com/${CLOUDINARY.cloudName}/image/upload`
+        + `/q_auto,f_auto,c_limit,w_${w}/v${version}/${publicId}.${format}`;
+
+      // Génère un srcset responsive : 4 tailles couvrant mobile→desktop→retina
+      const cldSrcset = (publicId, version, format) =>
+        [400, 800, 1200, 1600]
+          .map(w => `${cldUrl(publicId, version, format, w)} ${w}w`)
+          .join(', ');
+
+      const parseCldResource = (r) => {
+        const file  = r.public_id.split('/').pop();
+        const title = file.replace(/[_-]+/g, ' ').trim();
+        return {
+          title,
+          src:    cldUrl(r.public_id, r.version, r.format, 800),
+          srcHd:  cldUrl(r.public_id, r.version, r.format, 1600),
+          srcset: cldSrcset(r.public_id, r.version, r.format),
+        };
+      };
+
+      /* ==================================================================
+         RÉALISATIONS — load more + lightbox + injection Cloudinary
+         ================================================================== */
+      {
+        const grid     = document.getElementById('masonryGrid');
+        const loadBtn  = document.getElementById('loadMoreBtn');
+
+        const lb       = document.getElementById('lightbox');
+        const lbImg    = document.getElementById('lbImg');
+        const lbTitle  = document.getElementById('lbTitle');
+        const lbNum    = document.getElementById('lbNum');
+        const lbClose  = document.getElementById('lbClose');
+        const lbPrev   = document.getElementById('lbPrev');
+        const lbNext   = document.getElementById('lbNext');
+
+        let items = [];     // [{ src, srcHd, title }, ...]  recalculé à chaque bind
+        let idx = 0;
+        let lastFocus = null;
+
+        const collectItems = () => {
+          items = Array.from(grid.querySelectorAll('.masonry-item:not(.hidden)')).map(el => {
+            const img = el.querySelector('img');
+            const lbl = el.querySelector('.masonry-item__label');
+            return {
+              src:   img ? img.src : '',
+              srcHd: el.getAttribute('data-img-hd') || (img ? img.src : ''),
+              title: lbl ? lbl.textContent.trim() : (img ? img.alt : ''),
+              el,
+            };
+          });
+        };
+
+        const fillLightbox = (i) => {
+          const item = items[i];
+          if (!item) return;
+          lbImg.classList.add('is-swap');
+          const preload = new Image();
+          preload.onload = () => {
+            lbImg.src = item.srcHd;
+            lbImg.alt = item.title;
+            requestAnimationFrame(() => lbImg.classList.remove('is-swap'));
+          };
+          preload.onerror = () => {
+            lbImg.src = item.src;
+            lbImg.alt = item.title;
+            lbImg.classList.remove('is-swap');
+          };
+          preload.src = item.srcHd;
+          lbTitle.textContent = item.title;
+          lbNum.textContent = `${String(i + 1).padStart(2, '0')} / ${String(items.length).padStart(2, '0')}`;
+        };
+
+        const openLb = (i) => {
+          collectItems();
+          if (!items.length) return;
+          idx = i;
+          lastFocus = document.activeElement;
+          fillLightbox(idx);
+          lb.setAttribute('aria-hidden', 'false');
+          document.body.style.overflow = 'hidden';
+          setTimeout(() => lbClose.focus(), 150);
+        };
+        const closeLb = () => {
+          lb.setAttribute('aria-hidden', 'true');
+          document.body.style.overflow = '';
+          if (lastFocus && lastFocus.focus) lastFocus.focus();
+        };
+        const next = () => { idx = (idx + 1) % items.length; fillLightbox(idx); };
+        const prev = () => { idx = (idx - 1 + items.length) % items.length; fillLightbox(idx); };
+
+        const bindItemClicks = () => {
+          grid.querySelectorAll('.masonry-item').forEach(it => {
+            if (it.dataset.bound) return;
+            it.dataset.bound = '1';
+            it.tabIndex = 0;
+            it.setAttribute('role', 'button');
+            it.setAttribute('aria-label', 'Ouvrir l\'aperçu');
+            it.addEventListener('click', () => {
+              collectItems();
+              const i = items.findIndex(x => x.el === it);
+              if (i >= 0) openLb(i);
+            });
+            it.addEventListener('keydown', (e) => {
+              if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                collectItems();
+                const i = items.findIndex(x => x.el === it);
+                if (i >= 0) openLb(i);
+              }
+            });
+          });
+        };
+
+        // Cloudinary : remplace le HTML statique si configuré, sinon garde le fallback
+        const cardHtml = (p, i) => {
+          // On garde 8 visibles puis hidden après — pattern existant du template
+          const cls = i >= 8 ? 'masonry-item hidden' : 'masonry-item fi';
+          return `<div class="${cls}" role="listitem" data-img-hd="${p.srcHd}">
+            <img src="${p.src}" srcset="${p.srcset}"
+                 sizes="(max-width: 640px) 100vw, (max-width: 1100px) 50vw, 33vw"
+                 alt="${p.title}"
+                 width="1024" height="1280"
+                 loading="lazy" decoding="async"/>
+            <div class="masonry-item__label">${p.title}</div>
+          </div>`;
+        };
+
+        const loadCloudinary = async () => {
+          if (!CLOUDINARY.cloudName) return; // pas encore configuré → fallback
+          const url = `https://res.cloudinary.com/${CLOUDINARY.cloudName}/image/list/${CLOUDINARY.tag}.json`;
+          try {
+            const res = await fetch(url, { cache: 'no-store' });
+            if (!res.ok) throw new Error(`Cloudinary list ${res.status}`);
+            const { resources = [] } = await res.json();
+            if (!resources.length) return;
+            resources.sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
+            grid.innerHTML = resources.map((r, i) => cardHtml(parseCldResource(r), i)).join('');
+            bindItemClicks();
+            // Re-trigger fade-in observer sur les nouveaux .fi
+            grid.querySelectorAll('.fi:not(.is-in)').forEach(el => el.classList.add('is-in'));
+          } catch (err) {
+            console.warn('[LRMJ] Cloudinary injoignable — fallback HTML statique.', err);
+          }
+        };
+
+        // Init
+        bindItemClicks();
+        loadCloudinary();
+
+        // Load more (réalisations cachées → visibles, par lots de 8)
+        if (loadBtn) {
+          loadBtn.addEventListener('click', () => {
+            const hidden = [...grid.querySelectorAll('.masonry-item.hidden')].slice(0, 8);
+            hidden.forEach((item, i) => {
+              item.classList.remove('hidden');
+              setTimeout(() => item.classList.add('reveal'), i * 55);
+            });
+            // (Re)bind les nouveaux items rendus visibles
+            bindItemClicks();
+            if (!grid.querySelector('.masonry-item.hidden')) {
+              loadBtn.classList.add('done');
+              loadBtn.textContent = 'Toutes les réalisations affichées';
+            }
+          });
+        }
+
+        // Lightbox controls
+        lbClose.addEventListener('click', closeLb);
+        lbNext .addEventListener('click', next);
+        lbPrev .addEventListener('click', prev);
+        lb.addEventListener('click', e => { if (e.target === lb) closeLb(); });
+        document.addEventListener('keydown', e => {
+          if (lb.getAttribute('aria-hidden') !== 'false') return;
+          if (e.key === 'Escape')           { e.preventDefault(); closeLb(); }
+          else if (e.key === 'ArrowRight')  { e.preventDefault(); next();    }
+          else if (e.key === 'ArrowLeft')   { e.preventDefault(); prev();    }
+        });
+      }
+
+      /* ==================================================================
+         TÉMOIGNAGES — Google Reviews (Places API New) + carrousel statique
+         ------------------------------------------------------------------
+         Philosophie : zéro maintenance pour Romeo, ses avis Google Business
+         remontent automatiquement, toujours à jour.
+
+         SETUP (une fois, au delivery) :
+           1. console.cloud.google.com → projet → activer "Places API (New)"
+           2. Créer une clé API → RESTREINDRE :
+              · Application : HTTP referrers → lrmjproject.be/*
+              · API : limiter à "Places API (New)"
+              (la restriction referrer rend la clé safe en clair côté client)
+           3. Récupérer le PLACE ID de la fiche LRMJ Google Business :
+              developers.google.com/maps/documentation/places/web-service/place-id
+           4. Renseigner apiKey + placeId ci-dessous
+
+         QUOTA : Places API (New) Essentials inclut un large volume gratuit
+         mensuel. On cache la réponse en sessionStorage (1 appel/session).
+
+         LIMITE GOOGLE : l'API renvoie au max 5 avis (les plus pertinents).
+         FALLBACK : si non configuré ou injoignable, on garde les 3 cards
+         placeholder telles quelles.
+         ================================================================== */
+      {
+        const GOOGLE_REVIEWS = {
+          apiKey:  '',                                                    // ← à remplir
+          placeId: '',                                                    // ← à remplir
+        };
+
+        const testiGrid = document.getElementById('testiGrid');
+        if (testiGrid && GOOGLE_REVIEWS.apiKey && GOOGLE_REVIEWS.placeId) {
+
+          const STARS_SVG = `<svg width="72" height="11" viewBox="0 0 72 11" fill="none" aria-hidden="true">
+              <path d="M5.5 1l1.2 3.7H10L7.3 6.8l1.2 3.7L5.5 8.6 2.5 10.5l1.2-3.7L1 4.7h3.3L5.5 1z" fill="#d94f3b"/>
+              <path d="M20 1l1.2 3.7H25l-2.7 2.1 1.2 3.7L20 8.6 17 10.5l1.2-3.7-2.7-2.1H19L20 1z" fill="#d94f3b"/>
+              <path d="M34.5 1l1.2 3.7H39l-2.7 2.1 1.2 3.7-2.9-1.9-3 1.9 1.2-3.7-2.7-2.1h3.3L34.5 1z" fill="#d94f3b"/>
+              <path d="M49 1l1.2 3.7H54l-2.7 2.1 1.2 3.7L49 8.6 46 10.5l1.2-3.7-2.7-2.1h3.3L49 1z" fill="#d94f3b"/>
+              <path d="M63.5 1l1.2 3.7H68l-2.7 2.1 1.2 3.7-2.9-1.9-3 1.9 1.2-3.7-2.7-2.1h3.3L63.5 1z" fill="#d94f3b"/>
+            </svg>`;
+
+          const escape = (s) => String(s || '').replace(/[&<>"']/g, c => ({
+            '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'
+          })[c]);
+
+          const cardHtml = (r) => {
+            const initial = (r.author || '?').trim().charAt(0).toUpperCase();
+            return `<div class="testi-card fi is-in">
+              <div class="testi-stars" aria-label="5 étoiles">${STARS_SVG}</div>
+              <blockquote class="testi-quote">${escape(r.text)}</blockquote>
+              <div class="testi-author">
+                <div class="testi-av" aria-hidden="true">${escape(initial)}</div>
+                <div>
+                  <div class="testi-name">${escape(r.author)}</div>
+                  <div class="testi-loc">${escape(r.when || 'Avis Google')}</div>
+                </div>
+              </div>
+            </div>`;
+          };
+
+          const relTime = (iso) => {
+            const sec = (Date.now() - Date.parse(iso)) / 1000;
+            const days = Math.floor(sec / 86400);
+            if (days < 30)  return 'récemment';
+            if (days < 365) return `il y a ${Math.max(1, Math.round(days / 30))} mois`;
+            return `il y a ${Math.round(days / 365)} an${days >= 730 ? 's' : ''}`;
+          };
+
+          const applyReviews = (data) => {
+            const list = (data.reviews || [])
+              .filter(r => r.text && (r.text.text || '').trim().length > 0)
+              .slice(0, 3)
+              .map(r => ({
+                text:   r.text.text.trim(),
+                author: (r.authorAttribution && r.authorAttribution.displayName) || 'Client Google',
+                when:   r.publishTime ? relTime(r.publishTime) : '',
+              }));
+            if (list.length < 3) return; // garde le fallback si moins de 3 avis
+            testiGrid.innerHTML = list.map(cardHtml).join('');
+          };
+
+          const fetchReviews = async () => {
+            const cacheKey = 'lrmj_greviews';
+            try {
+              const cached = sessionStorage.getItem(cacheKey);
+              if (cached) { applyReviews(JSON.parse(cached)); return; }
+            } catch (_) {}
+            try {
+              const res = await fetch(
+                `https://places.googleapis.com/v1/places/${GOOGLE_REVIEWS.placeId}`,
+                {
+                  headers: {
+                    'X-Goog-Api-Key': GOOGLE_REVIEWS.apiKey,
+                    'X-Goog-FieldMask': 'reviews,rating,userRatingCount',
+                  },
+                }
+              );
+              if (!res.ok) throw new Error(`Places API ${res.status}`);
+              const data = await res.json();
+              try { sessionStorage.setItem(cacheKey, JSON.stringify(data)); } catch (_) {}
+              applyReviews(data);
+            } catch (err) {
+              console.warn('[LRMJ] Google Reviews injoignable — fallback placeholders.', err);
+            }
+          };
+
+          fetchReviews();
+        }
+      }
+
+      /* ==================================================================
+         CONTACT — Web3Forms (AJAX, zéro backend)
+         ------------------------------------------------------------------
+         Web3Forms : service gratuit illimité, pas de compte serveur.
+
+         SETUP (une fois, au delivery) :
+           1. web3forms.com → entrer l'email de Romeo → recevoir l'access key
+           2. Coller la clé dans WEB3FORMS_KEY ci-dessous
+           (la clé est publique par design : elle ne fait QUE router un
+            envoi vers l'email de Romeo, aucun risque de fuite)
+
+         Tant que la clé est vide : mode démo (simule un succès sans envoi).
+         Honeypot anti-spam (champ botcheck) + validation native + UX inline.
+         ================================================================== */
+      {
+        const WEB3FORMS_KEY = '';   // ← access key Web3Forms (à remplir au delivery)
+
+        const form    = document.getElementById('contactForm');
+        const keyInp  = document.getElementById('formAccessKey');
+        const submit  = form ? form.querySelector('.form-submit') : null;
+        const okEl    = document.getElementById('formSuccess');
+        const errEl   = document.getElementById('formError');
+
+        if (form && submit) {
+          keyInp.value = WEB3FORMS_KEY;
+          const originalLabel = submit.textContent;
+
+          const showOk = (msg) => {
+            if (errEl) errEl.classList.remove('visible');
+            if (okEl)  {
+              if (msg) okEl.textContent = msg;
+              okEl.classList.add('visible');
+            }
+          };
+          const showErr = (msg) => {
+            if (okEl)  okEl.classList.remove('visible');
+            if (errEl) {
+              if (msg) errEl.textContent = msg;
+              errEl.classList.add('visible');
+            }
+          };
+
+          form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            // Validation native
+            if (!form.checkValidity()) {
+              form.reportValidity();
+              return;
+            }
+            // Honeypot : si rempli = bot, on ignore silencieusement
+            const honeypot = form.querySelector('[name="botcheck"]');
+            if (honeypot && honeypot.checked) return;
+
+            submit.disabled = true;
+            submit.textContent = 'Envoi…';
+            if (okEl)  okEl.classList.remove('visible');
+            if (errEl) errEl.classList.remove('visible');
+
+            // MODE DÉMO (clé non configurée) — simule un succès pour la preview
+            if (!WEB3FORMS_KEY) {
+              setTimeout(() => {
+                showOk('✓ Mode démo — formulaire non connecté (renseigner la clé Web3Forms au delivery).');
+                form.reset();
+                submit.disabled = false;
+                submit.textContent = originalLabel;
+              }, 700);
+              return;
+            }
+
+            // ENVOI RÉEL
+            try {
+              const res = await fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                headers: { 'Accept': 'application/json' },
+                body: new FormData(form),
+              });
+              const data = await res.json();
+              if (data.success) {
+                showOk('✓ Message bien reçu — nous vous recontactons sous 24h.');
+                form.reset();
+              } else {
+                showErr("L'envoi a échoué. Réessayez ou appelez le 0475 39 99 09.");
+              }
+            } catch (_) {
+              showErr('Problème réseau. Réessayez ou appelez le 0475 39 99 09.');
+            } finally {
+              submit.disabled = false;
+              submit.textContent = originalLabel;
+            }
+          });
+        }
+      }
+
+      /* ==================================================================
+         FOOTER YEAR — auto-update
+         ================================================================== */
+      {
+        const yEl = document.getElementById('footYear');
+        if (yEl) yEl.textContent = new Date().getFullYear();
+      }
+
+      /* ==================================================================
+         COOKIE BANNER — GDPR minimaliste, persist localStorage
+         ================================================================== */
+      {
+        const banner = document.getElementById('cookieBanner');
+        const KEY = 'lrmj-cookies';
+        let stored;
+        try { stored = localStorage.getItem(KEY); } catch (_) { stored = null; }
+
+        if (banner && !stored) {
+          // Délai sympathique : on n'agresse pas immédiatement
+          banner.hidden = false;
+          setTimeout(() => banner.classList.add('visible'), 800);
+
+          const close = (choice) => {
+            banner.classList.remove('visible');
+            setTimeout(() => { banner.hidden = true; }, 420);
+            try { localStorage.setItem(KEY, choice); } catch (_) {}
+          };
+          document.getElementById('cookieAccept')?.addEventListener('click', () => close('accepted'));
+          document.getElementById('cookieDecline')?.addEventListener('click', () => close('declined'));
+        }
+      }
+
+      /* ==================================================================
+         MODALS LÉGAUX — Mentions / Confidentialité (focus management + ESC)
+         ================================================================== */
+      {
+        const modalById = { mentions: 'modalMentions', privacy: 'modalPrivacy' };
+        let lastFocus = null;
+        let currentModal = null;
+
+        const open = (modalKey) => {
+          const id = modalById[modalKey];
+          if (!id) return;
+          const modal = document.getElementById(id);
+          if (!modal) return;
+          lastFocus = document.activeElement;
+          currentModal = modal;
+          modal.setAttribute('aria-hidden', 'false');
+          document.body.style.overflow = 'hidden';
+          // Focus sur le close button après l'animation
+          setTimeout(() => modal.querySelector('.modal-legal__close')?.focus(), 150);
+        };
+        const close = () => {
+          if (!currentModal) return;
+          currentModal.setAttribute('aria-hidden', 'true');
+          document.body.style.overflow = '';
+          if (lastFocus && lastFocus.focus) lastFocus.focus();
+          currentModal = null;
+        };
+
+        document.querySelectorAll('[data-open-legal]').forEach(btn => {
+          btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            open(btn.dataset.openLegal);
+          });
+        });
+        document.querySelectorAll('[data-close-legal]').forEach(btn => {
+          btn.addEventListener('click', close);
+        });
+        document.querySelectorAll('.modal-legal').forEach(modal => {
+          modal.addEventListener('click', (e) => {
+            if (e.target === modal) close();
+          });
+        });
+        document.addEventListener('keydown', (e) => {
+          if (e.key === 'Escape' && currentModal) close();
+        });
+      }
+
+    });
+  </script>
+</body>
+</html>
