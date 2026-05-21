@@ -321,61 +321,118 @@
   <section id="restauration" class="s s--dark resto" aria-labelledby="resto-title">
     <div class="wrap">
       <div class="resto__grid">
+
+        <!-- Colonne gauche : texte -->
         <div class="resto__content fi">
-          <span class="eyebrow">Spécialité rare</span>
+          <span class="eyebrow">Spécialité rare · Bruxelles</span>
           <h2 class="h-large" id="resto-title">Restauration des<br><em>balustrades en fonte</em></h2>
           <p class="lead" style="margin-top:.75rem;">
             Peu d'artisans maîtrisent encore la restauration de la fonte ancienne.
-            Romeo redonne vie à vos balustrades, rampes et éléments décoratifs d'époque —
-            nettoyage, soudure spécialisée, remplacement de pièces, traitement anticorrosion,
-            peinture à l'ancienne.
+            Romeo redonne vie à vos balustrades, rampes, garde-corps et éléments décoratifs d'époque —
+            nettoyage, soudure spécialisée, remplacement de pièces manquantes,
+            traitement anticorrosion et finition à l'ancienne.
           </p>
+
+          <!-- Travaux éligibles -->
+          <ul class="resto__works fi">
+            <li><span class="resto__works-ico" aria-hidden="true">✓</span>Nettoyage &amp; décapage de la fonte</li>
+            <li><span class="resto__works-ico" aria-hidden="true">✓</span>Soudure et remplacement de pièces</li>
+            <li><span class="resto__works-ico" aria-hidden="true">✓</span>Traitement anticorrosion &amp; peinture</li>
+            <li><span class="resto__works-ico" aria-hidden="true">✓</span>Garde-corps, balcons, consoles, moulures</li>
+          </ul>
+
+          <!-- Prime card -->
           <div class="resto__prime fi">
-            <div class="resto__prime-ico" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>
-              </svg>
+            <div class="resto__prime-header">
+              <img src="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_120/v1779405108/logo_vbx_ykxksr.png"
+                   alt="Ville de Bruxelles" width="60" height="40" loading="lazy" class="resto__prime-logo"/>
+              <div>
+                <p class="resto__prime-label">Prime officielle</p>
+                <p class="resto__prime-title">Prime Embellissement de Façade</p>
+              </div>
             </div>
-            <div>
-              <p class="resto__prime-title">Prime communale jusqu'à 40 %</p>
-              <p class="resto__prime-text">
-                De nombreuses communes belges accordent une prime pour la restauration du patrimoine architectural.
-                Selon votre commune, vous pouvez récupérer jusqu'à <strong>40 % du coût des travaux</strong>.
-                Renseignez-vous auprès de votre administration communale — nous vous accompagnons dans les démarches.
-              </p>
+            <p class="resto__prime-text">
+              La Ville de Bruxelles rembourse <strong>40 à 60 % du coût des travaux</strong>
+              de restauration de façade, dont les balcons, garde-corps et consoles en fonte —
+              jusqu'à <strong>€&nbsp;14&nbsp;000</strong> par dossier.
+              D'autres communes ont leur propre programme : renseignez-vous.
+            </p>
+            <div class="resto__prime-tiers">
+              <div class="resto__prime-tier">
+                <span class="resto__prime-pct">40 %</span>
+                <span class="resto__prime-facade">Façade ≤ 10 m</span>
+                <span class="resto__prime-max">max €&thinsp;6 000</span>
+              </div>
+              <div class="resto__prime-tier">
+                <span class="resto__prime-pct">50 %</span>
+                <span class="resto__prime-facade">Façade 10–20 m</span>
+                <span class="resto__prime-max">max €&thinsp;10 000</span>
+              </div>
+              <div class="resto__prime-tier resto__prime-tier--hi">
+                <span class="resto__prime-pct">60 %</span>
+                <span class="resto__prime-facade">Façade &gt; 20 m</span>
+                <span class="resto__prime-max">max €&thinsp;14 000</span>
+              </div>
             </div>
+            <a href="https://www.bruxelles.be/prime-facades"
+               target="_blank" rel="noopener noreferrer"
+               class="resto__prime-link">
+              Consulter la prime officielle →
+            </a>
           </div>
-          <a href="#contact" class="cta-pill cta-pill--outline" style="margin-top:2rem;display:inline-flex;">
+
+          <a href="#contact" class="cta-pill" style="margin-top:2rem;display:inline-flex;align-self:flex-start;">
             Demander un devis restauration →
           </a>
         </div>
-        <div class="resto__visual fi" aria-hidden="true">
-          <div class="resto__visual-deco">
-            <svg viewBox="0 0 200 400" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <!-- Balustrade stylisée -->
-              <rect x="10" y="10" width="8" height="380" rx="4" fill="currentColor" opacity=".15"/>
-              <rect x="182" y="10" width="8" height="380" rx="4" fill="currentColor" opacity=".15"/>
-              <rect x="10" y="10" width="180" height="6" rx="3" fill="currentColor" opacity=".3"/>
-              <rect x="10" y="384" width="180" height="6" rx="3" fill="currentColor" opacity=".3"/>
-              <circle cx="40" cy="50" r="10" fill="currentColor" opacity=".2"/>
-              <rect x="36" y="60" width="8" height="280" rx="4" fill="currentColor" opacity=".2"/>
-              <circle cx="40" cy="350" r="10" fill="currentColor" opacity=".2"/>
-              <circle cx="80" cy="50" r="10" fill="currentColor" opacity=".2"/>
-              <rect x="76" y="60" width="8" height="280" rx="4" fill="currentColor" opacity=".2"/>
-              <circle cx="80" cy="350" r="10" fill="currentColor" opacity=".2"/>
-              <circle cx="120" cy="50" r="10" fill="currentColor" opacity=".2"/>
-              <rect x="116" y="60" width="8" height="280" rx="4" fill="currentColor" opacity=".2"/>
-              <circle cx="120" cy="350" r="10" fill="currentColor" opacity=".2"/>
-              <circle cx="160" cy="50" r="10" fill="currentColor" opacity=".2"/>
-              <rect x="156" y="60" width="8" height="280" rx="4" fill="currentColor" opacity=".2"/>
-              <circle cx="160" cy="350" r="10" fill="currentColor" opacity=".2"/>
-            </svg>
-          </div>
+
+        <!-- Colonne droite : visuel -->
+        <div class="resto__visual fi">
           <blockquote class="resto__quote">
-            <p>« La fonte ancienne mérite une seconde vie.<br>C'est notre patrimoine. »</p>
+            <p>« La fonte ancienne mérite une seconde vie. C'est notre patrimoine. »</p>
             <cite>— Romeo, artisan ferronnier</cite>
           </blockquote>
+          <!-- Illustration balustrade stylisée -->
+          <div class="resto__visual-deco" aria-hidden="true">
+            <svg viewBox="0 0 260 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Rails -->
+              <rect x="0" y="18" width="260" height="10" rx="5" fill="currentColor" opacity=".4"/>
+              <rect x="0" y="392" width="260" height="10" rx="5" fill="currentColor" opacity=".4"/>
+              <!-- Montants ext -->
+              <rect x="0" y="18" width="10" height="384" rx="5" fill="currentColor" opacity=".35"/>
+              <rect x="250" y="18" width="10" height="384" rx="5" fill="currentColor" opacity=".35"/>
+              <!-- Balustres ornementaux x5 -->
+              <g opacity=".55">
+                <!-- Balustre 1 -->
+                <rect x="36" y="28" width="7" height="364" rx="3.5" fill="currentColor"/>
+                <ellipse cx="39.5" cy="28" rx="10" ry="6" fill="currentColor"/>
+                <ellipse cx="39.5" cy="392" rx="10" ry="6" fill="currentColor"/>
+                <ellipse cx="39.5" cy="210" rx="14" ry="18" fill="currentColor" opacity=".6"/>
+                <!-- Balustre 2 -->
+                <rect x="83" y="28" width="7" height="364" rx="3.5" fill="currentColor"/>
+                <ellipse cx="86.5" cy="28" rx="10" ry="6" fill="currentColor"/>
+                <ellipse cx="86.5" cy="392" rx="10" ry="6" fill="currentColor"/>
+                <ellipse cx="86.5" cy="210" rx="14" ry="18" fill="currentColor" opacity=".6"/>
+                <!-- Balustre 3 (centre, plus grand) -->
+                <rect x="126" y="18" width="8" height="384" rx="4" fill="currentColor"/>
+                <ellipse cx="130" cy="18" rx="13" ry="8" fill="currentColor"/>
+                <ellipse cx="130" cy="402" rx="13" ry="8" fill="currentColor"/>
+                <ellipse cx="130" cy="210" rx="18" ry="24" fill="currentColor" opacity=".7"/>
+                <!-- Balustre 4 -->
+                <rect x="170" y="28" width="7" height="364" rx="3.5" fill="currentColor"/>
+                <ellipse cx="173.5" cy="28" rx="10" ry="6" fill="currentColor"/>
+                <ellipse cx="173.5" cy="392" rx="10" ry="6" fill="currentColor"/>
+                <ellipse cx="173.5" cy="210" rx="14" ry="18" fill="currentColor" opacity=".6"/>
+                <!-- Balustre 5 -->
+                <rect x="213" y="28" width="7" height="364" rx="3.5" fill="currentColor"/>
+                <ellipse cx="216.5" cy="28" rx="10" ry="6" fill="currentColor"/>
+                <ellipse cx="216.5" cy="392" rx="10" ry="6" fill="currentColor"/>
+                <ellipse cx="216.5" cy="210" rx="14" ry="18" fill="currentColor" opacity=".6"/>
+              </g>
+            </svg>
+          </div>
         </div>
+
       </div>
     </div>
   </section>
