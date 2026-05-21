@@ -1,6 +1,6 @@
 /** Cloudinary delivery helpers + folder fetch (via /api/cloudinary proxy). */
 
-const CLOUD = import.meta.env.VITE_CLOUDINARY_CLOUD || '';
+const CLOUD = import.meta.env.VITE_CLOUDINARY_CLOUD || 'dbugcatig';
 
 /** Mapping logique → vrais dossiers Cloudinary.
  *  Ajuste si tu renommes dossiers Console. */
@@ -33,9 +33,9 @@ export function isFeatured(r) {
   return false;
 }
 
-export const HERO_VIDEO_ID  = import.meta.env.VITE_HERO_VIDEO_ID  || '';
+export const HERO_VIDEO_ID  = import.meta.env.VITE_HERO_VIDEO_ID  || 'aa79faff86284dd9b28f307dbfc81a8a_4K_kpnw8a';
 export const HERO_POSTER_ID = import.meta.env.VITE_HERO_POSTER_ID || '';
-export const LOGO_ID        = import.meta.env.VITE_LOGO_ID        || '';
+export const LOGO_ID        = import.meta.env.VITE_LOGO_ID        || 'LRMJ_PROJECT_LOGO_xzm1yq';
 
 /** Build delivery URL with transformations. */
 export function cldUrl(publicId, version, format = 'jpg', w = 1200, extra = 'c_limit') {
