@@ -25,7 +25,7 @@ export async function initMasonry() {
   }));
 
   const cardHtml = (p, i) => {
-    const cls = i >= 8 ? 'masonry-item hidden' : 'masonry-item fi';
+    const cls = i >= 21 ? 'masonry-item hidden' : 'masonry-item fi';
     return `<div class="${cls}" role="listitem" data-img-hd="${p.srcHd}">
       <img src="${p.src}"
            srcset="${p.srcset}"

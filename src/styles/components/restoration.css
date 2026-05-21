@@ -1,9 +1,5 @@
 /* ── RESTAURATION FONTE ── */
-.resto {
-  background: var(--bg);
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
-}
+/* background géré par .s--lift (bg-1), pas d'override ici */
 .resto__grid {
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
@@ -35,9 +31,9 @@
   flex-shrink: 0;
 }
 
-/* Prime card */
+/* Prime card — sur fond bg-1 (s--lift), la card utilise bg (un cran plus sombre) */
 .resto__prime {
-  background: var(--bg-1, rgba(0,0,0,.04));
+  background: var(--bg);
   border: 1px solid var(--border);
   border-radius: 16px;
   padding: 1.75rem;
@@ -45,7 +41,6 @@
   flex-direction: column;
   gap: 1.1rem;
 }
-[data-theme="dark"] .resto__prime { background: rgba(255,255,255,.03); }
 
 .resto__prime-header {
   display: flex;
@@ -97,7 +92,6 @@
   border-radius: 10px;
   padding: .9rem .6rem;
 }
-[data-theme="dark"] .resto__prime-tier { background: rgba(255,255,255,.04); }
 .resto__prime-tier--hi {
   border-color: var(--red);
   background: rgba(217,79,59,.06);
