@@ -1,9 +1,14 @@
 import { fetchCategory, parseResource, isFeatured } from './cloudinary.js';
 
-/** Pick best image of a category : featured first, fallback first resource. */
+/** Pick best image of a category : featured first, fallback first image.
+ *  Skips videos (resource_type "video" ou format mp4/mov/webm…). */
 function pickHero(resources) {
-  if (!resources.length) return null;
-  return resources.find(isFeatured) || resources[0];
+  const images = resources.filter(r =>
+    r.resource_type !== 'video' &&
+    !['mp4','mov','webm','avi','mkv'].includes((r.format || '').toLowerCase())
+  );
+  if (!images.length) return null;
+  return images.find(isFeatured) || images[0];
 }
 
 /** Replace static svc-card images with hero asset from category folder. */

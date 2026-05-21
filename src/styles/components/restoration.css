@@ -1,0 +1,93 @@
+/* ── RESTAURATION FONTE ── */
+.resto { background: var(--bg-dark, #0e0e0e); color: var(--tx-dark, #e8e1d6); }
+.resto__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(3rem, 6vw, 6rem);
+  align-items: center;
+  padding: clamp(4rem,7vw,7rem) 0;
+}
+.resto__content { display: flex; flex-direction: column; gap: 1.25rem; }
+.resto__prime {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+  background: rgba(217,79,59,.08);
+  border: 1px solid rgba(217,79,59,.22);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-top: .5rem;
+}
+.resto__prime-ico {
+  flex-shrink: 0;
+  width: 44px; height: 44px;
+  display: flex; align-items: center; justify-content: center;
+  background: rgba(217,79,59,.12);
+  border-radius: 8px;
+  color: var(--red);
+}
+.resto__prime-title {
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--red);
+  margin-bottom: .5rem;
+}
+.resto__prime-text {
+  font-size: .88rem;
+  line-height: 1.65;
+  color: rgba(var(--tx-rgb), .75);
+}
+.resto__prime-text strong { color: var(--tx, #e8e1d6); }
+
+.resto__visual {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  position: relative;
+}
+.resto__visual-deco {
+  width: 100%;
+  max-width: 200px;
+  color: var(--red);
+  opacity: .6;
+}
+.resto__visual-deco svg { width: 100%; height: auto; }
+
+.resto__quote {
+  text-align: center;
+  border-left: 2px solid var(--red);
+  padding-left: 1.5rem;
+  margin: 0;
+  align-self: flex-start;
+}
+.resto__quote p {
+  font-family: var(--f-display);
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.5;
+  color: rgba(var(--tx-rgb), .85);
+  margin-bottom: .75rem;
+}
+.resto__quote cite {
+  font-size: .72rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--red);
+  font-style: normal;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .resto__grid { grid-template-columns: 1fr; }
+  .resto__visual { flex-direction: row; align-items: flex-start; }
+  .resto__visual-deco { max-width: 120px; }
+}
+/* Mobile */
+@media (max-width: 600px) {
+  .resto__visual { display: none; }
+  .resto__prime { flex-direction: column; }
+}

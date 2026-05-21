@@ -25,7 +25,12 @@ export const GALLERY_FOLDERS = [
  *  - context custom { featured: "true" }
  *  - structured metadata { featured: true } */
 export function isFeatured(r) {
-  if (Array.isArray(r.tags) && (r.tags.includes('featured') || r.tags.includes('lrmj-featured'))) return true;
+  // Tags : case-insensitive ("Featured", "featured", "lrmj-featured"…)
+  if (Array.isArray(r.tags)) {
+    for (const t of r.tags) {
+      if (typeof t === 'string' && /^(lrmj-)?featured$/i.test(t)) return true;
+    }
+  }
   const ctx = r.context?.custom?.featured ?? r.context?.featured;
   if (ctx === true || ctx === 'true' || ctx === '1') return true;
   const meta = r.metadata?.featured;
