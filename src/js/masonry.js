@@ -1,5 +1,14 @@
-import { fetchGallery, parseResource, isFeatured } from './cloudinary.js';
+import { fetchGallery, parseResource, isFeatured, isMasonryPinned } from './cloudinary.js';
 import { revealNewFi } from './reveal.js';
+
+/** Nombre d'items visibles selon viewport.
+ *  desktop ≥ 961 → 21 | tablet 601-960 → 10 | mobile ≤ 600 → 7 */
+function initialCount() {
+  const w = window.innerWidth;
+  if (w <= 600) return 7;
+  if (w <= 960) return 10;
+  return 21;
+}
 
 /** Populate masonry-grid from union of all category folders.
  *  If empty / unreachable → keep static fallback markup. */
@@ -10,8 +19,14 @@ export async function initMasonry() {
   const resources = await fetchGallery();
   if (!resources.length) return; // garde fallback HTML
 
-  // Featured d'abord (tag OU metadata), ensuite ordre Cloudinary date desc
+  // Tri 3 niveaux :
+  // 1. tag "Masonry" → épinglé en tête (peu importe le dossier)
+  // 2. tag "Featured" → couvertures de catégorie
+  // 3. date desc (ordre Cloudinary)
   resources.sort((a, b) => {
+    const am = isMasonryPinned(a) ? 0 : 1;
+    const bm = isMasonryPinned(b) ? 0 : 1;
+    if (am !== bm) return am - bm;
     const af = isFeatured(a) ? 0 : 1;
     const bf = isFeatured(b) ? 0 : 1;
     if (af !== bf) return af - bf;
@@ -24,8 +39,9 @@ export async function initMasonry() {
     wHd: 2000,
   }));
 
+  const limit = initialCount();
   const cardHtml = (p, i) => {
-    const cls = i >= 21 ? 'masonry-item hidden' : 'masonry-item fi';
+    const cls = i >= limit ? 'masonry-item hidden' : 'masonry-item fi';
     return `<div class="${cls}" role="listitem" data-img-hd="${p.srcHd}">
       <img src="${p.src}"
            srcset="${p.srcset}"

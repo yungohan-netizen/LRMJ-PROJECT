@@ -20,6 +20,17 @@ export const GALLERY_FOLDERS = [
   'marquises', 'escaliers', 'meubles',
 ];
 
+/** Tag "Masonry" → épingle la photo en tête de galerie masonry, peu importe le dossier.
+ *  Utilisation Cloudinary : ajouter le tag "Masonry" (capital M, insensible à la casse). */
+export function isMasonryPinned(r) {
+  if (Array.isArray(r.tags)) {
+    for (const t of r.tags) {
+      if (typeof t === 'string' && /^masonry$/i.test(t)) return true;
+    }
+  }
+  return false;
+}
+
 /** Detection "featured" cross-mechanism :
  *  - tag classique "featured" ou "lrmj-featured"
  *  - context custom { featured: "true" }
