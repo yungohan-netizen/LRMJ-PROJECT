@@ -59,21 +59,21 @@
   transition: opacity .35s var(--ease);
 }
 
-/* ── HERO EMBLEM — desktop only, zone vide gauche vidéo ── */
+/* ── HERO EMBLEM — toutes dimensions, centré par défaut → gauche desktop ── */
 .hero__emblem {
-  display: none; /* masqué mobile/tablet — activé via media query desktop */
   position: absolute;
-  left: clamp(3rem, 13vw, 9rem);
+  left: 50%;
   top: 50%;
   z-index: 3;
   pointer-events: none;
-  /* Entrance : opacity + scale + drift vertical — easing luxe (technique #4 md) */
+  /* Centré mobile/tablet : translate(-50%, -50%) dans les keyframes */
   animation:
-    emblem-enter 1.6s cubic-bezier(0.16, 1, 0.3, 1) 0.7s both,
-    emblem-breathe 7s ease-in-out 2.3s infinite;
+    emblem-enter-c 1.6s cubic-bezier(0.16, 1, 0.3, 1) 0.7s both,
+    emblem-breathe-c 7s ease-in-out 2.3s infinite;
 }
 .hero__emblem img {
-  width: clamp(80px, 10vw, 140px);
+  /* Mobile : petit, discret sur petite fenêtre */
+  width: clamp(72px, 22vw, 108px);
   height: auto;
   display: block;
   /* Halo rouge subtil — signature de marque */
@@ -85,28 +85,43 @@
   will-change: transform, opacity;
 }
 
-/* Entrance : monte depuis le bas + fade + scale */
-@keyframes emblem-enter {
-  from {
-    opacity: 0;
-    transform: translateY(calc(-50% + 24px)) scale(0.84);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(-50%) scale(1);
-  }
+/* Tablet (540–860px) : taille intermédiaire */
+@media (min-width: 540px) and (max-width: 860px) {
+  .hero__emblem img { width: clamp(110px, 18vw, 155px); }
 }
 
-/* Breathing continu : infime pulsation scale (vivant, pas distrayant) */
+/* Desktop (861px+) : zone vide gauche, grand format */
+@media (min-width: 861px) {
+  .hero__emblem {
+    left: clamp(3rem, 13vw, 9rem);
+    /* translateY only — left est fixe, pas besoin de translateX */
+    animation:
+      emblem-enter 1.6s cubic-bezier(0.16, 1, 0.3, 1) 0.7s both,
+      emblem-breathe 7s ease-in-out 2.3s infinite;
+  }
+  .hero__emblem img { width: clamp(150px, 17vw, 220px); }
+}
+
+/* ── Keyframes desktop (left fixe) ── */
+@keyframes emblem-enter {
+  from { opacity: 0; transform: translateY(calc(-50% + 24px)) scale(0.84); }
+  to   { opacity: 1; transform: translateY(-50%) scale(1); }
+}
 @keyframes emblem-breathe {
   0%, 100% { transform: translateY(-50%) scale(1);      }
   45%       { transform: translateY(-50%) scale(1.028);  }
   55%       { transform: translateY(-50%) scale(1.028);  }
 }
 
-/* Affiché uniquement sur grand écran */
-@media (min-width: 861px) {
-  .hero__emblem { display: block; }
+/* ── Keyframes centré (mobile + tablet) ── */
+@keyframes emblem-enter-c {
+  from { opacity: 0; transform: translate(-50%, calc(-50% + 20px)) scale(0.84); }
+  to   { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+}
+@keyframes emblem-breathe-c {
+  0%, 100% { transform: translate(-50%, -50%) scale(1);      }
+  45%       { transform: translate(-50%, -50%) scale(1.028);  }
+  55%       { transform: translate(-50%, -50%) scale(1.028);  }
 }
 
 /* scroll hint */
