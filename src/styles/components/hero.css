@@ -72,8 +72,8 @@
     emblem-breathe-c 7s ease-in-out 2.3s infinite;
 }
 .hero__emblem img {
-  /* Mobile : petit, discret sur petite fenêtre */
-  width: clamp(72px, 22vw, 108px);
+  /* Mobile */
+  width: clamp(90px, 26vw, 130px);
   height: auto;
   display: block;
   /* Halo rouge subtil — signature de marque */
@@ -87,7 +87,7 @@
 
 /* Tablet (540–860px) : taille intermédiaire */
 @media (min-width: 540px) and (max-width: 860px) {
-  .hero__emblem img { width: clamp(110px, 18vw, 155px); }
+  .hero__emblem img { width: clamp(140px, 22vw, 200px); }
 }
 
 /* Desktop (861px+) : zone vide gauche, grand format */
@@ -99,7 +99,7 @@
       emblem-enter 1.6s cubic-bezier(0.16, 1, 0.3, 1) 0.7s both,
       emblem-breathe 7s ease-in-out 2.3s infinite;
   }
-  .hero__emblem img { width: clamp(150px, 17vw, 220px); }
+  .hero__emblem img { width: clamp(220px, 24vw, 320px); }
 }
 
 /* ── Keyframes desktop (left fixe) ── */
