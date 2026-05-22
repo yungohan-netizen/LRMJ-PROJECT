@@ -15,6 +15,7 @@ import { initForm }       from './js/form.js';
 import { initReviews }    from './js/reviews.js';
 import { initCookies }    from './js/cookies.js';
 import { initModals }     from './js/modals.js';
+import { initRestoImage } from './js/restoration.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   // Sync : DOM-ready interactions
@@ -42,5 +43,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   initServices();
   initAboutImage();
+  initRestoImage();
   initReviews();
 });
