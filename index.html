@@ -28,8 +28,11 @@
   <meta name="theme-color" content="#f5f3ee" media="(prefers-color-scheme: light)" />
   <meta name="theme-color" content="#07080c" media="(prefers-color-scheme: dark)" />
 
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><style>rect{fill:%23f5f3ee}.m{fill:%231a1d24;font:600 13px/1 system-ui,sans-serif;letter-spacing:.5px}.a{fill:%23c4432f}@media(prefers-color-scheme:dark){rect{fill:%2307080c}.m{fill:%23f2f0ec}.a{fill:%23d94f3b}}</style><rect width='32' height='32' rx='4'/><text x='5' y='22' class='m'>LR</text><circle cx='27' cy='7' r='2.5' class='a'/></svg>" />
-  <link rel="apple-touch-icon" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'><rect width='180' height='180' rx='20' fill='%2307080c'/><text x='28' y='115' fill='%23f2f0ec' font-family='Georgia,serif' font-size='72' font-weight='400' letter-spacing='2'>LR</text><circle cx='148' cy='42' r='12' fill='%23d94f3b'/></svg>" />
+  <!-- Favicon : emblem LRMJ — swappé par theme.js selon mode light/dark -->
+  <link id="faviconEl" rel="icon" type="image/png"
+        href="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_64/LRMJ_EMBLEM_FLAT_DARK_MODE_yhtb4t.png" />
+  <link rel="apple-touch-icon"
+        href="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_180/LRMJ_EMBLEM_FLAT_DARK_MODE_yhtb4t.png" />
 
   <meta property="og:title" content="LRMJ Project — Ferronnerie sur mesure" />
   <meta property="og:description" content="Portails, garde-corps, serres, marquises. Atelier en Belgique." />
@@ -96,10 +99,13 @@
 <header class="nav" id="siteNav">
   <div class="nav__inner">
     <a href="#" class="nav__logo" aria-label="LRMJ Project — Accueil">
-      <img class="nav__logo-img"
-           src="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_320,c_limit/v1779382283/LRMJ_PROJECT_LOGO_xzm1yq.png"
+      <img id="navLogoImg"
+           class="nav__logo-img"
+           src="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_96/LRMJ_EMBLEM_FLAT_DARK_MODE_yhtb4t.png"
+           data-src-dark="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_96/LRMJ_EMBLEM_FLAT_DARK_MODE_yhtb4t.png"
+           data-src-light="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_96/LRMJ_EMBLEM_FLAT_LIGHT_MODE_tlr9tp.png"
            alt="LRMJ Project"
-           width="160" height="48"
+           width="48" height="48"
            fetchpriority="high"/>
     </a>
     <ul class="nav__links" role="list">
@@ -393,10 +399,10 @@
             <cite>— Romeo, artisan ferronnier</cite>
           </blockquote>
           <div class="resto__visual-img">
-            <img src="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_fill,g_auto,w_700/v1779381523/Garde-corps_Balcon_Fer_Forg%C3%A9_Volutes_15_iac0gz.jpg"
-                 srcset="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_fill,g_auto,w_400/v1779381523/Garde-corps_Balcon_Fer_Forg%C3%A9_Volutes_15_iac0gz.jpg 400w,
-                         https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_fill,g_auto,w_700/v1779381523/Garde-corps_Balcon_Fer_Forg%C3%A9_Volutes_15_iac0gz.jpg 700w,
-                         https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_fill,g_auto,w_1000/v1779381523/Garde-corps_Balcon_Fer_Forg%C3%A9_Volutes_15_iac0gz.jpg 1000w"
+            <img src="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_700/v1779381523/Garde-corps_Balcon_Fer_Forg%C3%A9_Volutes_15_iac0gz.jpg"
+                 srcset="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_400/v1779381523/Garde-corps_Balcon_Fer_Forg%C3%A9_Volutes_15_iac0gz.jpg 400w,
+                         https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_700/v1779381523/Garde-corps_Balcon_Fer_Forg%C3%A9_Volutes_15_iac0gz.jpg 700w,
+                         https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_1000/v1779381523/Garde-corps_Balcon_Fer_Forg%C3%A9_Volutes_15_iac0gz.jpg 1000w"
                  sizes="(max-width: 960px) 100vw, 45vw"
                  alt="Garde-corps balcon fer forgé volutes — LRMJ Project"
                  loading="lazy" decoding="async"/>
@@ -606,10 +612,19 @@
   <div class="wrap">
     <div class="footer-grid">
       <div class="footer-brand-wrap">
-        <img class="footer-logo"
-             src="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_480,c_limit/LRMJ_PROJECT_LOGO_xzm1yq.png"
-             alt="LRMJ Project"
-             loading="lazy"/>
+        <div class="footer-emblem-row">
+          <img class="footer-emblem"
+               src="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_80/LRMJ_EMBLEM_FLAT_DARK_MODE_yhtb4t.png"
+               data-src-dark="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_80/LRMJ_EMBLEM_FLAT_DARK_MODE_yhtb4t.png"
+               data-src-light="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_80/LRMJ_EMBLEM_FLAT_LIGHT_MODE_tlr9tp.png"
+               alt="" aria-hidden="true" loading="lazy" width="40" height="40"/>
+          <img id="footerTypefaceImg"
+               class="footer-typeface"
+               src="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_320/LRMJ_typeface_white_ybpjxy.png"
+               data-src-dark="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_320/LRMJ_typeface_white_ybpjxy.png"
+               data-src-light="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_320/LRMJ_typeface_black_nevuzo.png"
+               alt="LRMJ Project" loading="lazy"/>
+        </div>
         <p class="footer-desc">Artisan ferronnier sur mesure à Bruxelles. Portails, garde-corps, verrières, marquises, restauration fonte.</p>
       </div>
       <div>
