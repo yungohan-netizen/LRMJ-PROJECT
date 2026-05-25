@@ -7,7 +7,7 @@ const CLOUD = import.meta.env.VITE_CLOUDINARY_CLOUD || 'dbugcatig';
 export const FOLDERS = {
   portails:   'LMRJ PROJECT/Portails et Clotures',
   gardecorps: 'LMRJ PROJECT/Garde-Corps',
-  verrieres:  'LMRJ PROJECT/Verrièrres',  // typo Cloudinary (2 R) — baies mergées dedans
+  verrieres:  'LMRJ PROJECT/Verrières',
   marquises:  'LMRJ PROJECT/Marquises',
   escaliers:  'LMRJ PROJECT/Escaliers',
   meubles:    'LMRJ PROJECT/Meubles-Déco',
