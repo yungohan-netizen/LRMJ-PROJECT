@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page introuvable — LRMJ Project</title>
+  <meta name="robots" content="noindex" />
+  <link rel="icon" type="image/png"
+        href="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_64/LRMJ_EMBLEM_FLAT_DARK_MODE_yhtb4t.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #f5f3ee; --tx: #1a1d24; --tx-2: rgba(26,29,36,0.6); --red: #c4432f;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #07080c; --tx: #f2f0ec; --tx-2: rgba(242,240,236,0.55); --red: #d94f3b; }
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      background: var(--bg); color: var(--tx);
+      font-family: 'Inter', system-ui, sans-serif;
+      display: flex; align-items: center; justify-content: center;
+      min-height: 100svh; padding: 2rem; text-align: center;
+    }
+    .e404 { display: flex; flex-direction: column; align-items: center; gap: 1.5rem; max-width: 540px; }
+    .e404__emblem { width: 96px; height: auto; opacity: .9; filter: drop-shadow(0 0 28px rgba(217,79,59,.18)); }
+    .e404__code {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: clamp(5rem, 18vw, 9rem); font-weight: 300; line-height: 1;
+      letter-spacing: -.02em; color: var(--tx);
+    }
+    .e404__title {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: clamp(1.5rem, 4vw, 2.2rem); font-weight: 400; line-height: 1.2;
+    }
+    .e404__title em { color: var(--red); font-style: italic; }
+    .e404__text { font-size: .95rem; color: var(--tx-2); line-height: 1.6; }
+    .e404__link {
+      margin-top: .5rem;
+      font-size: .68rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase;
+      color: var(--tx); border: 1px solid var(--red);
+      padding: 12px 28px; border-radius: 999px; text-decoration: none;
+      transition: background-color .35s ease, color .35s ease;
+    }
+    .e404__link:hover { background: var(--red); color: #fff; }
+  </style>
+</head>
+<body>
+  <main class="e404">
+    <img class="e404__emblem"
+         src="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_192/LRMJ_EMBLEM_tyxqhl.png"
+         alt="LRMJ Project" width="96" height="96" />
+    <div class="e404__code">404</div>
+    <h1 class="e404__title">Cette page <em>n'existe pas</em></h1>
+    <p class="e404__text">La page recherchée a été déplacée ou n'a jamais existé. Retournez à l'accueil pour découvrir nos réalisations.</p>
+    <a class="e404__link" href="/">Retour à l'accueil</a>
+  </main>
+</body>
+</html>
