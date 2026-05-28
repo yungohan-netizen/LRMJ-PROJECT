@@ -46,16 +46,24 @@
   font-feature-settings: "salt" 1;
 }
 .about-hl-grid {
-  display: grid; grid-template-columns: 1fr 1fr; gap: 1px;
-  background: var(--border); border: 1px solid var(--border);
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: .65rem;
   margin-top: 2.5rem;
 }
 .about-hl {
-  background: var(--bg-1);
-  padding: 1.4rem 1.25rem;
-  transition: background .35s var(--ease);
+  background: var(--surf);
+  border: 1px solid var(--border);
+  border-radius: 1.25rem;
+  padding: 1.5rem 1.35rem;
   position: relative;
+  isolation: isolate;
   overflow: hidden;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.06);
+  transition:
+    background-color .45s var(--ease),
+    border-color .45s var(--ease),
+    transform .5s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow .5s var(--ease);
 }
 .about-hl::before {
   content: '';
@@ -63,9 +71,21 @@
   top: 0; left: 0;
   width: 0; height: 1px;
   background: var(--red);
-  transition: width .6s var(--ease);
+  transition: width .7s cubic-bezier(0.16, 1, 0.3, 1);
 }
-.about-hl:hover { background: var(--bg-2); }
+.about-hl:hover {
+  background: var(--surf-2);
+  border-color: var(--border-2);
+  transform: translateY(-3px);
+  box-shadow:
+    0 16px 36px rgba(0,0,0,.10),
+    inset 0 1px 0 rgba(255,255,255,.08);
+}
+html[data-theme="dark"] .about-hl:hover {
+  box-shadow:
+    0 16px 36px rgba(0,0,0,.4),
+    inset 0 1px 0 rgba(255,255,255,.05);
+}
 .about-hl:hover::before { width: 100%; }
 .about-hl-val {
   font-family: var(--f-display);

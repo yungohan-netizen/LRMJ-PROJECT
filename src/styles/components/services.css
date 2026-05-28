@@ -1,11 +1,48 @@
-/* ── SERVICES ── */
+/* ── SERVICES — Floating Bento + Double-Bezel ── */
 .svc-hdr { display: flex; align-items: flex-end; justify-content: space-between; gap: 2rem; margin-bottom: 2.5rem; }
-.svc-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); }
-.svc-card { background: var(--bg-1); overflow: hidden; display: flex; flex-direction: column; transition: background .35s var(--ease); }
-.svc-card:hover { background: var(--bg-2); }
+.svc-grid {
+  display: grid; grid-template-columns: repeat(3,1fr);
+  gap: clamp(.75rem, 1.2vw, 1.25rem);
+}
+.svc-card {
+  /* Outer shell (double-bezel) */
+  background: var(--surf);
+  border: 1px solid var(--border);
+  padding: 6px;
+  border-radius: 1.75rem;
+  overflow: hidden;
+  position: relative; isolation: isolate;
+  display: flex; flex-direction: column;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.06);
+  transition:
+    background-color .5s var(--ease),
+    border-color .5s var(--ease),
+    transform .55s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow .55s var(--ease);
+}
+.svc-card:hover {
+  background: var(--surf-2);
+  border-color: var(--border-2);
+  transform: translateY(-6px);
+  box-shadow:
+    0 24px 56px rgba(0,0,0,.14),
+    inset 0 1px 0 rgba(255,255,255,.08);
+}
+html[data-theme="dark"] .svc-card:hover {
+  box-shadow:
+    0 24px 56px rgba(0,0,0,.5),
+    inset 0 1px 0 rgba(255,255,255,.06);
+}
 .svc-card--feat { grid-column: span 3; flex-direction: row; }
-.svc-img-wrap { overflow: hidden; flex-shrink: 0; position: relative; }
-.svc-img { width: 100%; height: 200px; object-fit: cover; display: block; transition: transform .8s cubic-bezier(.25,.46,.45,.94), filter .8s ease, opacity .4s var(--ease); filter: brightness(.75) saturate(.7); will-change: transform; }
+.svc-img-wrap {
+  overflow: hidden; flex-shrink: 0; position: relative;
+  /* Inner core radius — concentric with outer (1.75rem - 6px padding) */
+  border-radius: calc(1.75rem - 6px) calc(1.75rem - 6px) 0 0;
+}
+.svc-card--feat .svc-img-wrap {
+  border-radius: calc(1.75rem - 6px) 0 0 calc(1.75rem - 6px);
+}
+.svc-img { width: 100%; height: 220px; object-fit: cover; display: block; transition: transform .8s cubic-bezier(.25,.46,.45,.94), filter .8s ease, opacity .4s var(--ease); filter: brightness(.78) saturate(.78); will-change: transform; }
 .svc-card--feat .svc-img { width: 480px; height: 100%; }
 /* Skeleton state — masque image quand pas encore loadée par JS Cloudinary */
 .svc-card--loading .svc-img-wrap {
@@ -20,7 +57,15 @@
   100% { background-position: -100% 0; }
 }
 .svc-card:hover .svc-img { transform: scale(1.06); filter: brightness(.92) saturate(.92); }
-.svc-body { padding: 1.75rem; display: flex; flex-direction: column; gap: .35rem; flex: 1; }
+.svc-body {
+  padding: 1.75rem;
+  display: flex; flex-direction: column; gap: .35rem; flex: 1;
+  background: var(--bg-1);
+  border-radius: 0 0 calc(1.75rem - 6px) calc(1.75rem - 6px);
+}
+.svc-card--feat .svc-body {
+  border-radius: 0 calc(1.75rem - 6px) calc(1.75rem - 6px) 0;
+}
 .svc-tag  { font-size: .6rem; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; color: var(--red); margin-bottom: .25rem; }
 .svc-title {
   font-family: var(--f-display); font-size: 1.3rem; font-weight: 400;
@@ -40,5 +85,11 @@
 }
 .svc-card:hover .svc-title::after { transform: scaleX(.4); }
 .svc-desc  { font-size: .87rem; color: var(--tx-2); line-height: 1.75; flex: 1; margin-top: .25rem; }
-@media (max-width:900px) { .svc-grid { grid-template-columns:1fr 1fr; } .svc-card--feat { grid-column: span 2; flex-direction:column; } .svc-card--feat .svc-img { width:100%; height:220px; } }
+@media (max-width:900px) {
+  .svc-grid { grid-template-columns:1fr 1fr; }
+  .svc-card--feat { grid-column: span 2; flex-direction:column; }
+  .svc-card--feat .svc-img { width:100%; height:220px; }
+  .svc-card--feat .svc-img-wrap { border-radius: calc(1.75rem - 6px) calc(1.75rem - 6px) 0 0; }
+  .svc-card--feat .svc-body { border-radius: 0 0 calc(1.75rem - 6px) calc(1.75rem - 6px); }
+}
 @media (max-width:560px) { .svc-grid { grid-template-columns:1fr; } .svc-card--feat { grid-column:1; } }

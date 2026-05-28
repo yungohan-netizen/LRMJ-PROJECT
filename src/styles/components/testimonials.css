@@ -1,14 +1,33 @@
-/* ── TESTIMONIALS ── */
-.testi-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; }
+/* ── TESTIMONIALS — Floating bento + double-bezel ── */
+.testi-grid {
+  display: grid; grid-template-columns: repeat(3,1fr);
+  gap: clamp(.75rem, 1.2vw, 1.25rem);
+}
 .testi-card {
-  background: var(--bg-1);
+  background: var(--surf);
+  border: 1px solid var(--border);
+  border-radius: 1.5rem;
   padding: 2.5rem 2rem;
-  position: relative;
-  transition: background-color .35s var(--ease), transform .4s var(--ease);
+  position: relative; isolation: isolate;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.06);
+  transition:
+    background-color .5s var(--ease),
+    border-color .5s var(--ease),
+    transform .55s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow .55s var(--ease);
 }
 .testi-card:hover {
-  background: var(--bg-2);
-  transform: translateY(-2px);
+  background: var(--surf-2);
+  border-color: var(--border-2);
+  transform: translateY(-5px);
+  box-shadow:
+    0 20px 44px rgba(0,0,0,.12),
+    inset 0 1px 0 rgba(255,255,255,.08);
+}
+html[data-theme="dark"] .testi-card:hover {
+  box-shadow:
+    0 20px 44px rgba(0,0,0,.45),
+    inset 0 1px 0 rgba(255,255,255,.05);
 }
 html.js .testi-card.fi:nth-child(2).is-in { animation-delay: .12s; }
 html.js .testi-card.fi:nth-child(3).is-in { animation-delay: .24s; }
@@ -37,5 +56,5 @@ html.js .testi-card.fi:nth-child(3).is-in { animation-delay: .24s; }
 .testi-card:hover .testi-av { box-shadow: 0 0 0 4px rgba(217,79,59,.15); }
 .testi-name { font-size: .88rem; font-weight: 500; color: var(--tx); }
 .testi-loc  { font-size: .64rem; letter-spacing:.1em; text-transform:uppercase; color: var(--tx-3); margin-top: 2px; }
-@media (max-width:900px) { .testi-grid { grid-template-columns:1fr 1fr; gap:.75rem; background:none; border:none; } .testi-card { border-radius:10px; border:1px solid var(--border); } }
+@media (max-width:900px) { .testi-grid { grid-template-columns:1fr 1fr; } }
 @media (max-width:560px) { .testi-grid { grid-template-columns:1fr; } }
