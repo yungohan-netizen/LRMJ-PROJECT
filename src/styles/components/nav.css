@@ -1,42 +1,58 @@
-/* ── NAV ── */
+/* ── NAV — Fluid Island floating pill (Awwwards-tier) ── */
 .nav {
-  position: fixed; top: 0; left: 0; right: 0; z-index: 200;
-  transition: background 500ms ease, border-color 500ms ease;
-  border-bottom: 1px solid transparent;
+  position: fixed;
+  top: 1.25rem; left: 50%;
+  transform: translateX(-50%);
+  z-index: 200;
+  width: calc(100% - 2rem);
+  max-width: 1080px;
+  border-radius: 999px;
+  background: rgba(var(--bg-rgb), 0.55);
+  backdrop-filter: blur(24px) saturate(1.6);
+  -webkit-backdrop-filter: blur(24px) saturate(1.6);
+  border: 1px solid var(--border);
+  box-shadow:
+    0 8px 32px rgba(0,0,0,.06),
+    inset 0 1px 0 rgba(255,255,255,.08);
+  transition:
+    top .6s cubic-bezier(0.16, 1, 0.3, 1),
+    background-color .6s var(--ease),
+    border-color .6s var(--ease),
+    box-shadow .6s var(--ease),
+    max-width .6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+html[data-theme="dark"] .nav {
+  box-shadow:
+    0 8px 32px rgba(0,0,0,.35),
+    inset 0 1px 0 rgba(255,255,255,.04);
 }
 .nav--solid {
-  background: rgba(var(--bg-rgb), 0.88);
-  backdrop-filter: blur(20px) saturate(1.4);
-  -webkit-backdrop-filter: blur(20px) saturate(1.4);
-  border-bottom-color: var(--border);
+  background: rgba(var(--bg-rgb), 0.78);
+  box-shadow:
+    0 16px 48px rgba(0,0,0,.10),
+    inset 0 1px 0 rgba(255,255,255,.10);
 }
-.nav__progress {
-  position: absolute; bottom: 0; left: 0;
-  height: 1px;
-  width: var(--scroll-pct, 0%);
-  background: linear-gradient(to right, var(--red) 0%, rgba(217,79,59,.2) 100%);
-  pointer-events: none;
-  opacity: 0;
-  transition: opacity .4s var(--ease);
-  will-change: width;
+html[data-theme="dark"] .nav--solid {
+  box-shadow:
+    0 16px 48px rgba(0,0,0,.5),
+    inset 0 1px 0 rgba(255,255,255,.05);
 }
-.nav--solid .nav__progress { opacity: 1; }
+.nav__progress { display: none; }
 .nav__inner {
   display: flex; align-items: center; justify-content: space-between;
-  height: 68px; max-width: 1360px; margin: 0 auto;
-  padding: 0 clamp(1.5rem, 5vw, 4rem);
+  height: 58px; width: 100%;
+  padding: 0 .65rem 0 1.4rem;
 }
 .nav__logo { display: flex; align-items: center; text-decoration: none; transition: opacity .25s var(--ease); }
 .nav__logo:hover { opacity: .8; }
 .nav__logo-img {
   display: block;
-  width: clamp(36px, 4vw, 48px);
-  height: clamp(36px, 4vw, 48px);
+  width: 36px; height: 36px;
   object-fit: contain;
   filter: drop-shadow(0 1px 4px rgba(0,0,0,.3));
   transition: filter .35s var(--ease);
 }
-.nav__links { position: absolute; left: 50%; transform: translateX(-50%); display: flex; align-items: center; gap: 2.5rem; list-style: none; }
+.nav__links { position: absolute; left: 50%; transform: translateX(-50%); display: flex; align-items: center; gap: 2.25rem; list-style: none; }
 .nav__links a { font-size: .68rem; font-weight: 500; letter-spacing: .18em; text-transform: uppercase; text-decoration: none; color: var(--tx-2); position: relative; padding-bottom: 3px; transition: color .25s; }
 .nav__links a::after { content:''; position:absolute; bottom:0; left:0; right:0; height:1px; background: var(--red); transform:scaleX(0); transform-origin:left; transition:transform .3s var(--ease); }
 .nav__links a:hover { color: var(--tx); }

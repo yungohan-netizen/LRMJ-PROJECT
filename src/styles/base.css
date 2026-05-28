@@ -1,6 +1,6 @@
 /* ── RESET ── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; scroll-padding-top: 80px; -webkit-font-smoothing: antialiased; }
+html { scroll-behavior: smooth; scroll-padding-top: 96px; -webkit-font-smoothing: antialiased; }
 body { background: var(--bg); color: var(--tx); font-family: var(--f-body); font-size: 1rem; line-height: 1.6; min-height: 100dvh; overflow-x: hidden; }
 img, video { display: block; max-width: 100%; }
 a { color: inherit; }
@@ -145,6 +145,36 @@ html:not(.js) .word > span { transform: none; }
 }
 .btn:active { transform: scale(.97) !important; transition-duration: 80ms; }
 
+/* ── Button-in-Button : nested icon wrapper (Awwwards pattern) ── */
+.btn__ico {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px; height: 28px;
+  border-radius: 50%;
+  background: rgba(255,255,255,.16);
+  margin-left: 10px;
+  margin-right: -12px;
+  flex-shrink: 0;
+  font-size: .9rem;
+  line-height: 1;
+  font-weight: 400;
+  transition:
+    transform .5s cubic-bezier(0.16, 1, 0.3, 1),
+    background-color .35s var(--ease);
+  will-change: transform;
+}
+.btn:hover .btn__ico {
+  transform: translate(3px, -1px) scale(1.06);
+  background: rgba(255,255,255,.28);
+}
+.btn--ghost .btn__ico {
+  background: rgba(var(--tx-rgb), .08);
+}
+.btn--ghost:hover .btn__ico {
+  background: rgba(var(--tx-rgb), .16);
+}
+
 .btn--red { background: var(--red); color: #fff; border-color: var(--red); }
 .btn--red:hover {
   background: #c4432f; border-color: #c4432f;
@@ -183,18 +213,18 @@ html:not(.js) .word > span { transform: none; }
   .btn:hover::before { transform: translateX(120%); opacity: 1; animation: none; }
 }
 
-/* ── FADE IN ── */
-.fi { opacity: 1; transform: none; }
-html.js .fi { opacity: 0; transform: translateY(18px); }
+/* ── FADE IN — cinematic blur-up entry ── */
+.fi { opacity: 1; transform: none; filter: none; }
+html.js .fi { opacity: 0; transform: translateY(32px); filter: blur(8px); }
 html.js .fi.is-in {
-  animation: fi-in .75s var(--ease-out) forwards;
+  animation: fi-in .95s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 @keyframes fi-in {
-  from { opacity: 0; transform: translateY(18px); }
-  to   { opacity: 1; transform: translateY(0); }
+  from { opacity: 0; transform: translateY(32px); filter: blur(8px); }
+  to   { opacity: 1; transform: translateY(0);    filter: blur(0); }
 }
 @media (prefers-reduced-motion: reduce) {
-  html.js .fi { opacity: 1; transform: none; animation: none; }
+  html.js .fi { opacity: 1; transform: none; filter: none; animation: none; }
 }
 
 /* ── MISC UTILS ── */

@@ -40,7 +40,7 @@ export function initLenis() {
       const t = document.querySelector(id);
       if (!t) return;
       e.preventDefault();
-      lenis.scrollTo(t, { offset: -68, duration: 1.2 });
+      lenis.scrollTo(t, { offset: -96, duration: 1.2 });
     });
   });
 
