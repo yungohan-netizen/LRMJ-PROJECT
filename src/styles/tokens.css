@@ -3,33 +3,33 @@
    Toutes les couleurs du site référencent ces variables.
    ────────────────────────────────────────────────────────────── */
 :root {
-  /* Backgrounds */
+  /* Backgrounds — cream */
   --bg:          #f5f3ee;
-  --bg-1:        #ebe8e0;
+  --bg-1:        #ebe7dd;
   --bg-2:        #dfdbd0;
   --bg-3:        #d2cdc0;
   --bg-rgb:      245, 243, 238;
 
-  /* Surfaces */
-  --surf:        rgba(7,8,12,0.04);
-  --surf-2:      rgba(7,8,12,0.07);
-  --border:      rgba(7,8,12,0.10);
-  --border-2:    rgba(7,8,12,0.18);
+  /* Surfaces (cobalt-tinted) */
+  --surf:        rgba(13,31,60,0.04);
+  --surf-2:      rgba(13,31,60,0.07);
+  --border:      rgba(13,31,60,0.10);
+  --border-2:    rgba(13,31,60,0.18);
 
-  /* Text */
-  --tx:          #1a1d24;
-  --tx-2:        rgba(26,29,36,0.65);
-  --tx-3:        rgba(26,29,36,0.40);
-  --tx-rgb:      26, 29, 36;
+  /* Text — deep cobalt navy */
+  --tx:          #0d1f3c;
+  --tx-2:        rgba(13,31,60,0.62);
+  --tx-3:        rgba(13,31,60,0.40);
+  --tx-rgb:      13, 31, 60;
 
-  /* Accent — Forge Red / Braise */
+  /* Accent : Forge Red signature */
   --red:         #c4432f;
   --red-glow:    rgba(196,67,47,0.18);
   --red-border:  rgba(196,67,47,0.32);
 
   /* Shadows & glows */
   --glow-red:    0 0 80px rgba(196,67,47,0.10);
-  --shadow-card: 0 12px 32px rgba(7,8,12,0.08);
+  --shadow-card: 0 12px 32px rgba(13,31,60,0.10);
 
   /* Type scale */
   --f-display: 'Cormorant Garamond', Georgia, serif;
@@ -49,28 +49,31 @@
 }
 
 html[data-theme="dark"] {
-  --bg:          #07080c;
-  --bg-1:        #0c0e14;
-  --bg-2:        #111420;
-  --bg-3:        #171b28;
-  --bg-rgb:      7, 8, 12;
+  /* Backgrounds — deep cobalt */
+  --bg:          #07101f;
+  --bg-1:        #0c1530;
+  --bg-2:        #121b3a;
+  --bg-3:        #18234a;
+  --bg-rgb:      7, 16, 31;
 
   --surf:        rgba(255,255,255,0.04);
   --surf-2:      rgba(255,255,255,0.07);
-  --border:      rgba(255,255,255,0.07);
-  --border-2:    rgba(255,255,255,0.12);
+  --border:      rgba(255,255,255,0.08);
+  --border-2:    rgba(255,255,255,0.14);
 
-  --tx:          #f2f0ec;
-  --tx-2:        rgba(242,240,236,0.55);
-  --tx-3:        rgba(242,240,236,0.28);
-  --tx-rgb:      242, 240, 236;
+  /* Text — cool cream */
+  --tx:          #eef0f5;
+  --tx-2:        rgba(238,240,245,0.58);
+  --tx-3:        rgba(238,240,245,0.30);
+  --tx-rgb:      238, 240, 245;
 
+  /* Accent : same signature red, slightly hotter */
   --red:         #d94f3b;
-  --red-glow:    rgba(217,79,59,0.18);
-  --red-border:  rgba(217,79,59,0.30);
+  --red-glow:    rgba(217,79,59,0.20);
+  --red-border:  rgba(217,79,59,0.32);
 
-  --glow-red:    0 0 80px rgba(217,79,59,0.12);
-  --shadow-card: 0 12px 32px rgba(0,0,0,0.4);
+  --glow-red:    0 0 80px rgba(217,79,59,0.14);
+  --shadow-card: 0 12px 32px rgba(0,0,0,0.5);
 
   --grain-opacity: 0.045;
   --hero-video-opacity: .68;

@@ -44,7 +44,7 @@ export function initForm() {
 
     if (!WEB3FORMS_KEY) {
       setTimeout(() => {
-        showOk('✓ Mode démo — clé Web3Forms manquante (à renseigner dans .env).');
+        showOk('✓ Mode démo : clé Web3Forms manquante (à renseigner dans .env).');
         form.reset();
         submit.disabled = false;
         submit.textContent = originalLabel;
@@ -60,7 +60,7 @@ export function initForm() {
       });
       const data = await res.json();
       if (data.success) {
-        showOk('✓ Message bien reçu — nous vous recontactons sous 24h.');
+        showOk('✓ Message bien reçu. Nous vous recontactons sous 24h.');
         form.reset();
       } else {
         showErr("L'envoi a échoué. Réessayez ou appelez le 0475 39 99 09.");
