@@ -60,39 +60,53 @@
   position: absolute;
   top: clamp(1rem, 2.5vw, 2rem);
   right: clamp(1rem, 2.5vw, 2rem);
-  width: 44px; height: 44px;
+  width: 48px; height: 48px;
   display: flex; align-items: center; justify-content: center;
-  color: var(--tx-2);
-  border: 1px solid var(--border);
-  background: none;
+  color: rgba(255,255,255,.7);
+  border: 1px solid rgba(255,255,255,.18);
+  background: rgba(255,255,255,.04);
+  border-radius: 50%;
   cursor: pointer;
-  transition: color .25s var(--ease), border-color .25s var(--ease), transform .45s var(--ease);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.10);
+  transition:
+    color .35s var(--ease),
+    border-color .35s var(--ease),
+    background-color .35s var(--ease),
+    transform .5s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .lb__close:hover {
-  color: var(--tx);
+  color: #fff;
   border-color: var(--red);
-  transform: rotate(90deg);
+  background: rgba(217,79,59,.14);
+  transform: rotate(90deg) scale(1.06);
 }
 
 .lb__nav {
   position: absolute;
   bottom: clamp(1.25rem, 3vw, 2.4rem);
   right: clamp(1.25rem, 3vw, 2.4rem);
-  display: flex; gap: .55rem;
+  display: flex; gap: .65rem;
 }
 .lb__btn {
-  width: 44px; height: 44px;
-  border: 1px solid var(--border-2);
-  background: none;
+  width: 48px; height: 48px;
+  border: 1px solid rgba(255,255,255,.18);
+  background: rgba(255,255,255,.04);
+  border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
-  color: var(--tx-2);
+  color: rgba(255,255,255,.7);
   cursor: pointer;
-  transition: border-color .25s var(--ease), color .25s var(--ease), background-color .25s var(--ease);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.10);
+  transition:
+    border-color .35s var(--ease),
+    color .35s var(--ease),
+    background-color .35s var(--ease),
+    transform .45s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .lb__btn:hover {
   border-color: var(--red);
-  color: var(--tx);
-  background: rgba(217,79,59,.08);
+  color: #fff;
+  background: rgba(217,79,59,.14);
+  transform: translateY(-2px) scale(1.05);
 }
 
 @media (max-width: 640px) {

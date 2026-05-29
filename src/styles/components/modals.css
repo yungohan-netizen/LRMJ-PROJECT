@@ -1,4 +1,4 @@
-/* ── COOKIE BANNER ── */
+/* ── COOKIE BANNER — premium floating card ── */
 .cookie-banner {
   position: fixed;
   bottom: 1.25rem;
@@ -7,17 +7,29 @@
   max-width: 480px;
   margin: 0 auto;
   background: var(--bg-1);
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  padding: 1.25rem 1.4rem;
-  box-shadow: 0 16px 48px rgba(0,0,0,.18);
+  border: 1px solid var(--border-2);
+  border-radius: 1.25rem;
+  padding: 1.4rem 1.5rem;
+  box-shadow:
+    0 0 0 7px var(--surf),
+    0 0 0 8px var(--border),
+    0 24px 60px rgba(0,0,0,.12),
+    inset 0 1px 0 rgba(255,255,255,.06);
   z-index: 500;
   opacity: 0;
-  transform: translateY(20px);
-  transition: opacity .4s var(--ease), transform .4s var(--ease);
+  transform: translateY(28px);
+  transition:
+    opacity .55s cubic-bezier(0.16, 1, 0.3, 1),
+    transform .55s cubic-bezier(0.16, 1, 0.3, 1);
   pointer-events: none;
 }
-html[data-theme="dark"] .cookie-banner { box-shadow: 0 16px 48px rgba(0,0,0,.5); }
+html[data-theme="dark"] .cookie-banner {
+  box-shadow:
+    0 0 0 7px var(--surf),
+    0 0 0 8px var(--border),
+    0 24px 60px rgba(0,0,0,.5),
+    inset 0 1px 0 rgba(255,255,255,.04);
+}
 .cookie-banner.visible { opacity: 1; transform: translateY(0); pointer-events: auto; }
 .cookie-banner__title {
   font-family: var(--f-display);
@@ -47,7 +59,7 @@ html[data-theme="dark"] .cookie-banner { box-shadow: 0 16px 48px rgba(0,0,0,.5);
 .cookie-banner__btn {
   flex: 1;
   min-width: 110px;
-  padding: 10px 14px;
+  padding: 11px 18px;
   border-radius: 999px;
   font-family: var(--f-body);
   font-size: .66rem;
@@ -55,20 +67,33 @@ html[data-theme="dark"] .cookie-banner { box-shadow: 0 16px 48px rgba(0,0,0,.5);
   letter-spacing: .14em;
   text-transform: uppercase;
   cursor: pointer;
-  transition: background-color .25s var(--ease), border-color .25s var(--ease), color .25s var(--ease);
+  transition:
+    background-color .35s var(--ease),
+    border-color .35s var(--ease),
+    color .35s var(--ease),
+    transform .35s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow .35s var(--ease);
 }
+.cookie-banner__btn:active { transform: scale(.97); transition-duration: 80ms; }
 .cookie-banner__btn--accept {
   background: var(--red);
   border: 1px solid var(--red);
   color: #fff;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.18);
 }
-.cookie-banner__btn--accept:hover { background: #b03a28; border-color: #b03a28; }
+.cookie-banner__btn--accept:hover {
+  background: #b03a28; border-color: #b03a28;
+  transform: translateY(-2px);
+  box-shadow:
+    0 12px 28px rgba(196,67,47,.32),
+    inset 0 1px 0 rgba(255,255,255,.18);
+}
 .cookie-banner__btn--decline {
   background: transparent;
   border: 1px solid var(--border-2);
   color: var(--tx-2);
 }
-.cookie-banner__btn--decline:hover { border-color: var(--tx-2); color: var(--tx); }
+.cookie-banner__btn--decline:hover { border-color: var(--tx-2); color: var(--tx); transform: translateY(-2px); }
 @media (max-width: 480px) {
   .cookie-banner { bottom: .75rem; left: .75rem; right: .75rem; padding: 1rem; }
 }
@@ -92,31 +117,44 @@ html[data-theme="dark"] .cookie-banner { box-shadow: 0 16px 48px rgba(0,0,0,.5);
 .modal-legal[aria-hidden="false"] { opacity: 1; pointer-events: auto; }
 .modal-legal__panel {
   background: var(--bg);
-  border: 1px solid var(--border);
-  border-radius: 12px;
+  border: 1px solid var(--border-2);
+  border-radius: 1.5rem;
   max-width: 720px;
   width: 100%;
   max-height: 86vh;
   overflow-y: auto;
   padding: clamp(2rem, 4vw, 3rem);
   position: relative;
-  transform: translateY(20px) scale(.98);
-  transition: transform .4s var(--ease);
+  transform: translateY(28px) scale(.97);
+  transition: transform .55s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow:
+    0 32px 80px rgba(0,0,0,.18),
+    inset 0 1px 0 rgba(255,255,255,.06);
+}
+html[data-theme="dark"] .modal-legal__panel {
+  box-shadow:
+    0 32px 80px rgba(0,0,0,.6),
+    inset 0 1px 0 rgba(255,255,255,.04);
 }
 .modal-legal[aria-hidden="false"] .modal-legal__panel { transform: translateY(0) scale(1); }
 .modal-legal__close {
   position: absolute;
-  top: 1rem; right: 1rem;
-  width: 36px; height: 36px;
-  border: 1px solid var(--border);
-  background: transparent;
+  top: 1.25rem; right: 1.25rem;
+  width: 42px; height: 42px;
+  border: 1px solid var(--border-2);
+  background: var(--surf);
   color: var(--tx-2);
   border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
   cursor: pointer;
-  transition: color .25s var(--ease), border-color .25s var(--ease), transform .35s var(--ease);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.06);
+  transition:
+    color .35s var(--ease),
+    border-color .35s var(--ease),
+    background-color .35s var(--ease),
+    transform .45s cubic-bezier(0.16, 1, 0.3, 1);
 }
-.modal-legal__close:hover { color: var(--red); border-color: var(--red); transform: rotate(90deg); }
+.modal-legal__close:hover { color: var(--red); border-color: var(--red); background: rgba(196,67,47,.06); transform: rotate(90deg) scale(1.05); }
 .modal-legal__eyebrow {
   font-family: var(--f-body);
   font-size: .6rem;
