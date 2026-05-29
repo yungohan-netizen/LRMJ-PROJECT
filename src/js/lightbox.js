@@ -17,8 +17,9 @@ export function initLightbox() {
   let idx = 0;
   let lastFocus = null;
 
+  // Exclut les clones du marquee (.is-clone) pour ne pas dupliquer la liste
   const collectItems = () => {
-    items = Array.from(grid.querySelectorAll('.masonry-item:not(.hidden)')).map(el => {
+    items = Array.from(grid.querySelectorAll('.masonry-item:not(.is-clone):not(.hidden)')).map(el => {
       const img = el.querySelector('img');
       const lbl = el.querySelector('.masonry-item__label');
       return {
@@ -68,26 +69,40 @@ export function initLightbox() {
   const next = () => { idx = (idx + 1) % items.length; fillLightbox(idx); };
   const prev = () => { idx = (idx - 1 + items.length) % items.length; fillLightbox(idx); };
 
+  // Trouve l'index dans la liste dédupliquée (clone → matche par data-img-hd)
+  const indexOfEl = (it) => {
+    const direct = items.findIndex(x => x.el === it);
+    if (direct >= 0) return direct;
+    const hd = it.getAttribute('data-img-hd');
+    return items.findIndex(x => x.srcHd === hd);
+  };
+
   const bindItemClicks = () => {
     grid.querySelectorAll('.masonry-item').forEach(it => {
       if (it.dataset.bound) return;
       it.dataset.bound = '1';
-      it.tabIndex = 0;
-      it.setAttribute('role', 'button');
-      it.setAttribute('aria-label', 'Ouvrir l\'aperçu');
+      const isClone = it.classList.contains('is-clone');
+      // Clones non focusables (aria-hidden), mais cliquables
+      if (!isClone) {
+        it.tabIndex = 0;
+        it.setAttribute('role', 'button');
+        it.setAttribute('aria-label', 'Ouvrir l\'aperçu');
+      }
       it.addEventListener('click', () => {
         collectItems();
-        const i = items.findIndex(x => x.el === it);
+        const i = indexOfEl(it);
         if (i >= 0) openLb(i);
       });
-      it.addEventListener('keydown', (e) => {
-        if (e.key === 'Enter' || e.key === ' ') {
-          e.preventDefault();
-          collectItems();
-          const i = items.findIndex(x => x.el === it);
-          if (i >= 0) openLb(i);
-        }
-      });
+      if (!isClone) {
+        it.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            collectItems();
+            const i = indexOfEl(it);
+            if (i >= 0) openLb(i);
+          }
+        });
+      }
     });
   };
 

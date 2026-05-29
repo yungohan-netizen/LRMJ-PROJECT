@@ -1,28 +1,21 @@
 import { fetchGallery, parseResource, isFeatured, isMasonryPinned } from './cloudinary.js';
-import { revealNewFi } from './reveal.js';
 
-/** Nombre d'items visibles selon viewport.
- *  desktop ≥ 961 → 21 | tablet 601-960 → 10 | mobile ≤ 600 → 7 */
-function initialCount() {
-  const w = window.innerWidth;
-  if (w <= 600) return 7;
-  if (w <= 960) return 10;
-  return 21;
-}
+/** Nombre de rangées du marquee. */
+const ROWS = 3;
+/** Plafond d'items affichés (perf : DOM nodes = CAP × 2 pour le loop). */
+const CAP = 60;
 
-/** Populate masonry-grid from union of all category folders.
- *  If empty / unreachable → keep static fallback markup. */
+/** Peuple #masonryGrid en 3 rangées défilantes (marquee).
+ *  Chaque rangée = items originaux + clone (loop translateX -50%).
+ *  Garde fallback skeleton si Cloudinary vide / injoignable. */
 export async function initMasonry() {
   const grid = document.getElementById('masonryGrid');
   if (!grid) return;
 
   const resources = await fetchGallery();
-  if (!resources.length) return; // garde fallback HTML
+  if (!resources.length) return; // garde skeleton HTML
 
-  // Tri 3 niveaux :
-  // 1. tag "Masonry" → épinglé en tête (peu importe le dossier)
-  // 2. tag "Featured" → couvertures de catégorie
-  // 3. date desc (ordre Cloudinary)
+  // Tri 3 niveaux : Masonry pin > Featured > date desc
   resources.sort((a, b) => {
     const am = isMasonryPinned(a) ? 0 : 1;
     const bm = isMasonryPinned(b) ? 0 : 1;
@@ -33,28 +26,36 @@ export async function initMasonry() {
     return new Date(b.created_at || 0) - new Date(a.created_at || 0);
   });
 
-  const items = resources.map(r => parseResource(r, {
-    extra: 'c_fill,g_auto',
-    w: 800,
+  const items = resources.slice(0, CAP).map(r => parseResource(r, {
+    extra: 'c_fill,g_auto,ar_1:1',
+    w: 500,
     wHd: 2000,
   }));
 
-  const limit = initialCount();
-  const cardHtml = (p, i) => {
-    const cls = i >= limit ? 'masonry-item hidden' : 'masonry-item fi';
-    return `<div class="${cls}" role="listitem" data-img-hd="${p.srcHd}">
-      <img src="${p.src}"
-           srcset="${p.srcset}"
-           sizes="(max-width: 640px) 100vw, (max-width: 1100px) 50vw, 33vw"
+  // Répartit en ROWS rangées (round-robin pour mélanger les catégories)
+  const rows = Array.from({ length: ROWS }, () => []);
+  items.forEach((p, i) => rows[i % ROWS].push(p));
+
+  const tile = (p, clone = false) => `<div
+      class="masonry-item${clone ? ' is-clone' : ''}"
+      role="listitem"${clone ? ' aria-hidden="true"' : ''}
+      data-img-hd="${escapeAttr(p.srcHd)}">
+      <img src="${escapeAttr(p.src)}"
+           sizes="clamp(150px, 20vw, 260px)"
            alt="${escapeAttr(p.title)}"
-           width="${p.width || 1024}" height="${p.height || 1280}"
+           width="500" height="500"
            loading="lazy" decoding="async"/>
       <div class="masonry-item__label">${escapeHtml(p.title)}</div>
     </div>`;
+
+  // Original + clone dans chaque track → loop sans couture (-50%)
+  const rowHtml = (rowItems) => {
+    const set = rowItems.map(p => tile(p, false)).join('');
+    const cloneSet = rowItems.map(p => tile(p, true)).join('');
+    return `<div class="marquee__row"><div class="marquee__track">${set}${cloneSet}</div></div>`;
   };
 
-  grid.innerHTML = items.map(cardHtml).join('');
-  revealNewFi(grid);
+  grid.innerHTML = rows.map(rowHtml).join('');
 }
 
 function escapeHtml(s) {

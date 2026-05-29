@@ -173,46 +173,25 @@
     <div class="hero__grain"   aria-hidden="true"></div>
   </section>
 
-  <!-- TICKER -->
-  <section class="ticker" aria-label="LRMJ Project en chiffres">
-    <div class="ticker__track" aria-hidden="true">
-      <div class="ticker__item"><strong>30 ans</strong><span>d'artisanat</span></div>
-      <span class="ticker__sep" aria-hidden="true"></span>
-      <div class="ticker__item"><strong>Bruxelles</strong><span>& Brabant flamand</span></div>
-      <span class="ticker__sep" aria-hidden="true"></span>
-      <div class="ticker__item"><strong>Fer &amp; verre</strong><span>sur mesure</span></div>
-      <span class="ticker__sep" aria-hidden="true"></span>
-      <div class="ticker__item"><strong>Devis</strong><span>gratuit</span></div>
-      <span class="ticker__sep" aria-hidden="true"></span>
-      <div class="ticker__item"><strong>Portails</strong><span>&amp; clôtures</span></div>
-      <span class="ticker__sep" aria-hidden="true"></span>
-      <div class="ticker__item"><strong>Garde-corps</strong><span>&amp; escaliers</span></div>
-      <span class="ticker__sep" aria-hidden="true"></span>
-      <div class="ticker__item"><strong>Verrières</strong><span>&amp; serres</span></div>
-      <span class="ticker__sep" aria-hidden="true"></span>
-      <div class="ticker__item"><strong>100%</strong><span>sur mesure</span></div>
-      <span class="ticker__sep" aria-hidden="true"></span>
-      <div class="ticker__item"><strong>Atelier</strong><span>familial</span></div>
-      <span class="ticker__sep" aria-hidden="true"></span>
-      <!-- Loop 2 -->
-      <div class="ticker__item"><strong>30 ans</strong><span>d'artisanat</span></div>
-      <span class="ticker__sep" aria-hidden="true"></span>
-      <div class="ticker__item"><strong>Bruxelles</strong><span>& Brabant flamand</span></div>
-      <span class="ticker__sep" aria-hidden="true"></span>
-      <div class="ticker__item"><strong>Fer &amp; verre</strong><span>sur mesure</span></div>
-      <span class="ticker__sep" aria-hidden="true"></span>
-      <div class="ticker__item"><strong>Devis</strong><span>gratuit</span></div>
-      <span class="ticker__sep" aria-hidden="true"></span>
-      <div class="ticker__item"><strong>Portails</strong><span>&amp; clôtures</span></div>
-      <span class="ticker__sep" aria-hidden="true"></span>
-      <div class="ticker__item"><strong>Garde-corps</strong><span>&amp; escaliers</span></div>
-      <span class="ticker__sep" aria-hidden="true"></span>
-      <div class="ticker__item"><strong>Verrières</strong><span>&amp; serres</span></div>
-      <span class="ticker__sep" aria-hidden="true"></span>
-      <div class="ticker__item"><strong>100%</strong><span>sur mesure</span></div>
-      <span class="ticker__sep" aria-hidden="true"></span>
-      <div class="ticker__item"><strong>Atelier</strong><span>familial</span></div>
-      <span class="ticker__sep" aria-hidden="true"></span>
+  <!-- TRUST STRIP — piliers de confiance (statique) -->
+  <section class="trust" aria-label="LRMJ Project, points de confiance">
+    <div class="trust__inner">
+      <div class="trust__item">
+        <span class="trust__value">Sur mesure</span>
+        <span class="trust__label">Fer &amp; verre, 100% conçu pour vous</span>
+      </div>
+      <div class="trust__item">
+        <span class="trust__value">Bruxelles</span>
+        <span class="trust__label">&amp; Brabant flamand</span>
+      </div>
+      <div class="trust__item">
+        <span class="trust__value">Atelier propre</span>
+        <span class="trust__label">Zéro sous-traitance</span>
+      </div>
+      <div class="trust__item">
+        <span class="trust__value">Devis gratuit</span>
+        <span class="trust__label">Réponse sous 48h</span>
+      </div>
     </div>
   </section>
 
@@ -226,16 +205,20 @@
       <a href="#contact" class="btn btn--ghost">Devis Gratuit<span class="btn__ico" aria-hidden="true">↗</span></a>
     </div>
 
-    <!-- Fallback statique. JS Cloudinary remplace si tag "lrmj-realisation" trouvé. -->
-    <div class="masonry-grid" id="masonryGrid" role="list">
-      <div class="masonry-item masonry-item--skeleton" role="listitem" aria-hidden="true"></div>
-      <div class="masonry-item masonry-item--skeleton" role="listitem" aria-hidden="true"></div>
-      <div class="masonry-item masonry-item--skeleton" role="listitem" aria-hidden="true"></div>
+    <!-- Marquee photos : 3 rangées défilantes, sens + vitesses alternés.
+         JS Cloudinary peuple #masonryGrid. Fallback = skeleton rows. -->
+    <div class="marquee" id="masonryGrid" role="list" aria-label="Galerie des réalisations">
+      <div class="marquee__row marquee__row--skeleton" aria-hidden="true">
+        <span></span><span></span><span></span><span></span><span></span><span></span>
+      </div>
+      <div class="marquee__row marquee__row--skeleton" aria-hidden="true">
+        <span></span><span></span><span></span><span></span><span></span><span></span>
+      </div>
+      <div class="marquee__row marquee__row--skeleton" aria-hidden="true">
+        <span></span><span></span><span></span><span></span><span></span><span></span>
+      </div>
     </div>
-
-    <div class="masonry-footer">
-      <button class="masonry-load-btn" id="loadMoreBtn">Voir plus de réalisations</button>
-    </div>
+    <p class="marquee__hint">Survolez pour mettre en pause, cliquez pour agrandir</p>
   </section>
 
   <div class="sdiv sdiv--01" aria-hidden="true"></div>
