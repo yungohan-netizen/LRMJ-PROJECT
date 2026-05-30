@@ -26,9 +26,11 @@ export async function initMasonry() {
     return new Date(b.created_at || 0) - new Date(a.created_at || 0);
   });
 
+  // c_limit : préserve le ratio natif (vertical / horizontal / carré).
+  // La hauteur est fixée en CSS, la largeur suit le ratio → agencement varié.
   const items = resources.slice(0, CAP).map(r => parseResource(r, {
-    extra: 'c_fill,g_auto,ar_1:1',
-    w: 500,
+    extra: 'c_limit',
+    w: 700,
     wHd: 2000,
   }));
 
@@ -41,9 +43,8 @@ export async function initMasonry() {
       role="listitem"${clone ? ' aria-hidden="true"' : ''}
       data-img-hd="${escapeAttr(p.srcHd)}">
       <img src="${escapeAttr(p.src)}"
-           sizes="clamp(150px, 20vw, 260px)"
            alt="${escapeAttr(p.title)}"
-           width="500" height="500"
+           width="${p.width || 800}" height="${p.height || 800}"
            loading="lazy" decoding="async"/>
       <div class="masonry-item__label">${escapeHtml(p.title)}</div>
     </div>`;
