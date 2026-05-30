@@ -63,9 +63,9 @@ html.js .fi.is-in.eyebrow::before { transform: scaleX(1); }
 }
 
 .h-mega { font-family: var(--f-display); font-size: clamp(2.8rem,6vw,6rem); font-weight: 300; line-height: 1.02; letter-spacing: -.02em; color: var(--tx); }
-.h-mega em { font-style: italic; color: rgba(var(--tx-rgb), .4); }
+.h-mega em { font-style: normal; font-weight: 500; color: var(--red); }
 .h-large { font-family: var(--f-display); font-size: clamp(2rem,4vw,3.8rem); font-weight: 300; line-height: 1.06; letter-spacing: -.02em; color: var(--tx); }
-.h-large em { font-style: italic; color: rgba(var(--tx-rgb), .5); }
+.h-large em { font-style: normal; font-weight: 500; color: var(--red); }
 
 /* Split-text reveal */
 .word {

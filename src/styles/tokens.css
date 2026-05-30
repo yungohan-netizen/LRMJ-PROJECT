@@ -32,7 +32,7 @@
   --shadow-card: 0 12px 32px rgba(13,31,60,0.10);
 
   /* Type scale */
-  --f-display: 'Cormorant Garamond', Georgia, serif;
+  --f-display: 'Clash Display', system-ui, sans-serif;
   --f-body:    'DM Sans', system-ui, sans-serif;
 
   /* Spacing */

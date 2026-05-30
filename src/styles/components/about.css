@@ -8,8 +8,8 @@
 .about-tagline {
   font-family: var(--f-display);
   font-size: clamp(1.6rem, 3vw, 2.4rem);
-  font-weight: 300;
-  font-style: italic;
+  font-weight: 400;
+  font-style: normal;
   color: var(--tx);
   line-height: 1.25;
   margin: .5rem 0 1.75rem;
