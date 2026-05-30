@@ -176,27 +176,63 @@
     <div class="hero__grain"   aria-hidden="true"></div>
   </section>
 
-  <!-- CERTIFICATIONS / PARTENAIRES — placeholders à remplacer par vrais logos
-       (RGIE, assurance décennale, Ville de Bruxelles, fédérations, labels…) -->
+  <!-- CERTIFICATIONS / PARTENAIRES — placeholders style logos institutionnels
+       (à remplacer par les vrais : RGIE, décennale, VBX, fédérations, labels…) -->
   <section class="certs" aria-label="Certifications et partenaires">
     <p class="certs__label">Certifications &amp; partenaires</p>
     <div class="certs__row">
-      <!-- TODO: remplacer chaque .certs__logo par le vrai logo (SVG ou PNG transparent) -->
-      <div class="certs__logo" aria-label="Partenaire (à venir)">
-        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="32" cy="32" r="22"/><path d="M22 32l7 7 13-15"/></svg>
+
+      <!-- Placeholder 1 : technique encadré "RGIE" style -->
+      <div class="certs__logo" aria-label="Placeholder RGIE — à remplacer">
+        <svg viewBox="0 0 130 60" fill="none" aria-hidden="true">
+          <rect x="2" y="2" width="126" height="56" rx="2" fill="none" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="14" y1="46" x2="116" y2="46" stroke="currentColor" stroke-width=".8" opacity=".5"/>
+          <text x="65" y="34" text-anchor="middle" font-family="Clash Display, sans-serif" font-weight="700" font-size="22" letter-spacing="4" fill="currentColor">RGIE</text>
+          <text x="65" y="54" text-anchor="middle" font-family="DM Sans, sans-serif" font-weight="500" font-size="6" letter-spacing="2.5" fill="currentColor" opacity=".7">CERTIFIÉ</text>
+        </svg>
       </div>
-      <div class="certs__logo" aria-label="Certification (à venir)">
-        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M32 8l6 6h8v8l6 6-6 6v8h-8l-6 6-6-6h-8v-8l-6-6 6-6v-8h8z"/><path d="M26 32l5 5 9-11"/></svg>
+
+      <!-- Placeholder 2 : sceau institutionnel circulaire -->
+      <div class="certs__logo" aria-label="Placeholder Ville de Bruxelles — à remplacer">
+        <svg viewBox="0 0 80 80" fill="none" aria-hidden="true">
+          <circle cx="40" cy="40" r="37" fill="none" stroke="currentColor" stroke-width="1.5"/>
+          <circle cx="40" cy="40" r="30" fill="none" stroke="currentColor" stroke-width=".7" opacity=".55"/>
+          <path d="M40 14 L46 26 H56 L48 34 L51 46 L40 39 L29 46 L32 34 L24 26 H34 Z" fill="currentColor" opacity=".85"/>
+          <text x="40" y="60" text-anchor="middle" font-family="Clash Display, sans-serif" font-weight="700" font-size="9" letter-spacing="2.5" fill="currentColor">VBX</text>
+          <text x="40" y="70" text-anchor="middle" font-family="DM Sans, sans-serif" font-weight="500" font-size="4.5" letter-spacing="1.6" fill="currentColor" opacity=".7">BRUXELLES</text>
+        </svg>
       </div>
-      <div class="certs__logo" aria-label="Label (à venir)">
-        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="12" y="12" width="40" height="40" rx="6"/><path d="M24 32h16M32 24v16"/></svg>
+
+      <!-- Placeholder 3 : wordmark fédération + pastille -->
+      <div class="certs__logo" aria-label="Placeholder Confédération — à remplacer">
+        <svg viewBox="0 0 180 50" fill="none" aria-hidden="true">
+          <circle cx="20" cy="25" r="12" fill="currentColor"/>
+          <path d="M14 25 L19 30 L27 21" fill="none" stroke="var(--bg)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="42" y="22" font-family="Clash Display, sans-serif" font-weight="700" font-size="14" letter-spacing="2" fill="currentColor">FERROBEL</text>
+          <text x="42" y="36" font-family="DM Sans, sans-serif" font-weight="500" font-size="6" letter-spacing="3.5" fill="currentColor" opacity=".7">FÉDÉRATION ARTISANS</text>
+        </svg>
       </div>
-      <div class="certs__logo" aria-label="Fédération (à venir)">
-        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M32 6l24 12v14c0 14-10 22-24 26C18 54 8 46 8 32V18z"/></svg>
+
+      <!-- Placeholder 4 : blason assurance décennale -->
+      <div class="certs__logo" aria-label="Placeholder assurance décennale — à remplacer">
+        <svg viewBox="0 0 70 80" fill="none" aria-hidden="true">
+          <path d="M35 4 L66 14 V40 Q66 60 35 76 Q4 60 4 40 V14 Z" fill="none" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M35 10 L60 18 V40 Q60 56 35 70 Q10 56 10 40 V18 Z" fill="currentColor" opacity=".06"/>
+          <text x="35" y="42" text-anchor="middle" font-family="Clash Display, sans-serif" font-weight="700" font-size="18" letter-spacing="1" fill="currentColor">10</text>
+          <text x="35" y="56" text-anchor="middle" font-family="DM Sans, sans-serif" font-weight="600" font-size="5" letter-spacing="2.2" fill="currentColor" opacity=".75">DÉCENNALE</text>
+        </svg>
       </div>
-      <div class="certs__logo" aria-label="Assurance (à venir)">
-        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="32" cy="26" r="14"/><path d="M22 48l10-8 10 8"/><path d="M32 20v12M26 26h12"/></svg>
+
+      <!-- Placeholder 5 : badge hexagonal qualité -->
+      <div class="certs__logo" aria-label="Placeholder ISO 9001 — à remplacer">
+        <svg viewBox="0 0 110 80" fill="none" aria-hidden="true">
+          <path d="M28 6 L82 6 L104 40 L82 74 L28 74 L6 40 Z" fill="none" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M28 12 L82 12 L98 40 L82 68 L28 68 L12 40 Z" fill="currentColor" opacity=".05"/>
+          <text x="55" y="38" text-anchor="middle" font-family="Clash Display, sans-serif" font-weight="700" font-size="16" letter-spacing="2" fill="currentColor">ISO</text>
+          <text x="55" y="55" text-anchor="middle" font-family="DM Sans, sans-serif" font-weight="600" font-size="9" letter-spacing="3" fill="currentColor" opacity=".8">9001</text>
+        </svg>
       </div>
+
     </div>
   </section>
 
