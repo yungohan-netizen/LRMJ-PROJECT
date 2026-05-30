@@ -1,73 +1,46 @@
-/* ── TRUST STRIP — piliers de confiance statiques (remplace l'ancien ticker) ── */
-.trust {
+/* ── CERTIF / PARTENAIRES — bande de logos (placeholders en attendant) ── */
+.certs {
   position: relative;
   background: var(--bg);
-  border-top: 1px solid var(--red-border);
-  border-bottom: 1px solid var(--red-border);
-  z-index: 5;
+  padding: clamp(2.5rem, 5vw, 4rem) clamp(1.5rem, 5vw, 4rem);
+  border-bottom: 1px solid var(--border);
 }
-.trust__inner {
-  max-width: 1280px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  align-items: center;
-}
-.trust__item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.certs__label {
   text-align: center;
-  gap: .5rem;
-  padding: clamp(1.5rem, 3vw, 2.4rem) clamp(.75rem, 2vw, 1.5rem);
-  position: relative;
-}
-/* Hairline separators between pillars */
-.trust__item:not(:last-child)::after {
-  content: '';
-  position: absolute;
-  right: 0; top: 50%;
-  transform: translateY(-50%);
-  width: 1px; height: 48%;
-  background: var(--border);
-}
-.trust__value {
-  font-family: var(--f-display);
-  font-weight: 400;
-  font-size: clamp(1.3rem, 2.2vw, 1.85rem);
-  color: var(--tx);
-  letter-spacing: -.01em;
-  line-height: 1.05;
-}
-.trust__label {
-  font-family: var(--f-body);
-  font-size: clamp(.56rem, .85vw, .68rem);
-  font-weight: 500;
-  letter-spacing: .16em;
+  font-size: .62rem;
+  font-weight: 600;
+  letter-spacing: .22em;
   text-transform: uppercase;
   color: var(--tx-3);
-  line-height: 1.3;
-  max-width: 22ch;
+  margin-bottom: clamp(1.5rem, 3vw, 2.25rem);
 }
+.certs__row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(1.75rem, 5vw, 4rem);
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.certs__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: clamp(42px, 6vw, 60px);
+  color: var(--tx-2);
+  opacity: .55;
+  filter: grayscale(1);
+  transition: opacity .4s var(--ease), filter .4s var(--ease), transform .5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.certs__logo:hover {
+  opacity: 1;
+  filter: grayscale(0);
+  transform: translateY(-2px);
+}
+.certs__logo svg { height: 100%; width: auto; display: block; }
+.certs__logo img { height: 100%; width: auto; object-fit: contain; display: block; }
 
-@media (max-width: 720px) {
-  .trust__inner { grid-template-columns: 1fr 1fr; }
-  /* remove vertical separator on right-column items, add bottom borders for the top row */
-  .trust__item:not(:last-child)::after { display: none; }
-  .trust__item:nth-child(odd)::before {
-    content: '';
-    position: absolute;
-    right: 0; top: 22%;
-    width: 1px; height: 56%;
-    background: var(--border);
-  }
-  .trust__item:nth-child(1),
-  .trust__item:nth-child(2) {
-    border-bottom: 1px solid var(--border);
-  }
-}
-@media (max-width: 420px) {
-  .trust__inner { grid-template-columns: 1fr; }
-  .trust__item:nth-child(odd)::before { display: none; }
-  .trust__item:not(:last-child) { border-bottom: 1px solid var(--border); }
+@media (max-width: 560px) {
+  .certs__row { gap: 1.75rem 2.5rem; }
 }

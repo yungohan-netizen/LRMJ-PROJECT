@@ -1,4 +1,7 @@
 /* ── RÉALISATIONS — Multi-row photo marquee (remplace l'ancienne masonry pinterest) ── */
+/* La section gère son espacement via .masonry-hdr (haut) + padding-bottom ici.
+   On annule le padding-block de .s pour éviter un double-vide. */
+#realisations.s { padding-top: 0; padding-bottom: clamp(3.5rem, 6vw, 6rem); }
 .masonry-hdr {
   display: flex; align-items: flex-end; justify-content: space-between;
   padding: clamp(3rem,5vw,5rem) clamp(1.5rem,5vw,4rem) clamp(2rem,4vw,3rem);
