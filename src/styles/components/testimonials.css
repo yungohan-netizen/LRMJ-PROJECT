@@ -1,3 +1,23 @@
+/* Crédibilité réelle sous le titre (Facebook) */
+.testi-cred {
+  display: inline-flex;
+  align-items: center;
+  gap: .75rem;
+  margin-top: 1.1rem;
+  padding: .5rem 1.1rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surf);
+  text-decoration: none;
+  font-size: .68rem;
+  letter-spacing: .04em;
+  transition: border-color .35s var(--ease), background-color .35s var(--ease), transform .4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.testi-cred:hover { border-color: var(--red-border); background: rgba(196,67,47,.06); transform: translateY(-2px); }
+.testi-cred__score { color: var(--red); font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+.testi-cred__sep { width: 1px; height: 12px; background: var(--border-2); }
+.testi-cred__src { color: var(--tx-2); font-weight: 500; }
+
 /* ── TESTIMONIALS — Floating bento + double-bezel ── */
 .testi-grid {
   display: grid; grid-template-columns: repeat(3,1fr);
