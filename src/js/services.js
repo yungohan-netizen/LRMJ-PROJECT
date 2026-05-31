@@ -23,6 +23,8 @@ export async function initServices() {
     { selector: '.svc-card[data-svc="gardecorps"]', key: 'gardecorps' },
     { selector: '.svc-card[data-svc="verrieres"]',  key: 'verrieres'  },
     { selector: '.svc-card[data-svc="marquises"]',  key: 'marquises'  },
+    { selector: '.svc-card[data-svc="escaliers"]',  key: 'escaliers'  },
+    { selector: '.svc-card[data-svc="meubles"]',    key: 'meubles'    },
   ];
 
   await Promise.all(mapping.map(async ({ selector, key }) => {
