@@ -116,12 +116,18 @@
            fetchpriority="high"/>
     </a>
     <ul class="nav__links" role="list">
-      <li><a href="#realisations">Réalisations</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#restauration">Restauration fonte</a></li>
-      <li><a href="#about">À Propos</a></li>
+      <li><a href="#realisations" data-i18n="nav.realisations">Réalisations</a></li>
+      <li><a href="#services" data-i18n="nav.services">Services</a></li>
+      <li><a href="#restauration" data-i18n="nav.restauration">Restauration fonte</a></li>
+      <li><a href="#about" data-i18n="nav.about">À Propos</a></li>
     </ul>
     <div class="nav__actions">
+      <!-- Lang toggle FR / NL -->
+      <div class="lang-toggle" role="group" aria-label="Langue / Taal">
+        <button class="lang-toggle__btn is-active" data-lang="fr" aria-current="true" type="button">FR</button>
+        <span class="lang-toggle__sep" aria-hidden="true"></span>
+        <button class="lang-toggle__btn" data-lang="nl" aria-current="false" type="button">NL</button>
+      </div>
       <button class="theme-toggle" id="themeToggle" type="button" aria-label="Basculer entre mode clair et sombre">
         <svg class="theme-toggle__sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
           <circle cx="12" cy="12" r="4"/>
@@ -135,7 +141,7 @@
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.9z"/></svg>
         <span>0475 39 99 09</span>
       </a>
-      <a href="#contact" class="nav__cta-pill">Devis Gratuit</a>
+      <a href="#contact" class="nav__cta-pill" data-i18n="nav.cta">Devis Gratuit</a>
       <button class="nav__hamburger" id="navHamburger" aria-expanded="false" aria-controls="navMobile" aria-label="Menu">
         <span></span><span></span>
       </button>
@@ -146,15 +152,15 @@
 
 <div class="nav__mobile" id="navMobile" role="dialog" aria-modal="true" aria-label="Menu" hidden>
   <nav class="nav__mobile-links">
-    <a href="#realisations" class="mobile-link">Réalisations</a>
-    <a href="#services" class="mobile-link">Services</a>
-    <a href="#restauration" class="mobile-link">Restauration fonte</a>
-    <a href="#about" class="mobile-link">À Propos</a>
-    <a href="#contact" class="mobile-link">Contact</a>
+    <a href="#realisations" class="mobile-link" data-i18n="nav.realisations">Réalisations</a>
+    <a href="#services" class="mobile-link" data-i18n="nav.services">Services</a>
+    <a href="#restauration" class="mobile-link" data-i18n="nav.restauration">Restauration fonte</a>
+    <a href="#about" class="mobile-link" data-i18n="nav.about">À Propos</a>
+    <a href="#contact" class="mobile-link" data-i18n="nav.contact">Contact</a>
   </nav>
   <div class="nav__mobile-bottom">
     <a href="tel:0475399909" class="nav__mobile-phone">0475 39 99 09</a>
-    <a href="#contact" class="nav__mobile-cta">Devis Gratuit →</a>
+    <a href="#contact" class="nav__mobile-cta" data-i18n="mobile.cta">Devis Gratuit →</a>
   </div>
 </div>
 
@@ -179,7 +185,7 @@
   <!-- CERTIFICATIONS / PARTENAIRES — placeholders style logos institutionnels
        (à remplacer par les vrais : RGIE, décennale, VBX, fédérations, labels…) -->
   <section class="certs" aria-label="Certifications et partenaires">
-    <p class="certs__label">Certifications &amp; partenaires</p>
+    <p class="certs__label" data-i18n="certs.label">Certifications &amp; partenaires</p>
     <div class="certs__row">
 
       <!-- Placeholder 1 : technique encadré "RGIE" style -->
@@ -240,10 +246,10 @@
   <section id="realisations" class="s s--dark" aria-labelledby="gal-title">
     <div class="masonry-hdr fi">
       <div>
-        <span class="eyebrow">Réalisations</span>
-        <h2 class="h-large" id="gal-title">Le Travail<br><em>Parle Pour Lui-Même</em></h2>
+        <span class="eyebrow" data-i18n="real.eyebrow">Réalisations</span>
+        <h2 class="h-large" id="gal-title" data-i18n="real.title" data-i18n-html>Le Travail<br><em>Parle Pour Lui-Même</em></h2>
       </div>
-      <a href="#contact" class="btn btn--ghost">Devis Gratuit<span class="btn__ico" aria-hidden="true">↗</span></a>
+      <a href="#contact" class="btn btn--ghost"><span data-i18n="real.cta">Devis Gratuit</span><span class="btn__ico" aria-hidden="true">↗</span></a>
     </div>
 
     <!-- Marquee photos : 3 rangées défilantes, sens + vitesses alternés.
@@ -259,7 +265,7 @@
         <span></span><span></span><span></span><span></span><span></span><span></span>
       </div>
     </div>
-    <p class="marquee__hint">Survolez pour mettre en pause, cliquez pour agrandir</p>
+    <p class="marquee__hint" data-i18n="real.hint">Survolez pour mettre en pause, cliquez pour agrandir</p>
   </section>
 
   <div class="sdiv sdiv--01" aria-hidden="true"></div>
@@ -269,8 +275,8 @@
     <div class="wrap">
       <div class="svc-hdr fi">
         <div>
-          <span class="eyebrow">Prestations</span>
-          <h2 class="h-large" id="svc-title">Tout ce que<br><em>nous fabriquons</em></h2>
+          <span class="eyebrow" data-i18n="svc.eyebrow">Prestations</span>
+          <h2 class="h-large" id="svc-title" data-i18n="svc.title" data-i18n-html>Tout ce que<br><em>nous fabriquons</em></h2>
         </div>
         <a href="#contact" class="btn btn--red">Devis Gratuit<span class="btn__ico" aria-hidden="true">↗</span></a>
       </div>
@@ -280,31 +286,31 @@
             <img class="svc-img" src="" alt="Portail en fer forgé" loading="lazy" decoding="async"/>
           </div>
           <div class="svc-body">
-            <span class="svc-tag">Signature</span>
-            <h3 class="svc-title">Portails &amp; Clôtures</h3>
-            <p class="svc-desc">Entrées monumentales ou clôtures élégantes. Finitions époxy ou galvanisées pour une durabilité maximale. Conçu sur mesure pour votre propriété.</p>
-            <a href="#contact" class="btn btn--ghost mt-auto" style="width:fit-content;">Devis Gratuit<span class="btn__ico" aria-hidden="true">↗</span></a>
+            <span class="svc-tag" data-i18n="svc.portails.tag">Signature</span>
+            <h3 class="svc-title" data-i18n="svc.portails.title">Portails &amp; Clôtures</h3>
+            <p class="svc-desc" data-i18n="svc.portails.desc">Entrées monumentales ou clôtures élégantes. Finitions époxy ou galvanisées pour une durabilité maximale. Conçu sur mesure pour votre propriété.</p>
+            <a href="#contact" class="btn btn--ghost mt-auto" style="width:fit-content;"><span data-i18n="svc.portails.cta">Devis Gratuit</span><span class="btn__ico" aria-hidden="true">↗</span></a>
           </div>
         </div>
         <div class="svc-card svc-card--loading fi" data-svc="gardecorps">
           <div class="svc-img-wrap"><img class="svc-img" src="" alt="Garde-corps en fer forgé" loading="lazy" decoding="async"/></div>
-          <div class="svc-body"><span class="svc-tag">Intérieur &amp; Extérieur</span><h3 class="svc-title">Garde-Corps &amp; Rampes</h3><p class="svc-desc">Escaliers, balcons, mezzanines. Sécurité et esthétique au service de votre espace.</p></div>
+          <div class="svc-body"><span class="svc-tag" data-i18n="svc.gardecorps.tag">Intérieur &amp; Extérieur</span><h3 class="svc-title" data-i18n="svc.gardecorps.title">Garde-Corps &amp; Rampes</h3><p class="svc-desc" data-i18n="svc.gardecorps.desc">Escaliers, balcons, mezzanines. Sécurité et esthétique au service de votre espace.</p></div>
         </div>
         <div class="svc-card svc-card--loading fi" data-svc="verrieres">
           <div class="svc-img-wrap"><img class="svc-img" src="" alt="Verrière et baie vitrée" loading="lazy" decoding="async"/></div>
-          <div class="svc-body"><span class="svc-tag">Jardin &amp; Extension</span><h3 class="svc-title">Verrières &amp; Baies Vitrées</h3><p class="svc-desc">Jardins d'hiver, vérandas, extensions vitrées. Structures légères et résistantes.</p></div>
+          <div class="svc-body"><span class="svc-tag" data-i18n="svc.verrieres.tag">Jardin &amp; Extension</span><h3 class="svc-title" data-i18n="svc.verrieres.title">Verrières &amp; Baies Vitrées</h3><p class="svc-desc" data-i18n="svc.verrieres.desc">Jardins d'hiver, vérandas, extensions vitrées. Structures légères et résistantes.</p></div>
         </div>
         <div class="svc-card svc-card--loading fi" data-svc="marquises">
           <div class="svc-img-wrap"><img class="svc-img" src="" alt="Marquise en fer forgé" loading="lazy" decoding="async"/></div>
-          <div class="svc-body"><span class="svc-tag">Protection</span><h3 class="svc-title">Marquises &amp; Auvents</h3><p class="svc-desc">Protection élégante pour entrées et terrasses. Châssis fer forgé, verre feuilleté.</p></div>
+          <div class="svc-body"><span class="svc-tag" data-i18n="svc.marquises.tag">Protection</span><h3 class="svc-title" data-i18n="svc.marquises.title">Marquises &amp; Auvents</h3><p class="svc-desc" data-i18n="svc.marquises.desc">Protection élégante pour entrées et terrasses. Châssis fer forgé, verre feuilleté.</p></div>
         </div>
         <div class="svc-card svc-card--loading fi" data-svc="escaliers">
           <div class="svc-img-wrap"><img class="svc-img" src="" alt="Escalier en acier et bois" loading="lazy" decoding="async"/></div>
-          <div class="svc-body"><span class="svc-tag">Structure</span><h3 class="svc-title">Escaliers</h3><p class="svc-desc">Escaliers droits ou hélicoïdaux, structure acier, marches bois ou métal. Trait d'union entre vos niveaux.</p></div>
+          <div class="svc-body"><span class="svc-tag" data-i18n="svc.escaliers.tag">Structure</span><h3 class="svc-title" data-i18n="svc.escaliers.title">Escaliers</h3><p class="svc-desc" data-i18n="svc.escaliers.desc">Escaliers droits ou hélicoïdaux, structure acier, marches bois ou métal. Trait d'union entre vos niveaux.</p></div>
         </div>
         <div class="svc-card svc-card--loading fi" data-svc="meubles">
           <div class="svc-img-wrap"><img class="svc-img" src="" alt="Meuble déco en fer forgé" loading="lazy" decoding="async"/></div>
-          <div class="svc-body"><span class="svc-tag">Décoration</span><h3 class="svc-title">Meubles &amp; Déco</h3><p class="svc-desc">Mobilier et pièces décoratives forgées sur mesure. Consoles, miroirs, lampes, objets uniques.</p></div>
+          <div class="svc-body"><span class="svc-tag" data-i18n="svc.meubles.tag">Décoration</span><h3 class="svc-title" data-i18n="svc.meubles.title">Meubles &amp; Déco</h3><p class="svc-desc" data-i18n="svc.meubles.desc">Mobilier et pièces décoratives forgées sur mesure. Consoles, miroirs, lampes, objets uniques.</p></div>
         </div>
       </div>
     </div>
@@ -319,9 +325,9 @@
 
         <!-- Colonne gauche : texte -->
         <div class="resto__content fi">
-          <span class="eyebrow">Spécialité rare · Bruxelles</span>
-          <h2 class="h-large" id="resto-title">Restauration des<br><em>balustrades en fonte</em></h2>
-          <p class="lead" style="margin-top:.75rem;">
+          <span class="eyebrow" data-i18n="resto.eyebrow">Spécialité rare · Bruxelles</span>
+          <h2 class="h-large" id="resto-title" data-i18n="resto.title" data-i18n-html>Restauration des<br><em>balustrades en fonte</em></h2>
+          <p class="lead" style="margin-top:.75rem;" data-i18n="resto.lead">
             Peu d'artisans maîtrisent encore la restauration de la fonte ancienne.
             Romeo redonne vie à vos balustrades, rampes, garde-corps et éléments décoratifs d'époque :
             nettoyage, soudure spécialisée, remplacement de pièces manquantes,
@@ -330,10 +336,10 @@
 
           <!-- Travaux éligibles -->
           <ul class="resto__works fi">
-            <li><span class="resto__works-ico" aria-hidden="true">✓</span>Nettoyage &amp; décapage de la fonte</li>
-            <li><span class="resto__works-ico" aria-hidden="true">✓</span>Soudure et remplacement de pièces</li>
-            <li><span class="resto__works-ico" aria-hidden="true">✓</span>Traitement anticorrosion &amp; peinture</li>
-            <li><span class="resto__works-ico" aria-hidden="true">✓</span>Garde-corps, balcons, consoles, moulures</li>
+            <li><span class="resto__works-ico" aria-hidden="true">✓</span><span data-i18n="resto.w1">Nettoyage &amp; décapage de la fonte</span></li>
+            <li><span class="resto__works-ico" aria-hidden="true">✓</span><span data-i18n="resto.w2">Soudure et remplacement de pièces</span></li>
+            <li><span class="resto__works-ico" aria-hidden="true">✓</span><span data-i18n="resto.w3">Traitement anticorrosion &amp; peinture</span></li>
+            <li><span class="resto__works-ico" aria-hidden="true">✓</span><span data-i18n="resto.w4">Garde-corps, balcons, consoles, moulures</span></li>
           </ul>
 
           <!-- Prime card -->
@@ -342,11 +348,11 @@
               <img src="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_120/v1779405108/logo_vbx_ykxksr.png"
                    alt="Ville de Bruxelles" width="60" height="40" loading="lazy" class="resto__prime-logo"/>
               <div>
-                <p class="resto__prime-label">Prime officielle</p>
-                <p class="resto__prime-title">Prime Embellissement de Façade</p>
+                <p class="resto__prime-label" data-i18n="resto.prime.label">Prime officielle</p>
+                <p class="resto__prime-title" data-i18n="resto.prime.title">Prime Embellissement de Façade</p>
               </div>
             </div>
-            <p class="resto__prime-text">
+            <p class="resto__prime-text" data-i18n="resto.prime.text" data-i18n-html>
               La Ville de Bruxelles rembourse <strong>40 à 60 % du coût des travaux</strong>
               de restauration de façade, dont les balcons, garde-corps et consoles en fonte,
               jusqu'à <strong>€&nbsp;14&nbsp;000</strong> par dossier.
@@ -371,21 +377,21 @@
             </div>
             <a href="https://www.bruxelles.be/prime-facades"
                target="_blank" rel="noopener noreferrer"
-               class="resto__prime-link">
+               class="resto__prime-link" data-i18n="resto.prime.link">
               Consulter la prime officielle →
             </a>
           </div>
 
           <a href="#contact" class="btn btn--red" style="margin-top:2rem;align-self:flex-start;">
-            Devis Gratuit<span class="btn__ico" aria-hidden="true">↗</span>
+            <span data-i18n="resto.cta">Devis Gratuit</span><span class="btn__ico" aria-hidden="true">↗</span>
           </a>
         </div>
 
         <!-- Colonne droite : visuel -->
         <div class="resto__visual fi">
           <blockquote class="resto__quote">
-            <p>« La fonte ancienne mérite une seconde vie. C'est notre patrimoine. »</p>
-            <cite>Romeo, artisan ferronnier</cite>
+            <p data-i18n="resto.quote">« La fonte ancienne mérite une seconde vie. C'est notre patrimoine. »</p>
+            <cite data-i18n="resto.cite">Romeo, artisan ferronnier</cite>
           </blockquote>
           <div class="resto__visual-img">
             <img id="restoImg"
@@ -405,11 +411,11 @@
   <section class="s s--dark glow-center" aria-labelledby="testi-title">
     <div class="wrap">
       <div class="fi text-center mb-10">
-        <h2 class="h-large" id="testi-title" style="margin-inline:auto;max-width:18ch;">Ce que disent<br><em>nos clients</em></h2>
+        <h2 class="h-large" id="testi-title" style="margin-inline:auto;max-width:18ch;" data-i18n="testi.title" data-i18n-html>Ce que disent<br><em>nos clients</em></h2>
         <a class="testi-cred" href="https://www.facebook.com/lrmjproject/reviews" target="_blank" rel="noopener noreferrer">
-          <span class="testi-cred__score">100% recommandé</span>
+          <span class="testi-cred__score" data-i18n="testi.cred.score">100% recommandé</span>
           <span class="testi-cred__sep" aria-hidden="true"></span>
-          <span class="testi-cred__src">9 avis sur Facebook</span>
+          <span class="testi-cred__src" data-i18n="testi.cred.src">9 avis sur Facebook</span>
         </a>
       </div>
       <div class="testi-grid" id="testiGrid">
@@ -453,7 +459,7 @@
   <section class="s s--lift proc" aria-labelledby="proc-title">
     <div class="wrap wrap--sm">
       <div class="fi text-center mb-10">
-        <h2 class="h-large" id="proc-title">De votre idée<br><em>à la pose finale</em></h2>
+        <h2 class="h-large" id="proc-title" data-i18n="proc.title" data-i18n-html>De votre idée<br><em>à la pose finale</em></h2>
       </div>
     </div>
     <div class="wrap">
@@ -473,8 +479,8 @@
             </svg>
           </div>
           <div class="proc-body">
-            <h3 class="proc-ttl">Contact</h3>
-            <p class="proc-desc">Appelez ou écrivez. On comprend votre projet et vos contraintes sans jargon.</p>
+            <h3 class="proc-ttl" data-i18n="proc.1.title">Contact</h3>
+            <p class="proc-desc" data-i18n="proc.1.desc">Appelez ou écrivez. On comprend votre projet et vos contraintes sans jargon.</p>
           </div>
         </article>
 
@@ -488,8 +494,8 @@
             </svg>
           </div>
           <div class="proc-body">
-            <h3 class="proc-ttl">Visite &amp; Devis</h3>
-            <p class="proc-desc">On se déplace, on mesure, devis détaillé et gratuit sous 48h.</p>
+            <h3 class="proc-ttl" data-i18n="proc.2.title">Visite &amp; Devis</h3>
+            <p class="proc-desc" data-i18n="proc.2.desc">On se déplace, on mesure, devis détaillé et gratuit sous 48h.</p>
           </div>
         </article>
 
@@ -504,8 +510,8 @@
             </svg>
           </div>
           <div class="proc-body">
-            <h3 class="proc-ttl">Fabrication</h3>
-            <p class="proc-desc">Chaque pièce façonnée dans notre atelier. Finition époxy, galva ou thermolaqué.</p>
+            <h3 class="proc-ttl" data-i18n="proc.3.title">Fabrication</h3>
+            <p class="proc-desc" data-i18n="proc.3.desc">Chaque pièce façonnée dans notre atelier. Finition époxy, galva ou thermolaqué.</p>
           </div>
         </article>
 
@@ -519,8 +525,8 @@
             </svg>
           </div>
           <div class="proc-body">
-            <h3 class="proc-ttl">Pose &amp; Réception</h3>
-            <p class="proc-desc">Installation soignée par notre équipe, finitions impeccables, remise des clés.</p>
+            <h3 class="proc-ttl" data-i18n="proc.4.title">Pose &amp; Réception</h3>
+            <p class="proc-desc" data-i18n="proc.4.desc">Installation soignée par notre équipe, finitions impeccables, remise des clés.</p>
           </div>
         </article>
       </div>
@@ -535,31 +541,31 @@
       <div class="about-grid">
         <div class="about-img about-img--loading fi">
           <img src="" alt="Artisan ferronnier au travail" width="480" height="640" loading="lazy" decoding="async"/>
-          <div class="about-img__caption" aria-hidden="true">Atelier LRMJ, Belgique</div>
+          <div class="about-img__caption" aria-hidden="true" data-i18n="about.caption">Atelier LRMJ, Belgique</div>
         </div>
         <div class="about-content fi">
-          <span class="eyebrow">À Propos</span>
-          <h2 class="about-tagline" id="about-title">L'artisanat comme vocation,<br>le terrain comme passion</h2>
+          <span class="eyebrow" data-i18n="about.eyebrow">À Propos</span>
+          <h2 class="about-tagline" id="about-title" data-i18n="about.tagline">L'artisanat comme vocation,<br>le terrain comme passion</h2>
           <div class="about-body">
             <p class="about-lede"><span class="about-dropcap" aria-hidden="true">L</span>RMJ Project est né de la passion d'un artisan ferronnier installé en Belgique. Chaque pièce est conçue et fabriquée en atelier, posée par nos propres mains.</p>
-            <p>Aucune sous-traitance. De la première esquisse au dernier boulon, vous avez notre parole, et un seul interlocuteur du devis à la pose.</p>
+            <p data-i18n="about.p2">Aucune sous-traitance. De la première esquisse au dernier boulon, vous avez notre parole, et un seul interlocuteur du devis à la pose.</p>
           </div>
           <div class="about-hl-grid">
             <div class="about-hl">
               <div class="about-hl-val"><span class="counter" data-target="30" data-prefix="+">+30</span></div>
-              <div class="about-hl-lbl">Années d'expérience</div>
+              <div class="about-hl-lbl" data-i18n="about.hl1.lbl">Années d'expérience</div>
             </div>
             <div class="about-hl">
               <div class="about-hl-val"><span class="counter" data-target="500" data-prefix="+">+500</span></div>
-              <div class="about-hl-lbl">Projets livrés</div>
+              <div class="about-hl-lbl" data-i18n="about.hl2.lbl">Projets livrés</div>
             </div>
             <div class="about-hl">
               <div class="about-hl-val"><span class="counter" data-target="100" data-suffix="%">100%</span></div>
-              <div class="about-hl-lbl">Fabrication propre</div>
+              <div class="about-hl-lbl" data-i18n="about.hl3.lbl">Fabrication propre</div>
             </div>
             <div class="about-hl">
               <div class="about-hl-val"><span class="counter" data-target="48" data-suffix="h">48h</span></div>
-              <div class="about-hl-lbl">Délai devis</div>
+              <div class="about-hl-lbl" data-i18n="about.hl4.lbl">Délai devis</div>
             </div>
           </div>
         </div>
@@ -574,21 +580,21 @@
     <div class="wrap">
       <div class="contact-grid">
         <div class="fi">
-          <span class="eyebrow">Contact</span>
-          <h2 class="h-large" id="contact-title">Parlons de<br><em>votre projet</em></h2>
-          <p class="lead" style="margin-top:.75rem;">Devis entièrement gratuit, sans engagement. Réponse sous 24h.</p>
+          <span class="eyebrow" data-i18n="contact.eyebrow">Contact</span>
+          <h2 class="h-large" id="contact-title" data-i18n="contact.title" data-i18n-html>Parlons de<br><em>votre projet</em></h2>
+          <p class="lead" style="margin-top:.75rem;" data-i18n="contact.lead">Devis entièrement gratuit, sans engagement. Réponse sous 24h.</p>
           <ul class="contact-info-list" role="list">
             <li class="contact-info-item">
               <div class="contact-info-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.9z"/></svg></div>
-              <div><div class="contact-info-lbl">Téléphone</div><div class="contact-info-val"><a href="tel:0475399909">0475 39 99 09</a></div></div>
+              <div><div class="contact-info-lbl" data-i18n="contact.phone.lbl">Téléphone</div><div class="contact-info-val"><a href="tel:0475399909">0475 39 99 09</a></div></div>
             </li>
             <li class="contact-info-item">
               <div class="contact-info-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
-              <div><div class="contact-info-lbl">Email</div><div class="contact-info-val"><a href="mailto:contact@lrmjproject.be">contact@lrmjproject.be</a></div></div>
+              <div><div class="contact-info-lbl" data-i18n="contact.email.lbl">Email</div><div class="contact-info-val"><a href="mailto:contact@lrmjproject.be">contact@lrmjproject.be</a></div></div>
             </li>
             <li class="contact-info-item">
               <div class="contact-info-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
-              <div><div class="contact-info-lbl">Disponibilité</div><div class="contact-info-val">Lun-Sam · 8h-18h</div></div>
+              <div><div class="contact-info-lbl" data-i18n="contact.hours.lbl">Disponibilité</div><div class="contact-info-val" data-i18n="contact.hours.val">Lun-Sam · 8h-18h</div></div>
             </li>
           </ul>
         </div>
@@ -598,18 +604,18 @@
             <input type="hidden" name="subject" value="Nouvelle demande de devis | lrmjproject.be" />
             <input type="hidden" name="from_name" value="Site LRMJ Project" />
             <input type="checkbox" name="botcheck" class="sr-only" tabindex="-1" autocomplete="off" aria-hidden="true" />
-            <p class="form-eye">Demande de devis</p>
+            <p class="form-eye" data-i18n="contact.form.eye">Demande de devis</p>
             <div class="form-grid">
-              <div class="form-field"><label class="form-lbl" for="prenom">Prénom *</label><input class="form-inp" type="text" id="prenom" name="prenom" placeholder="Jean" required autocomplete="given-name"/></div>
-              <div class="form-field"><label class="form-lbl" for="nom">Nom *</label><input class="form-inp" type="text" id="nom" name="nom" placeholder="Dupont" required autocomplete="family-name"/></div>
-              <div class="form-field"><label class="form-lbl" for="tel">Téléphone *</label><input class="form-inp" type="tel" id="tel" name="tel" placeholder="04XX XXX XXX" required autocomplete="tel"/></div>
-              <div class="form-field"><label class="form-lbl" for="email">Email</label><input class="form-inp" type="email" id="email" name="email" placeholder="jean@email.be" autocomplete="email"/></div>
-              <div class="form-field form-field--full"><label class="form-lbl" for="service">Type de projet</label><select class="form-sel" id="service" name="service"><option value="">Sélectionnez…</option><option value="portail">Portail / Clôture</option><option value="gardecorps">Garde-corps / Rampe</option><option value="serre">Serre / Baie vitrée</option><option value="marquise">Marquise / Auvent</option><option value="autre">Autre projet</option></select></div>
-              <div class="form-field form-field--full"><label class="form-lbl" for="message">Décrivez votre projet</label><textarea class="form-txt" id="message" name="message" placeholder="Dimensions, style, délai, localisation…"></textarea></div>
+              <div class="form-field"><label class="form-lbl" for="prenom" data-i18n="contact.form.prenom">Prénom *</label><input class="form-inp" type="text" id="prenom" name="prenom" placeholder="Jean" required autocomplete="given-name"/></div>
+              <div class="form-field"><label class="form-lbl" for="nom" data-i18n="contact.form.nom">Nom *</label><input class="form-inp" type="text" id="nom" name="nom" placeholder="Dupont" required autocomplete="family-name"/></div>
+              <div class="form-field"><label class="form-lbl" for="tel" data-i18n="contact.form.tel">Téléphone *</label><input class="form-inp" type="tel" id="tel" name="tel" placeholder="04XX XXX XXX" required autocomplete="tel"/></div>
+              <div class="form-field"><label class="form-lbl" for="email" data-i18n="contact.form.email">Email</label><input class="form-inp" type="email" id="email" name="email" placeholder="jean@email.be" autocomplete="email"/></div>
+              <div class="form-field form-field--full"><label class="form-lbl" for="service" data-i18n="contact.form.service">Type de projet</label><select class="form-sel" id="service" name="service"><option value="">Sélectionnez…</option><option value="portail">Portail / Clôture</option><option value="gardecorps">Garde-corps / Rampe</option><option value="serre">Serre / Baie vitrée</option><option value="marquise">Marquise / Auvent</option><option value="autre">Autre projet</option></select></div>
+              <div class="form-field form-field--full"><label class="form-lbl" for="message" data-i18n="contact.form.msg">Décrivez votre projet</label><textarea class="form-txt" id="message" name="message" placeholder="Dimensions, style, délai, localisation…"></textarea></div>
             </div>
-            <button type="submit" class="form-submit">Envoyer ma demande<span class="btn__ico" aria-hidden="true">↗</span></button>
-            <div class="form-success" id="formSuccess" role="status" aria-live="polite">✓ Message bien reçu. Nous vous recontactons sous 24h.</div>
-            <div class="form-error" id="formError" role="status" aria-live="polite">Une erreur est survenue. Réessayez ou appelez le 0475 39 99 09.</div>
+            <button type="submit" class="form-submit"><span data-i18n="contact.form.submit">Envoyer ma demande</span><span class="btn__ico" aria-hidden="true">↗</span></button>
+            <div class="form-success" id="formSuccess" role="status" aria-live="polite" data-i18n="contact.form.ok">✓ Message bien reçu. Nous vous recontactons sous 24h.</div>
+            <div class="form-error" id="formError" role="status" aria-live="polite" data-i18n="contact.form.err">Une erreur est survenue. Réessayez ou appelez le 0475 39 99 09.</div>
           </form>
         </div>
       </div>
@@ -658,10 +664,10 @@
                data-src-light="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_320/LRMJ_typeface_black_nevuzo.png"
                alt="LRMJ Project" loading="lazy"/>
         </div>
-        <p class="footer-desc">Artisan ferronnier sur mesure à Bruxelles. Portails, garde-corps, verrières, marquises, restauration fonte.</p>
+        <p class="footer-desc" data-i18n="footer.desc">Artisan ferronnier sur mesure à Bruxelles. Portails, garde-corps, verrières, marquises, restauration fonte.</p>
       </div>
       <div>
-        <p class="footer-hdg">Navigation</p>
+        <p class="footer-hdg" data-i18n="footer.nav.title">Navigation</p>
         <ul class="footer-links" role="list">
           <li><a href="#realisations">Réalisations</a></li>
           <li><a href="#services">Services</a></li>
@@ -679,7 +685,7 @@
         </ul>
       </div>
       <div>
-        <p class="footer-hdg">Contact</p>
+        <p class="footer-hdg" data-i18n="footer.contact.title">Contact</p>
         <ul class="footer-links" role="list">
           <li><a href="tel:0475399909">0475 39 99 09</a></li>
           <li><a href="mailto:contact@lrmjproject.be">contact@lrmjproject.be</a></li>
@@ -689,8 +695,8 @@
     </div>
     <div class="footer-btm">
       <p class="footer-copy">© <span id="footYear">2026</span> LRMJ Project ·
-        <button type="button" class="footer-link-btn" data-open-legal="mentions">Mentions légales</button> ·
-        <button type="button" class="footer-link-btn" data-open-legal="privacy">Confidentialité</button>
+        <button type="button" class="footer-link-btn" data-open-legal="mentions" data-i18n="footer.mentions">Mentions légales</button> ·
+        <button type="button" class="footer-link-btn" data-open-legal="privacy" data-i18n="footer.privacy">Confidentialité</button>
       </p>
       <p class="footer-copy">Ferronnerie artisanale · Belgique</p>
     </div>
@@ -699,15 +705,15 @@
 
 <!-- COOKIE BANNER -->
 <div class="cookie-banner" id="cookieBanner" role="dialog" aria-labelledby="cookieTitle" aria-describedby="cookieText" hidden>
-  <h2 class="cookie-banner__title" id="cookieTitle">Vos cookies</h2>
+  <h2 class="cookie-banner__title" id="cookieTitle" data-i18n="cookie.title">Vos cookies</h2>
   <p class="cookie-banner__text" id="cookieText">
     Nous utilisons uniquement des cookies <strong>strictement nécessaires</strong> au fonctionnement du site
     (préférence thème, mémoire de session). Aucun traceur publicitaire, aucune revente de données.
     <button type="button" class="footer-link-btn" data-open-legal="privacy">En savoir plus</button>
   </p>
   <div class="cookie-banner__actions">
-    <button type="button" class="cookie-banner__btn cookie-banner__btn--accept" id="cookieAccept">J'ai compris</button>
-    <button type="button" class="cookie-banner__btn cookie-banner__btn--decline" id="cookieDecline">Refuser tout</button>
+    <button type="button" class="cookie-banner__btn cookie-banner__btn--accept" id="cookieAccept" data-i18n="cookie.accept">J'ai compris</button>
+    <button type="button" class="cookie-banner__btn cookie-banner__btn--decline" id="cookieDecline" data-i18n="cookie.decline">Refuser tout</button>
   </div>
 </div>
 
