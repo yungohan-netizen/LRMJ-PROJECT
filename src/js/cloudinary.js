@@ -49,7 +49,7 @@ export function isFeatured(r) {
   return false;
 }
 
-export const HERO_VIDEO_ID  = import.meta.env.VITE_HERO_VIDEO_ID  || 'aa79faff86284dd9b28f307dbfc81a8a_4K_kpnw8a';
+export const HERO_VIDEO_ID  = import.meta.env.VITE_HERO_VIDEO_ID  || 'lrmj project hero video';
 export const HERO_POSTER_ID = import.meta.env.VITE_HERO_POSTER_ID || '';
 export const LOGO_ID        = import.meta.env.VITE_LOGO_ID        || 'LRMJ_PROJECT_LOGO_xzm1yq';
 
