@@ -1,6 +1,7 @@
 import './styles/main.css';
 
 import { initTheme }      from './js/theme.js';
+import { initI18n }       from './js/i18n.js';
 import { initNav }        from './js/nav.js';
 import { initLenis }      from './js/lenis.js';
 import { initSplitText }  from './js/splitText.js';
@@ -20,6 +21,7 @@ import { initRestoImage } from './js/restoration.js';
 document.addEventListener('DOMContentLoaded', () => {
   // Sync : DOM-ready interactions
   initTheme();
+  initI18n();
   initNav();
   initLenis();
   initSplitText();
