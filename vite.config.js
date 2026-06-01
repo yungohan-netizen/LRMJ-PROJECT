@@ -57,6 +57,12 @@ export default defineConfig(({ mode }) => {
       emptyOutDir: true,
       cssCodeSplit: false,
       sourcemap: false,
+      rollupOptions: {
+        input: {
+          main: 'index.html',
+          portfolio: 'portfolio.html',
+        },
+      },
     },
     server: {
       port: 5173,

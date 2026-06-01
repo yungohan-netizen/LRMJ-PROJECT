@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <script>
+    (function() {
+      var html = document.documentElement;
+      html.classList.add('js');
+      try {
+        var stored = localStorage.getItem('lrmj-theme');
+        var theme = (stored === 'dark' || stored === 'light')
+          ? stored
+          : (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        if (theme === 'dark') html.setAttribute('data-theme', 'dark');
+      } catch (_) {}
+    })();
+  </script>
+
+  <title>Réalisations | LRMJ Project</title>
+  <meta name="description" content="Toutes les réalisations LRMJ Project. Portails, garde-corps, verrières, marquises, escaliers, restauration fonte." />
+  <meta name="theme-color" content="#f5f3ee" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#07101f" media="(prefers-color-scheme: dark)" />
+
+  <link id="faviconEl" rel="icon" type="image/png"
+        href="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_64/LRMJ_EMBLEM_FLAT_DARK_MODE_yhtb4t.png" />
+
+  <link rel="canonical" href="https://lrmjproject.be/portfolio.html" />
+  <link rel="alternate" hreflang="fr-BE" href="https://lrmjproject.be/portfolio.html" />
+  <link rel="alternate" hreflang="nl-BE" href="https://lrmjproject.be/portfolio.html" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+  <link rel="preconnect" href="https://res.cloudinary.com" crossorigin>
+  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@300,400,500,600,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
+
+  <script type="module" src="/src/portfolio.js"></script>
+</head>
+<body>
+<a href="#main" class="skip-link" data-i18n="skip">Aller au contenu</a>
+
+<!-- NAV (simplifiée : retour accueil + lang + theme) -->
+<header class="nav" id="siteNav">
+  <div class="nav__inner">
+    <a href="/" class="nav__logo" aria-label="LRMJ Project | Accueil">
+      <img id="navLogoImg"
+           class="nav__logo-img"
+           src="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_96/LRMJ_EMBLEM_FLAT_DARK_MODE_yhtb4t.png"
+           data-src-dark="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_96/LRMJ_EMBLEM_FLAT_DARK_MODE_yhtb4t.png"
+           data-src-light="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_96/LRMJ_EMBLEM_FLAT_LIGHT_MODE_tlr9tp.png"
+           alt="LRMJ Project" width="48" height="48"/>
+    </a>
+    <ul class="nav__links" role="list">
+      <li><a href="/#realisations" data-i18n="nav.realisations">Réalisations</a></li>
+      <li><a href="/#services" data-i18n="nav.services">Services</a></li>
+      <li><a href="/#restauration" data-i18n="nav.restauration">Restauration fonte</a></li>
+      <li><a href="/#about" data-i18n="nav.about">À Propos</a></li>
+    </ul>
+    <div class="nav__actions">
+      <div class="lang-toggle" role="group" aria-label="Langue / Taal">
+        <button class="lang-toggle__btn is-active" data-lang="fr" aria-current="true" type="button">FR</button>
+        <span class="lang-toggle__sep" aria-hidden="true"></span>
+        <button class="lang-toggle__btn" data-lang="nl" aria-current="false" type="button">NL</button>
+      </div>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Thème">
+        <svg class="theme-toggle__sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="4"/>
+          <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+        </svg>
+        <svg class="theme-toggle__moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
+        </svg>
+      </button>
+      <a href="/#contact" class="nav__cta-pill" data-i18n="nav.cta">Devis Gratuit</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="portfolio s s--dark" aria-labelledby="pf-title">
+    <div class="portfolio__hdr fi">
+      <a href="/" class="portfolio__back" data-i18n="portfolio.back">← Retour à l'accueil</a>
+      <span class="eyebrow" data-i18n="portfolio.eyebrow">Toutes nos réalisations</span>
+      <h1 class="h-large" id="pf-title" data-i18n="portfolio.title" data-i18n-html>L'archive<br><em>complète</em></h1>
+      <p class="lead" data-i18n="portfolio.lead">Portails, garde-corps, verrières, marquises, escaliers, restauration fonte. Chaque pièce conçue et fabriquée dans notre atelier.</p>
+    </div>
+
+    <div class="portfolio-grid" id="masonryGrid" role="list">
+      <div class="portfolio-item portfolio-item--skeleton" role="listitem" aria-hidden="true"></div>
+      <div class="portfolio-item portfolio-item--skeleton" role="listitem" aria-hidden="true"></div>
+      <div class="portfolio-item portfolio-item--skeleton" role="listitem" aria-hidden="true"></div>
+      <div class="portfolio-item portfolio-item--skeleton" role="listitem" aria-hidden="true"></div>
+      <div class="portfolio-item portfolio-item--skeleton" role="listitem" aria-hidden="true"></div>
+      <div class="portfolio-item portfolio-item--skeleton" role="listitem" aria-hidden="true"></div>
+    </div>
+  </section>
+
+</main>
+
+<!-- LIGHTBOX -->
+<div class="lb" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true">
+  <button class="lb__close" id="lbClose" aria-label="Fermer">
+    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" aria-hidden="true"><path d="M2 2 L12 12 M12 2 L2 12"/></svg>
+  </button>
+  <div class="lb__stage">
+    <img class="lb__img" id="lbImg" src="" alt="" />
+    <div class="lb__caption">
+      <span class="lb__num" id="lbNum">01 / 01</span>
+      <span class="lb__title" id="lbTitle"></span>
+    </div>
+  </div>
+  <div class="lb__nav">
+    <button class="lb__btn" id="lbPrev" aria-label="Précédent">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 2 3 7 9 12"/></svg>
+    </button>
+    <button class="lb__btn" id="lbNext" aria-label="Suivant">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="5 2 11 7 5 12"/></svg>
+    </button>
+  </div>
+</div>
+
+</body>
+</html>

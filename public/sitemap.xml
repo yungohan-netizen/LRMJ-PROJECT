@@ -9,4 +9,12 @@
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url>
+    <loc>https://lrmjproject.be/portfolio.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr-BE" href="https://lrmjproject.be/portfolio.html" />
+    <xhtml:link rel="alternate" hreflang="nl-BE" href="https://lrmjproject.be/portfolio.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lrmjproject.be/portfolio.html" />
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>

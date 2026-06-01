@@ -19,8 +19,12 @@ export const translations = {
     /* Réalisations */
     'real.eyebrow':     'Réalisations',
     'real.title':       'Le Travail<br><em>Parle Pour Lui-Même</em>',
-    'real.cta':         'Devis Gratuit',
+    'real.cta':         'Voir toutes les réalisations',
     'real.hint':        'Survolez pour mettre en pause, cliquez pour agrandir',
+    'portfolio.back':   '← Retour à l\'accueil',
+    'portfolio.eyebrow':'Toutes nos réalisations',
+    'portfolio.title':  'L\'archive<br><em>complète</em>',
+    'portfolio.lead':   'Portails, garde-corps, verrières, marquises, escaliers, restauration fonte. Chaque pièce conçue et fabriquée dans notre atelier.',
     /* Services */
     'svc.eyebrow':                   'Prestations',
     'svc.title':                     'Tout ce que<br><em>nous fabriquons</em>',
@@ -139,8 +143,12 @@ export const translations = {
     /* Réalisations */
     'real.eyebrow':     'Realisaties',
     'real.title':       'Het werk<br><em>spreekt voor zichzelf</em>',
-    'real.cta':         'Gratis offerte',
+    'real.cta':         'Alle realisaties bekijken',
     'real.hint':        'Beweeg om te pauzeren, klik om te vergroten',
+    'portfolio.back':   '← Terug naar de startpagina',
+    'portfolio.eyebrow':'Al onze realisaties',
+    'portfolio.title':  'Het volledige<br><em>archief</em>',
+    'portfolio.lead':   'Poorten, leuningen, serres, luifels, trappen, restauratie gietijzer. Elk stuk ontworpen en vervaardigd in ons atelier.',
     /* Services */
     'svc.eyebrow':                   'Diensten',
     'svc.title':                     'Alles wat<br><em>wij maken</em>',
