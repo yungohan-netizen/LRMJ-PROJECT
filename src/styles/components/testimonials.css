@@ -76,5 +76,9 @@ html.js .testi-card.fi:nth-child(3).is-in { animation-delay: .24s; }
 .testi-card:hover .testi-av { box-shadow: 0 0 0 4px rgba(217,79,59,.15); }
 .testi-name { font-size: .88rem; font-weight: 500; color: var(--tx); }
 .testi-loc  { font-size: .64rem; letter-spacing:.1em; text-transform:uppercase; color: var(--tx-3); margin-top: 2px; }
-@media (max-width:900px) { .testi-grid { grid-template-columns:1fr 1fr; } }
+@media (max-width:900px) {
+  .testi-grid { grid-template-columns:1fr 1fr; }
+  /* 3 cards en 2 col : 3e card span 2 col pour combler la row */
+  .testi-grid > .testi-card:nth-child(3):last-child { grid-column: 1 / -1; }
+}
 @media (max-width:560px) { .testi-grid { grid-template-columns:1fr; } }
