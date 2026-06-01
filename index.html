@@ -98,6 +98,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
   <link rel="preconnect" href="https://res.cloudinary.com" crossorigin>
+  <!-- Hero video poster preload : démarre le téléchargement avant le parse du <video> -->
+  <link rel="preload" as="image"
+        href="https://res.cloudinary.com/dbugcatig/video/upload/so_0/lrmj%20project%20hero%20video.jpg"
+        fetchpriority="high">
   <!-- Clash Display (display, Fontshare) + DM Sans (body) -->
   <link href="https://api.fontshare.com/v2/css?f[]=clash-display@300,400,500,600,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
@@ -105,7 +109,7 @@
   <script type="module" src="/src/main.js"></script>
 </head>
 <body>
-<a href="#main" class="skip-link">Aller au contenu</a>
+<a href="#main" class="skip-link" data-i18n="skip">Aller au contenu</a>
 
 <!-- NAV -->
 <header class="nav" id="siteNav">
@@ -166,6 +170,11 @@
   <div class="nav__mobile-bottom">
     <a href="tel:0475399909" class="nav__mobile-phone">0475 39 99 09</a>
     <a href="#contact" class="nav__mobile-cta" data-i18n="mobile.cta">Devis Gratuit →</a>
+  </div>
+  <div class="nav__mobile-lang" role="group" aria-label="Langue / Taal">
+    <button class="lang-toggle__btn is-active" data-lang="fr" aria-current="true" type="button">FR</button>
+    <span class="lang-toggle__sep" aria-hidden="true"></span>
+    <button class="lang-toggle__btn" data-lang="nl" aria-current="false" type="button">NL</button>
   </div>
 </div>
 
@@ -557,16 +566,16 @@
           </div>
           <div class="about-hl-grid">
             <div class="about-hl">
-              <div class="about-hl-val"><span class="counter" data-target="30" data-prefix="+">+30</span></div>
-              <div class="about-hl-lbl" data-i18n="about.hl1.lbl">Années d'expérience</div>
+              <div class="about-hl-val">2011</div>
+              <div class="about-hl-lbl" data-i18n="about.hl1.lbl">Année de fondation</div>
             </div>
             <div class="about-hl">
-              <div class="about-hl-val"><span class="counter" data-target="500" data-prefix="+">+500</span></div>
-              <div class="about-hl-lbl" data-i18n="about.hl2.lbl">Projets livrés</div>
+              <div class="about-hl-val"><span class="counter" data-target="6">6</span></div>
+              <div class="about-hl-lbl" data-i18n="about.hl2.lbl">Catégories métier</div>
             </div>
             <div class="about-hl">
               <div class="about-hl-val"><span class="counter" data-target="100" data-suffix="%">100%</span></div>
-              <div class="about-hl-lbl" data-i18n="about.hl3.lbl">Fabrication propre</div>
+              <div class="about-hl-lbl" data-i18n="about.hl3.lbl">Sur mesure</div>
             </div>
             <div class="about-hl">
               <div class="about-hl-val"><span class="counter" data-target="48" data-suffix="h">48h</span></div>

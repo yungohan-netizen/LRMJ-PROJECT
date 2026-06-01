@@ -2,6 +2,8 @@
 
 export const translations = {
   fr: {
+    /* A11y */
+    'skip': 'Aller au contenu',
     /* Nav */
     'nav.realisations': 'Réalisations',
     'nav.services':     'Services',
@@ -77,9 +79,9 @@ export const translations = {
     'about.tagline':    'L\'artisanat comme vocation,\nle terrain comme passion',
     'about.lede':       'LRMJ Project est né de la passion d\'un artisan ferronnier installé en Belgique. Chaque pièce est conçue et fabriquée en atelier, posée par nos propres mains.',
     'about.p2':         'Aucune sous-traitance. De la première esquisse au dernier boulon, vous avez notre parole, et un seul interlocuteur du devis à la pose.',
-    'about.hl1.lbl':    'Années d\'expérience',
-    'about.hl2.lbl':    'Projets livrés',
-    'about.hl3.lbl':    'Fabrication propre',
+    'about.hl1.lbl':    'Année de fondation',
+    'about.hl2.lbl':    'Catégories métier',
+    'about.hl3.lbl':    'Sur mesure',
     'about.hl4.lbl':    'Délai devis',
     'about.caption':    'Atelier LRMJ, Belgique',
     /* Contact */
@@ -120,6 +122,8 @@ export const translations = {
   },
 
   nl: {
+    /* A11y */
+    'skip': 'Ga naar de inhoud',
     /* Nav */
     'nav.realisations': 'Realisaties',
     'nav.services':     'Diensten',
@@ -195,9 +199,9 @@ export const translations = {
     'about.tagline':    'Ambacht als roeping,\nhet veld als passie',
     'about.lede':       'LRMJ Project is geboren uit de passie van een smid gevestigd in België. Elk stuk wordt ontworpen en vervaardigd in het atelier, geplaatst door onze eigen handen.',
     'about.p2':         'Geen uitbesteding. Van de eerste schets tot de laatste bout heeft u ons woord en één aanspreekpunt, van offerte tot plaatsing.',
-    'about.hl1.lbl':    'Jaar ervaring',
-    'about.hl2.lbl':    'Geleverde projecten',
-    'about.hl3.lbl':    'Eigen fabricage',
+    'about.hl1.lbl':    'Oprichtingsjaar',
+    'about.hl2.lbl':    'Vakcategorieën',
+    'about.hl3.lbl':    'Op maat',
     'about.hl4.lbl':    'Offertetijd',
     'about.caption':    'Atelier LRMJ, België',
     /* Contact */
