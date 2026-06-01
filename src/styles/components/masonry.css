@@ -83,6 +83,15 @@
 .marquee__row:nth-child(2) { --row-h: clamp(200px, 26vw, 330px); }
 .marquee__row:nth-child(3) { --row-h: clamp(180px, 23vw, 290px); }
 
+/* Mobile : tiles plus petites pour cadence visuelle correcte */
+@media (max-width: 640px) {
+  .marquee__row:nth-child(1) { --row-h: 140px; }
+  .marquee__row:nth-child(2) { --row-h: 170px; }
+  .marquee__row:nth-child(3) { --row-h: 150px; }
+  .marquee .masonry-item { border-radius: 10px; }
+  .marquee:hover .masonry-item { opacity: 1; filter: none; }
+}
+
 /* Focus premium : au survol de la galerie, les autres tiles s'estompent,
    seule la survolée reste nette + se soulève. */
 .marquee:hover .masonry-item { opacity: .42; filter: saturate(.7); }
