@@ -1,12 +1,11 @@
-/* ── PORTFOLIO PAGE — masonry CSS columns (galerie complète) ── */
-.portfolio {
-  padding-top: clamp(7rem, 11vw, 11rem);
-  padding-bottom: clamp(5rem, 9vw, 9rem);
+/* ── PORTFOLIO PAGE — sections par catégorie + sticky filters ── */
+.portfolio-page { background: var(--bg); }
+
+/* Hero */
+.portfolio-hero {
+  padding: clamp(7rem, 11vw, 11rem) 0 clamp(2.5rem, 5vw, 4rem);
 }
-.portfolio__hdr {
-  max-width: 1280px;
-  margin: 0 auto clamp(2.5rem, 5vw, 4rem);
-  padding: 0 clamp(1.5rem, 5vw, 4rem);
+.portfolio-hero .wrap {
   display: flex; flex-direction: column; gap: .75rem;
 }
 .portfolio__back {
@@ -14,11 +13,98 @@
   font-size: .68rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase;
   color: var(--tx-3); text-decoration: none;
   margin-bottom: 1rem;
-  transition: color .3s var(--ease), gap .3s var(--ease);
-  gap: 6px;
+  transition: color .3s var(--ease), transform .3s var(--ease);
 }
-.portfolio__back:hover { color: var(--red); }
-.portfolio__hdr .lead { max-width: 60ch; margin-top: .25rem; }
+.portfolio__back:hover { color: var(--red); transform: translateX(-3px); }
+.portfolio-hero .lead { max-width: 60ch; margin-top: .25rem; }
+
+/* Sticky filter pills */
+.pf-filters {
+  position: sticky;
+  top: calc(58px + 1.25rem + 1rem);
+  z-index: 50;
+  padding: 0 clamp(1rem, 3vw, 2rem);
+  margin-bottom: clamp(2rem, 4vw, 3rem);
+}
+.pf-filters__inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  gap: .5rem;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  padding: 8px;
+  background: rgba(var(--bg-rgb), .72);
+  backdrop-filter: blur(20px) saturate(1.4);
+  -webkit-backdrop-filter: blur(20px) saturate(1.4);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  box-shadow: 0 8px 28px rgba(0,0,0,.08), inset 0 1px 0 rgba(255,255,255,.06);
+}
+.pf-filters__inner::-webkit-scrollbar { display: none; }
+.pf-chip {
+  flex-shrink: 0;
+  display: inline-flex; align-items: center;
+  padding: 9px 18px;
+  font-size: .66rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase;
+  color: var(--tx-3); text-decoration: none;
+  border-radius: 999px;
+  transition: background .35s var(--ease), color .35s var(--ease);
+  white-space: nowrap;
+}
+.pf-chip:hover { color: var(--tx-2); }
+.pf-chip.is-active {
+  background: var(--tx);
+  color: var(--bg);
+}
+
+/* Catégorie section */
+.pf-cat {
+  padding: clamp(2rem, 4vw, 3.5rem) clamp(1rem, 3vw, 2rem) clamp(3rem, 5vw, 5rem);
+  max-width: 1400px;
+  margin: 0 auto;
+  scroll-margin-top: calc(58px + 1.25rem + 80px);
+}
+.pf-cat[hidden] { display: none; }
+.pf-cat__hdr {
+  display: flex;
+  align-items: baseline;
+  gap: 1.25rem;
+  margin-bottom: clamp(1.5rem, 3vw, 2.5rem);
+  padding-bottom: clamp(.75rem, 1.5vw, 1.25rem);
+  border-bottom: 1px solid var(--border);
+}
+.pf-cat__num {
+  font-family: var(--f-body);
+  font-size: .68rem; font-weight: 600; letter-spacing: .24em;
+  color: var(--red);
+  flex-shrink: 0;
+}
+.pf-cat__title {
+  font-family: var(--f-display);
+  font-size: clamp(1.4rem, 3vw, 2.2rem);
+  font-weight: 500;
+  letter-spacing: -.01em;
+  color: var(--tx);
+  margin: 0;
+  flex: 1;
+  line-height: 1.1;
+}
+.pf-cat__count {
+  font-family: var(--f-body);
+  font-size: .68rem; font-weight: 500; letter-spacing: .08em;
+  color: var(--tx-3);
+  flex-shrink: 0;
+}
+.pf-cat__count::before { content: '— '; opacity: .6; }
+.pf-cat__count::after  { content: ' pièces'; opacity: .6; margin-left: 2px; }
+.pf-cat__grid {
+  columns: 4 240px;
+  column-gap: clamp(.5rem, 1vw, .85rem);
+}
+@media (max-width: 800px) { .pf-cat__grid { columns: 2 180px; } }
+@media (max-width: 480px) { .pf-cat__grid { columns: 2 140px; column-gap: 6px; } .pf-cat__hdr { gap: .75rem; flex-wrap: wrap; } }
 
 .portfolio-grid {
   columns: 4 240px;

@@ -18,8 +18,8 @@
     })();
   </script>
 
-  <title>Réalisations | LRMJ Project</title>
-  <meta name="description" content="Toutes les réalisations LRMJ Project. Portails, garde-corps, verrières, marquises, escaliers, restauration fonte." />
+  <title>Archive | LRMJ Project</title>
+  <meta name="description" content="Toutes les réalisations LRMJ Project organisées par catégorie : portails, garde-corps, verrières, marquises, escaliers, meubles." />
   <meta name="theme-color" content="#f5f3ee" media="(prefers-color-scheme: light)" />
   <meta name="theme-color" content="#07101f" media="(prefers-color-scheme: dark)" />
 
@@ -42,7 +42,7 @@
 <body>
 <a href="#main" class="skip-link" data-i18n="skip">Aller au contenu</a>
 
-<!-- NAV (simplifiée : retour accueil + lang + theme) -->
+<!-- NAV -->
 <header class="nav" id="siteNav">
   <div class="nav__inner">
     <a href="/" class="nav__logo" aria-label="LRMJ Project | Accueil">
@@ -79,25 +79,87 @@
   </div>
 </header>
 
-<main id="main">
+<main id="main" class="portfolio-page">
 
-  <section class="portfolio s s--dark" aria-labelledby="pf-title">
-    <div class="portfolio__hdr fi">
+  <!-- HEADER -->
+  <section class="portfolio-hero">
+    <div class="wrap fi">
       <a href="/" class="portfolio__back" data-i18n="portfolio.back">← Retour à l'accueil</a>
       <span class="eyebrow" data-i18n="portfolio.eyebrow">Toutes nos réalisations</span>
       <h1 class="h-large" id="pf-title" data-i18n="portfolio.title" data-i18n-html>L'archive<br><em>complète</em></h1>
-      <p class="lead" data-i18n="portfolio.lead">Portails, garde-corps, verrières, marquises, escaliers, restauration fonte. Chaque pièce conçue et fabriquée dans notre atelier.</p>
-    </div>
-
-    <div class="portfolio-grid" id="masonryGrid" role="list">
-      <div class="portfolio-item portfolio-item--skeleton" role="listitem" aria-hidden="true"></div>
-      <div class="portfolio-item portfolio-item--skeleton" role="listitem" aria-hidden="true"></div>
-      <div class="portfolio-item portfolio-item--skeleton" role="listitem" aria-hidden="true"></div>
-      <div class="portfolio-item portfolio-item--skeleton" role="listitem" aria-hidden="true"></div>
-      <div class="portfolio-item portfolio-item--skeleton" role="listitem" aria-hidden="true"></div>
-      <div class="portfolio-item portfolio-item--skeleton" role="listitem" aria-hidden="true"></div>
+      <p class="lead" data-i18n="portfolio.lead">Portails, garde-corps, verrières, marquises, escaliers, meubles. Chaque pièce conçue et fabriquée dans notre atelier.</p>
     </div>
   </section>
+
+  <!-- STICKY FILTER PILLS -->
+  <nav class="pf-filters" id="pfFilters" aria-label="Filtres catégories">
+    <div class="pf-filters__inner">
+      <a class="pf-chip is-active" href="#all" data-cat="all" data-i18n="pf.cat.all">Tout</a>
+      <a class="pf-chip" href="#portails" data-cat="portails" data-i18n="pf.cat.portails">Portails & Clôtures</a>
+      <a class="pf-chip" href="#gardecorps" data-cat="gardecorps" data-i18n="pf.cat.gardecorps">Garde-Corps</a>
+      <a class="pf-chip" href="#verrieres" data-cat="verrieres" data-i18n="pf.cat.verrieres">Verrières</a>
+      <a class="pf-chip" href="#marquises" data-cat="marquises" data-i18n="pf.cat.marquises">Marquises</a>
+      <a class="pf-chip" href="#escaliers" data-cat="escaliers" data-i18n="pf.cat.escaliers">Escaliers</a>
+      <a class="pf-chip" href="#meubles" data-cat="meubles" data-i18n="pf.cat.meubles">Meubles & Déco</a>
+    </div>
+  </nav>
+
+  <!-- 6 SECTIONS CATÉGORIES -->
+  <div id="masonryGrid">
+    <section class="pf-cat" id="portails" data-cat="portails">
+      <header class="pf-cat__hdr fi">
+        <span class="pf-cat__num">01</span>
+        <h2 class="pf-cat__title" data-i18n="pf.cat.portails">Portails & Clôtures</h2>
+        <span class="pf-cat__count" data-count></span>
+      </header>
+      <div class="pf-cat__grid" data-grid></div>
+    </section>
+
+    <section class="pf-cat" id="gardecorps" data-cat="gardecorps">
+      <header class="pf-cat__hdr fi">
+        <span class="pf-cat__num">02</span>
+        <h2 class="pf-cat__title" data-i18n="pf.cat.gardecorps">Garde-Corps & Rampes</h2>
+        <span class="pf-cat__count" data-count></span>
+      </header>
+      <div class="pf-cat__grid" data-grid></div>
+    </section>
+
+    <section class="pf-cat" id="verrieres" data-cat="verrieres">
+      <header class="pf-cat__hdr fi">
+        <span class="pf-cat__num">03</span>
+        <h2 class="pf-cat__title" data-i18n="pf.cat.verrieres">Verrières & Baies Vitrées</h2>
+        <span class="pf-cat__count" data-count></span>
+      </header>
+      <div class="pf-cat__grid" data-grid></div>
+    </section>
+
+    <section class="pf-cat" id="marquises" data-cat="marquises">
+      <header class="pf-cat__hdr fi">
+        <span class="pf-cat__num">04</span>
+        <h2 class="pf-cat__title" data-i18n="pf.cat.marquises">Marquises & Auvents</h2>
+        <span class="pf-cat__count" data-count></span>
+      </header>
+      <div class="pf-cat__grid" data-grid></div>
+    </section>
+
+    <section class="pf-cat" id="escaliers" data-cat="escaliers">
+      <header class="pf-cat__hdr fi">
+        <span class="pf-cat__num">05</span>
+        <h2 class="pf-cat__title" data-i18n="pf.cat.escaliers">Escaliers</h2>
+        <span class="pf-cat__count" data-count></span>
+      </header>
+      <div class="pf-cat__grid" data-grid></div>
+    </section>
+
+    <section class="pf-cat" id="meubles" data-cat="meubles">
+      <header class="pf-cat__hdr fi">
+        <span class="pf-cat__num">06</span>
+        <h2 class="pf-cat__title" data-i18n="pf.cat.meubles">Meubles & Déco</h2>
+        <span class="pf-cat__count" data-count></span>
+      </header>
+      <div class="pf-cat__grid" data-grid></div>
+    </section>
+  </div>
 
 </main>
 
