@@ -127,4 +127,8 @@ document.addEventListener('DOMContentLoaded', () => {
   initReveal();
   initLightbox();
   initPortfolio();
+
+  // Footer year
+  const yEl = document.getElementById('footYear');
+  if (yEl) yEl.textContent = new Date().getFullYear();
 });
