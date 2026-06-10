@@ -24,12 +24,22 @@
 
   /* Accent : Forge Red signature */
   --red:         #c4432f;
+  --red-rgb:     196, 67, 47;
+  --red-deep:    #b03a28;
   --red-glow:    rgba(196,67,47,0.18);
   --red-border:  rgba(196,67,47,0.32);
 
-  /* Shadows & glows */
+  /* Shadows & glows — teintées cobalt sur fond clair, jamais noir pur */
+  --shadow-rgb:  13, 31, 60;
   --glow-red:    0 0 80px rgba(196,67,47,0.10);
   --shadow-card: 0 12px 32px rgba(13,31,60,0.10);
+
+  /* Radius scale — un seul système */
+  --r-xl:  1.75rem;
+  --r-lg:  1.5rem;
+  --r-md:  1.25rem;
+  --r-img: 14px;
+  --r-inp: 12px;
 
   /* Type scale */
   --f-display: 'Clash Display', system-ui, sans-serif;
@@ -43,8 +53,8 @@
   --ease-flip: cubic-bezier(0.76, 0, 0.24, 1);
   --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
 
-  /* Grain + hero video opacity */
-  --grain-opacity: 0;
+  /* Grain (global, body::after) + hero video opacity */
+  --grain-opacity: 0.022;
   --hero-video-opacity: .92;
 }
 
@@ -69,9 +79,12 @@ html[data-theme="dark"] {
 
   /* Accent : same signature red, slightly hotter */
   --red:         #d94f3b;
+  --red-rgb:     217, 79, 59;
+  --red-deep:    #c4432f;
   --red-glow:    rgba(217,79,59,0.20);
   --red-border:  rgba(217,79,59,0.32);
 
+  --shadow-rgb:  0, 0, 0;
   --glow-red:    0 0 80px rgba(217,79,59,0.14);
   --shadow-card: 0 12px 32px rgba(0,0,0,0.5);
 
@@ -83,7 +96,7 @@ html[data-theme="dark"] {
 html {
   transition: background-color .35s var(--ease), color .35s var(--ease);
 }
-body, .nav, .ticker, .footer,
+body, .nav, .pledge, .footer,
 .testi-card, .svc-card, .proc-step, .about-hl, .contact-form,
 .form-inp, .form-sel, .form-txt, .contact-info-ico {
   transition: background-color .35s var(--ease), color .35s var(--ease), border-color .35s var(--ease);

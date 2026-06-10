@@ -40,7 +40,10 @@
   -webkit-backdrop-filter: blur(20px) saturate(1.4);
   border: 1px solid var(--border);
   border-radius: 999px;
-  box-shadow: 0 8px 28px rgba(0,0,0,.08), inset 0 1px 0 rgba(255,255,255,.06);
+  box-shadow: 0 8px 28px rgba(var(--shadow-rgb),.10), inset 0 1px 0 rgba(255,255,255,.06);
+}
+html[data-theme="dark"] .pf-filters__inner {
+  box-shadow: 0 8px 28px rgba(0,0,0,.30), inset 0 1px 0 rgba(255,255,255,.04);
 }
 .pf-filters__inner::-webkit-scrollbar { display: none; }
 .pf-chip {
@@ -53,7 +56,7 @@
   transition: background .35s var(--ease), color .35s var(--ease);
   white-space: nowrap;
 }
-.pf-chip:hover { color: var(--tx-2); }
+.pf-chip:hover { color: var(--tx); background: var(--surf-2); }
 .pf-chip.is-active {
   background: var(--tx);
   color: var(--bg);
@@ -93,12 +96,13 @@
 }
 .pf-cat__count {
   font-family: var(--f-body);
-  font-size: .68rem; font-weight: 500; letter-spacing: .08em;
+  font-size: .68rem; font-weight: 500; letter-spacing: .14em;
   color: var(--tx-3);
   flex-shrink: 0;
 }
-.pf-cat__count::before { content: '— '; opacity: .6; }
-.pf-cat__count::after  { content: ' pièces'; opacity: .6; margin-left: 2px; }
+/* Compteur éditorial neutre FR/NL : "( 12 )" */
+.pf-cat__count::before { content: '( '; opacity: .55; }
+.pf-cat__count::after  { content: ' )'; opacity: .55; }
 .pf-cat__grid {
   columns: 4 240px;
   column-gap: clamp(.5rem, 1vw, .85rem);
@@ -149,7 +153,7 @@
   break-inside: avoid;
   position: relative;
   overflow: hidden;
-  border-radius: 12px;
+  border-radius: var(--r-img);
   margin-bottom: clamp(.5rem, 1vw, .85rem);
   background: var(--bg-1);
   cursor: zoom-in;
@@ -166,7 +170,10 @@
 }
 .portfolio-item:hover {
   transform: translateY(-4px);
-  box-shadow: 0 18px 40px rgba(0,0,0,.22), inset 0 1px 0 rgba(255,255,255,.08);
+  box-shadow: 0 18px 40px rgba(var(--shadow-rgb),.18), inset 0 1px 0 rgba(255,255,255,.08);
+}
+html[data-theme="dark"] .portfolio-item:hover {
+  box-shadow: 0 18px 40px rgba(0,0,0,.4), inset 0 1px 0 rgba(255,255,255,.06);
 }
 .portfolio-item:hover img { transform: scale(1.04); filter: brightness(1.02) saturate(1.05); }
 .portfolio-item--skeleton {
@@ -202,6 +209,9 @@
   display: flex; align-items: flex-end; justify-content: space-between;
   padding: clamp(3rem,5vw,5rem) clamp(1.5rem,5vw,4rem) clamp(2rem,4vw,3rem);
   gap: 2rem; max-width: 1360px; margin: 0 auto;
+}
+@media (max-width: 760px) {
+  .masonry-hdr { flex-direction: column; align-items: flex-start; gap: 1.75rem; }
 }
 
 .marquee {
@@ -254,7 +264,7 @@
   height: var(--row-h, clamp(180px, 24vw, 300px));
   width: auto;
   overflow: hidden;
-  border-radius: 14px;
+  border-radius: var(--r-img);
   cursor: zoom-in;
   background: var(--bg-1);
   box-shadow: inset 0 1px 0 rgba(255,255,255,.05);
@@ -298,8 +308,14 @@
   transform: translateY(-6px) scale(1.03);
   z-index: 2;
   box-shadow:
-    0 22px 50px rgba(0,0,0,.32),
+    0 22px 50px rgba(var(--shadow-rgb),.22),
     inset 0 1px 0 rgba(255,255,255,.08);
+}
+html[data-theme="dark"] .marquee .masonry-item:hover,
+html[data-theme="dark"] .marquee .masonry-item:focus-visible {
+  box-shadow:
+    0 22px 50px rgba(0,0,0,.45),
+    inset 0 1px 0 rgba(255,255,255,.06);
 }
 .marquee .masonry-item:hover img,
 .marquee .masonry-item:focus-visible img {
@@ -372,7 +388,7 @@
 .marquee__row--skeleton span {
   flex-shrink: 0;
   height: 100%;
-  border-radius: 14px;
+  border-radius: var(--r-img);
   background: linear-gradient(110deg, var(--bg-1) 0%, var(--bg-2) 45%, var(--bg-1) 100%);
   background-size: 250% 100%;
   animation: skeleton-shimmer 1.6s linear infinite;

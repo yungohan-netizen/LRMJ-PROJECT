@@ -8,6 +8,20 @@ button { cursor: pointer; background: none; border: none; font: inherit; color: 
 .sr-only { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
 ::selection { background: var(--red); color: #fff; }
 :focus-visible { outline: 2px solid var(--red); outline-offset: 3px; border-radius: 1px; }
+html { scrollbar-color: rgba(var(--tx-rgb), .25) transparent; }
+
+/* ── GRAIN GLOBAL — matérialité papier/film, fixe (zéro repaint au scroll) ── */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 90;
+  pointer-events: none;
+  opacity: var(--grain-opacity);
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 180px;
+  transition: opacity .35s var(--ease);
+}
 
 /* ── SKIP LINK ── */
 .skip-link { position: absolute; top: -100px; left: 1rem; background: var(--red); color: #fff; padding: .5rem 1rem; font-weight: 600; z-index: 9999; border-radius: 4px; }
@@ -28,19 +42,19 @@ button { cursor: pointer; background: none; border: none; font: inherit; color: 
 .sdiv--20 { background: linear-gradient(to bottom, var(--bg-2), var(--bg));   }
 .sdiv--02 { background: linear-gradient(to bottom, var(--bg),   var(--bg-2)); }
 
-/* Glow backgrounds (radial) */
+/* Glow backgrounds (radial) — suivent le rouge du thème */
 .glow-red-tl { position: relative; }
 .glow-red-tl::before {
   content:''; position:absolute; inset:0; pointer-events:none; z-index:0;
-  background: radial-gradient(ellipse 60% 50% at 15% 20%, rgba(217,79,59,.09) 0%, transparent 70%);
+  background: radial-gradient(ellipse 60% 50% at 15% 20%, rgba(var(--red-rgb),.09) 0%, transparent 70%);
 }
 .glow-red-br::after  {
   content:''; position:absolute; inset:0; pointer-events:none; z-index:0;
-  background: radial-gradient(ellipse 50% 40% at 85% 80%, rgba(217,79,59,.07) 0%, transparent 70%);
+  background: radial-gradient(ellipse 50% 40% at 85% 80%, rgba(var(--red-rgb),.07) 0%, transparent 70%);
 }
 .glow-center::before {
   content:''; position:absolute; inset:0; pointer-events:none; z-index:0;
-  background: radial-gradient(ellipse 70% 60% at 50% 50%, rgba(217,79,59,.08) 0%, transparent 70%);
+  background: radial-gradient(ellipse 70% 60% at 50% 50%, rgba(var(--red-rgb),.08) 0%, transparent 70%);
 }
 
 /* ── CONTAINER ── */
@@ -62,6 +76,7 @@ html.js .fi.is-in.eyebrow::before { transform: scaleX(1); }
   html.js .eyebrow::before { transform: scaleX(1) !important; transition: none !important; }
 }
 
+/* Pas de text-wrap:balance ici : titres art-directed via <br> + split-text spans */
 .h-mega { font-family: var(--f-display); font-size: clamp(2.8rem,6vw,6rem); font-weight: 300; line-height: 1.02; letter-spacing: -.02em; color: var(--tx); }
 .h-mega em { font-style: normal; font-weight: 500; color: var(--red); }
 .h-large { font-family: var(--f-display); font-size: clamp(2rem,4vw,3.8rem); font-weight: 300; line-height: 1.06; letter-spacing: -.02em; color: var(--tx); }
@@ -87,8 +102,8 @@ html.js .fi.is-in .word > span { transform: translateY(0); }
 }
 html:not(.js) .word > span { transform: none; }
 
-.h-mid   { font-family: var(--f-display); font-size: clamp(1.4rem,2.5vw,2rem); font-weight: 400; line-height: 1.2; color: var(--tx); }
-.lead { font-size: clamp(.9rem,1.2vw,1.05rem); color: var(--tx-2); line-height: 1.8; max-width: 52ch; }
+.h-mid   { font-family: var(--f-display); font-size: clamp(1.4rem,2.5vw,2rem); font-weight: 400; line-height: 1.2; color: var(--tx); text-wrap: balance; }
+.lead { font-size: clamp(.9rem,1.2vw,1.05rem); color: var(--tx-2); line-height: 1.8; max-width: 52ch; text-wrap: pretty; }
 
 /* ── BUTTONS ── */
 @property --shimmer-x {
@@ -175,11 +190,11 @@ html:not(.js) .word > span { transform: none; }
   background: rgba(var(--tx-rgb), .16);
 }
 
-.btn--red { background: var(--red); color: #fff; border-color: var(--red); }
+.btn--red { background: var(--red); color: #fff; border-color: var(--red); box-shadow: inset 0 1px 0 rgba(255,255,255,.16); }
 .btn--red:hover {
-  background: #c4432f; border-color: #c4432f;
+  background: var(--red-deep); border-color: var(--red-deep);
   transform: translateY(-2px);
-  box-shadow: 0 12px 32px rgba(217,79,59,.32), 0 0 0 1px rgba(255,255,255,.05) inset;
+  box-shadow: 0 12px 32px rgba(var(--red-rgb),.30), inset 0 1px 0 rgba(255,255,255,.16);
 }
 
 .btn--ghost { background: transparent; color: var(--tx-2); border-color: var(--border-2); }
@@ -198,8 +213,11 @@ html:not(.js) .word > span { transform: none; }
 }
 .btn--ghost:hover {
   color: var(--tx);
-  border-color: rgba(255,255,255,.32);
+  border-color: rgba(var(--tx-rgb), .30);
   transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(var(--shadow-rgb), .14);
+}
+html[data-theme="dark"] .btn--ghost:hover {
   box-shadow: 0 12px 32px rgba(0,0,0,.35);
 }
 
@@ -240,19 +258,20 @@ html.js .fi.is-in {
     transition-duration: .01ms !important;
     scroll-behavior: auto !important;
   }
-  .hero__scroll { animation: none; }
+  .hero__scroll-line { animation: none; transform: scaleY(1); }
 }
 
 /* ── PRINT STYLESHEET ── */
 @media print {
   :root { --bg: #fff; --tx: #000; --tx-2: #333; --tx-3: #666; --red: #c4432f; }
   html, body { background: #fff !important; color: #000 !important; }
-  .nav, .ticker, .hero__video, .hero__vignette, .hero__merge, .hero__grain,
+  .nav, .hero__video, .hero__vignette, .hero__merge,
   .hero__scroll, .lb, .nav__progress,
   .theme-toggle, .masonry-load-btn, .form-submit, .btn,
   .cookie-banner, .modal-legal, .nav__mobile {
     display: none !important;
   }
+  body::after { display: none !important; }
   .hero { height: auto !important; min-height: 0 !important; padding: 2rem 0; background: #fff !important; }
   .hero::before, .hero::after { display: none !important; }
   section, .s { padding: 1.5rem 0 !important; page-break-inside: avoid; background: #fff !important; box-shadow: none !important; }

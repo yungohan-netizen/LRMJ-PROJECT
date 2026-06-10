@@ -193,66 +193,36 @@
     </video>
     <div class="hero__vignette" aria-hidden="true"></div>
     <div class="hero__merge"   aria-hidden="true"></div>
-    <div class="hero__grain"   aria-hidden="true"></div>
+    <a href="#realisations" class="hero__scroll">
+      <span data-i18n="hero.scroll">Découvrir</span>
+      <span class="hero__scroll-line" aria-hidden="true"></span>
+    </a>
   </section>
 
-  <!-- CERTIFICATIONS / PARTENAIRES — placeholders style logos institutionnels
-       (à remplacer par les vrais : RGIE, décennale, VBX, fédérations, labels…) -->
-  <section class="certs" aria-label="Certifications et partenaires">
-    <p class="certs__label" data-i18n="certs.label">Certifications &amp; partenaires</p>
-    <div class="certs__row">
-
-      <!-- Placeholder 1 : technique encadré "RGIE" style -->
-      <div class="certs__logo" aria-label="Placeholder RGIE — à remplacer">
-        <svg viewBox="0 0 130 60" fill="none" aria-hidden="true">
-          <rect x="2" y="2" width="126" height="56" rx="2" fill="none" stroke="currentColor" stroke-width="1.5"/>
-          <line x1="14" y1="46" x2="116" y2="46" stroke="currentColor" stroke-width=".8" opacity=".5"/>
-          <text x="65" y="34" text-anchor="middle" font-family="Clash Display, sans-serif" font-weight="700" font-size="22" letter-spacing="4" fill="currentColor">RGIE</text>
-          <text x="65" y="54" text-anchor="middle" font-family="DM Sans, sans-serif" font-weight="500" font-size="6" letter-spacing="2.5" fill="currentColor" opacity=".7">CERTIFIÉ</text>
-        </svg>
-      </div>
-
-      <!-- Placeholder 2 : sceau institutionnel circulaire -->
-      <div class="certs__logo" aria-label="Placeholder Ville de Bruxelles — à remplacer">
-        <svg viewBox="0 0 80 80" fill="none" aria-hidden="true">
-          <circle cx="40" cy="40" r="37" fill="none" stroke="currentColor" stroke-width="1.5"/>
-          <circle cx="40" cy="40" r="30" fill="none" stroke="currentColor" stroke-width=".7" opacity=".55"/>
-          <path d="M40 14 L46 26 H56 L48 34 L51 46 L40 39 L29 46 L32 34 L24 26 H34 Z" fill="currentColor" opacity=".85"/>
-          <text x="40" y="60" text-anchor="middle" font-family="Clash Display, sans-serif" font-weight="700" font-size="9" letter-spacing="2.5" fill="currentColor">VBX</text>
-          <text x="40" y="70" text-anchor="middle" font-family="DM Sans, sans-serif" font-weight="500" font-size="4.5" letter-spacing="1.6" fill="currentColor" opacity=".7">BRUXELLES</text>
-        </svg>
-      </div>
-
-      <!-- Placeholder 3 : wordmark fédération + pastille -->
-      <div class="certs__logo" aria-label="Placeholder Confédération — à remplacer">
-        <svg viewBox="0 0 180 50" fill="none" aria-hidden="true">
-          <circle cx="20" cy="25" r="12" fill="currentColor"/>
-          <path d="M14 25 L19 30 L27 21" fill="none" stroke="var(--bg)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          <text x="42" y="22" font-family="Clash Display, sans-serif" font-weight="700" font-size="14" letter-spacing="2" fill="currentColor">FERROBEL</text>
-          <text x="42" y="36" font-family="DM Sans, sans-serif" font-weight="500" font-size="6" letter-spacing="3.5" fill="currentColor" opacity=".7">FÉDÉRATION ARTISANS</text>
-        </svg>
-      </div>
-
-      <!-- Placeholder 4 : blason assurance décennale -->
-      <div class="certs__logo" aria-label="Placeholder assurance décennale — à remplacer">
-        <svg viewBox="0 0 70 80" fill="none" aria-hidden="true">
-          <path d="M35 4 L66 14 V40 Q66 60 35 76 Q4 60 4 40 V14 Z" fill="none" stroke="currentColor" stroke-width="1.5"/>
-          <path d="M35 10 L60 18 V40 Q60 56 35 70 Q10 56 10 40 V18 Z" fill="currentColor" opacity=".06"/>
-          <text x="35" y="42" text-anchor="middle" font-family="Clash Display, sans-serif" font-weight="700" font-size="18" letter-spacing="1" fill="currentColor">10</text>
-          <text x="35" y="56" text-anchor="middle" font-family="DM Sans, sans-serif" font-weight="600" font-size="5" letter-spacing="2.2" fill="currentColor" opacity=".75">DÉCENNALE</text>
-        </svg>
-      </div>
-
-      <!-- Placeholder 5 : badge hexagonal qualité -->
-      <div class="certs__logo" aria-label="Placeholder ISO 9001 — à remplacer">
-        <svg viewBox="0 0 110 80" fill="none" aria-hidden="true">
-          <path d="M28 6 L82 6 L104 40 L82 74 L28 74 L6 40 Z" fill="none" stroke="currentColor" stroke-width="1.5"/>
-          <path d="M28 12 L82 12 L98 40 L82 68 L28 68 L12 40 Z" fill="currentColor" opacity=".05"/>
-          <text x="55" y="38" text-anchor="middle" font-family="Clash Display, sans-serif" font-weight="700" font-size="16" letter-spacing="2" fill="currentColor">ISO</text>
-          <text x="55" y="55" text-anchor="middle" font-family="DM Sans, sans-serif" font-weight="600" font-size="9" letter-spacing="3" fill="currentColor" opacity=".8">9001</text>
-        </svg>
-      </div>
-
+  <!-- ENGAGEMENTS — garanties réelles de l'atelier -->
+  <section class="pledges" aria-labelledby="pledges-title">
+    <h2 class="sr-only" id="pledges-title" data-i18n="pledges.sr">Nos engagements</h2>
+    <div class="pledges__grid">
+      <article class="pledge fi">
+        <span class="pledge__num" aria-hidden="true">01</span>
+        <h3 class="pledge__title" data-i18n="pledges.1.t">Sur mesure, uniquement</h3>
+        <p class="pledge__desc" data-i18n="pledges.1.d">Chaque pièce est dessinée et forgée pour votre projet, jamais tirée d'un catalogue.</p>
+      </article>
+      <article class="pledge fi">
+        <span class="pledge__num" aria-hidden="true">02</span>
+        <h3 class="pledge__title" data-i18n="pledges.2.t">Un seul atelier</h3>
+        <p class="pledge__desc" data-i18n="pledges.2.d">Conçu, fabriqué et posé par nos propres mains. Zéro sous-traitance.</p>
+      </article>
+      <article class="pledge fi">
+        <span class="pledge__num" aria-hidden="true">03</span>
+        <h3 class="pledge__title" data-i18n="pledges.3.t">Devis en 48 heures</h3>
+        <p class="pledge__desc" data-i18n="pledges.3.d">Visite sur place, prise de mesures et devis détaillé, gratuits et sans engagement.</p>
+      </article>
+      <article class="pledge fi">
+        <span class="pledge__num" aria-hidden="true">04</span>
+        <h3 class="pledge__title" data-i18n="pledges.4.t">Depuis 2011</h3>
+        <p class="pledge__desc" data-i18n="pledges.4.d">Au service des particuliers et du patrimoine, de Bruxelles au Brabant flamand.</p>
+      </article>
     </div>
   </section>
 
@@ -292,7 +262,7 @@
           <span class="eyebrow" data-i18n="svc.eyebrow">Prestations</span>
           <h2 class="h-large" id="svc-title" data-i18n="svc.title" data-i18n-html>Tout ce que<br><em>nous fabriquons</em></h2>
         </div>
-        <a href="#contact" class="btn btn--red">Devis Gratuit<span class="btn__ico" aria-hidden="true">↗</span></a>
+        <a href="#contact" class="btn btn--red"><span data-i18n="svc.cta">Devis Gratuit</span><span class="btn__ico" aria-hidden="true">↗</span></a>
       </div>
       <div class="svc-grid">
         <div class="svc-card svc-card--feat svc-card--loading fi" data-svc="verrieres">
@@ -440,7 +410,7 @@
           <blockquote class="testi-quote">Super service, rapide et propre. Je suis fan de ma porte et je repasserai par chez eux pour celle du salon.</blockquote>
           <div class="testi-author">
             <div class="testi-av" aria-hidden="true">L</div>
-            <div><div class="testi-name">Laurence D.</div><div class="testi-loc">Avis Facebook</div></div>
+            <div><div class="testi-name">Laurence D.</div><div class="testi-loc" data-i18n="testi.src">Avis Facebook</div></div>
           </div>
         </div>
         <div class="testi-card fi">
@@ -450,7 +420,7 @@
           <blockquote class="testi-quote">Nous sommes super contents du résultat ! Critères parfaitement respectés, bonne communication et rapidité. Je recommande à 100%.</blockquote>
           <div class="testi-author">
             <div class="testi-av" aria-hidden="true">A</div>
-            <div><div class="testi-name">Andrea Leroy</div><div class="testi-loc">Avis Facebook</div></div>
+            <div><div class="testi-name">Andrea Leroy</div><div class="testi-loc" data-i18n="testi.src">Avis Facebook</div></div>
           </div>
         </div>
         <div class="testi-card fi">
@@ -460,7 +430,7 @@
           <blockquote class="testi-quote">Un travail de qualité et très professionnel ! Je recommande vivement LRMJ Project. Le rendu correspond exactement à nos attentes.</blockquote>
           <div class="testi-author">
             <div class="testi-av" aria-hidden="true">M</div>
-            <div><div class="testi-name">Melina Gogos</div><div class="testi-loc">Avis Facebook</div></div>
+            <div><div class="testi-name">Melina Gogos</div><div class="testi-loc" data-i18n="testi.src">Avis Facebook</div></div>
           </div>
         </div>
       </div>
@@ -620,12 +590,12 @@
             <input type="checkbox" name="botcheck" class="sr-only" tabindex="-1" autocomplete="off" aria-hidden="true" />
             <p class="form-eye" data-i18n="contact.form.eye">Demande de devis</p>
             <div class="form-grid">
-              <div class="form-field"><label class="form-lbl" for="prenom" data-i18n="contact.form.prenom">Prénom *</label><input class="form-inp" type="text" id="prenom" name="prenom" placeholder="Jean" required autocomplete="given-name"/></div>
-              <div class="form-field"><label class="form-lbl" for="nom" data-i18n="contact.form.nom">Nom *</label><input class="form-inp" type="text" id="nom" name="nom" placeholder="Dupont" required autocomplete="family-name"/></div>
-              <div class="form-field"><label class="form-lbl" for="tel" data-i18n="contact.form.tel">Téléphone *</label><input class="form-inp" type="tel" id="tel" name="tel" placeholder="04XX XXX XXX" required autocomplete="tel"/></div>
-              <div class="form-field"><label class="form-lbl" for="email" data-i18n="contact.form.email">Email</label><input class="form-inp" type="email" id="email" name="email" placeholder="jean@email.be" autocomplete="email"/></div>
-              <div class="form-field form-field--full"><label class="form-lbl" for="service" data-i18n="contact.form.service">Type de projet</label><select class="form-sel" id="service" name="service"><option value="">Sélectionnez…</option><option value="portail">Portail / Clôture</option><option value="gardecorps">Garde-corps / Rampe</option><option value="serre">Serre / Baie vitrée</option><option value="marquise">Marquise / Auvent</option><option value="autre">Autre projet</option></select></div>
-              <div class="form-field form-field--full"><label class="form-lbl" for="message" data-i18n="contact.form.msg">Décrivez votre projet</label><textarea class="form-txt" id="message" name="message" placeholder="Dimensions, style, délai, localisation…"></textarea></div>
+              <div class="form-field"><label class="form-lbl" for="prenom" data-i18n="contact.form.prenom">Prénom *</label><input class="form-inp" type="text" id="prenom" name="prenom" placeholder="Camille" data-i18n="contact.ph.prenom" required autocomplete="given-name"/></div>
+              <div class="form-field"><label class="form-lbl" for="nom" data-i18n="contact.form.nom">Nom *</label><input class="form-inp" type="text" id="nom" name="nom" placeholder="Janssens" data-i18n="contact.ph.nom" required autocomplete="family-name"/></div>
+              <div class="form-field"><label class="form-lbl" for="tel" data-i18n="contact.form.tel">Téléphone *</label><input class="form-inp" type="tel" id="tel" name="tel" placeholder="04XX XXX XXX" data-i18n="contact.ph.tel" required autocomplete="tel"/></div>
+              <div class="form-field"><label class="form-lbl" for="email" data-i18n="contact.form.email">Email</label><input class="form-inp" type="email" id="email" name="email" placeholder="camille@email.be" data-i18n="contact.ph.email" autocomplete="email"/></div>
+              <div class="form-field form-field--full"><label class="form-lbl" for="service" data-i18n="contact.form.service">Type de projet</label><select class="form-sel" id="service" name="service"><option value="" data-i18n="contact.opt.none">Sélectionnez…</option><option value="portail" data-i18n="contact.opt.portail">Portail / Clôture</option><option value="gardecorps" data-i18n="contact.opt.gardecorps">Garde-corps / Rampe</option><option value="serre" data-i18n="contact.opt.serre">Serre / Baie vitrée</option><option value="marquise" data-i18n="contact.opt.marquise">Marquise / Auvent</option><option value="autre" data-i18n="contact.opt.autre">Autre projet</option></select></div>
+              <div class="form-field form-field--full"><label class="form-lbl" for="message" data-i18n="contact.form.msg">Décrivez votre projet</label><textarea class="form-txt" id="message" name="message" placeholder="Dimensions, style, délai, localisation…" data-i18n="contact.ph.msg"></textarea></div>
             </div>
             <button type="submit" class="form-submit"><span data-i18n="contact.form.submit">Envoyer ma demande</span><span class="btn__ico" aria-hidden="true">↗</span></button>
             <div class="form-success" id="formSuccess" role="status" aria-live="polite" data-i18n="contact.form.ok">✓ Message bien reçu. Nous vous recontactons sous 24h.</div>
@@ -683,19 +653,19 @@
       <div>
         <p class="footer-hdg" data-i18n="footer.nav.title">Navigation</p>
         <ul class="footer-links" role="list">
-          <li><a href="#realisations">Réalisations</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#about">À Propos</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#realisations" data-i18n="nav.realisations">Réalisations</a></li>
+          <li><a href="#services" data-i18n="nav.services">Services</a></li>
+          <li><a href="#about" data-i18n="nav.about">À Propos</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
         </ul>
       </div>
       <div>
-        <p class="footer-hdg">Services</p>
+        <p class="footer-hdg" data-i18n="footer.svc.title">Services</p>
         <ul class="footer-links" role="list">
-          <li><a href="#services">Portails</a></li>
-          <li><a href="#services">Garde-corps</a></li>
-          <li><a href="#services">Serres</a></li>
-          <li><a href="#services">Marquises</a></li>
+          <li><a href="#services" data-i18n="footer.s.portails">Portails</a></li>
+          <li><a href="#services" data-i18n="footer.s.gardecorps">Garde-corps</a></li>
+          <li><a href="#services" data-i18n="footer.s.serres">Serres</a></li>
+          <li><a href="#services" data-i18n="footer.s.marquises">Marquises</a></li>
         </ul>
       </div>
       <div>
@@ -703,7 +673,7 @@
         <ul class="footer-links" role="list">
           <li><a href="tel:0475399909">0475 39 99 09</a></li>
           <li><a href="mailto:contact@lrmjproject.be">contact@lrmjproject.be</a></li>
-          <li>Lun-Sam · 8h-18h</li>
+          <li data-i18n="contact.hours.val">Lun - Sam · 8h - 18h</li>
         </ul>
       </div>
     </div>
@@ -712,7 +682,7 @@
         <button type="button" class="footer-link-btn" data-open-legal="mentions" data-i18n="footer.mentions">Mentions légales</button> ·
         <button type="button" class="footer-link-btn" data-open-legal="privacy" data-i18n="footer.privacy">Confidentialité</button>
       </p>
-      <p class="footer-copy">Ferronnerie artisanale · Belgique</p>
+      <p class="footer-copy" data-i18n="footer.tag">Ferronnerie artisanale · Belgique</p>
     </div>
   </div>
 </footer>
@@ -721,9 +691,8 @@
 <div class="cookie-banner" id="cookieBanner" role="dialog" aria-labelledby="cookieTitle" aria-describedby="cookieText" hidden>
   <h2 class="cookie-banner__title" id="cookieTitle" data-i18n="cookie.title">Vos cookies</h2>
   <p class="cookie-banner__text" id="cookieText">
-    Nous utilisons uniquement des cookies <strong>strictement nécessaires</strong> au fonctionnement du site
-    (préférence thème, mémoire de session). Aucun traceur publicitaire, aucune revente de données.
-    <button type="button" class="footer-link-btn" data-open-legal="privacy">En savoir plus</button>
+    <span data-i18n="cookie.text">Nous utilisons uniquement des cookies strictement nécessaires au fonctionnement du site (préférence thème, mémoire de session). Aucun traceur publicitaire, aucune revente de données.</span>
+    <button type="button" class="footer-link-btn" data-open-legal="privacy" data-i18n="cookie.more">En savoir plus</button>
   </p>
   <div class="cookie-banner__actions">
     <button type="button" class="cookie-banner__btn cookie-banner__btn--accept" id="cookieAccept" data-i18n="cookie.accept">J'ai compris</button>

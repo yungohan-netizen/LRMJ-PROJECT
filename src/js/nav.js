@@ -10,8 +10,8 @@ export function initNav() {
     nav.classList.toggle('nav--solid', y > 40);
     if (progress) {
       const max = document.documentElement.scrollHeight - window.innerHeight;
-      const pct = max > 0 ? Math.min((y / max) * 100, 100) : 0;
-      nav.style.setProperty('--scroll-pct', pct.toFixed(1) + '%');
+      const p = max > 0 ? Math.min(y / max, 1) : 0;
+      nav.style.setProperty('--scroll-p', p.toFixed(4));
     }
     ticking = false;
   };

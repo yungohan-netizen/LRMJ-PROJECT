@@ -5,8 +5,7 @@
 .footer-emblem-row { display: flex; align-items: center; gap: .85rem; margin-bottom: .75rem; }
 .footer-emblem { width: 38px; height: 38px; object-fit: contain; flex-shrink: 0; filter: drop-shadow(0 1px 3px rgba(0,0,0,.25)); }
 .footer-typeface { height: 22px; width: auto; object-fit: contain; opacity: .88; filter: drop-shadow(0 1px 2px rgba(0,0,0,.2)); }
-.footer-brand { font-family:var(--f-display); font-size:1.6rem; font-weight:400; letter-spacing:.08em; color:var(--tx); margin-bottom:.5rem; }
-.footer-desc { font-size:.85rem; line-height:1.7; max-width:32ch; }
+.footer-desc { font-size:.85rem; line-height:1.7; max-width:32ch; text-wrap: pretty; }
 .footer-hdg { font-size:.6rem; font-weight:700; letter-spacing:.2em; text-transform:uppercase; color:var(--tx-3); margin-bottom:1.25rem; }
 .footer-links { list-style:none; display:flex; flex-direction:column; gap:.6rem; }
 .footer-links a {
@@ -34,7 +33,6 @@
   opacity: 1;
   transform: translateX(0);
 }
-.footer-links li > span { color: var(--tx-3); font-size: .88rem; }
 .footer-btm { border-top:1px solid var(--border); padding-top:1.5rem; display:flex; justify-content:space-between; align-items:center; gap:1rem; }
 .footer-copy { font-size:.75rem; }
 .footer-copy a { text-decoration:none; }

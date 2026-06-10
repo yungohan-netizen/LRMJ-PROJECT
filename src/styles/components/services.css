@@ -1,5 +1,8 @@
 /* ── SERVICES — Floating Bento + Double-Bezel ── */
 .svc-hdr { display: flex; align-items: flex-end; justify-content: space-between; gap: 2rem; margin-bottom: 2.5rem; }
+@media (max-width: 760px) {
+  .svc-hdr { flex-direction: column; align-items: flex-start; gap: 1.75rem; }
+}
 .svc-grid {
   display: grid; grid-template-columns: repeat(3,1fr);
   gap: clamp(.75rem, 1.2vw, 1.25rem);
@@ -16,7 +19,7 @@
   background: var(--surf);
   border: 1px solid var(--border);
   padding: 6px;
-  border-radius: 1.75rem;
+  border-radius: var(--r-xl);
   overflow: hidden;
   position: relative; isolation: isolate;
   display: flex; flex-direction: column;
@@ -32,7 +35,7 @@
   border-color: var(--border-2);
   transform: translateY(-6px);
   box-shadow:
-    0 24px 56px rgba(0,0,0,.14),
+    0 24px 56px rgba(var(--shadow-rgb),.14),
     inset 0 1px 0 rgba(255,255,255,.08);
 }
 html[data-theme="dark"] .svc-card:hover {
@@ -44,10 +47,10 @@ html[data-theme="dark"] .svc-card:hover {
 .svc-img-wrap {
   overflow: hidden; flex-shrink: 0; position: relative;
   /* Inner core radius — concentric with outer (1.75rem - 6px padding) */
-  border-radius: calc(1.75rem - 6px) calc(1.75rem - 6px) 0 0;
+  border-radius: calc(var(--r-xl) - 6px) calc(var(--r-xl) - 6px) 0 0;
 }
 .svc-card--feat .svc-img-wrap {
-  border-radius: calc(1.75rem - 6px) 0 0 calc(1.75rem - 6px);
+  border-radius: calc(var(--r-xl) - 6px) 0 0 calc(var(--r-xl) - 6px);
 }
 .svc-img { width: 100%; height: 220px; object-fit: cover; display: block; transition: transform .8s cubic-bezier(.25,.46,.45,.94), filter .8s ease, opacity .4s var(--ease); filter: brightness(.78) saturate(.78); will-change: transform; }
 .svc-card--feat .svc-img { width: 480px; height: 100%; }
@@ -68,10 +71,10 @@ html[data-theme="dark"] .svc-card:hover {
   padding: 1.75rem;
   display: flex; flex-direction: column; gap: .35rem; flex: 1;
   background: var(--bg-1);
-  border-radius: 0 0 calc(1.75rem - 6px) calc(1.75rem - 6px);
+  border-radius: 0 0 calc(var(--r-xl) - 6px) calc(var(--r-xl) - 6px);
 }
 .svc-card--feat .svc-body {
-  border-radius: 0 calc(1.75rem - 6px) calc(1.75rem - 6px) 0;
+  border-radius: 0 calc(var(--r-xl) - 6px) calc(var(--r-xl) - 6px) 0;
 }
 .svc-tag  { font-size: .6rem; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; color: var(--red); margin-bottom: .25rem; }
 .svc-title {
@@ -98,8 +101,8 @@ html[data-theme="dark"] .svc-card:hover {
   .svc-card:not(.svc-card--feat):last-child { grid-column: span 2; }
   .svc-card--feat { grid-column: span 2; flex-direction:column; }
   .svc-card--feat .svc-img { width:100%; height:220px; }
-  .svc-card--feat .svc-img-wrap { border-radius: calc(1.75rem - 6px) calc(1.75rem - 6px) 0 0; }
-  .svc-card--feat .svc-body { border-radius: 0 0 calc(1.75rem - 6px) calc(1.75rem - 6px); }
+  .svc-card--feat .svc-img-wrap { border-radius: calc(var(--r-xl) - 6px) calc(var(--r-xl) - 6px) 0 0; }
+  .svc-card--feat .svc-body { border-radius: 0 0 calc(var(--r-xl) - 6px) calc(var(--r-xl) - 6px); }
 }
 @media (max-width:560px) {
   .svc-grid { grid-template-columns:1fr; }

@@ -1,10 +1,11 @@
 import './styles/main.css';
 
-import { initTheme }    from './js/theme.js';
-import { initI18n }     from './js/i18n.js';
-import { initLenis }    from './js/lenis.js';
-import { initReveal }   from './js/reveal.js';
-import { initLightbox } from './js/lightbox.js';
+import { initTheme }     from './js/theme.js';
+import { initI18n }      from './js/i18n.js';
+import { initLenis }     from './js/lenis.js';
+import { initSplitText } from './js/splitText.js';
+import { initReveal }    from './js/reveal.js';
+import { initLightbox }  from './js/lightbox.js';
 import { fetchCategory, parseResource, isFeatured, isMasonryPinned } from './js/cloudinary.js';
 
 const CATS = ['portails', 'gardecorps', 'verrieres', 'marquises', 'escaliers', 'meubles'];
@@ -124,6 +125,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initTheme();
   initI18n();
   initLenis();
+  initSplitText();
   initReveal();
   initLightbox();
   initPortfolio();
