@@ -158,3 +158,23 @@ html.js .fi.is-in.proc-step:nth-child(5) { animation-delay: .32s; }
   }
   .proc-body { max-width: none; margin: 0; flex: 1; padding-top: .35rem; }
 }
+
+/* ── Draw-on des icônes : les traits se dessinent à l'apparition ──
+   Ne s'active que si JS a posé pathLength=1 (sinon dasharray:1 = invisible !)
+   → on scope sur .proc-step.fi qui n'est PAS encore .is-in uniquement côté html.js,
+   et reduced-motion garde les icônes pleines. */
+html.js .proc-icon svg :is(path, rect, circle:not([fill])) {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  transition: stroke-dashoffset 1.15s var(--ease-out) .2s;
+}
+html.js .proc-step.is-in .proc-icon svg :is(path, rect, circle:not([fill])) {
+  stroke-dashoffset: 0;
+}
+@media (prefers-reduced-motion: reduce) {
+  html.js .proc-icon svg :is(path, rect, circle) {
+    stroke-dasharray: none !important;
+    stroke-dashoffset: 0 !important;
+    transition: none !important;
+  }
+}

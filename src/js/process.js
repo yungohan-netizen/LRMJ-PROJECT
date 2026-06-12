@@ -9,6 +9,10 @@ export function initProcess() {
     return;
   }
 
+  // pathLength=1 → le CSS peut animer stroke-dashoffset de 1 à 0 (draw-on)
+  timeline.querySelectorAll('.proc-icon path, .proc-icon rect, .proc-icon circle:not([fill])')
+    .forEach(s => s.setAttribute('pathLength', '1'));
+
   const steps = timeline.querySelectorAll('.proc-step');
   let progress = 0;
   const obs = new IntersectionObserver(entries => {
