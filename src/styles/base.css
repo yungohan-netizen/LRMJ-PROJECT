@@ -261,6 +261,16 @@ html.js .fi.is-in {
   .hero__scroll-line { animation: none; transform: scaleY(1); }
 }
 
+/* ── VIEW TRANSITION : toggle de thème (cercle depuis le bouton) ──
+   Scopé via html.vt-theme pour ne pas écraser les transitions de pages (Tâche 2). */
+html.vt-theme::view-transition-old(root),
+html.vt-theme::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+html.vt-theme::view-transition-new(root) { z-index: 1; }
+html.vt-theme::view-transition-old(root) { z-index: 0; }
+
 /* ── PRINT STYLESHEET ── */
 @media print {
   :root { --bg: #fff; --tx: #000; --tx-2: #333; --tx-3: #666; --red: #c4432f; }

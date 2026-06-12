@@ -27,9 +27,30 @@ export function initTheme() {
   toggle.addEventListener('click', () => {
     const current = html.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
     const next = current === 'dark' ? 'light' : 'dark';
-    if (next === 'dark') html.setAttribute('data-theme', 'dark');
-    else html.removeAttribute('data-theme');
+    const apply = () => {
+      if (next === 'dark') html.setAttribute('data-theme', 'dark');
+      else html.removeAttribute('data-theme');
+      applyThemeAssets(next);
+    };
     try { localStorage.setItem('lrmj-theme', next); } catch (_) {}
-    applyThemeAssets(next);
+
+    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (!document.startViewTransition || reduced) { apply(); return; }
+
+    // Révélation circulaire depuis le centre du bouton
+    const r = toggle.getBoundingClientRect();
+    const cx = r.left + r.width / 2;
+    const cy = r.top + r.height / 2;
+    const maxR = Math.hypot(Math.max(cx, innerWidth - cx), Math.max(cy, innerHeight - cy));
+
+    html.classList.add('vt-theme');
+    const vt = document.startViewTransition(apply);
+    vt.ready.then(() => {
+      html.animate(
+        { clipPath: [`circle(0px at ${cx}px ${cy}px)`, `circle(${maxR}px at ${cx}px ${cy}px)`] },
+        { duration: 550, easing: 'cubic-bezier(0.16, 1, 0.3, 1)', pseudoElement: '::view-transition-new(root)' }
+      );
+    }).catch(() => {});
+    vt.finished.finally(() => html.classList.remove('vt-theme'));
   });
 }
