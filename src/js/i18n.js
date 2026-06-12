@@ -13,7 +13,9 @@ export const translations = {
     'nav.cta':          'Devis Gratuit',
     'nav.phone.aria':   '0475 39 99 09',
     /* Hero */
-    'hero.h1':          'LRMJ Project | Artisan Ferronnier Belgique',
+    'hero.eyebrow':     'Atelier de ferronnerie · Bruxelles & Brabant flamand',
+    'hero.title':       'Portails, garde-corps, verrières.<br><em>Forgés pour durer.</em>',
+    'hero.cta2':        'Voir les réalisations',
     'hero.scroll':      'Découvrir',
     /* Engagements */
     'pledges.sr':       'Nos engagements',
@@ -172,7 +174,9 @@ export const translations = {
     'nav.cta':          'Gratis offerte',
     'nav.phone.aria':   '0475 39 99 09',
     /* Hero */
-    'hero.h1':          'LRMJ Project | Smid & Schrijnwerker België',
+    'hero.eyebrow':     'Smeedatelier · Brussel & Vlaams-Brabant',
+    'hero.title':       'Poorten, leuningen, serres.<br><em>Gesmeed om te duren.</em>',
+    'hero.cta2':        'Bekijk de realisaties',
     'hero.scroll':      'Ontdekken',
     /* Engagements */
     'pledges.sr':       'Onze engagementen',

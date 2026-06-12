@@ -51,6 +51,97 @@
       var(--bg) 100%);
 }
 
+/* ── Contenu éditorial : eyebrow + titre + CTAs, ancré bas-gauche ── */
+.hero__content {
+  position: absolute;
+  left: clamp(1.5rem, 5vw, 4rem);
+  right: clamp(1.5rem, 5vw, 4rem);
+  bottom: clamp(11vh, 14vh, 17vh);
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.1rem;
+  max-width: 1280px;
+  margin-inline: auto;
+  pointer-events: none;
+}
+.hero__content > * { pointer-events: auto; }
+/* Scrim cobalt derrière le texte : garantit la lisibilité du blanc sur la vidéo
+   dans les deux thèmes (en clair, le merge fond vers le crème → sinon faible contraste). */
+.hero__content::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  left: -8vw;
+  right: -4vw;
+  top: -16%;
+  bottom: -18vh;
+  pointer-events: none;
+  background:
+    linear-gradient(to top,
+      rgba(7, 16, 31, .58) 0%,
+      rgba(7, 16, 31, .30) 34%,
+      rgba(7, 16, 31, .08) 60%,
+      transparent 80%),
+    linear-gradient(to right,
+      rgba(7, 16, 31, .26) 0%,
+      transparent 72%);
+}
+.hero__eyebrow {
+  display: inline-flex; align-items: center; gap: 10px;
+  font-size: .64rem; font-weight: 600;
+  letter-spacing: .24em; text-transform: uppercase;
+  color: rgba(245, 243, 238, .82);
+  text-shadow: 0 1px 12px rgba(0, 0, 0, .35);
+}
+.hero__eyebrow::before {
+  content: ''; display: block;
+  width: 22px; height: 1px;
+  background: var(--red);
+}
+.hero__title {
+  font-family: var(--f-display);
+  font-size: clamp(2.1rem, 4.6vw, 4.2rem);
+  font-weight: 300;
+  line-height: 1.05;
+  letter-spacing: -.02em;
+  color: #f3f1ea;
+  text-shadow: 0 2px 28px rgba(0, 0, 0, .45);
+  margin: 0;
+}
+.hero__title em { font-style: normal; font-weight: 500; color: #e0573f; }
+.hero__ctas { display: flex; gap: .75rem; flex-wrap: wrap; margin-top: .4rem; }
+.hero__btn-alt { color: rgba(245, 243, 238, .85); border-color: rgba(245, 243, 238, .32); }
+.hero__btn-alt:hover { color: #fff; border-color: rgba(245, 243, 238, .55); }
+.hero__btn-alt .btn__ico { background: rgba(255, 255, 255, .14); }
+
+/* Entrée chorégraphiée (JS présent uniquement) */
+html.js .hero__eyebrow,
+html.js .hero__title,
+html.js .hero__ctas {
+  opacity: 0;
+  transform: translateY(26px);
+  filter: blur(6px);
+  animation: hero-rise .95s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+html.js .hero__eyebrow { animation-delay: .3s; }
+html.js .hero__title   { animation-delay: .45s; }
+html.js .hero__ctas    { animation-delay: .65s; }
+@keyframes hero-rise {
+  to { opacity: 1; transform: translateY(0); filter: blur(0); }
+}
+@media (prefers-reduced-motion: reduce) {
+  html.js .hero__eyebrow, html.js .hero__title, html.js .hero__ctas {
+    opacity: 1; transform: none; filter: none; animation: none;
+  }
+}
+@media (max-width: 640px) {
+  .hero__content { bottom: 13vh; gap: .9rem; }
+  .hero__title { font-size: clamp(1.9rem, 8.5vw, 2.4rem); }
+  .hero__ctas .btn { padding: 12px 22px; }
+}
+
 /* scroll hint */
 .hero__scroll {
   position: absolute; bottom: 5vh; left: 50%;
