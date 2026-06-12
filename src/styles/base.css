@@ -303,3 +303,31 @@ html.vt-theme::view-transition-old(root) { z-index: 0; }
   h1, h2, h3, h4 { color: #000 !important; page-break-after: avoid; }
   p { orphans: 3; widows: 3; }
 }
+
+/* ── PARALLAX SCROLL-DRIVEN — progressive enhancement, Firefox ignore ──
+   Cibles SANS autre transform (pas de .fi, pas de hover transform) :
+   - .resto__visual-img (le cadre image restauration ; le hover zoom est sur l'img interne)
+   - les pseudo-éléments de glow (aucun transform existant) */
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .resto__visual-img {
+      animation: plx-block linear both;
+      animation-timeline: view();
+      animation-range: entry 0% exit 100%;
+    }
+    .glow-center::before,
+    .glow-red-br::after {
+      animation: plx-glow linear both;
+      animation-timeline: view();
+      animation-range: entry 0% exit 100%;
+    }
+  }
+}
+@keyframes plx-block {
+  from { transform: translateY(clamp(-44px, -3vw, -20px)); }
+  to   { transform: translateY(clamp(20px, 3vw, 44px)); }
+}
+@keyframes plx-glow {
+  from { transform: translateY(-5%); }
+  to   { transform: translateY(5%); }
+}
