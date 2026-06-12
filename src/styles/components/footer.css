@@ -1,5 +1,5 @@
 /* ── FOOTER ── */
-.footer { background: var(--bg); border-top: 1px solid var(--border); color: var(--tx-3); padding: clamp(4rem,6vw,6rem) 0 2rem; }
+.footer { background: var(--bg); color: var(--tx-3); padding: clamp(4rem,6vw,6rem) 0 2rem; }
 .footer-grid { display:grid; grid-template-columns:2fr 1fr 1fr 1fr; gap:3rem; padding-bottom:3rem; align-items:start; }
 .footer-brand-wrap { display: flex; flex-direction: column; gap: .5rem; }
 .footer-emblem-row { display: flex; align-items: center; gap: .85rem; margin-bottom: .75rem; }

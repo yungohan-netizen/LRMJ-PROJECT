@@ -1,0 +1,50 @@
+/* ── STRIP MÉTIER — défilé typographique lent avant le footer ── */
+.strip {
+  overflow: hidden;
+  background: var(--bg);
+  border-top: 1px solid var(--border);
+  padding: clamp(1.6rem, 3vw, 2.6rem) 0;
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+          mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+}
+.strip__track {
+  display: flex;
+  width: max-content;
+  animation: strip-scroll 70s linear infinite;
+  will-change: transform;
+}
+.strip:hover .strip__track { animation-play-state: paused; }
+.strip__seq {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  gap: clamp(1.5rem, 3vw, 2.75rem);
+  padding-right: clamp(1.5rem, 3vw, 2.75rem);
+}
+.strip__seq > span {
+  font-family: var(--f-display);
+  font-size: clamp(1.9rem, 3.6vw, 3.1rem);
+  font-weight: 400;
+  letter-spacing: .01em;
+  white-space: nowrap;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(var(--tx-rgb), .30);
+  transition: color .45s var(--ease), -webkit-text-stroke-color .45s var(--ease);
+}
+.strip__seq > span:hover {
+  color: var(--red);
+  -webkit-text-stroke-color: var(--red);
+}
+.strip__seq > i {
+  font-style: normal;
+  color: var(--red);
+  font-size: 1.4rem;
+  line-height: 1;
+}
+@keyframes strip-scroll {
+  from { transform: translate3d(0, 0, 0); }
+  to   { transform: translate3d(-50%, 0, 0); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .strip__track { animation: none; }
+}
