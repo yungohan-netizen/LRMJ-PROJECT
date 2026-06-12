@@ -271,6 +271,15 @@ html.vt-theme::view-transition-new(root) {
 html.vt-theme::view-transition-new(root) { z-index: 1; }
 html.vt-theme::view-transition-old(root) { z-index: 0; }
 
+/* ── VIEW TRANSITION : navigation entre pages (index ↔ portfolio) ── */
+@view-transition { navigation: auto; }
+@media (prefers-reduced-motion: no-preference) {
+  ::view-transition-old(root) { animation: vt-page-out .4s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+  ::view-transition-new(root) { animation: vt-page-in .55s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+}
+@keyframes vt-page-out { to { opacity: 0; transform: translateY(-18px); } }
+@keyframes vt-page-in { from { opacity: 0; transform: translateY(14px); } }
+
 /* ── PRINT STYLESHEET ── */
 @media print {
   :root { --bg: #fff; --tx: #000; --tx-2: #333; --tx-3: #666; --red: #c4432f; }
