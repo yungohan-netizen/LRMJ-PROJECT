@@ -82,7 +82,7 @@ html.js .fi.is-in.eyebrow::before { transform: scaleX(1); }
 .h-large { font-family: var(--f-display); font-size: clamp(2rem,4vw,3.8rem); font-weight: 300; line-height: 1.06; letter-spacing: -.02em; color: var(--tx); }
 .h-large em { font-style: normal; font-weight: 500; color: var(--red); }
 
-/* Split-text reveal */
+/* Split-text reveal : lettre par lettre, montée + micro-rotation */
 .word {
   display: inline-block;
   overflow: hidden;
@@ -90,17 +90,17 @@ html.js .fi.is-in.eyebrow::before { transform: scaleX(1); }
   padding-bottom: .12em;
   margin-bottom: -.12em;
 }
-.word > span {
+.word .char {
   display: inline-block;
-  transform: translateY(115%);
-  transition: transform .9s var(--ease-out);
-  will-change: transform;
+  transform: translateY(115%) rotate(5deg);
+  transform-origin: left bottom;
+  transition: transform .75s var(--ease-out);
 }
-html.js .fi.is-in .word > span { transform: translateY(0); }
+html.js .fi.is-in .word .char { transform: translateY(0) rotate(0deg); }
 @media (prefers-reduced-motion: reduce) {
-  html.js .word > span { transform: none !important; }
+  html.js .word .char { transform: none !important; transition: none !important; }
 }
-html:not(.js) .word > span { transform: none; }
+html:not(.js) .word .char { transform: none; }
 
 .h-mid   { font-family: var(--f-display); font-size: clamp(1.4rem,2.5vw,2rem); font-weight: 400; line-height: 1.2; color: var(--tx); text-wrap: balance; }
 .lead { font-size: clamp(.9rem,1.2vw,1.05rem); color: var(--tx-2); line-height: 1.8; max-width: 52ch; text-wrap: pretty; }

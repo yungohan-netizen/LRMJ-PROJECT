@@ -365,6 +365,8 @@ export function applyLang(lang) {
   });
 
   try { localStorage.setItem(LANG_KEY, lang); } catch (_) {}
+
+  document.dispatchEvent(new CustomEvent('lrmj:lang-changed', { detail: { lang } }));
 }
 
 /** Init — lit localStorage ou navigator.language */
