@@ -10,18 +10,13 @@
   object-fit: cover;
   pointer-events: none;
   opacity: 0;
-  /* mask-image retiré : conflicte avec animation transform → jitter GPU.
-     Fade bas géré par .hero__vignette + .hero__merge */
-  animation: hero-zoom 18s var(--ease-out) forwards;
+  /* scale 1.05 = marge de débattement pour le parallax JS (translateY max 28px).
+     Le transform est piloté par hero.js ; pas d'animation CSS ici (conflit). */
+  transform: scale(1.05);
   will-change: transform;
   transition: opacity .6s var(--ease);
 }
 .hero__video.is-ready { opacity: var(--hero-video-opacity); }
-
-@keyframes hero-zoom {
-  from { transform: scale(1.06); }
-  to   { transform: scale(1); }
-}
 
 /* Vignette resserre — fade ne demarre qu a 70% au lieu de 55% */
 .hero__vignette {
