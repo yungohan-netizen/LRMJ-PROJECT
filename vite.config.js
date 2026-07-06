@@ -1,4 +1,6 @@
 import { defineConfig, loadEnv } from 'vite';
+import fs from 'node:fs';
+import path from 'node:path';
 
 /** Cloudinary Admin API proxy — dev only (Vite middleware).
  *  Prod : équivalent dans functions/api/cloudinary/[folder].js (Cloudflare Pages).
@@ -47,6 +49,23 @@ function cloudinaryProxy(env) {
   };
 }
 
+/** URLs propres en dev/preview : /portfolio → portfolio.html, /nl/x → nl/x.html.
+ *  Parité avec Cloudflare Pages qui le fait nativement en prod. */
+function cleanUrls() {
+  const rewrite = (root) => (req, _res, next) => {
+    const url = (req.url || '').split('?')[0];
+    if (url !== '/' && !path.extname(url) && fs.existsSync(path.join(root, url + '.html'))) {
+      req.url = url + '.html' + ((req.url || '').includes('?') ? '?' + req.url.split('?')[1] : '');
+    }
+    next();
+  };
+  return {
+    name: 'lrmj-clean-urls',
+    configureServer(server) { server.middlewares.use(rewrite(server.config.root)); },
+    configurePreviewServer(server) { server.middlewares.use(rewrite(server.config.root)); },
+  };
+}
+
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '');
   return {
@@ -72,6 +91,6 @@ export default defineConfig(({ mode }) => {
     preview: {
       port: 4173,
     },
-    plugins: [cloudinaryProxy(env)],
+    plugins: [cloudinaryProxy(env), cleanUrls()],
   };
 });
