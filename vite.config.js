@@ -80,6 +80,8 @@ export default defineConfig(({ mode }) => {
         input: {
           main: 'index.html',
           portfolio: 'portfolio.html',
+          mentions: 'mentions-legales.html',
+          confidentialite: 'confidentialite.html',
         },
       },
     },

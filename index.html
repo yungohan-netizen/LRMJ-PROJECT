@@ -705,8 +705,8 @@
     </div>
     <div class="footer-btm">
       <p class="footer-copy">© <span id="footYear">2026</span> LRMJ Project ·
-        <button type="button" class="footer-link-btn" data-open-legal="mentions" data-i18n="footer.mentions">Mentions légales</button> ·
-        <button type="button" class="footer-link-btn" data-open-legal="privacy" data-i18n="footer.privacy">Confidentialité</button>
+        <a class="footer-link-btn" href="/mentions-legales" data-i18n="footer.mentions">Mentions légales</a> ·
+        <a class="footer-link-btn" href="/confidentialite" data-i18n="footer.privacy">Confidentialité</a>
       </p>
       <p class="footer-copy" data-i18n="footer.tag">Ferronnerie artisanale · Belgique</p>
     </div>
@@ -718,85 +718,11 @@
   <h2 class="cookie-banner__title" id="cookieTitle" data-i18n="cookie.title">Vos cookies</h2>
   <p class="cookie-banner__text" id="cookieText">
     <span data-i18n="cookie.text">Nous utilisons uniquement des cookies strictement nécessaires au fonctionnement du site (préférence thème, mémoire de session). Aucun traceur publicitaire, aucune revente de données.</span>
-    <button type="button" class="footer-link-btn" data-open-legal="privacy" data-i18n="cookie.more">En savoir plus</button>
+    <a class="footer-link-btn" href="/confidentialite" data-i18n="cookie.more">En savoir plus</a>
   </p>
   <div class="cookie-banner__actions">
     <button type="button" class="cookie-banner__btn cookie-banner__btn--accept" id="cookieAccept" data-i18n="cookie.accept">J'ai compris</button>
     <button type="button" class="cookie-banner__btn cookie-banner__btn--decline" id="cookieDecline" data-i18n="cookie.decline">Refuser tout</button>
-  </div>
-</div>
-
-<!-- MODAL MENTIONS LÉGALES -->
-<div class="modal-legal" id="modalMentions" role="dialog" aria-modal="true" aria-labelledby="mentionsTitle" aria-hidden="true">
-  <div class="modal-legal__panel" role="document">
-    <button type="button" class="modal-legal__close" data-close-legal aria-label="Fermer">
-      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" aria-hidden="true"><path d="M2 2 L12 12 M12 2 L2 12"/></svg>
-    </button>
-    <span class="modal-legal__eyebrow">Légal</span>
-    <h3 class="modal-legal__title" id="mentionsTitle">Mentions légales</h3>
-    <div class="modal-legal__body">
-      <h4>Éditeur du site</h4>
-      <p>
-        <strong>L.R.M.J Project SRL</strong><br>
-        Broekstraat 26, 1745 Opwijk, Belgique<br>
-        Téléphone : <a href="tel:0475399909">+32 475 39 99 09</a><br>
-        Email : <a href="mailto:contact@lrmjproject.be">contact@lrmjproject.be</a>
-      </p>
-      <p>
-        Numéro d'entreprise (BCE) : <strong>BE 0839.975.656</strong><br>
-        Numéro de TVA : <strong>BE 0839.975.656</strong><br>
-        Forme juridique : Société à responsabilité limitée (SRL)
-      </p>
-
-      <h4>Directeur de la publication</h4>
-      <p>Romeo Lesac, Administrateur de L.R.M.J Project SRL.</p>
-
-      <h4>Hébergement</h4>
-      <p>Le site est hébergé par <strong>Cloudflare Pages</strong> (Cloudflare, Inc., 101 Townsend St., San Francisco, CA 94107, USA). Les médias (photos, vidéos) sont distribués via <strong>Cloudinary</strong> (Cloudinary Ltd., Petah Tikva, Israël).</p>
-
-      <h4>Propriété intellectuelle</h4>
-      <p>L'ensemble du site (textes, photographies, logo, charte graphique) est la propriété exclusive de LRMJ Project, sauf mention contraire. Toute reproduction, même partielle, sans autorisation écrite préalable est interdite.</p>
-
-      <h4>Limitation de responsabilité</h4>
-      <p>Les informations affichées sur ce site sont fournies à titre indicatif. LRMJ Project ne saurait être tenu responsable d'éventuelles erreurs ou omissions. Les visuels et descriptions de réalisations sont propres à chaque projet et ne constituent pas un engagement contractuel.</p>
-
-      <h4>Litiges</h4>
-      <p>Le présent site est régi par le droit belge. En cas de litige, les tribunaux belges sont seuls compétents.</p>
-    </div>
-  </div>
-</div>
-
-<!-- MODAL CONFIDENTIALITÉ -->
-<div class="modal-legal" id="modalPrivacy" role="dialog" aria-modal="true" aria-labelledby="privacyTitle" aria-hidden="true">
-  <div class="modal-legal__panel" role="document">
-    <button type="button" class="modal-legal__close" data-close-legal aria-label="Fermer">
-      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" aria-hidden="true"><path d="M2 2 L12 12 M12 2 L2 12"/></svg>
-    </button>
-    <span class="modal-legal__eyebrow">Légal</span>
-    <h3 class="modal-legal__title" id="privacyTitle">Politique de confidentialité</h3>
-    <div class="modal-legal__body">
-      <h4>Données personnelles collectées</h4>
-      <p>Seuls les champs que vous remplissez volontairement dans le formulaire de contact (nom, email, téléphone, message, type de projet) sont collectés. Ils servent <strong>uniquement</strong> à vous recontacter au sujet de votre demande.</p>
-
-      <h4>Conservation</h4>
-      <p>Vos données sont conservées le temps strictement nécessaire au traitement de votre demande, puis archivées ou supprimées sous 24 mois maximum.</p>
-
-      <h4>Partage avec des tiers</h4>
-      <p>Vos données ne sont jamais vendues, louées ni cédées à des tiers à des fins commerciales. Elles sont uniquement traitées par LRMJ Project et son prestataire d'envoi de formulaire.</p>
-
-      <h4>Cookies utilisés</h4>
-      <ul>
-        <li><strong>Cookies strictement nécessaires</strong> : préférence de thème (clair/sombre), validation du bandeau cookies. Pas de tracking.</li>
-        <li><strong>Pas de cookies tiers publicitaires</strong>, pas de pixels Facebook ou Google Ads.</li>
-      </ul>
-      <p>Vous pouvez à tout moment supprimer ces cookies depuis les paramètres de votre navigateur.</p>
-
-      <h4>Vos droits (RGPD)</h4>
-      <p>Conformément au Règlement Général sur la Protection des Données, vous disposez d'un droit d'accès, de rectification, d'effacement, d'opposition et de portabilité sur vos données. Pour exercer ces droits, contactez-nous à <a href="mailto:contact@lrmjproject.be">contact@lrmjproject.be</a>.</p>
-
-      <h4>Autorité de contrôle</h4>
-      <p>En cas de litige non résolu, vous pouvez saisir l'Autorité de protection des données belge : <a href="https://www.autoriteprotectiondonnees.be" rel="noopener">autoriteprotectiondonnees.be</a>.</p>
-    </div>
   </div>
 </div>
 
