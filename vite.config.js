@@ -82,6 +82,7 @@ export default defineConfig(({ mode }) => {
           portfolio: 'portfolio.html',
           mentions: 'mentions-legales.html',
           confidentialite: 'confidentialite.html',
+          ferronnierbruxelles: 'ferronnier-bruxelles.html',
         },
       },
     },
