@@ -1,0 +1,128 @@
+/* ── PAGES ARTICLE (légal + landing SEO) — prose dans le design system ── */
+
+/* Nav slim : logo + retour + thème + CTA (pas de liens centraux, pas de burger) */
+.nav--slim .nav__inner { padding-left: 1rem; }
+.nav--slim .nav__back {
+  flex: 1;
+  display: inline-flex; align-items: center; gap: 8px;
+  font-size: .66rem; font-weight: 600; letter-spacing: .16em; text-transform: uppercase;
+  color: var(--tx-3); text-decoration: none;
+  transition: color .3s var(--ease), transform .3s var(--ease);
+}
+.nav--slim .nav__back:hover { color: var(--red); transform: translateX(-3px); }
+@media (max-width: 860px) {
+  .nav--slim .nav__cta-pill { display: inline-flex; }
+  .nav--slim .nav__back span { display: none; } /* garde la flèche seule */
+}
+
+/* Header de page */
+.page-hero {
+  padding: clamp(8rem, 14vh, 11rem) 0 clamp(2.5rem, 5vw, 4rem);
+  background: var(--bg);
+}
+.page-hero .lead { margin-top: 1rem; }
+
+/* Corps prose */
+.article {
+  padding-bottom: clamp(4rem, 8vw, 7rem);
+}
+.article__body { max-width: 68ch; }
+.article__body h2 {
+  font-family: var(--f-display);
+  font-size: clamp(1.4rem, 2.4vw, 1.9rem);
+  font-weight: 400;
+  letter-spacing: -.01em;
+  color: var(--tx);
+  margin: 2.75rem 0 1rem;
+  text-wrap: balance;
+}
+.article__body h2 em { font-style: normal; font-weight: 500; color: var(--red); }
+.article__body p {
+  font-size: .95rem; line-height: 1.85; color: var(--tx-2);
+  margin: 0 0 1.1rem;
+  text-wrap: pretty;
+}
+.article__body strong { color: var(--tx); font-weight: 500; }
+.article__body a { color: var(--red); text-decoration: none; border-bottom: 1px solid rgba(var(--red-rgb), .35); transition: border-color .25s var(--ease); }
+.article__body a:hover { border-color: var(--red); }
+.article__body ul { list-style: none; margin: 0 0 1.25rem; padding: 0; }
+.article__body ul li {
+  position: relative; padding-left: 1.4rem;
+  font-size: .95rem; line-height: 1.8; color: var(--tx-2);
+  margin-bottom: .45rem;
+}
+.article__body ul li::before {
+  content: ''; position: absolute; left: 0; top: .78em;
+  width: 10px; height: 1px; background: var(--red);
+}
+
+/* Galerie photos (remplie par page.js via Cloudinary, fallback = retirée) */
+.article__gallery {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: clamp(.5rem, 1vw, .85rem);
+  margin: 2rem 0 .5rem;
+}
+.article__gallery figure { margin: 0; border-radius: var(--r-img); overflow: hidden; background: var(--bg-1); box-shadow: inset 0 1px 0 rgba(255,255,255,.05); }
+.article__gallery img { width: 100%; height: 200px; object-fit: cover; display: block; filter: brightness(.94) saturate(.92); }
+@media (max-width: 640px) {
+  .article__gallery { grid-template-columns: 1fr 1fr; }
+  .article__gallery figure:nth-child(3) { display: none; }
+}
+
+/* FAQ en details natifs, stylés design system */
+.article__faq { margin-top: 1rem; }
+.article__faq details {
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  background: var(--surf);
+  margin-bottom: .6rem;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.06);
+  transition: border-color .35s var(--ease), background-color .35s var(--ease);
+}
+.article__faq details[open] { border-color: var(--border-2); background: var(--surf-2); }
+.article__faq summary {
+  cursor: pointer; list-style: none;
+  padding: 1.05rem 1.25rem;
+  font-family: var(--f-display); font-weight: 400; font-size: 1.02rem; color: var(--tx);
+  display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+}
+.article__faq summary::-webkit-details-marker { display: none; }
+.article__faq summary::after {
+  content: '+'; color: var(--red); font-size: 1.2rem; line-height: 1;
+  transition: transform .35s var(--ease);
+}
+.article__faq details[open] summary::after { transform: rotate(45deg); }
+.article__faq details p { padding: 0 1.25rem 1.1rem; margin: 0; font-size: .9rem; }
+
+/* Bande CTA de fin */
+.article__cta {
+  margin-top: 3rem;
+  padding: clamp(1.75rem, 3.5vw, 2.5rem);
+  border: 1px solid var(--border-2);
+  border-radius: var(--r-lg);
+  background: var(--bg-1);
+  box-shadow: 0 24px 60px rgba(var(--shadow-rgb), .10), inset 0 1px 0 rgba(255,255,255,.08);
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 1.5rem; flex-wrap: wrap;
+}
+.article__cta-txt { max-width: 46ch; }
+.article__cta-title { font-family: var(--f-display); font-size: 1.3rem; font-weight: 400; color: var(--tx); margin: 0 0 .35rem; }
+.article__cta-sub { font-size: .88rem; color: var(--tx-2); margin: 0; }
+
+/* Maillage bas de page ("Voir aussi") */
+.article__related { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid var(--border); }
+.article__related p { font-size: .64rem; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; color: var(--tx-3); margin: 0 0 .8rem; }
+.article__related ul { display: flex; flex-wrap: wrap; gap: .5rem; margin: 0; }
+.article__related li { padding: 0; margin: 0; }
+.article__related li::before { display: none; }
+.article__related a {
+  display: inline-flex; padding: 8px 16px;
+  border: 1px solid var(--border); border-radius: 999px;
+  font-size: .72rem; font-weight: 500; color: var(--tx-2);
+  text-decoration: none; border-bottom-width: 1px;
+  transition: color .3s var(--ease), border-color .3s var(--ease), background-color .3s var(--ease);
+}
+.article__related a:hover { color: var(--red); border-color: var(--red-border); background: rgba(var(--red-rgb), .05); }
+
+/* Sélecteur de langue statique (liens, pas de JS) sur les pages par-langue */
+.nav--slim .lang-toggle__btn { text-decoration: none; }
