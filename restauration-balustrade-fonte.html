@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script>
+    (function() {
+      var html = document.documentElement;
+      html.classList.add('js');
+      try {
+        var stored = localStorage.getItem('lrmj-theme');
+        var theme = (stored === 'dark' || stored === 'light')
+          ? stored
+          : (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        if (theme === 'dark') html.setAttribute('data-theme', 'dark');
+      } catch (_) {}
+    })();
+  </script>
+  <title>Restauration de balustrades en fonte | Bruxelles | LRMJ Project</title>
+  <meta name="description" content="Restauration de balustrades, balcons et garde-corps en fonte ancienne à Bruxelles : décapage, soudure spécialisée, pièces manquantes, anticorrosion. Prime façade jusqu'à 14 000 €." />
+  <link rel="canonical" href="https://lrmjproject.be/restauration-balustrade-fonte" />
+  <meta property="og:title" content="Restauration de balustrades en fonte | LRMJ Project" />
+  <meta property="og:description" content="Une spécialité rare au service du patrimoine bruxellois. La Ville de Bruxelles rembourse 40 à 60% des travaux de restauration de façade." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://lrmjproject.be/restauration-balustrade-fonte" />
+  <meta property="og:image" content="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_fill,g_auto,w_1200,h_630/LRMJ_PROJECT_LOGO_xzm1yq.png" />
+  <link id="faviconEl" rel="icon" type="image/png"
+        href="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_64/LRMJ_EMBLEM_FLAT_DARK_MODE_yhtb4t.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+  <link rel="preconnect" href="https://res.cloudinary.com" crossorigin>
+  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@300,400,500,600,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
+  <script type="module" src="/src/page.js"></script>
+</head>
+<body>
+
+<header class="nav nav--slim" id="siteNav">
+  <div class="nav__inner">
+    <a href="/" class="nav__logo" aria-label="LRMJ Project | Accueil">
+      <img class="nav__logo-img"
+           src="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_96/LRMJ_EMBLEM_FLAT_DARK_MODE_yhtb4t.png"
+           data-src-dark="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_96/LRMJ_EMBLEM_FLAT_DARK_MODE_yhtb4t.png"
+           data-src-light="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_96/LRMJ_EMBLEM_FLAT_LIGHT_MODE_tlr9tp.png"
+           alt="LRMJ Project" width="48" height="48"/>
+    </a>
+    <a href="/" class="nav__back">←<span>&nbsp;Retour à l'accueil</span></a>
+    <div class="nav__actions">
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Basculer entre mode clair et sombre">
+        <svg class="theme-toggle__sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="4"/>
+          <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+        </svg>
+        <svg class="theme-toggle__moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
+        </svg>
+      </button>
+      <a href="/#contact" class="nav__cta-pill">Devis Gratuit</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="page-hero">
+    <div class="wrap wrap--sm fi">
+      <span class="eyebrow">Spécialité rare · Patrimoine</span>
+      <h1 class="h-large">Restauration de balustrades en <em>fonte</em></h1>
+      <p class="lead">Les balcons bruxellois du dix-neuvième siècle méritent mieux qu'un remplacement. Nous restaurons la fonte ancienne : un savoir-faire que peu d'artisans maîtrisent encore.</p>
+    </div>
+  </section>
+
+  <section class="article">
+    <div class="wrap wrap--sm">
+      <div class="article__body fi">
+        <h2>Pourquoi restaurer plutôt que remplacer</h2>
+        <p>Les balustrades en fonte des façades bruxelloises font partie de l'identité de la ville : motifs moulés, volutes, rosaces, d'une finesse que les fabrications modernes ne reproduisent pas. Quand la corrosion, un choc ou le temps les abîment, le réflexe du remplacement fait perdre ce caractère pour toujours. La restauration le préserve, et redonne à la façade sa valeur d'origine.</p>
+        <p>La fonte est un matériau exigeant : cassante, elle ne se soude pas comme l'acier. C'est un travail de spécialiste, et c'est précisément la spécialité de notre atelier.</p>
+
+        <h2>Ce que nous <em>restaurons</em></h2>
+        <ul>
+          <li>Balustrades et garde-corps de balcon en fonte ou en fer forgé ancien</li>
+          <li>Rampes d'escalier d'époque</li>
+          <li>Consoles, moulures et éléments décoratifs de façade</li>
+        </ul>
+        <p>Le travail comprend, selon l'état : nettoyage et décapage complet, <strong>soudure spécialisée de la fonte</strong>, remplacement des pièces manquantes, traitement anticorrosion et finition à l'ancienne, dans le respect du dessin d'origine.</p>
+
+        <h2>La prime de la Ville de Bruxelles</h2>
+        <p>Bonne nouvelle pour les propriétaires : la Ville de Bruxelles rembourse <strong>40 à 60 pour cent du coût des travaux</strong> d'embellissement de façade, ce qui couvre les balcons, garde-corps et consoles en fonte, jusqu'à <strong>14 000 euros par dossier</strong> selon la longueur de la façade. D'autres communes bruxelloises ont leur propre programme de primes : renseignez-vous auprès de la vôtre, ou demandez-nous lors de la visite.</p>
+        <p>Les conditions officielles sont consultables sur <a href="https://www.bruxelles.be/prime-facades" rel="noopener noreferrer" target="_blank">le site de la Ville de Bruxelles</a>.</p>
+
+        <h2>Comment ça se passe</h2>
+        <p>Nous venons examiner l'ouvrage sur place : état de la fonte, pièces manquantes, fixations, ancrages dans la façade. Vous recevez un <strong>devis détaillé et gratuit sous 48 heures</strong>. Selon le chantier, la restauration se fait sur place ou en atelier après dépose soignée, puis l'ouvrage est reposé et protégé pour les décennies à venir.</p>
+
+        <div class="article__faq">
+          <h2>Questions fréquentes</h2>
+          <details class="fi">
+            <summary>Ma balustrade est très abîmée, est-elle encore restaurable ?</summary>
+            <p>Dans la grande majorité des cas, oui. Même avec des pièces cassées ou manquantes, nous pouvons souder la fonte et refaire les éléments absents dans le respect du dessin d'origine. Le diagnostic sur place est gratuit.</p>
+          </details>
+          <details class="fi">
+            <summary>Combien coûte une restauration de balustrade ?</summary>
+            <p>Tout dépend de l'état, du linéaire et de la complexité des motifs. Le devis est gratuit et détaillé, et la prime de la Ville de Bruxelles peut couvrir 40 à 60 pour cent du montant des travaux éligibles.</p>
+          </details>
+          <details class="fi">
+            <summary>Faut-il démonter la balustrade pour la restaurer ?</summary>
+            <p>Pas toujours. Les interventions légères se font sur place. Quand l'état le justifie, nous déposons l'ouvrage avec précaution, le restaurons en atelier et le reposons.</p>
+          </details>
+          <details class="fi">
+            <summary>Intervenez-vous en dehors de Bruxelles ?</summary>
+            <p>Oui, dans tout le Brabant flamand et au-delà selon le projet. La prime décrite ici est propre à la Ville de Bruxelles, mais d'autres communes ont des dispositifs comparables.</p>
+          </details>
+        </div>
+
+        <div class="article__cta fi">
+          <div class="article__cta-txt">
+            <p class="article__cta-title">Votre façade a du patrimoine, préservons-le</p>
+            <p class="article__cta-sub">Diagnostic sur place et devis détaillé gratuits. Réponse sous 48h.</p>
+          </div>
+          <a href="/#contact" class="btn btn--red"><span>Devis Gratuit</span><span class="btn__ico" aria-hidden="true">↗</span></a>
+        </div>
+
+        <div class="article__related">
+          <p>Voir aussi</p>
+          <ul>
+            <li><a href="/garde-corps-fer-forge">Garde-corps neufs en fer forgé</a></li>
+            <li><a href="/ferronnier-bruxelles">Ferronnier à Bruxelles</a></li>
+            <li><a href="/portfolio">Nos réalisations</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer pf-footer">
+  <div class="wrap">
+    <div class="pf-footer__inner">
+      <a href="/" class="pf-footer__brand">
+        <img src="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_72/LRMJ_EMBLEM_FLAT_DARK_MODE_yhtb4t.png"
+             data-src-dark="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_72/LRMJ_EMBLEM_FLAT_DARK_MODE_yhtb4t.png"
+             data-src-light="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_72/LRMJ_EMBLEM_FLAT_LIGHT_MODE_tlr9tp.png"
+             alt="" aria-hidden="true" width="36" height="36" loading="lazy"/>
+        <span>← Retour à l'accueil</span>
+      </a>
+      <a href="/#contact" class="btn btn--red">
+        <span>Devis Gratuit</span>
+        <span class="btn__ico" aria-hidden="true">↗</span>
+      </a>
+    </div>
+    <p class="pf-footer__copy">© <span id="footYear">2026</span> LRMJ Project · BE 0839.975.656 · <a class="footer-link-btn" href="/mentions-legales">Mentions légales</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
