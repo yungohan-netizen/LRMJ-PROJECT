@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script>
+    (function() {
+      var html = document.documentElement;
+      html.classList.add('js');
+      try {
+        var stored = localStorage.getItem('lrmj-theme');
+        var theme = (stored === 'dark' || stored === 'light')
+          ? stored
+          : (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        if (theme === 'dark') html.setAttribute('data-theme', 'dark');
+      } catch (_) {}
+    })();
+  </script>
+  <title>Smid in Vlaams-Brabant &amp; Brussel | Smeedwerk op maat | LRMJ Project</title>
+  <meta name="description" content="Ambachtelijke smid in Opwijk, Vlaams-Brabant. Smeedijzeren poorten, balustrades, stalen ramen en restauratie van gietijzer, ontworpen en geplaatst door ons atelier. Gratis offerte binnen 48 uur." />
+  <link rel="canonical" href="https://lrmjproject.be/nl/smid-vlaams-brabant" />
+  <link rel="alternate" hreflang="fr-BE" href="https://lrmjproject.be/ferronnier-bruxelles" />
+  <link rel="alternate" hreflang="nl-BE" href="https://lrmjproject.be/nl/smid-vlaams-brabant" />
+  <link rel="alternate" hreflang="x-default" href="https://lrmjproject.be/ferronnier-bruxelles" />
+  <meta property="og:title" content="Smid in Vlaams-Brabant &amp; Brussel | LRMJ Project" />
+  <meta property="og:description" content="Smeedwerk op maat: poorten, balustrades, stalen ramen, restauratie van gietijzer. Eén atelier, geen uitbesteding." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://lrmjproject.be/nl/smid-vlaams-brabant" />
+  <meta property="og:image" content="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_fill,g_auto,w_1200,h_630/LRMJ_PROJECT_LOGO_xzm1yq.png" />
+  <link id="faviconEl" rel="icon" type="image/png"
+        href="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_64/LRMJ_EMBLEM_FLAT_DARK_MODE_yhtb4t.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+  <link rel="preconnect" href="https://res.cloudinary.com" crossorigin>
+  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@300,400,500,600,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
+  <script type="module" src="/src/page.js"></script>
+</head>
+<body>
+
+<header class="nav nav--slim" id="siteNav">
+  <div class="nav__inner">
+    <a href="/" class="nav__logo" aria-label="LRMJ Project | Startpagina">
+      <img class="nav__logo-img"
+           src="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_96/LRMJ_EMBLEM_FLAT_DARK_MODE_yhtb4t.png"
+           data-src-dark="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_96/LRMJ_EMBLEM_FLAT_DARK_MODE_yhtb4t.png"
+           data-src-light="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_96/LRMJ_EMBLEM_FLAT_LIGHT_MODE_tlr9tp.png"
+           alt="LRMJ Project" width="48" height="48"/>
+    </a>
+    <a href="/" class="nav__back">←<span>&nbsp;Terug naar de startpagina</span></a>
+    <div class="nav__actions">
+      <div class="lang-toggle" role="group" aria-label="Langue / Taal">
+        <a class="lang-toggle__btn" href="/ferronnier-bruxelles" hreflang="fr">FR</a>
+        <span class="lang-toggle__sep" aria-hidden="true"></span>
+        <a class="lang-toggle__btn is-active" href="#" aria-current="true">NL</a>
+      </div>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Wissel tussen licht en donker">
+        <svg class="theme-toggle__sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="4"/>
+          <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+        </svg>
+        <svg class="theme-toggle__moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
+        </svg>
+      </button>
+      <a href="/#contact" class="nav__cta-pill">Gratis Offerte</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="page-hero">
+    <div class="wrap wrap--sm fi">
+      <span class="eyebrow">Siersmederij · Sinds 2011</span>
+      <h1 class="h-large">Smid in <em>Vlaams-Brabant</em></h1>
+      <p class="lead">Eén atelier, één ambachtsman, één woord. LRMJ Project ontwerpt, smeedt en plaatst smeedwerk op maat, vanuit Opwijk, voor woningen in Vlaams-Brabant en Brussel.</p>
+    </div>
+  </section>
+
+  <section class="article">
+    <div class="wrap wrap--sm">
+      <div class="article__body fi">
+        <h2>Een smidse in het hart van Vlaams-Brabant</h2>
+        <p>LRMJ Project werd in 2011 opgericht door Romeo Lesac en is een siersmederij gevestigd in Opwijk. Elk stuk wordt hier ontworpen, gesmeed en samengesteld met onze eigen handen, en vervolgens geplaatst door hetzelfde team. <strong>Geen uitbesteding</strong>: wie uw opmeting doet, is ook wie uw werkstuk smeedt en plaatst.</p>
+        <p>Deze manier van werken, zeldzaam geworden, maakt het verschil: één aanspreekpunt van het eerste telefoontje tot de oplevering, details die van begin tot eind beheerst worden, en een duidelijke verantwoordelijkheid over het resultaat.</p>
+
+        <div class="article__gallery" data-seo-gallery="portails" aria-label="Voorbeelden van realisaties"></div>
+
+        <h2>Wat wij <em>smeden</em></h2>
+        <ul>
+          <li><a href="/nl/smeedijzeren-poort">Smeedijzeren poorten en hekwerk</a>: draai- of schuifpoorten, bijpassende omheiningen.</li>
+          <li><a href="/nl/smeedijzeren-balustrade">Balustrades en trapleuningen</a>: trappen, balkons, mezzanines, terrassen.</li>
+          <li><a href="/nl/serre-veranda-op-maat">Stalen binnenramen en glaspuien</a>: atelierwanden, wintertuinen, glazen uitbreidingen.</li>
+          <li><a href="/nl/restauratie-gietijzeren-balustrade">Restauratie van gietijzeren balustrades</a>: een zeldzame specialiteit, kostbaar voor het Brusselse erfgoed.</li>
+          <li>Luifels, afdaken, metalen trappen en smeedijzeren meubels, te bekijken op onze <a href="/portfolio">realisatiepagina</a>.</li>
+        </ul>
+
+        <h2>Onze manier van werken</h2>
+        <p>Alles begint met een eenvoudig gesprek: u belt of schrijft ons, wij begrijpen uw project zonder jargon. Daarna komen we bij u langs om op te meten en de stijlen, afwerkingen en beperkingen van de plaats te bespreken. U ontvangt een <strong>gedetailleerde en gratis offerte binnen 48 uur</strong>, vrijblijvend.</p>
+        <p>De fabricage gebeurt volledig in ons atelier in Opwijk. Afhankelijk van het gebruik en de blootstelling krijgen de werkstukken een epoxy-afwerking, thermisch verzinken of poederlakken, voor een duurzame bescherming tegen corrosie. De plaatsing gebeurt door ons team, met de zorgvuldige afwerking die het verschil maakt.</p>
+
+        <h2>Vlaams-Brabant en Brussel</h2>
+        <p>Wij werken in heel Vlaams-Brabant: Opwijk, Asse, Merchtem, Dilbeek, Wemmel, Grimbergen, Vilvoorde, Zaventem en omgeving, evenals in de 19 gemeenten van het Brussels Hoofdstedelijk Gewest. Voor een project daarbuiten vraagt u het ons gewoon.</p>
+
+        <div class="article__faq">
+          <h2>Veelgestelde vragen</h2>
+          <details class="fi">
+            <summary>Wat kost een smeedwerk op maat?</summary>
+            <p>Omdat elk stuk voor uw project wordt ontworpen en gesmeed, hangt de prijs af van de afmetingen, het ontwerp en de gekozen afwerking. Daarom zijn het bezoek en de offerte gratis: u ontvangt een nauwkeurige prijsopgave binnen 48 uur, vrijblijvend.</p>
+          </details>
+          <details class="fi">
+            <summary>Werken jullie met onderaannemers?</summary>
+            <p>Nee, nooit. Het ontwerp, de fabricage en de plaatsing gebeuren door ons atelier. Dat is onze belofte sinds 2011.</p>
+          </details>
+          <details class="fi">
+            <summary>Vraagt smeedijzer veel onderhoud?</summary>
+            <p>Met een geschikte afwerking (thermisch verzinken, poederlakken of epoxy) gaat een smeedijzeren werkstuk decennia mee. Een regelmatige visuele controle en een herstelling bij een beschadiging volstaan in de meeste gevallen.</p>
+          </details>
+          <details class="fi">
+            <summary>Komen jullie in mijn gemeente?</summary>
+            <p>Als u in Vlaams-Brabant of Brussel woont, ja. Elders in België: bel ons, afhankelijk van het project verplaatsen we ons graag.</p>
+          </details>
+        </div>
+
+        <div class="article__cta fi">
+          <div class="article__cta-txt">
+            <p class="article__cta-title">Laten we over uw project praten</p>
+            <p class="article__cta-sub">Plaatsbezoek, opmeting en gedetailleerde offerte, gratis en vrijblijvend. Antwoord binnen 48 uur.</p>
+          </div>
+          <a href="/#contact" class="btn btn--red"><span>Gratis Offerte</span><span class="btn__ico" aria-hidden="true">↗</span></a>
+        </div>
+
+        <div class="article__related">
+          <p>Zie ook</p>
+          <ul>
+            <li><a href="/nl/smeedijzeren-poort">Smeedijzeren poorten</a></li>
+            <li><a href="/nl/smeedijzeren-balustrade">Balustrades</a></li>
+            <li><a href="/nl/serre-veranda-op-maat">Stalen binnenramen</a></li>
+            <li><a href="/nl/restauratie-gietijzeren-balustrade">Restauratie gietijzer</a></li>
+            <li><a href="/portfolio">Onze realisaties</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer pf-footer">
+  <div class="wrap">
+    <div class="pf-footer__inner">
+      <a href="/" class="pf-footer__brand">
+        <img src="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_72/LRMJ_EMBLEM_FLAT_DARK_MODE_yhtb4t.png"
+             data-src-dark="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_72/LRMJ_EMBLEM_FLAT_DARK_MODE_yhtb4t.png"
+             data-src-light="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_72/LRMJ_EMBLEM_FLAT_LIGHT_MODE_tlr9tp.png"
+             alt="" aria-hidden="true" width="36" height="36" loading="lazy"/>
+        <span>← Terug naar de startpagina</span>
+      </a>
+      <a href="/#contact" class="btn btn--red">
+        <span>Gratis Offerte</span>
+        <span class="btn__ico" aria-hidden="true">↗</span>
+      </a>
+    </div>
+    <p class="pf-footer__copy">© <span id="footYear">2026</span> LRMJ Project · BE 0839.975.656 · <a class="footer-link-btn" href="/nl/juridische-vermeldingen">Juridische vermeldingen</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

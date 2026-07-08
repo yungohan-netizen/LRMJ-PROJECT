@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script>
+    (function() {
+      var html = document.documentElement;
+      html.classList.add('js');
+      try {
+        var stored = localStorage.getItem('lrmj-theme');
+        var theme = (stored === 'dark' || stored === 'light')
+          ? stored
+          : (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        if (theme === 'dark') html.setAttribute('data-theme', 'dark');
+      } catch (_) {}
+    })();
+  </script>
+  <title>Smeedijzeren poort op maat | Vlaams-Brabant &amp; Brussel | LRMJ Project</title>
+  <meta name="description" content="Smeedijzeren poorten en hekwerk op maat, draai- of schuifpoort. Gesmeed in ons atelier, thermisch verzinkt of gepoederlakt, plaatsing inbegrepen. Gratis offerte binnen 48 uur." />
+  <link rel="canonical" href="https://lrmjproject.be/nl/smeedijzeren-poort" />
+  <link rel="alternate" hreflang="fr-BE" href="https://lrmjproject.be/portail-fer-forge" />
+  <link rel="alternate" hreflang="nl-BE" href="https://lrmjproject.be/nl/smeedijzeren-poort" />
+  <link rel="alternate" hreflang="x-default" href="https://lrmjproject.be/portail-fer-forge" />
+  <meta property="og:title" content="Smeedijzeren poort op maat | LRMJ Project" />
+  <meta property="og:description" content="Monumentale toegangen of elegante omheiningen, ontworpen en gesmeed voor uw eigendom. Ambachtelijk atelier in Opwijk." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://lrmjproject.be/nl/smeedijzeren-poort" />
+  <meta property="og:image" content="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_fill,g_auto,w_1200,h_630/LRMJ_PROJECT_LOGO_xzm1yq.png" />
+  <link id="faviconEl" rel="icon" type="image/png"
+        href="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_64/LRMJ_EMBLEM_FLAT_DARK_MODE_yhtb4t.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+  <link rel="preconnect" href="https://res.cloudinary.com" crossorigin>
+  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@300,400,500,600,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
+  <script type="module" src="/src/page.js"></script>
+</head>
+<body>
+
+<header class="nav nav--slim" id="siteNav">
+  <div class="nav__inner">
+    <a href="/" class="nav__logo" aria-label="LRMJ Project | Startpagina">
+      <img class="nav__logo-img"
+           src="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_96/LRMJ_EMBLEM_FLAT_DARK_MODE_yhtb4t.png"
+           data-src-dark="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_96/LRMJ_EMBLEM_FLAT_DARK_MODE_yhtb4t.png"
+           data-src-light="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_96/LRMJ_EMBLEM_FLAT_LIGHT_MODE_tlr9tp.png"
+           alt="LRMJ Project" width="48" height="48"/>
+    </a>
+    <a href="/" class="nav__back">←<span>&nbsp;Terug naar de startpagina</span></a>
+    <div class="nav__actions">
+      <div class="lang-toggle" role="group" aria-label="Langue / Taal">
+        <a class="lang-toggle__btn" href="/portail-fer-forge" hreflang="fr">FR</a>
+        <span class="lang-toggle__sep" aria-hidden="true"></span>
+        <a class="lang-toggle__btn is-active" href="#" aria-current="true">NL</a>
+      </div>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Wissel tussen licht en donker">
+        <svg class="theme-toggle__sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="4"/>
+          <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+        </svg>
+        <svg class="theme-toggle__moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
+        </svg>
+      </button>
+      <a href="/#contact" class="nav__cta-pill">Gratis Offerte</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="page-hero">
+    <div class="wrap wrap--sm fi">
+      <span class="eyebrow">Handtekening van het atelier</span>
+      <h1 class="h-large">Smeedijzeren <em>poorten</em> en hekwerk</h1>
+      <p class="lead">De toegang bepaalt de toon van heel het eigendom. Wij ontwerpen en smeden poorten op maat die aanwezigheid, veiligheid en duurzaamheid verenigen, in Vlaams-Brabant en Brussel.</p>
+    </div>
+  </section>
+
+  <section class="article">
+    <div class="wrap wrap--sm">
+      <div class="article__body fi">
+        <h2>Een poort ontworpen voor uw eigendom</h2>
+        <p>Een smeedijzeren poort is bij ons nooit een catalogusproduct. Elk project vertrekt van uw werkelijke toegang: de breedte, de helling, de stijl van de gevel, de aanwezigheid van een muur of pijlers. Vervolgens ontwerpen we een model dat daarbij past, van heel sober tot rijk bewerkt: strakke hedendaagse lijnen, klassieke krullen, speerpunten, monogram.</p>
+        <p>Een <strong>dubbele draaipoort</strong> of een <strong>schuifpoort</strong> naargelang de configuratie, een bijpassend poortje, een omheining in hetzelfde ontwerp om het geheel te verlengen: alles komt uit hetzelfde atelier, met dezelfde hand.</p>
+
+        <div class="article__gallery" data-seo-gallery="portails" aria-label="Door het atelier gerealiseerde poorten"></div>
+
+        <h2>Gesmeed om <em>buiten</em> te duren</h2>
+        <p>Een poort staat het hele jaar buiten. Daarom telt de afwerking net zo zwaar als het ontwerp: naargelang de blootstelling en uw voorkeuren beschermen we het staal door <strong>thermisch verzinken</strong>, <strong>poederlakken</strong> (RAL-kleur naar keuze) of een epoxyverf. Deze behandelingen geven de werkstukken een corrosiebestendigheid die in decennia telt, met minimaal onderhoud.</p>
+        <p>Wat het gebruik betreft, wordt de structuur al bij het ontwerp voorzien om een motorisering te kunnen dragen, vandaag of later.</p>
+
+        <h2>Van bezoek tot plaatsing</h2>
+        <p>Wij komen uw toegang bekijken, opmeten en uw beperkingen begrijpen. U ontvangt een <strong>gratis en gedetailleerde offerte binnen 48 uur</strong>. De fabricage gebeurt in ons atelier in Opwijk, de plaatsing door ons eigen team: verankering, uitlijning, afstelling van de scharnieren en afwerking. Eén aanspreekpunt van begin tot eind, <a href="/nl/smid-vlaams-brabant">dat is onze manier van werken</a>.</p>
+
+        <div class="article__faq">
+          <h2>Veelgestelde vragen</h2>
+          <details class="fi">
+            <summary>Wat kost een smeedijzeren poort?</summary>
+            <p>Dat hangt af van de afmetingen, het ontwerp (sober of rijk bewerkt), het type opening en de afwerking. Maatwerk vraagt een prijsopgave per geval: het bezoek en de offerte zijn gratis, en u heeft het antwoord binnen 48 uur.</p>
+          </details>
+          <details class="fi">
+            <summary>Draai- of schuifpoort, hoe kiezen?</summary>
+            <p>De draaipoort is de grote klassieker wanneer er voldoende ruimte is om open te draaien. De schuifpoort dringt zich op wanneer de oprit stijgt, er te weinig plaats is of u de hele toegang wilt vrijmaken. We beslissen samen tijdens het bezoek, in functie van uw terrein.</p>
+          </details>
+          <details class="fi">
+            <summary>Kan een smeedijzeren poort gemotoriseerd worden?</summary>
+            <p>Ja. We ontwerpen de structuur zodat ze een motorisering kan dragen die is aangepast aan haar gewicht en opening, of u die nu meteen of later plaatst.</p>
+          </details>
+          <details class="fi">
+            <summary>Maken jullie ook de bijpassende omheining?</summary>
+            <p>Uiteraard, en het is zelfs aan te raden: omheining, poortje en poort in hetzelfde ontwerp geven een samenhangende toegang. Alles komt uit hetzelfde atelier.</p>
+          </details>
+        </div>
+
+        <div class="article__cta fi">
+          <div class="article__cta-txt">
+            <p class="article__cta-title">Uw toegang verdient beter dan een catalogus</p>
+            <p class="article__cta-sub">Bezoek, opmeting en gedetailleerde offerte gratis. Antwoord binnen 48 uur, vrijblijvend.</p>
+          </div>
+          <a href="/#contact" class="btn btn--red"><span>Gratis Offerte</span><span class="btn__ico" aria-hidden="true">↗</span></a>
+        </div>
+
+        <div class="article__related">
+          <p>Zie ook</p>
+          <ul>
+            <li><a href="/nl/smid-vlaams-brabant">Smid in Vlaams-Brabant</a></li>
+            <li><a href="/nl/smeedijzeren-balustrade">Balustrades</a></li>
+            <li><a href="/portfolio">Gerealiseerde poorten</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer pf-footer">
+  <div class="wrap">
+    <div class="pf-footer__inner">
+      <a href="/" class="pf-footer__brand">
+        <img src="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_72/LRMJ_EMBLEM_FLAT_DARK_MODE_yhtb4t.png"
+             data-src-dark="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_72/LRMJ_EMBLEM_FLAT_DARK_MODE_yhtb4t.png"
+             data-src-light="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_72/LRMJ_EMBLEM_FLAT_LIGHT_MODE_tlr9tp.png"
+             alt="" aria-hidden="true" width="36" height="36" loading="lazy"/>
+        <span>← Terug naar de startpagina</span>
+      </a>
+      <a href="/#contact" class="btn btn--red">
+        <span>Gratis Offerte</span>
+        <span class="btn__ico" aria-hidden="true">↗</span>
+      </a>
+    </div>
+    <p class="pf-footer__copy">© <span id="footYear">2026</span> LRMJ Project · BE 0839.975.656 · <a class="footer-link-btn" href="/nl/juridische-vermeldingen">Juridische vermeldingen</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

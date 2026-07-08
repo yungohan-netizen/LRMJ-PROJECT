@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script>
+    (function() {
+      var html = document.documentElement;
+      html.classList.add('js');
+      try {
+        var stored = localStorage.getItem('lrmj-theme');
+        var theme = (stored === 'dark' || stored === 'light')
+          ? stored
+          : (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        if (theme === 'dark') html.setAttribute('data-theme', 'dark');
+      } catch (_) {}
+    })();
+  </script>
+  <title>Restauratie gietijzeren balustrades | Brussel | LRMJ Project</title>
+  <meta name="description" content="Restauratie van gietijzeren balustrades, balkons en leuningen: ontlakken, gespecialiseerd lassen, ontbrekende onderdelen, roestbehandeling. Gevelpremie tot 14 000 euro in Brussel." />
+  <link rel="canonical" href="https://lrmjproject.be/nl/restauratie-gietijzeren-balustrade" />
+  <link rel="alternate" hreflang="fr-BE" href="https://lrmjproject.be/restauration-balustrade-fonte" />
+  <link rel="alternate" hreflang="nl-BE" href="https://lrmjproject.be/nl/restauratie-gietijzeren-balustrade" />
+  <link rel="alternate" hreflang="x-default" href="https://lrmjproject.be/restauration-balustrade-fonte" />
+  <meta property="og:title" content="Restauratie van gietijzeren balustrades | LRMJ Project" />
+  <meta property="og:description" content="Een zeldzame specialiteit ten dienste van het Brusselse erfgoed. De Stad Brussel betaalt 40 tot 60% van de gevelwerken terug." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://lrmjproject.be/nl/restauratie-gietijzeren-balustrade" />
+  <meta property="og:image" content="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_fill,g_auto,w_1200,h_630/LRMJ_PROJECT_LOGO_xzm1yq.png" />
+  <link id="faviconEl" rel="icon" type="image/png"
+        href="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_64/LRMJ_EMBLEM_FLAT_DARK_MODE_yhtb4t.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+  <link rel="preconnect" href="https://res.cloudinary.com" crossorigin>
+  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@300,400,500,600,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
+  <script type="module" src="/src/page.js"></script>
+</head>
+<body>
+
+<header class="nav nav--slim" id="siteNav">
+  <div class="nav__inner">
+    <a href="/" class="nav__logo" aria-label="LRMJ Project | Startpagina">
+      <img class="nav__logo-img"
+           src="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_96/LRMJ_EMBLEM_FLAT_DARK_MODE_yhtb4t.png"
+           data-src-dark="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_96/LRMJ_EMBLEM_FLAT_DARK_MODE_yhtb4t.png"
+           data-src-light="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_96/LRMJ_EMBLEM_FLAT_LIGHT_MODE_tlr9tp.png"
+           alt="LRMJ Project" width="48" height="48"/>
+    </a>
+    <a href="/" class="nav__back">←<span>&nbsp;Terug naar de startpagina</span></a>
+    <div class="nav__actions">
+      <div class="lang-toggle" role="group" aria-label="Langue / Taal">
+        <a class="lang-toggle__btn" href="/restauration-balustrade-fonte" hreflang="fr">FR</a>
+        <span class="lang-toggle__sep" aria-hidden="true"></span>
+        <a class="lang-toggle__btn is-active" href="#" aria-current="true">NL</a>
+      </div>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Wissel tussen licht en donker">
+        <svg class="theme-toggle__sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="4"/>
+          <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+        </svg>
+        <svg class="theme-toggle__moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
+        </svg>
+      </button>
+      <a href="/#contact" class="nav__cta-pill">Gratis Offerte</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="page-hero">
+    <div class="wrap wrap--sm fi">
+      <span class="eyebrow">Zeldzame specialiteit · Erfgoed</span>
+      <h1 class="h-large">Restauratie van gietijzeren <em>balustrades</em></h1>
+      <p class="lead">De Brusselse balkons uit de negentiende eeuw verdienen beter dan een vervanging. Wij restaureren oud gietijzer: een vakkennis die weinig ambachtslieden nog beheersen.</p>
+    </div>
+  </section>
+
+  <section class="article">
+    <div class="wrap wrap--sm">
+      <div class="article__body fi">
+        <h2>Waarom restaureren in plaats van vervangen</h2>
+        <p>De gietijzeren balustrades van de Brusselse gevels maken deel uit van de identiteit van de stad: gegoten motieven, krullen, rozetten, van een fijnheid die moderne fabricages niet nabootsen. Wanneer corrosie, een schok of de tijd ze beschadigen, doet de reflex om te vervangen dat karakter voorgoed verloren gaan. De restauratie behoudt het, en geeft de gevel zijn oorspronkelijke waarde terug.</p>
+        <p>Gietijzer is een veeleisend materiaal: bros, het laat zich niet lassen zoals staal. Het is specialistenwerk, en het is precies de specialiteit van ons atelier.</p>
+
+        <h2>Wat wij <em>restaureren</em></h2>
+        <ul>
+          <li>Balustrades en balkonleuningen in gietijzer of oud smeedijzer</li>
+          <li>Historische trapleuningen</li>
+          <li>Consoles, lijstwerk en decoratieve gevelelementen</li>
+        </ul>
+        <p>Het werk omvat, naargelang de toestand: reiniging en volledig ontlakken, <strong>gespecialiseerd lassen van gietijzer</strong>, vervanging van ontbrekende onderdelen, roestbehandeling en traditionele afwerking, met respect voor het oorspronkelijke ontwerp.</p>
+
+        <h2>De gevelpremie van de Stad Brussel</h2>
+        <p>Goed nieuws voor eigenaars: de Stad Brussel betaalt <strong>40 tot 60 procent van de werkkosten</strong> voor gevelverfraaiing terug, wat balkons, leuningen en gietijzeren consoles omvat, tot <strong>14 000 euro per dossier</strong> naargelang de lengte van de gevel. Andere Brusselse gemeenten hebben hun eigen premieprogramma: informeer bij de uwe, of vraag het ons tijdens het bezoek.</p>
+        <p>De officiële voorwaarden zijn te raadplegen op <a href="https://www.brussel.be/gevelpremie" rel="noopener noreferrer" target="_blank">de website van de Stad Brussel</a>.</p>
+
+        <h2>Hoe het verloopt</h2>
+        <p>Wij komen het werkstuk ter plaatse onderzoeken: toestand van het gietijzer, ontbrekende onderdelen, bevestigingen, verankeringen in de gevel. U ontvangt een <strong>gedetailleerde en gratis offerte binnen 48 uur</strong>. Naargelang de werf gebeurt de restauratie ter plaatse of in het atelier na een zorgvuldige demontage, waarna het werkstuk wordt teruggeplaatst en beschermd voor de komende decennia.</p>
+
+        <div class="article__faq">
+          <h2>Veelgestelde vragen</h2>
+          <details class="fi">
+            <summary>Mijn balustrade is zwaar beschadigd, is ze nog te restaureren?</summary>
+            <p>In de grote meerderheid van de gevallen wel. Zelfs met gebroken of ontbrekende onderdelen kunnen we het gietijzer lassen en de ontbrekende elementen opnieuw maken met respect voor het oorspronkelijke ontwerp. De diagnose ter plaatse is gratis.</p>
+          </details>
+          <details class="fi">
+            <summary>Wat kost een restauratie van een balustrade?</summary>
+            <p>Alles hangt af van de toestand, de lopende meter en de complexiteit van de motieven. De offerte is gratis en gedetailleerd, en de premie van de Stad Brussel kan 40 tot 60 procent van de in aanmerking komende werken dekken.</p>
+          </details>
+          <details class="fi">
+            <summary>Moet de balustrade gedemonteerd worden om ze te restaureren?</summary>
+            <p>Niet altijd. Lichte ingrepen gebeuren ter plaatse. Wanneer de toestand het rechtvaardigt, demonteren we het werkstuk voorzichtig, restaureren het in het atelier en plaatsen het terug.</p>
+          </details>
+          <details class="fi">
+            <summary>Werken jullie ook buiten Brussel?</summary>
+            <p>Ja, in heel Vlaams-Brabant en daarbuiten naargelang het project. De hier beschreven premie is eigen aan de Stad Brussel, maar andere gemeenten hebben vergelijkbare regelingen.</p>
+          </details>
+        </div>
+
+        <div class="article__cta fi">
+          <div class="article__cta-txt">
+            <p class="article__cta-title">Uw gevel heeft erfgoed, laten we het bewaren</p>
+            <p class="article__cta-sub">Diagnose ter plaatse en gedetailleerde offerte gratis. Antwoord binnen 48 uur.</p>
+          </div>
+          <a href="/#contact" class="btn btn--red"><span>Gratis Offerte</span><span class="btn__ico" aria-hidden="true">↗</span></a>
+        </div>
+
+        <div class="article__related">
+          <p>Zie ook</p>
+          <ul>
+            <li><a href="/nl/smeedijzeren-balustrade">Nieuwe smeedijzeren balustrades</a></li>
+            <li><a href="/nl/smid-vlaams-brabant">Smid in Vlaams-Brabant</a></li>
+            <li><a href="/portfolio">Onze realisaties</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer pf-footer">
+  <div class="wrap">
+    <div class="pf-footer__inner">
+      <a href="/" class="pf-footer__brand">
+        <img src="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_72/LRMJ_EMBLEM_FLAT_DARK_MODE_yhtb4t.png"
+             data-src-dark="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_72/LRMJ_EMBLEM_FLAT_DARK_MODE_yhtb4t.png"
+             data-src-light="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_72/LRMJ_EMBLEM_FLAT_LIGHT_MODE_tlr9tp.png"
+             alt="" aria-hidden="true" width="36" height="36" loading="lazy"/>
+        <span>← Terug naar de startpagina</span>
+      </a>
+      <a href="/#contact" class="btn btn--red">
+        <span>Gratis Offerte</span>
+        <span class="btn__ico" aria-hidden="true">↗</span>
+      </a>
+    </div>
+    <p class="pf-footer__copy">© <span id="footYear">2026</span> LRMJ Project · BE 0839.975.656 · <a class="footer-link-btn" href="/nl/juridische-vermeldingen">Juridische vermeldingen</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script>
+    (function() {
+      var html = document.documentElement;
+      html.classList.add('js');
+      try {
+        var stored = localStorage.getItem('lrmj-theme');
+        var theme = (stored === 'dark' || stored === 'light')
+          ? stored
+          : (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        if (theme === 'dark') html.setAttribute('data-theme', 'dark');
+      } catch (_) {}
+    })();
+  </script>
+  <title>Privacybeleid | LRMJ Project</title>
+  <meta name="description" content="Privacybeleid van lrmjproject.be: verzamelde gegevens via het contactformulier, enkel functionele cookies, uw AVG-rechten." />
+  <meta name="robots" content="noindex, follow" />
+  <link rel="canonical" href="https://lrmjproject.be/nl/privacybeleid" />
+  <link id="faviconEl" rel="icon" type="image/png"
+        href="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_64/LRMJ_EMBLEM_FLAT_DARK_MODE_yhtb4t.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@300,400,500,600,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
+  <script type="module" src="/src/page.js"></script>
+</head>
+<body>
+
+<header class="nav nav--slim" id="siteNav">
+  <div class="nav__inner">
+    <a href="/" class="nav__logo" aria-label="LRMJ Project | Startpagina">
+      <img class="nav__logo-img"
+           src="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_96/LRMJ_EMBLEM_FLAT_DARK_MODE_yhtb4t.png"
+           data-src-dark="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_96/LRMJ_EMBLEM_FLAT_DARK_MODE_yhtb4t.png"
+           data-src-light="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_96/LRMJ_EMBLEM_FLAT_LIGHT_MODE_tlr9tp.png"
+           alt="LRMJ Project" width="48" height="48"/>
+    </a>
+    <a href="/" class="nav__back">←<span>&nbsp;Terug naar de startpagina</span></a>
+    <div class="nav__actions">
+      <div class="lang-toggle" role="group" aria-label="Langue / Taal">
+        <a class="lang-toggle__btn" href="/confidentialite" hreflang="fr">FR</a>
+        <span class="lang-toggle__sep" aria-hidden="true"></span>
+        <a class="lang-toggle__btn is-active" href="#" aria-current="true">NL</a>
+      </div>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Wissel tussen licht en donker">
+        <svg class="theme-toggle__sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="4"/>
+          <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+        </svg>
+        <svg class="theme-toggle__moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
+        </svg>
+      </button>
+      <a href="/#contact" class="nav__cta-pill">Gratis Offerte</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="page-hero">
+    <div class="wrap wrap--sm fi">
+      <span class="eyebrow">Juridisch</span>
+      <h1 class="h-large">Privacy<em>beleid</em></h1>
+    </div>
+  </section>
+
+  <section class="article">
+    <div class="wrap wrap--sm">
+      <div class="article__body fi">
+        <h2>Verzamelde persoonsgegevens</h2>
+        <p>Enkel de velden die u vrijwillig invult in het contactformulier (naam, e-mail, telefoon, bericht, type project) worden verzameld. Ze dienen <strong>uitsluitend</strong> om u opnieuw te contacteren over uw aanvraag.</p>
+
+        <h2>Bewaring</h2>
+        <p>Uw gegevens worden bewaard zolang strikt nodig voor de behandeling van uw aanvraag, en vervolgens gearchiveerd of verwijderd binnen maximaal 24 maanden.</p>
+
+        <h2>Delen met derden</h2>
+        <p>Uw gegevens worden nooit verkocht, verhuurd of aan derden overgedragen voor commerciële doeleinden. Ze worden uitsluitend verwerkt door LRMJ Project en zijn dienstverlener voor het versturen van formulieren.</p>
+
+        <h2>Gebruikte cookies</h2>
+        <ul>
+          <li><strong>Strikt noodzakelijke cookies</strong> : themavoorkeur (licht/donker), bevestiging van de cookiebanner. Geen tracking.</li>
+          <li><strong>Geen externe advertentiecookies</strong>, geen Facebook- of Google Ads-pixels.</li>
+        </ul>
+        <p>De site gebruikt anonieme bezoekersstatistieken zonder cookies (Cloudflare Web Analytics) : geen persoonsgegevens, geen identificatie, geen tracking tussen sites.</p>
+        <p>U kunt de lokale gegevens (voorkeuren) op elk moment verwijderen via de instellingen van uw browser.</p>
+
+        <h2>Uw rechten (AVG)</h2>
+        <p>Conform de Algemene Verordening Gegevensbescherming beschikt u over een recht op inzage, verbetering, wissing, bezwaar en overdraagbaarheid van uw gegevens. Om deze rechten uit te oefenen, contacteer ons op <a href="mailto:contact@lrmjproject.be">contact@lrmjproject.be</a>.</p>
+
+        <h2>Toezichthoudende autoriteit</h2>
+        <p>Bij een onopgelost geschil kunt u zich wenden tot de Belgische Gegevensbeschermingsautoriteit : <a href="https://www.gegevensbeschermingsautoriteit.be" rel="noopener">gegevensbeschermingsautoriteit.be</a>.</p>
+
+        <div class="article__related">
+          <p>Zie ook</p>
+          <ul>
+            <li><a href="/nl/juridische-vermeldingen">Juridische vermeldingen</a></li>
+            <li><a href="/">Terug naar de startpagina</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer pf-footer">
+  <div class="wrap">
+    <div class="pf-footer__inner">
+      <a href="/" class="pf-footer__brand">
+        <img src="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_72/LRMJ_EMBLEM_FLAT_DARK_MODE_yhtb4t.png"
+             data-src-dark="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_72/LRMJ_EMBLEM_FLAT_DARK_MODE_yhtb4t.png"
+             data-src-light="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_72/LRMJ_EMBLEM_FLAT_LIGHT_MODE_tlr9tp.png"
+             alt="" aria-hidden="true" width="36" height="36" loading="lazy"/>
+        <span>← Terug naar de startpagina</span>
+      </a>
+      <a href="/#contact" class="btn btn--red">
+        <span>Gratis Offerte</span>
+        <span class="btn__ico" aria-hidden="true">↗</span>
+      </a>
+    </div>
+    <p class="pf-footer__copy">© <span id="footYear">2026</span> LRMJ Project · BE 0839.975.656</p>
+  </div>
+</footer>
+
+</body>
+</html>

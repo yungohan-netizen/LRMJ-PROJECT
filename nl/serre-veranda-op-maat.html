@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script>
+    (function() {
+      var html = document.documentElement;
+      html.classList.add('js');
+      try {
+        var stored = localStorage.getItem('lrmj-theme');
+        var theme = (stored === 'dark' || stored === 'light')
+          ? stored
+          : (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        if (theme === 'dark') html.setAttribute('data-theme', 'dark');
+      } catch (_) {}
+    })();
+  </script>
+  <title>Stalen binnenraam &amp; serre op maat | LRMJ Project</title>
+  <meta name="description" content="Stalen binnenramen, glaswanden en wintertuinen op maat: fijne stalen profielen, ambachtelijk gesmeed en geplaatst. Vlaams-Brabant en Brussel. Gratis offerte binnen 48 uur." />
+  <link rel="canonical" href="https://lrmjproject.be/nl/serre-veranda-op-maat" />
+  <link rel="alternate" hreflang="fr-BE" href="https://lrmjproject.be/verriere-sur-mesure" />
+  <link rel="alternate" hreflang="nl-BE" href="https://lrmjproject.be/nl/serre-veranda-op-maat" />
+  <link rel="alternate" hreflang="x-default" href="https://lrmjproject.be/verriere-sur-mesure" />
+  <meta property="og:title" content="Stalen binnenramen en serres op maat | LRMJ Project" />
+  <meta property="og:description" content="Licht binnenlaten zonder karakter te verliezen: glaswanden, stalen puien en wintertuinen op maat." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://lrmjproject.be/nl/serre-veranda-op-maat" />
+  <meta property="og:image" content="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_fill,g_auto,w_1200,h_630/LRMJ_PROJECT_LOGO_xzm1yq.png" />
+  <link id="faviconEl" rel="icon" type="image/png"
+        href="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_64/LRMJ_EMBLEM_FLAT_DARK_MODE_yhtb4t.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+  <link rel="preconnect" href="https://res.cloudinary.com" crossorigin>
+  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@300,400,500,600,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
+  <script type="module" src="/src/page.js"></script>
+</head>
+<body>
+
+<header class="nav nav--slim" id="siteNav">
+  <div class="nav__inner">
+    <a href="/" class="nav__logo" aria-label="LRMJ Project | Startpagina">
+      <img class="nav__logo-img"
+           src="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_96/LRMJ_EMBLEM_FLAT_DARK_MODE_yhtb4t.png"
+           data-src-dark="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_96/LRMJ_EMBLEM_FLAT_DARK_MODE_yhtb4t.png"
+           data-src-light="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_96/LRMJ_EMBLEM_FLAT_LIGHT_MODE_tlr9tp.png"
+           alt="LRMJ Project" width="48" height="48"/>
+    </a>
+    <a href="/" class="nav__back">←<span>&nbsp;Terug naar de startpagina</span></a>
+    <div class="nav__actions">
+      <div class="lang-toggle" role="group" aria-label="Langue / Taal">
+        <a class="lang-toggle__btn" href="/verriere-sur-mesure" hreflang="fr">FR</a>
+        <span class="lang-toggle__sep" aria-hidden="true"></span>
+        <a class="lang-toggle__btn is-active" href="#" aria-current="true">NL</a>
+      </div>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Wissel tussen licht en donker">
+        <svg class="theme-toggle__sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="4"/>
+          <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+        </svg>
+        <svg class="theme-toggle__moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
+        </svg>
+      </button>
+      <a href="/#contact" class="nav__cta-pill">Gratis Offerte</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="page-hero">
+    <div class="wrap wrap--sm fi">
+      <span class="eyebrow">Tuin &amp; uitbreiding</span>
+      <h1 class="h-large">Stalen binnenramen en serres <em>op maat</em></h1>
+      <p class="lead">Licht binnenlaten zonder karakter te verliezen: dat is de hele kunst van het stalen raam. Glaswanden, stalen puien en wintertuinen, ontworpen en gemaakt voor uw ruimte.</p>
+    </div>
+  </section>
+
+  <section class="article">
+    <div class="wrap wrap--sm">
+      <div class="article__body fi">
+        <h2>De fijnheid van staal, de kracht van maatwerk</h2>
+        <p>Wat het stalen binnenraam zo charmant maakt, is de fijnheid van de profielen: slanke stijlen die geen enkel standaard schrijnwerk evenaart, een roedeverdeling naar uw smaak, een onmiddellijke indruk van ruimte. Wij maken <strong>stalen binnenwanden</strong> (tussen keuken en leefruimte, rond een bureau, boven aan een trap), <strong>stalen puien</strong> en <strong>wintertuinen</strong> die de woning naar buiten verlengen.</p>
+        <p>Elk raam vertrekt van een nauwkeurige opmeting van uw opening en van een ontwerp: verhoudingen van de vakken, volle of beglaasde borstwering, geïntegreerde deur, bovenlicht. De structuur wordt vervolgens gemaakt in ons atelier in Opwijk en geplaatst door ons team.</p>
+
+        <div class="article__gallery" data-seo-gallery="verrieres" aria-label="Door het atelier gerealiseerde stalen ramen"></div>
+
+        <h2>Binnen of <em>buiten</em></h2>
+        <p>Binnen scheidt het stalen raam zonder te verduisteren: het verdeelt de functies terwijl het licht blijft doorstromen. Buiten krijgen puien en wintertuinen een beglazing aangepast aan het gebruik (gelaagd of dubbel glas naargelang het project) en een gepoederlakte afwerking die het staal duurzaam beschermt, in de kleur van uw keuze.</p>
+        <p>De structuren blijven visueel licht maar robuust: dat is de aard van gesmeed staal, en de reden waarom deze werkstukken generaties meegaan.</p>
+
+        <h2>Eén project, één aanspreekpunt</h2>
+        <p>Zoals voor al onze werkstukken heeft u te maken met de ambachtsman die maakt: plaatsbezoek, opmeting, ontwerp, <strong>gratis offerte binnen 48 uur</strong>, fabricage in het atelier en zorgvuldige plaatsing. Ontdek ook <a href="/nl/smid-vlaams-brabant">ons atelier en onze manier van werken</a>.</p>
+
+        <div class="article__faq">
+          <h2>Veelgestelde vragen</h2>
+          <details class="fi">
+            <summary>Wat kost een stalen binnenraam?</summary>
+            <p>Dat varieert naargelang de afmetingen, het aantal vakken, de aanwezigheid van een deur en het type beglazing. De offerte is gratis, gedetailleerd en wordt binnen 48 uur na het bezoek bezorgd.</p>
+          </details>
+          <details class="fi">
+            <summary>Welke beglazing gebruiken jullie?</summary>
+            <p>Dat hangt af van het gebruik: gelaagd glas voor de veiligheid binnen, dubbel glas voor werkstukken die op buiten uitgeven. Wij adviseren u de geschikte oplossing tijdens het bezoek.</p>
+          </details>
+          <details class="fi">
+            <summary>Kan er een deur in het stalen raam?</summary>
+            <p>Ja, draaiend of schuivend, met dezelfde fijnheid van profielen. Ze wordt ontworpen in het verlengde van de roedeverdeling zodat het geheel samenhangend blijft.</p>
+          </details>
+        </div>
+
+        <div class="article__cta fi">
+          <div class="article__cta-txt">
+            <p class="article__cta-title">Laat het licht binnen</p>
+            <p class="article__cta-sub">Opmeting, ontwerp en gedetailleerde offerte gratis. Antwoord binnen 48 uur.</p>
+          </div>
+          <a href="/#contact" class="btn btn--red"><span>Gratis Offerte</span><span class="btn__ico" aria-hidden="true">↗</span></a>
+        </div>
+
+        <div class="article__related">
+          <p>Zie ook</p>
+          <ul>
+            <li><a href="/nl/smid-vlaams-brabant">Smid in Vlaams-Brabant</a></li>
+            <li><a href="/nl/smeedijzeren-poort">Smeedijzeren poorten</a></li>
+            <li><a href="/portfolio">Gerealiseerde stalen ramen</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer pf-footer">
+  <div class="wrap">
+    <div class="pf-footer__inner">
+      <a href="/" class="pf-footer__brand">
+        <img src="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_72/LRMJ_EMBLEM_FLAT_DARK_MODE_yhtb4t.png"
+             data-src-dark="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_72/LRMJ_EMBLEM_FLAT_DARK_MODE_yhtb4t.png"
+             data-src-light="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_72/LRMJ_EMBLEM_FLAT_LIGHT_MODE_tlr9tp.png"
+             alt="" aria-hidden="true" width="36" height="36" loading="lazy"/>
+        <span>← Terug naar de startpagina</span>
+      </a>
+      <a href="/#contact" class="btn btn--red">
+        <span>Gratis Offerte</span>
+        <span class="btn__ico" aria-hidden="true">↗</span>
+      </a>
+    </div>
+    <p class="pf-footer__copy">© <span id="footYear">2026</span> LRMJ Project · BE 0839.975.656 · <a class="footer-link-btn" href="/nl/juridische-vermeldingen">Juridische vermeldingen</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
