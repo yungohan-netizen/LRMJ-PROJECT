@@ -1,16 +1,14 @@
-/** Contact form — Web3Forms submission with honeypot + UX states. */
-const WEB3FORMS_KEY = import.meta.env.VITE_WEB3FORMS_KEY || '';
+/** Contact form — POST JSON vers /api/contact (Pages Function + Resend).
+ *  La clé API reste server-side : rien de sensible ne transite ici. */
 
 export function initForm() {
   const form   = document.getElementById('contactForm');
   if (!form) return;
-  const keyInp = document.getElementById('formAccessKey');
   const submit = form.querySelector('.form-submit');
   const okEl   = document.getElementById('formSuccess');
   const errEl  = document.getElementById('formError');
   if (!submit) return;
 
-  if (keyInp) keyInp.value = WEB3FORMS_KEY;
   const originalLabel = submit.textContent;
 
   const showOk = (msg) => {
@@ -34,37 +32,38 @@ export function initForm() {
       form.reportValidity();
       return;
     }
-    const honeypot = form.querySelector('[name="botcheck"]');
-    if (honeypot && honeypot.checked) return;
 
     submit.disabled = true;
     submit.textContent = 'Envoi…';
     if (okEl) okEl.classList.remove('visible');
     if (errEl) errEl.classList.remove('visible');
 
-    // Sans clé, aucun envoi n'est possible : ne JAMAIS afficher un faux succès,
-    // le visiteur croirait sa demande partie et le lead serait perdu.
-    if (!WEB3FORMS_KEY) {
-      showErr(import.meta.env.DEV
-        ? 'Dev : VITE_WEB3FORMS_KEY absente — aucun envoi réel.'
-        : 'Envoi indisponible pour le moment. Appelez-nous au 0475 39 99 09.');
-      submit.disabled = false;
-      submit.textContent = originalLabel;
-      return;
-    }
+    const fd = new FormData(form);
+    const payload = {
+      prenom:  fd.get('prenom')  || '',
+      nom:     fd.get('nom')     || '',
+      tel:     fd.get('tel')     || '',
+      email:   fd.get('email')   || '',
+      service: fd.get('service') || '',
+      message: fd.get('message') || '',
+      botcheck: !!form.querySelector('[name="botcheck"]')?.checked,
+    };
 
     try {
-      const res = await fetch('https://api.web3forms.com/submit', {
+      const res = await fetch('/api/contact', {
         method: 'POST',
-        headers: { 'Accept': 'application/json' },
-        body: new FormData(form),
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
       });
-      const data = await res.json();
-      if (data.success) {
+      const data = await res.json().catch(() => ({}));
+
+      if (res.ok && data.success) {
         showOk('✓ Message bien reçu. Nous vous recontactons sous 24h.');
         form.reset();
       } else {
-        showErr("L'envoi a échoué. Réessayez ou appelez le 0475 39 99 09.");
+        showErr(data.error
+          ? `${data.error} Vous pouvez aussi appeler le 0475 39 99 09.`
+          : "L'envoi a échoué. Réessayez ou appelez le 0475 39 99 09.");
       }
     } catch (_) {
       showErr('Problème réseau. Réessayez ou appelez le 0475 39 99 09.');

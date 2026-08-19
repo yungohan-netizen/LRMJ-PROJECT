@@ -49,6 +49,47 @@ function cloudinaryProxy(env) {
   };
 }
 
+/** Formulaire de contact — dev only (Vite middleware).
+ *  Délègue à la même Pages Function qu'en prod (functions/api/contact.js),
+ *  pour éviter de dupliquer la validation et le template d'email. */
+function contactProxy(env) {
+  return {
+    name: 'lrmj-contact-proxy',
+    configureServer(server) {
+      server.middlewares.use('/api/contact', async (req, res) => {
+        if (req.method !== 'POST') {
+          res.statusCode = 405;
+          res.end('Method Not Allowed');
+          return;
+        }
+        try {
+          const chunks = [];
+          for await (const c of req) chunks.push(c);
+          const body = Buffer.concat(chunks).toString('utf8');
+
+          const { onRequestPost } = await server.ssrLoadModule('/functions/api/contact.js');
+          const out = await onRequestPost({
+            request: new Request('http://localhost/api/contact', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body,
+            }),
+            env,
+          });
+
+          res.statusCode = out.status;
+          res.setHeader('Content-Type', 'application/json');
+          res.end(await out.text());
+        } catch (err) {
+          res.statusCode = 500;
+          res.setHeader('Content-Type', 'application/json');
+          res.end(JSON.stringify({ error: String(err) }));
+        }
+      });
+    },
+  };
+}
+
 /** URLs propres en dev/preview : /portfolio → portfolio.html, /nl/x → nl/x.html.
  *  Parité avec Cloudflare Pages qui le fait nativement en prod. */
 function cleanUrls() {
@@ -105,6 +146,6 @@ export default defineConfig(({ mode }) => {
     preview: {
       port: 4173,
     },
-    plugins: [cloudinaryProxy(env), cleanUrls()],
+    plugins: [cloudinaryProxy(env), contactProxy(env), cleanUrls()],
   };
 });

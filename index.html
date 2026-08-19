@@ -617,10 +617,7 @@
           </ul>
         </div>
         <div class="fi">
-          <form class="contact-form" id="contactForm" novalidate>
-            <input type="hidden" name="access_key" id="formAccessKey" value="" />
-            <input type="hidden" name="subject" value="Nouvelle demande de devis | lrmj-project.be" />
-            <input type="hidden" name="from_name" value="Site LRMJ Project" />
+          <form class="contact-form" id="contactForm" action="/api/contact" method="POST" novalidate>
             <input type="checkbox" name="botcheck" class="sr-only" tabindex="-1" autocomplete="off" aria-hidden="true" />
             <p class="form-eye" data-i18n="contact.form.eye">Demande de devis</p>
             <div class="form-grid">
