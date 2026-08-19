@@ -11,13 +11,8 @@
       html.classList.add('js');
       try {
         var stored = localStorage.getItem('lrmj-theme');
-        var theme;
-        if (stored === 'dark' || stored === 'light') {
-          theme = stored;
-        } else {
-          theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-        }
-        if (theme === 'dark') html.setAttribute('data-theme', 'dark');
+        // Défaut = light. Le mode sombre ne s'active que via le bouton.
+        if (stored === 'dark') html.setAttribute('data-theme', 'dark');
       } catch (_) {}
     })();
   </script>
@@ -25,14 +20,13 @@
   <title>LRMJ Project | Ferronnerie &amp; Menuiserie Sur Mesure</title>
   <meta name="description" content="LRMJ Project. Artisan ferronnier spécialisé dans la création sur mesure : portails, garde-corps, clôtures, serres, marquises en fer forgé." />
   <meta name="author" content="LRMJ Project" />
-  <meta name="theme-color" content="#f5f3ee" media="(prefers-color-scheme: light)" />
-  <meta name="theme-color" content="#07101f" media="(prefers-color-scheme: dark)" />
+  <meta name="theme-color" content="#f5f3ee" />
 
   <!-- Favicon : emblem LRMJ,swappé par theme.js selon mode light/dark -->
   <link id="faviconEl" rel="icon" type="image/png"
-        href="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_64/LRMJ_EMBLEM_FLAT_DARK_MODE_yhtb4t.png" />
+        href="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_64/LRMJ_EMBLEM_FLAT_LIGHT_MODE_tlr9tp.png" />
   <link rel="apple-touch-icon"
-        href="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_180/LRMJ_EMBLEM_FLAT_DARK_MODE_yhtb4t.png" />
+        href="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_180/LRMJ_EMBLEM_FLAT_LIGHT_MODE_tlr9tp.png" />
 
   <meta property="og:title" content="LRMJ Project | Ferronnerie sur mesure" />
   <meta property="og:description" content="Portails, garde-corps, serres, marquises. Atelier en Belgique." />
@@ -114,7 +108,7 @@
     <a href="#" class="nav__logo" aria-label="LRMJ Project | Accueil">
       <img id="navLogoImg"
            class="nav__logo-img"
-           src="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_96/LRMJ_EMBLEM_FLAT_DARK_MODE_yhtb4t.png"
+           src="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_96/LRMJ_EMBLEM_FLAT_LIGHT_MODE_tlr9tp.png"
            data-src-dark="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_96/LRMJ_EMBLEM_FLAT_DARK_MODE_yhtb4t.png"
            data-src-light="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_96/LRMJ_EMBLEM_FLAT_LIGHT_MODE_tlr9tp.png"
            alt="LRMJ Project"
@@ -385,35 +379,44 @@
             <cite data-i18n="resto.cite">Romeo, artisan ferronnier</cite>
           </blockquote>
 
-          <!-- Avant / Après : la même balustrade -->
+          <!-- Avant / après + ouvrages restaurés en façade -->
           <figure class="resto__ba">
-            <div class="resto__ba-pair">
-              <div class="resto__ba-item">
+            <div class="resto__ba-grid">
+              <div class="resto__ba-item" data-lb-group="resto"
+                   role="button" tabindex="0" data-i18n-label="resto.ba.zoom">
                 <img id="restoImgBefore"
                      alt="Balustrade en fonte ancienne encrassée et oxydée, déposée avant restauration"
                      width="600" height="800"
                      loading="lazy" decoding="async"/>
                 <span class="resto__ba-tag" data-i18n="resto.ba.before">Avant</span>
               </div>
-              <div class="resto__ba-item">
+              <div class="resto__ba-item" data-lb-group="resto"
+                   role="button" tabindex="0" data-i18n-label="resto.ba.zoom">
                 <img id="restoImgAfter"
                      alt="La même balustrade en fonte restaurée, traitée anticorrosion et reposée en façade"
                      width="600" height="800"
                      loading="lazy" decoding="async"/>
                 <span class="resto__ba-tag resto__ba-tag--after" data-i18n="resto.ba.after">Après</span>
               </div>
+              <div class="resto__ba-item" data-lb-group="resto"
+                   role="button" tabindex="0" data-i18n-label="resto.ba.zoom">
+                <img id="restoImgFacade"
+                     alt="Deux garde-corps de balcon en fer forgé à volutes sur une façade en brique à Bruxelles"
+                     width="600" height="800"
+                     loading="lazy" decoding="async"/>
+              </div>
+              <div class="resto__ba-item" data-lb-group="resto"
+                   role="button" tabindex="0" data-i18n-label="resto.ba.zoom">
+                <img id="restoImgBalcony"
+                     alt="Garde-corps de balcon en fer forgé à volutes restauré, vu depuis le balcon"
+                     width="600" height="800"
+                     loading="lazy" decoding="async"/>
+              </div>
             </div>
             <figcaption data-i18n="resto.ba.caption">
-              La même balustrade : dépose, restauration en atelier, puis repose en façade.
+              Avant / après sur une même balustrade, et des garde-corps restaurés en façade bruxelloise.
             </figcaption>
           </figure>
-
-          <div class="resto__visual-img">
-            <img id="restoImg"
-                 alt="Garde-corps de balcon en fer forgé à volutes restauré, immeuble bruxellois"
-                 width="900" height="600"
-                 loading="lazy" decoding="async"/>
-          </div>
         </div>
 
       </div>
@@ -690,13 +693,13 @@
       <div class="footer-brand-wrap">
         <div class="footer-emblem-row">
           <img class="footer-emblem"
-               src="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_80/LRMJ_EMBLEM_FLAT_DARK_MODE_yhtb4t.png"
+               src="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_80/LRMJ_EMBLEM_FLAT_LIGHT_MODE_tlr9tp.png"
                data-src-dark="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_80/LRMJ_EMBLEM_FLAT_DARK_MODE_yhtb4t.png"
                data-src-light="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_80/LRMJ_EMBLEM_FLAT_LIGHT_MODE_tlr9tp.png"
                alt="" aria-hidden="true" loading="lazy" width="40" height="40"/>
           <img id="footerTypefaceImg"
                class="footer-typeface"
-               src="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_320/LRMJ_typeface_white_ybpjxy.png"
+               src="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_320/LRMJ_typeface_black_nevuzo.png"
                data-src-dark="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_320/LRMJ_typeface_white_ybpjxy.png"
                data-src-light="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_320/LRMJ_typeface_black_nevuzo.png"
                alt="LRMJ Project" loading="lazy"/>

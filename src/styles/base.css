@@ -306,11 +306,11 @@ html.vt-theme::view-transition-old(root) { z-index: 0; }
 
 /* ── PARALLAX SCROLL-DRIVEN — progressive enhancement, Firefox ignore ──
    Cibles SANS autre transform (pas de .fi, pas de hover transform) :
-   - .resto__visual-img (le cadre image restauration ; le hover zoom est sur l'img interne)
+   - .resto__ba (la grille photos restauration ; le hover zoom est sur l'img interne)
    - les pseudo-éléments de glow (aucun transform existant) */
 @supports (animation-timeline: view()) {
   @media (prefers-reduced-motion: no-preference) {
-    .resto__visual-img {
+    .resto__ba {
       animation: plx-block linear both;
       animation-timeline: view();
       animation-range: entry 0% exit 100%;

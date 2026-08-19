@@ -1,4 +1,5 @@
-/** Lightbox for masonry gallery — open, swap, prev/next, keyboard, focus trap. */
+/** Lightbox — galerie masonry + groupes statiques ([data-lb-group]).
+ *  Chaque groupe est indépendant : prev/next ne sort jamais du groupe ouvert. */
 export function initLightbox() {
   const grid    = document.getElementById('masonryGrid');
   const loadBtn = document.getElementById('loadMoreBtn');
@@ -11,24 +12,30 @@ export function initLightbox() {
   const lbPrev  = document.getElementById('lbPrev');
   const lbNext  = document.getElementById('lbNext');
 
-  if (!grid || !lb) return;
+  if (!lb) return;
 
   let items = [];
   let idx = 0;
   let lastFocus = null;
+  let group = 'masonry';
 
-  // Exclut les clones du marquee (.is-clone) pour ne pas dupliquer la liste
+  const readItem = (el) => {
+    const img = el.querySelector('img');
+    const lbl = el.querySelector('.masonry-item__label');
+    return {
+      src:   img ? img.src : '',
+      srcHd: el.getAttribute('data-img-hd') || (img ? img.src : ''),
+      title: lbl ? lbl.textContent.trim() : (img ? img.alt : ''),
+      el,
+    };
+  };
+
+  // Masonry : exclut les clones du marquee (.is-clone) pour ne pas dupliquer la liste
   const collectItems = () => {
-    items = Array.from(grid.querySelectorAll('.masonry-item:not(.is-clone):not(.hidden)')).map(el => {
-      const img = el.querySelector('img');
-      const lbl = el.querySelector('.masonry-item__label');
-      return {
-        src:   img ? img.src : '',
-        srcHd: el.getAttribute('data-img-hd') || (img ? img.src : ''),
-        title: lbl ? lbl.textContent.trim() : (img ? img.alt : ''),
-        el,
-      };
-    });
+    const nodes = group === 'masonry'
+      ? (grid ? grid.querySelectorAll('.masonry-item:not(.is-clone):not(.hidden)') : [])
+      : document.querySelectorAll(`[data-lb-group="${group}"]`);
+    items = Array.from(nodes).map(readItem);
   };
 
   const fillLightbox = (i) => {
@@ -78,6 +85,7 @@ export function initLightbox() {
   };
 
   const bindItemClicks = () => {
+    if (!grid) return;
     grid.querySelectorAll('.masonry-item').forEach(it => {
       if (it.dataset.bound) return;
       it.dataset.bound = '1';
@@ -88,29 +96,52 @@ export function initLightbox() {
         it.setAttribute('role', 'button');
         it.setAttribute('aria-label', 'Ouvrir l\'aperçu');
       }
-      it.addEventListener('click', () => {
+      const open = () => {
+        group = 'masonry';
         collectItems();
         const i = indexOfEl(it);
         if (i >= 0) openLb(i);
-      });
+      };
+      it.addEventListener('click', open);
       if (!isClone) {
         it.addEventListener('keydown', (e) => {
           if (e.key === 'Enter' || e.key === ' ') {
             e.preventDefault();
-            collectItems();
-            const i = indexOfEl(it);
-            if (i >= 0) openLb(i);
+            open();
           }
         });
       }
     });
   };
 
+  /** Groupes statiques : role/tabindex/aria-label viennent du HTML. */
+  const bindGroups = () => {
+    document.querySelectorAll('[data-lb-group]').forEach(el => {
+      if (el.dataset.bound) return;
+      el.dataset.bound = '1';
+      const name = el.getAttribute('data-lb-group');
+      const open = () => {
+        group = name;
+        collectItems();
+        const i = items.findIndex(x => x.el === el);
+        if (i >= 0) openLb(i);
+      };
+      el.addEventListener('click', open);
+      el.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          open();
+        }
+      });
+    });
+  };
+
   bindItemClicks();
+  bindGroups();
   // Re-bind hook for dynamic injection
   document.addEventListener('lrmj:masonry-updated', bindItemClicks);
 
-  if (loadBtn) {
+  if (loadBtn && grid) {
     loadBtn.addEventListener('click', () => {
       const hidden = [...grid.querySelectorAll('.masonry-item.hidden')].slice(0, 8);
       hidden.forEach((item, i) => {

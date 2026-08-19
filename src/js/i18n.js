@@ -85,7 +85,8 @@ export const translations = {
     'resto.cite':       'Romeo, artisan ferronnier',
     'resto.ba.before':  'Avant',
     'resto.ba.after':   'Après',
-    'resto.ba.caption': 'La même balustrade : dépose, restauration en atelier, puis repose en façade.',
+    'resto.ba.caption': 'Avant / après sur une même balustrade, et des garde-corps restaurés en façade bruxelloise.',
+    'resto.ba.zoom':    'Agrandir la photo',
     /* Témoignages */
     'testi.title':      'Ce que disent<br><em>nos clients</em>',
     'testi.cred.score': '100% recommandé',
@@ -250,7 +251,8 @@ export const translations = {
     'resto.cite':       'Romeo, smid',
     'resto.ba.before':  'Voor',
     'resto.ba.after':   'Na',
-    'resto.ba.caption': 'Dezelfde balustrade: demontage, restauratie in het atelier en terugplaatsing in de gevel.',
+    'resto.ba.caption': 'Voor / na op eenzelfde balustrade, en gerestaureerde leuningen in een Brusselse gevel.',
+    'resto.ba.zoom':    'Foto vergroten',
     /* Témoignages */
     'testi.title':      'Wat onze<br><em>klanten zeggen</em>',
     'testi.cred.score': '100% aanbevolen',
