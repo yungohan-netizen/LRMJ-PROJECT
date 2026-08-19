@@ -181,6 +181,51 @@ html[data-theme="dark"] .resto__prime {
   color: var(--red);
   font-style: normal;
 }
+/* Avant / après — même ouvrage, preuve directe du savoir-faire */
+.resto__ba {
+  width: 100%;
+  margin: 0;
+}
+.resto__ba-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(.5rem, 1.2vw, .85rem);
+}
+.resto__ba-item {
+  position: relative;
+  border-radius: var(--r-img);
+  overflow: hidden;
+  box-shadow: 0 18px 44px rgba(var(--shadow-rgb),.16);
+}
+html[data-theme="dark"] .resto__ba-item {
+  box-shadow: 0 18px 44px rgba(0,0,0,.42);
+}
+.resto__ba-item img {
+  width: 100%; height: auto; display: block;
+  transition: transform 1s cubic-bezier(.25,.46,.45,.94);
+}
+.resto__ba-item:hover img { transform: scale(1.04); }
+.resto__ba-tag {
+  position: absolute;
+  top: .7rem; left: .7rem;
+  padding: .3rem .6rem;
+  border-radius: 4px;
+  background: rgba(13,31,60,.72);
+  backdrop-filter: blur(6px);
+  color: #fff;
+  font-family: var(--f-body);
+  font-size: .6rem; font-weight: 600;
+  letter-spacing: .16em; text-transform: uppercase;
+}
+.resto__ba-tag--after { background: var(--red); }
+.resto__ba figcaption {
+  margin-top: .9rem;
+  font-family: var(--f-body);
+  font-size: .78rem;
+  line-height: 1.5;
+  color: var(--tx-3);
+}
+
 .resto__visual-img {
   width: 100%;
   border-radius: var(--r-img);
@@ -205,6 +250,8 @@ html[data-theme="dark"] .resto__visual-img {
 /* Mobile */
 @media (max-width: 600px) {
   .resto__visual-img { border-radius: 8px; }
+  .resto__ba-item { border-radius: 8px; }
+  .resto__ba-tag { font-size: .55rem; padding: .25rem .5rem; }
   .resto__prime { padding: 1.25rem; }
   .resto__prime-tiers { grid-template-columns: 1fr; gap: 6px; }
   .resto__prime-tier { flex-direction: row; justify-content: space-between; padding: .75rem 1rem; }

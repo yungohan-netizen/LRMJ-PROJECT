@@ -83,6 +83,9 @@ export const translations = {
     'resto.cta':        'Devis Gratuit',
     'resto.quote':      '« La fonte ancienne mérite une seconde vie. C\'est notre patrimoine. »',
     'resto.cite':       'Romeo, artisan ferronnier',
+    'resto.ba.before':  'Avant',
+    'resto.ba.after':   'Après',
+    'resto.ba.caption': 'La même balustrade : dépose, restauration en atelier, puis repose en façade.',
     /* Témoignages */
     'testi.title':      'Ce que disent<br><em>nos clients</em>',
     'testi.cred.score': '100% recommandé',
@@ -245,6 +248,9 @@ export const translations = {
     'resto.cta':        'Gratis offerte',
     'resto.quote':      '« Oud gietijzer verdient een tweede leven. Het is ons erfgoed. »',
     'resto.cite':       'Romeo, smid',
+    'resto.ba.before':  'Voor',
+    'resto.ba.after':   'Na',
+    'resto.ba.caption': 'Dezelfde balustrade: demontage, restauratie in het atelier en terugplaatsing in de gevel.',
     /* Témoignages */
     'testi.title':      'Wat onze<br><em>klanten zeggen</em>',
     'testi.cred.score': '100% aanbevolen',
