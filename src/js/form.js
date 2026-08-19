@@ -42,13 +42,14 @@ export function initForm() {
     if (okEl) okEl.classList.remove('visible');
     if (errEl) errEl.classList.remove('visible');
 
+    // Sans clé, aucun envoi n'est possible : ne JAMAIS afficher un faux succès,
+    // le visiteur croirait sa demande partie et le lead serait perdu.
     if (!WEB3FORMS_KEY) {
-      setTimeout(() => {
-        showOk('✓ Mode démo : clé Web3Forms manquante (à renseigner dans .env).');
-        form.reset();
-        submit.disabled = false;
-        submit.textContent = originalLabel;
-      }, 700);
+      showErr(import.meta.env.DEV
+        ? 'Dev : VITE_WEB3FORMS_KEY absente — aucun envoi réel.'
+        : 'Envoi indisponible pour le moment. Appelez-nous au 0475 39 99 09.');
+      submit.disabled = false;
+      submit.textContent = originalLabel;
       return;
     }
 
