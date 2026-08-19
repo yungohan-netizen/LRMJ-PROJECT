@@ -28,7 +28,7 @@ npm run preview   # → http://localhost:4173 (test build local)
    - **Build output**: `dist`
    - **Root directory**: `/`
 4. Environment variables (Production + Preview): copier `.env` keys
-5. Custom domain: `lrmjproject.be` → CF gère DNS + SSL
+5. Custom domain: `lrmj-project.be` → CF gère DNS + SSL
 
 ## Cloudinary — Setup assets
 
