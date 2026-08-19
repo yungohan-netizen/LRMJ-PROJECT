@@ -10,10 +10,8 @@
       html.classList.add('js');
       try {
         var stored = localStorage.getItem('lrmj-theme');
-        var theme = (stored === 'dark' || stored === 'light')
-          ? stored
-          : (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-        if (theme === 'dark') html.setAttribute('data-theme', 'dark');
+        // Défaut = light. Le mode sombre ne s'active que via le bouton.
+        if (stored === 'dark') html.setAttribute('data-theme', 'dark');
       } catch (_) {}
     })();
   </script>
@@ -35,8 +33,7 @@
   <meta name="twitter:description" content="Portails, garde-corps, verrières, marquises, escaliers, meubles. Chaque pièce conçue et fabriquée dans notre atelier." />
   <meta name="twitter:image" content="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_fill,g_auto,w_1200,h_630/LRMJ_PROJECT_LOGO_xzm1yq.png" />
   <meta name="robots" content="index, follow" />
-  <meta name="theme-color" content="#f5f3ee" media="(prefers-color-scheme: light)" />
-  <meta name="theme-color" content="#07101f" media="(prefers-color-scheme: dark)" />
+  <meta name="theme-color" content="#f5f3ee" />
 
   <script type="application/ld+json">
   {
@@ -50,7 +47,7 @@
   </script>
 
   <link id="faviconEl" rel="icon" type="image/png"
-        href="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_64/LRMJ_EMBLEM_FLAT_DARK_MODE_yhtb4t.png" />
+        href="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_64/LRMJ_EMBLEM_FLAT_LIGHT_MODE_tlr9tp.png" />
 
   <link rel="canonical" href="https://lrmj-project.be/portfolio" />
 
@@ -72,7 +69,7 @@
     <a href="/" class="nav__logo" aria-label="LRMJ Project | Accueil">
       <img id="navLogoImg"
            class="nav__logo-img"
-           src="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_96/LRMJ_EMBLEM_FLAT_DARK_MODE_yhtb4t.png"
+           src="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_96/LRMJ_EMBLEM_FLAT_LIGHT_MODE_tlr9tp.png"
            data-src-dark="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_96/LRMJ_EMBLEM_FLAT_DARK_MODE_yhtb4t.png"
            data-src-light="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_96/LRMJ_EMBLEM_FLAT_LIGHT_MODE_tlr9tp.png"
            alt="LRMJ Project" width="48" height="48"/>
@@ -205,7 +202,7 @@
   <div class="wrap">
     <div class="pf-footer__inner">
       <a href="/" class="pf-footer__brand">
-        <img src="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_72/LRMJ_EMBLEM_FLAT_DARK_MODE_yhtb4t.png"
+        <img src="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_72/LRMJ_EMBLEM_FLAT_LIGHT_MODE_tlr9tp.png"
              data-src-dark="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_72/LRMJ_EMBLEM_FLAT_DARK_MODE_yhtb4t.png"
              data-src-light="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_72/LRMJ_EMBLEM_FLAT_LIGHT_MODE_tlr9tp.png"
              alt="" aria-hidden="true" width="36" height="36" loading="lazy"/>

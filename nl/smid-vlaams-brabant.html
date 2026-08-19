@@ -9,10 +9,8 @@
       html.classList.add('js');
       try {
         var stored = localStorage.getItem('lrmj-theme');
-        var theme = (stored === 'dark' || stored === 'light')
-          ? stored
-          : (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-        if (theme === 'dark') html.setAttribute('data-theme', 'dark');
+        // Défaut = light. Le mode sombre ne s'active que via le bouton.
+        if (stored === 'dark') html.setAttribute('data-theme', 'dark');
       } catch (_) {}
     })();
   </script>
@@ -130,7 +128,7 @@
   }
   </script>
   <link id="faviconEl" rel="icon" type="image/png"
-        href="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_64/LRMJ_EMBLEM_FLAT_DARK_MODE_yhtb4t.png" />
+        href="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_64/LRMJ_EMBLEM_FLAT_LIGHT_MODE_tlr9tp.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
@@ -145,7 +143,7 @@
   <div class="nav__inner">
     <a href="/" class="nav__logo" aria-label="LRMJ Project | Startpagina">
       <img class="nav__logo-img"
-           src="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_96/LRMJ_EMBLEM_FLAT_DARK_MODE_yhtb4t.png"
+           src="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_96/LRMJ_EMBLEM_FLAT_LIGHT_MODE_tlr9tp.png"
            data-src-dark="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_96/LRMJ_EMBLEM_FLAT_DARK_MODE_yhtb4t.png"
            data-src-light="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_96/LRMJ_EMBLEM_FLAT_LIGHT_MODE_tlr9tp.png"
            alt="LRMJ Project" width="48" height="48"/>
@@ -252,7 +250,7 @@
   <div class="wrap">
     <div class="pf-footer__inner">
       <a href="/" class="pf-footer__brand">
-        <img src="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_72/LRMJ_EMBLEM_FLAT_DARK_MODE_yhtb4t.png"
+        <img src="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_72/LRMJ_EMBLEM_FLAT_LIGHT_MODE_tlr9tp.png"
              data-src-dark="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_72/LRMJ_EMBLEM_FLAT_DARK_MODE_yhtb4t.png"
              data-src-light="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_72/LRMJ_EMBLEM_FLAT_LIGHT_MODE_tlr9tp.png"
              alt="" aria-hidden="true" width="36" height="36" loading="lazy"/>
