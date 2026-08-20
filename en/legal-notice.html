@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,19 +9,18 @@
       html.classList.add('js');
       try {
         var stored = localStorage.getItem('lrmj-theme');
-        // Défaut = light. Le mode sombre ne s'active que via le bouton.
         if (stored === 'dark') html.setAttribute('data-theme', 'dark');
       } catch (_) {}
     })();
   </script>
-  <title>Privacybeleid | LRMJ Project</title>
-  <meta name="description" content="Privacybeleid van lrmj-project.be: verzamelde gegevens via het contactformulier, enkel functionele cookies, uw AVG-rechten." />
+  <title>Legal Notice | LRMJ Project</title>
+  <meta name="description" content="Legal notice for lrmj-project.be: publisher, hosting, intellectual property. L.R.M.J Project SRL, Opwijk, Belgium." />
   <meta name="robots" content="noindex, follow" />
-  <link rel="canonical" href="https://lrmj-project.be/nl/privacybeleid" />
-  <link rel="alternate" hreflang="fr-BE" href="https://lrmj-project.be/confidentialite" />
-  <link rel="alternate" hreflang="nl-BE" href="https://lrmj-project.be/nl/privacybeleid" />
-  <link rel="alternate" hreflang="en" href="https://lrmj-project.be/en/privacy-policy" />
-  <link rel="alternate" hreflang="x-default" href="https://lrmj-project.be/confidentialite" />
+  <link rel="canonical" href="https://lrmj-project.be/en/legal-notice" />
+  <link rel="alternate" hreflang="fr-BE" href="https://lrmj-project.be/mentions-legales" />
+  <link rel="alternate" hreflang="nl-BE" href="https://lrmj-project.be/nl/juridische-vermeldingen" />
+  <link rel="alternate" hreflang="en" href="https://lrmj-project.be/en/legal-notice" />
+  <link rel="alternate" hreflang="x-default" href="https://lrmj-project.be/mentions-legales" />
   <link id="faviconEl" rel="icon" type="image/png"
         href="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_64/LRMJ_EMBLEM_FLAT_LIGHT_MODE_tlr9tp.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,23 +34,23 @@
 
 <header class="nav nav--slim" id="siteNav">
   <div class="nav__inner">
-    <a href="/nl/" class="nav__logo" aria-label="LRMJ Project | Startpagina">
+    <a href="/en/" class="nav__logo" aria-label="LRMJ Project | Home">
       <img class="nav__logo-img"
            src="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_96/LRMJ_EMBLEM_FLAT_LIGHT_MODE_tlr9tp.png"
            data-src-dark="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_96/LRMJ_EMBLEM_FLAT_DARK_MODE_yhtb4t.png"
            data-src-light="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_96/LRMJ_EMBLEM_FLAT_LIGHT_MODE_tlr9tp.png"
            alt="LRMJ Project" width="48" height="48"/>
     </a>
-    <a href="/nl/" class="nav__back">←<span>&nbsp;Terug naar de startpagina</span></a>
+    <a href="/en/" class="nav__back">←<span>&nbsp;Back to home</span></a>
     <div class="nav__actions">
       <div class="lang-toggle" role="group" aria-label="Language">
-        <a class="lang-toggle__btn" href="/confidentialite" hreflang="fr">FR</a>
+        <a class="lang-toggle__btn" href="/mentions-legales" hreflang="fr">FR</a>
         <span class="lang-toggle__sep" aria-hidden="true"></span>
-        <a class="lang-toggle__btn is-active" href="#" aria-current="true">NL</a>
+        <a class="lang-toggle__btn" href="/nl/juridische-vermeldingen" hreflang="nl">NL</a>
         <span class="lang-toggle__sep" aria-hidden="true"></span>
-        <a class="lang-toggle__btn" href="/en/privacy-policy" hreflang="en">EN</a>
+        <a class="lang-toggle__btn is-active" href="#" aria-current="true">EN</a>
       </div>
-      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Wissel tussen licht en donker">
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle light and dark mode">
         <svg class="theme-toggle__sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
           <circle cx="12" cy="12" r="4"/>
           <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
@@ -60,7 +59,7 @@
           <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
         </svg>
       </button>
-      <a href="/nl/#contact" class="nav__cta-pill">Gratis Offerte</a>
+      <a href="/en/#contact" class="nav__cta-pill">Free Quote</a>
     </div>
   </div>
 </header>
@@ -68,42 +67,47 @@
 <main id="main">
   <section class="page-hero">
     <div class="wrap wrap--sm fi">
-      <span class="eyebrow">Juridisch</span>
-      <h1 class="h-large">Privacy<em>beleid</em></h1>
+      <span class="eyebrow">Legal</span>
+      <h1 class="h-large">Legal <em>Notice</em></h1>
     </div>
   </section>
 
   <section class="article">
     <div class="wrap wrap--sm">
       <div class="article__body fi">
-        <h2>Verzamelde persoonsgegevens</h2>
-        <p>Enkel de velden die u vrijwillig invult in het contactformulier (naam, e-mail, telefoon, bericht, type project) worden verzameld. Ze dienen <strong>uitsluitend</strong> om u opnieuw te contacteren over uw aanvraag.</p>
+        <h2>Site publisher</h2>
+        <p>
+          <strong>L.R.M.J Project SRL</strong><br>
+          Broekstraat 26, 1745 Opwijk, Belgium<br>
+          Phone: <a href="tel:0475399909">+32 475 39 99 09</a><br>
+          Email: <a href="mailto:contact@lrmj-project.be">contact@lrmj-project.be</a>
+        </p>
+        <p>
+          Company number (BCE): <strong>BE 0839.975.656</strong><br>
+          VAT number: <strong>BE 0839.975.656</strong><br>
+          Legal form: Private limited company (SRL)
+        </p>
 
-        <h2>Bewaring</h2>
-        <p>Uw gegevens worden bewaard zolang strikt nodig voor de behandeling van uw aanvraag, en vervolgens gearchiveerd of verwijderd binnen maximaal 24 maanden.</p>
+        <h2>Publication director</h2>
+        <p>Romeo Lesac, Director of L.R.M.J Project SRL.</p>
 
-        <h2>Delen met derden</h2>
-        <p>Uw gegevens worden nooit verkocht, verhuurd of aan derden overgedragen voor commerciële doeleinden. Ze worden uitsluitend verwerkt door LRMJ Project en zijn dienstverlener voor het versturen van formulieren.</p>
+        <h2>Hosting</h2>
+        <p>The site is hosted by <strong>Cloudflare Pages</strong> (Cloudflare, Inc., 101 Townsend St., San Francisco, CA 94107, USA). Media (photos, videos) is delivered via <strong>Cloudinary</strong> (Cloudinary Ltd., Petah Tikva, Israel).</p>
 
-        <h2>Gebruikte cookies</h2>
-        <ul>
-          <li><strong>Strikt noodzakelijke cookies</strong> : themavoorkeur (licht/donker), bevestiging van de cookiebanner. Geen tracking.</li>
-          <li><strong>Geen externe advertentiecookies</strong>, geen Facebook- of Google Ads-pixels.</li>
-        </ul>
-        <p>De site gebruikt anonieme bezoekersstatistieken zonder cookies (Cloudflare Web Analytics) : geen persoonsgegevens, geen identificatie, geen tracking tussen sites.</p>
-        <p>U kunt de lokale gegevens (voorkeuren) op elk moment verwijderen via de instellingen van uw browser.</p>
+        <h2>Intellectual property</h2>
+        <p>The entire site (text, photographs, logo, visual identity) is the exclusive property of LRMJ Project, unless stated otherwise. Any reproduction, even partial, without prior written authorisation is prohibited.</p>
 
-        <h2>Uw rechten (AVG)</h2>
-        <p>Conform de Algemene Verordening Gegevensbescherming beschikt u over een recht op inzage, verbetering, wissing, bezwaar en overdraagbaarheid van uw gegevens. Om deze rechten uit te oefenen, contacteer ons op <a href="mailto:contact@lrmj-project.be">contact@lrmj-project.be</a>.</p>
+        <h2>Limitation of liability</h2>
+        <p>Information displayed on this site is provided for guidance only. LRMJ Project cannot be held liable for any errors or omissions. Visuals and descriptions of projects are specific to each project and do not constitute a contractual commitment.</p>
 
-        <h2>Toezichthoudende autoriteit</h2>
-        <p>Bij een onopgelost geschil kunt u zich wenden tot de Belgische Gegevensbeschermingsautoriteit : <a href="https://www.gegevensbeschermingsautoriteit.be" rel="noopener">gegevensbeschermingsautoriteit.be</a>.</p>
+        <h2>Disputes</h2>
+        <p>This site is governed by Belgian law. In the event of a dispute, only the Belgian courts have jurisdiction.</p>
 
         <div class="article__related">
-          <p>Zie ook</p>
+          <p>See also</p>
           <ul>
-            <li><a href="/nl/juridische-vermeldingen">Juridische vermeldingen</a></li>
-            <li><a href="/nl/">Terug naar de startpagina</a></li>
+            <li><a href="/en/privacy-policy">Privacy Policy</a></li>
+            <li><a href="/en/">Back to home</a></li>
           </ul>
         </div>
       </div>
@@ -114,24 +118,23 @@
 <footer class="footer pf-footer">
   <div class="wrap">
     <div class="pf-footer__inner">
-      <a href="/nl/" class="pf-footer__brand">
+      <a href="/en/" class="pf-footer__brand">
         <img src="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_72/LRMJ_EMBLEM_FLAT_LIGHT_MODE_tlr9tp.png"
              data-src-dark="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_72/LRMJ_EMBLEM_FLAT_DARK_MODE_yhtb4t.png"
              data-src-light="https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,w_72/LRMJ_EMBLEM_FLAT_LIGHT_MODE_tlr9tp.png"
              alt="" aria-hidden="true" width="36" height="36" loading="lazy"/>
-        <span>← Terug naar de startpagina</span>
+        <span>← Back to home</span>
       </a>
-      <a href="/nl/#contact" class="btn btn--red">
-        <span>Gratis Offerte</span>
+      <a href="/en/#contact" class="btn btn--red">
+        <span>Free Quote</span>
         <span class="btn__ico" aria-hidden="true">↗</span>
       </a>
     </div>
-    <p class="pf-footer__copy">© <span id="footYear">2026</span> LRMJ Project · BE 0839.975.656</p>
+    <p class="pf-footer__copy">© <span id="footYear">2026</span> LRMJ Project · BE 0839.975.656 · <a class="footer-link-btn" href="/en/legal-notice">Legal Notice</a></p>
   </div>
 </footer>
 
-
-<!-- Cloudflare Web Analytics : anonyme, sans cookie -->
+<!-- Cloudflare Web Analytics: anonymous, no cookies -->
 <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "6d96f994423040bdb486b180752eb9b3"}'></script>
 </body>
 </html>

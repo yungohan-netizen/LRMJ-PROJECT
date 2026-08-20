@@ -14,7 +14,8 @@ export function initForm() {
   // jamais afficher de message en dur dans la mauvaise langue.
   const okText  = okEl ? okEl.textContent.trim() : '';
   const errText = errEl ? errEl.textContent.trim() : '';
-  const sending = document.documentElement.lang === 'nl' ? 'Versturen…' : 'Envoi…';
+  const SENDING = { fr: 'Envoi…', nl: 'Versturen…', en: 'Sending…' };
+  const sending = SENDING[document.documentElement.lang] || SENDING.fr;
 
   const showOk = () => {
     if (errEl) errEl.classList.remove('visible');

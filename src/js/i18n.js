@@ -1,4 +1,4 @@
-/** i18n — FR (défaut) + NL. Toutes les chaînes visibles du site. */
+/** i18n — FR (défaut) + NL + EN. Toutes les chaînes visibles du site. */
 
 export const translations = {
   fr: {
@@ -331,10 +331,175 @@ export const translations = {
     'mobile.cta': 'Gratis offerte →',
     'mobile.restauration': 'Restauratie gietijzer',
     'mobile.about': 'Over ons',
+  },
+
+  en: {
+    /* A11y */
+    'skip': 'Skip to content',
+    /* Nav */
+    'nav.realisations': 'Projects',
+    'nav.services':     'Services',
+    'nav.restauration': 'Cast-Iron Restoration',
+    'nav.about':        'About',
+    'nav.contact':      'Contact',
+    'nav.cta':          'Free Quote',
+    'nav.phone.aria':   '0475 39 99 09',
+    /* Hero */
+    'hero.eyebrow':     'Ironwork Workshop · Brussels & Flemish Brabant',
+    'hero.title':       'Gates, railings, glass partitions.<br><em>Forged to last.</em>',
+    'hero.cta2':        'View our projects',
+    'hero.scroll':      'Discover',
+    /* Engagements */
+    'pledges.sr':       'Our commitments',
+    'pledges.1.t':      'Custom-made, always',
+    'pledges.1.d':      'Every piece is designed and forged for your project — never off a catalogue.',
+    'pledges.2.t':      'One workshop, start to finish',
+    'pledges.2.d':      'Designed, built and installed by our own hands. Zero subcontracting.',
+    'pledges.3.t':      'Quote within 48 hours',
+    'pledges.3.d':      'On-site visit, measurements and a detailed quote, free and with no obligation.',
+    'pledges.4.t':      'Since 2011',
+    'pledges.4.d':      'Serving homeowners and heritage buildings, from Brussels to Flemish Brabant.',
+    /* Réalisations */
+    'real.eyebrow':     'Projects',
+    'real.title':       'The Work<br><em>Speaks For Itself</em>',
+    'real.cta':         'See all projects',
+    'real.hint':        'Hover to pause, click to enlarge',
+    'portfolio.back':   '← Back to home',
+    'portfolio.eyebrow':'All our projects',
+    'portfolio.title':  'The full<br><em>archive</em>',
+    'portfolio.lead':   'Gates, railings, glass partitions, canopies, staircases, furniture. Every piece designed and made in our workshop.',
+    'pf.cat.all':         'All',
+    'pf.cat.portails':    'Gates & Fencing',
+    'pf.cat.gardecorps':  'Railings & Balustrades',
+    'pf.cat.verrieres':   'Glass Partitions & Windows',
+    'pf.cat.marquises':   'Canopies & Awnings',
+    'pf.cat.escaliers':   'Staircases',
+    'pf.cat.meubles':     'Furniture & Décor',
+    /* Services */
+    'svc.eyebrow':                   'Services',
+    'svc.title':                     'Everything<br><em>we make</em>',
+    'svc.cta':                       'Free Quote',
+    'svc.portails.tag':              'Signature',
+    'svc.portails.title':            'Gates & Fencing',
+    'svc.portails.desc':             'Monumental entrances or elegant fencing. Epoxy or galvanised finishes for maximum durability. Designed to fit your property.',
+    'svc.portails.cta':              'Free Quote',
+    'svc.gardecorps.tag':            'Indoor & Outdoor',
+    'svc.gardecorps.title':          'Railings & Balustrades',
+    'svc.gardecorps.desc':           'Staircases, balconies, mezzanines. Safety and style working for your space.',
+    'svc.verrieres.tag':             'Garden & Extension',
+    'svc.verrieres.cta':             'Free Quote',
+    'svc.verrieres.title':           'Glass Partitions & Windows',
+    'svc.verrieres.desc':            'Winter gardens, conservatories, glazed extensions. Slim, resilient steel structures.',
+    'svc.marquises.tag':             'Protection',
+    'svc.marquises.title':           'Canopies & Awnings',
+    'svc.marquises.desc':            'Elegant protection for entrances and terraces. Wrought-iron frame, laminated glass.',
+    'svc.escaliers.tag':             'Structure',
+    'svc.escaliers.title':           'Staircases',
+    'svc.escaliers.desc':            'Straight or spiral staircases, steel structure, wood or metal treads. The link between your floors.',
+    'svc.meubles.tag':               'Décor',
+    'svc.meubles.title':             'Furniture & Décor',
+    'svc.meubles.desc':              'Custom-forged furniture and decorative pieces. Consoles, mirrors, lamps, one-of-a-kind objects.',
+    /* Restauration */
+    'resto.eyebrow':    'A rare specialty · Brussels',
+    'resto.title':      'Restoring<br><em>cast-iron balustrades</em>',
+    'resto.lead':       'Few craftsmen still master the restoration of antique cast iron. Romeo brings your period balustrades, railings and decorative elements back to life: cleaning, specialised welding, replacement of missing parts, anti-corrosion treatment and period-accurate finishing.',
+    'resto.w1':         'Cleaning & stripping of the cast iron',
+    'resto.w2':         'Welding and replacement of missing parts',
+    'resto.w3':         'Anti-corrosion treatment & painting',
+    'resto.w4':         'Railings, balconies, brackets, mouldings',
+    'resto.prime.label':'Official grant',
+    'resto.prime.title':'Façade Restoration Grant',
+    'resto.prime.text': 'The City of Brussels reimburses <strong>40 to 60% of façade restoration costs</strong>, including cast-iron balconies, railings and brackets, up to <strong>€&nbsp;14,000</strong> per file. Other municipalities run their own schemes: ask us for details.',
+    'resto.prime.link': 'View the official grant →',
+    'resto.more':       'Everything about cast-iron restoration →',
+    'resto.cta':        'Free Quote',
+    'resto.quote':      '"Antique cast iron deserves a second life. It\'s our heritage."',
+    'resto.cite':       'Romeo, master blacksmith',
+    'resto.ba.before':  'Before',
+    'resto.ba.after':   'After',
+    'resto.ba.caption': 'Before / after on the same balustrade, plus restored railings on a Brussels façade.',
+    'resto.ba.zoom':    'Enlarge photo',
+    /* Témoignages */
+    'testi.title':      'What our<br><em>clients say</em>',
+    'testi.cred.score': '100% recommended',
+    'testi.cred.src':   '9 reviews on Facebook',
+    'testi.src':        'Facebook review',
+    /* Process */
+    'proc.title':       'From your idea<br><em>to the final fit</em>',
+    'proc.1.title':     'Contact',
+    'proc.1.desc':      'Call or write. We get your project and its constraints, no jargon involved.',
+    'proc.2.title':     'Visit & Quote',
+    'proc.2.desc':      'We visit, we measure, a detailed and free quote follows within 48h.',
+    'proc.3.title':     'Fabrication',
+    'proc.3.desc':      'Every piece shaped in our workshop. Epoxy, galvanised or powder-coated finish.',
+    'proc.4.title':     'Install & Handover',
+    'proc.4.desc':      'Careful installation by our own team, flawless finishing, keys handed over.',
+    /* About */
+    'about.eyebrow':    'About',
+    'about.tagline':    'Craftsmanship as a calling,\non-site work as a passion',
+    'about.lede':       'LRMJ Project was born from the passion of a blacksmith based in Belgium. Every piece is designed and made in the workshop, installed by our own hands.',
+    'about.p2':         'No subcontracting. From the first sketch to the last bolt, you have our word — and a single point of contact from quote to installation.',
+    'about.hl1.lbl':    'Founded in',
+    'about.hl2.lbl':    'Trade categories',
+    'about.hl3.lbl':    'Custom-made',
+    'about.hl4.lbl':    'Quote turnaround',
+    'about.caption':    'LRMJ workshop, Belgium',
+    /* Contact */
+    'contact.eyebrow':      'Contact',
+    'contact.title':        'Let\'s talk about<br><em>your project</em>',
+    'contact.lead':         'Completely free quote, no obligation. Reply within 24h.',
+    'contact.phone.lbl':    'Phone',
+    'contact.email.lbl':    'Email',
+    'contact.hours.lbl':    'Availability',
+    'contact.hours.val':    'Mon - Sat · 8am - 6pm',
+    'contact.form.eye':     'Quote request',
+    'contact.form.prenom':  'First name *',
+    'contact.form.nom':     'Last name *',
+    'contact.form.tel':     'Phone *',
+    'contact.form.email':   'Email',
+    'contact.form.service': 'Project type',
+    'contact.form.msg':     'Describe your project',
+    'contact.ph.prenom':    'Camille',
+    'contact.ph.nom':       'Janssens',
+    'contact.ph.tel':       '04XX XXX XXX',
+    'contact.ph.email':     'camille@email.be',
+    'contact.ph.msg':       'Dimensions, style, timeline, location…',
+    'contact.opt.none':       'Select…',
+    'contact.opt.portail':    'Gate / Fencing',
+    'contact.opt.gardecorps': 'Railing / Balustrade',
+    'contact.opt.serre':      'Conservatory / Glass partition',
+    'contact.opt.marquise':   'Canopy / Awning',
+    'contact.opt.autre':      'Other project',
+    'contact.form.submit':  'Send my request',
+    'contact.form.ok':      '✓ Message received. We\'ll get back to you within 24h.',
+    'contact.form.err':     'Something went wrong. Try again or call 0475 39 99 09.',
+    /* Footer */
+    'footer.desc':      'Custom ironwork by a Brussels-based blacksmith. Gates, railings, glass partitions, canopies, cast-iron restoration.',
+    'footer.nav.title': 'Navigation',
+    'footer.svc.title': 'Services',
+    'footer.s.portails':   'Gates',
+    'footer.s.gardecorps': 'Railings',
+    'footer.s.serres':     'Conservatories',
+    'footer.s.marquises':  'Cast-Iron Restoration',
+    'footer.contact.title': 'Contact',
+    'footer.legal.title':   'Legal',
+    'footer.mentions':      'Legal Notice',
+    'footer.privacy':       'Privacy Policy',
+    'footer.copy':          '© {year} LRMJ Project',
+    'footer.tag':           'Artisan ironwork · Belgium',
+    /* Cookie banner */
+    'cookie.title':   'Cookies',
+    'cookie.text':    'We only use cookies strictly necessary for the site to work (theme preference, session memory). No advertising trackers, no data resale.',
+    'cookie.more':    'Learn more',
+    'cookie.accept':  'Got it',
+    'cookie.decline': 'Decline all',
+    /* Mobile nav */
+    'mobile.cta': 'Free Quote →',
+    'mobile.restauration': 'Cast-Iron Restoration',
+    'mobile.about': 'About',
   }
 };
 
-const LANG_KEY = 'lrmj-lang';
 let currentLang = 'fr';
 
 /** Retourne la langue active */
@@ -347,7 +512,7 @@ export function applyLang(lang) {
   const t = translations[lang];
   const year = new Date().getFullYear();
 
-  document.documentElement.lang = lang === 'nl' ? 'nl' : 'fr';
+  document.documentElement.lang = lang;
 
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.getAttribute('data-i18n');
@@ -368,13 +533,8 @@ export function applyLang(lang) {
     if (t[key]) el.setAttribute('aria-label', t[key].replace('{year}', year));
   });
 
-  // Toggle visuel FR / NL
-  document.querySelectorAll('.lang-toggle__btn').forEach(btn => {
-    btn.classList.toggle('is-active', btn.dataset.lang === lang);
-    btn.setAttribute('aria-current', btn.dataset.lang === lang ? 'true' : 'false');
-  });
-
-  try { localStorage.setItem(LANG_KEY, lang); } catch (_) {}
+  // Le sélecteur de langue est un lien de navigation (une URL = une langue) :
+  // son état actif est déjà correct dans le HTML statique, rien à resynchroniser.
 
   document.dispatchEvent(new CustomEvent('lrmj:lang-changed', { detail: { lang } }));
 }
@@ -385,6 +545,7 @@ export function applyLang(lang) {
  *  Les sélecteurs de langue sont des liens : ils naviguent, ils ne basculent
  *  plus sur place, pour qu'une URL corresponde toujours à une seule langue. */
 export function initI18n() {
-  const pageLang = document.documentElement.lang === 'nl' ? 'nl' : 'fr';
+  const htmlLang = document.documentElement.lang;
+  const pageLang = translations[htmlLang] ? htmlLang : 'fr';
   applyLang(pageLang);
 }

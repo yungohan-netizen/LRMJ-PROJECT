@@ -121,9 +121,12 @@ export default defineConfig(({ mode }) => {
         input: {
           main: 'index.html',
           portfolio: 'portfolio.html',
-          // Générés par scripts/gen-nl.mjs — ne pas éditer à la main
+          // nl/*.html et en/*.html (home + portfolio) sont générés par
+          // scripts/gen-i18n.mjs — ne pas éditer à la main
           nlmain: 'nl/index.html',
           nlportfolio: 'nl/portfolio.html',
+          enmain: 'en/index.html',
+          enportfolio: 'en/portfolio.html',
           mentions: 'mentions-legales.html',
           confidentialite: 'confidentialite.html',
           ferronnierbruxelles: 'ferronnier-bruxelles.html',
@@ -138,6 +141,13 @@ export default defineConfig(({ mode }) => {
           nlrestauratie: 'nl/restauratie-gietijzeren-balustrade.html',
           nljuridisch: 'nl/juridische-vermeldingen.html',
           nlprivacy: 'nl/privacybeleid.html',
+          enblacksmith: 'en/blacksmith-brussels.html',
+          engate: 'en/wrought-iron-gate.html',
+          enrailing: 'en/wrought-iron-railing.html',
+          enwindows: 'en/steel-windows-brussels.html',
+          enrestoration: 'en/cast-iron-balustrade-restoration.html',
+          enlegal: 'en/legal-notice.html',
+          enprivacy: 'en/privacy-policy.html',
         },
       },
     },

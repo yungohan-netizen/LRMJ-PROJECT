@@ -112,26 +112,36 @@ Mapping configurable dans `src/js/cloudinary.js` → `FOLDERS`.
 ## Intégrations tierces
 
 - **Cloudinary** — assets dynamiques, `image/list/<tag>.json` endpoint public
-- **Web3Forms** — formulaire contact, key publique (mode démo si vide)
+- **Resend** (`functions/api/contact.js`) — formulaire contact, clé server-side uniquement (`RESEND_API_KEY`, jamais préfixée `VITE_`)
 - **Google Places API** — avis Google Business, key restreinte par referrer
 - **Lenis** — smooth scroll
+- **Cloudflare Web Analytics** — beacon posé en dur dans le HTML (pas d'injection edge, peu fiable), anonyme et sans cookie
 
 ## Reference
 
 Le single-file historique `lrmj-template_3_polished_17.html` reste comme référence. Pas inclus dans le build.
 
-## Pages néerlandaises générées
+## Site trilingue FR / NL / EN
 
-`nl/index.html` et `nl/portfolio.html` sont **générés** à partir de leurs
-équivalents français et de la table `translations.nl` (`src/js/i18n.js`).
-Ne pas les éditer à la main : modifier `index.html` / `portfolio.html`, puis
+Une URL = une langue. `scripts/page-map.mjs` est la table de correspondance
+unique entre les trois variantes de chaque page (FR = source de vérité).
 
-```
-npm run gen:nl
-```
-
-`npm run build` le fait automatiquement, et échoue si une clé de traduction
-manque — pour ne jamais publier de français sur `/nl/`.
+- **Accueil et portfolio** (`nl/index.html`, `nl/portfolio.html`,
+  `en/index.html`, `en/portfolio.html`) sont **générés** depuis `index.html` /
+  `portfolio.html` et les tables `translations.nl` / `translations.en`
+  (`src/js/i18n.js`). Ne pas les éditer à la main : modifier les pages FR,
+  puis lancer `npm run gen:i18n` (fait automatiquement par `npm run build`,
+  qui échoue si une clé de traduction manque — pour ne jamais publier de
+  français sur `/nl/` ou `/en/`).
+- **Les 5 pages de service et les 2 pages légales** (NL et EN) sont écrites
+  à la main, une par langue, en miroir des pages FR — leur contenu diffère
+  trop d'une page à l'autre pour un système à clés. Après toute modification
+  du sélecteur de langue ou de la structure hreflang sur ces pages FR/NL,
+  relancer `node scripts/update-toggles.mjs`.
+- Ajouter une langue ou un groupe de page : étendre `PAGE_GROUPS` dans
+  `scripts/page-map.mjs`, la table `translations` dans `src/js/i18n.js`,
+  puis les entrées `rollupOptions.input` de `vite.config.js` et
+  `public/sitemap.xml`.
 
 Principe : **une URL = une langue**. Les sélecteurs FR/NL sont des liens qui
 naviguent, pas une bascule JavaScript, afin que Google puisse indexer chaque
