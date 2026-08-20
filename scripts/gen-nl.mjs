@@ -185,6 +185,10 @@ for (const p of PAGES) {
   html = html.replace(/(<meta property="og:url" content=")[^"]*(")/, `$1${p.nlUrl}$2`);
   html = html.replace(/(<meta property="og:locale" content=")[^"]*(")/, `$1nl_BE$2`);
 
+  // La page FR porte déjà ses hreflang : on les retire avant de réinjecter,
+  // sinon la page NL en hérite en double.
+  html = html.replace(/\s*<link rel="alternate" hreflang="[^"]*" href="[^"]*" \/>/g, '');
+
   // canonical + hreflang réciproques
   const alts =
     `<link rel="canonical" href="${p.nlUrl}" />\n` +
@@ -221,6 +225,11 @@ for (const p of PAGES) {
 
   // Invariants : aucun sélecteur ne doit basculer sur place, et le NL doit
   // être marqué actif partout (barre + menu mobile).
+  const hrefLangs = (html.match(/rel="alternate" hreflang=/g) || []).length;
+  if (hrefLangs !== 3) {
+    console.error(`  ! ${p.out}: ${hrefLangs} hreflang, 3 attendus`);
+    failed = true;
+  }
   const asButton = (html.match(/<button[^>]*lang-toggle__btn/g) || []).length;
   const nlActive = (html.match(/data-lang="nl" href="#" aria-current="true"/g) || []).length;
   const frLink   = (html.match(new RegExp(`data-lang="fr" href="${frPath.replace(/\//g,'\\/')}"`, 'g')) || []).length;
