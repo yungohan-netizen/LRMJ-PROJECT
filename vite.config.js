@@ -121,6 +121,9 @@ export default defineConfig(({ mode }) => {
         input: {
           main: 'index.html',
           portfolio: 'portfolio.html',
+          // Générés par scripts/gen-nl.mjs — ne pas éditer à la main
+          nlmain: 'nl/index.html',
+          nlportfolio: 'nl/portfolio.html',
           mentions: 'mentions-legales.html',
           confidentialite: 'confidentialite.html',
           ferronnierbruxelles: 'ferronnier-bruxelles.html',

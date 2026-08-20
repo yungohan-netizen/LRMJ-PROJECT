@@ -119,3 +119,20 @@ Mapping configurable dans `src/js/cloudinary.js` → `FOLDERS`.
 ## Reference
 
 Le single-file historique `lrmj-template_3_polished_17.html` reste comme référence. Pas inclus dans le build.
+
+## Pages néerlandaises générées
+
+`nl/index.html` et `nl/portfolio.html` sont **générés** à partir de leurs
+équivalents français et de la table `translations.nl` (`src/js/i18n.js`).
+Ne pas les éditer à la main : modifier `index.html` / `portfolio.html`, puis
+
+```
+npm run gen:nl
+```
+
+`npm run build` le fait automatiquement, et échoue si une clé de traduction
+manque — pour ne jamais publier de français sur `/nl/`.
+
+Principe : **une URL = une langue**. Les sélecteurs FR/NL sont des liens qui
+naviguent, pas une bascule JavaScript, afin que Google puisse indexer chaque
+langue séparément (canonical + hreflang réciproques).

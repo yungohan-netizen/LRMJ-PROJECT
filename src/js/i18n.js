@@ -379,17 +379,12 @@ export function applyLang(lang) {
   document.dispatchEvent(new CustomEvent('lrmj:lang-changed', { detail: { lang } }));
 }
 
-/** Init — lit localStorage ou navigator.language */
+/** Init — la langue est portée par l'URL : / = fr, /nl/ = nl.
+ *  Le HTML est déjà rendu dans la bonne langue (voir scripts/gen-nl.mjs) ;
+ *  applyLang sert aux chaînes injectées après coup et au <html lang>.
+ *  Les sélecteurs de langue sont des liens : ils naviguent, ils ne basculent
+ *  plus sur place, pour qu'une URL corresponde toujours à une seule langue. */
 export function initI18n() {
-  let saved;
-  try { saved = localStorage.getItem(LANG_KEY); } catch (_) {}
-  const nav = (navigator.language || '').toLowerCase();
-  const detected = saved || (nav.startsWith('nl') ? 'nl' : 'fr');
-  applyLang(detected);
-
-  document.querySelectorAll('.lang-toggle__btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      applyLang(btn.dataset.lang);
-    });
-  });
+  const pageLang = document.documentElement.lang === 'nl' ? 'nl' : 'fr';
+  applyLang(pageLang);
 }

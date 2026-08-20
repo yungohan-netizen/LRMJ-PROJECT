@@ -10,20 +10,19 @@ export function initForm() {
   if (!submit) return;
 
   const originalLabel = submit.textContent;
+  // Textes déjà localisés par l'i18n (data-i18n) : on les mémorise pour ne
+  // jamais afficher de message en dur dans la mauvaise langue.
+  const okText  = okEl ? okEl.textContent.trim() : '';
+  const errText = errEl ? errEl.textContent.trim() : '';
+  const sending = document.documentElement.lang === 'nl' ? 'Versturen…' : 'Envoi…';
 
-  const showOk = (msg) => {
+  const showOk = () => {
     if (errEl) errEl.classList.remove('visible');
-    if (okEl) {
-      if (msg) okEl.textContent = msg;
-      okEl.classList.add('visible');
-    }
+    if (okEl) { okEl.textContent = okText; okEl.classList.add('visible'); }
   };
-  const showErr = (msg) => {
+  const showErr = () => {
     if (okEl) okEl.classList.remove('visible');
-    if (errEl) {
-      if (msg) errEl.textContent = msg;
-      errEl.classList.add('visible');
-    }
+    if (errEl) { errEl.textContent = errText; errEl.classList.add('visible'); }
   };
 
   form.addEventListener('submit', async (e) => {
@@ -34,7 +33,7 @@ export function initForm() {
     }
 
     submit.disabled = true;
-    submit.textContent = 'Envoi…';
+    submit.textContent = sending;
     if (okEl) okEl.classList.remove('visible');
     if (errEl) errEl.classList.remove('visible');
 
@@ -58,15 +57,16 @@ export function initForm() {
       const data = await res.json().catch(() => ({}));
 
       if (res.ok && data.success) {
-        showOk('✓ Message bien reçu. Nous vous recontactons sous 24h.');
+        showOk();
         form.reset();
       } else {
-        showErr(data.error
-          ? `${data.error} Vous pouvez aussi appeler le 0475 39 99 09.`
-          : "L'envoi a échoué. Réessayez ou appelez le 0475 39 99 09.");
+        // Le détail serveur n'est pas traduit : il va en console, pas à l'écran.
+        if (data.error) console.warn('[contact]', data.error);
+        showErr();
       }
-    } catch (_) {
-      showErr('Problème réseau. Réessayez ou appelez le 0475 39 99 09.');
+    } catch (err) {
+      console.warn('[contact]', err);
+      showErr();
     } finally {
       submit.disabled = false;
       submit.textContent = originalLabel;
