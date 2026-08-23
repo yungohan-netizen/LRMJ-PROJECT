@@ -137,7 +137,7 @@ export default defineConfig(({ mode }) => {
           prime: 'prime-facade-bruxelles.html',
           nlprime: 'nl/gevelpremie-brussel.html',
           enprime: 'en/brussels-facade-grant.html',
-          nlsmid: 'nl/smid-vlaams-brabant.html',
+          nlsmid: 'nl/smid-brussel.html',
           nlpoort: 'nl/smeedijzeren-poort.html',
           nlbalustrade: 'nl/smeedijzeren-balustrade.html',
           nlserre: 'nl/serre-veranda-op-maat.html',

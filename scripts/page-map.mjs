@@ -11,7 +11,7 @@ export const BASE = 'https://lrmj-project.be';
 export const PAGE_GROUPS = [
   { key: 'home',        fr: '/',                                 nl: '/nl/',                                     en: '/en/' },
   { key: 'portfolio',   fr: '/portfolio',                         nl: '/nl/portfolio',                           en: '/en/portfolio' },
-  { key: 'ferronnier',  fr: '/ferronnier-bruxelles',               nl: '/nl/smid-vlaams-brabant',                 en: '/en/blacksmith-brussels' },
+  { key: 'ferronnier',  fr: '/ferronnier-bruxelles',               nl: '/nl/smid-brussel',                 en: '/en/blacksmith-brussels' },
   { key: 'portail',     fr: '/portail-fer-forge',                  nl: '/nl/smeedijzeren-poort',                  en: '/en/wrought-iron-gate' },
   { key: 'gardecorps',  fr: '/garde-corps-fer-forge',               nl: '/nl/smeedijzeren-balustrade',             en: '/en/wrought-iron-railing' },
   { key: 'verriere',    fr: '/verriere-sur-mesure',                 nl: '/nl/serre-veranda-op-maat',               en: '/en/steel-windows-brussels' },
