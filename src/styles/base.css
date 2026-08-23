@@ -197,6 +197,17 @@ html:not(.js) .word .char { transform: none; }
   box-shadow: 0 12px 32px rgba(var(--red-rgb),.30), inset 0 1px 0 rgba(255,255,255,.16);
 }
 
+/* Variante encre : plein et très contrasté, pour un CTA secondaire qui doit
+   se voir sans dupliquer le rouge du CTA principal placé à proximité.
+   Les deux teintes viennent des tokens, donc valide en clair comme en sombre. */
+.btn--ink { background: var(--tx); color: var(--bg); border-color: var(--tx); }
+.btn--ink:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(var(--tx-rgb), .28);
+}
+.btn--ink .btn__ico { background: rgba(var(--bg-rgb), .18); }
+.btn--ink:hover .btn__ico { background: rgba(var(--bg-rgb), .30); }
+
 .btn--ghost { background: transparent; color: var(--tx-2); border-color: var(--border-2); }
 .btn--ghost::before {
   background: linear-gradient(
