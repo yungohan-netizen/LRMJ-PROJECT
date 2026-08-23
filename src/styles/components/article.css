@@ -94,6 +94,84 @@
 .article__faq details[open] summary::after { transform: rotate(45deg); }
 .article__faq details p { padding: 0 1.25rem 1.1rem; margin: 0; font-size: .9rem; }
 
+/* Barème de prime : 3 paliers selon la largeur de façade.
+   Utilisé sur la page dédiée à la prime façade. */
+.prime-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: .6rem;
+  margin: 1.5rem 0 1.75rem;
+}
+.prime-tier {
+  background: var(--bg-1);
+  border: 1px solid var(--border);
+  border-radius: var(--r-md, 10px);
+  padding: 1.1rem 1rem;
+  display: flex; flex-direction: column; gap: .3rem;
+}
+.prime-tier--hi { border-color: var(--red-border); background: rgba(var(--red-rgb), .05); }
+.prime-pct {
+  font-family: var(--f-display);
+  font-size: 1.75rem; font-weight: 500; line-height: 1;
+  color: var(--tx);
+}
+.prime-tier--hi .prime-pct { color: var(--red); }
+.prime-cond {
+  font-size: .72rem; font-weight: 600;
+  letter-spacing: .1em; text-transform: uppercase;
+  color: var(--tx-3);
+}
+.prime-max { font-size: .84rem; color: var(--tx-2); }
+
+/* Encadré d'avertissement — le piège le plus coûteux de la procédure */
+.article__body .prime-warn {
+  margin: 1.75rem 0;
+  padding: 1.2rem 1.35rem;
+  border: 1px solid var(--red-border);
+  border-left: 3px solid var(--red);
+  border-radius: var(--r-md, 10px);
+  background: rgba(var(--red-rgb), .05);
+}
+.prime-warn-label {
+  display: block;
+  font-size: .64rem; font-weight: 700;
+  letter-spacing: .18em; text-transform: uppercase;
+  color: var(--red);
+  margin-bottom: .5rem;
+}
+.article__body .prime-warn p { margin: 0; font-size: .94rem; }
+
+/* Étapes numérotées de la procédure */
+.article__body ol.steps {
+  list-style: none;
+  margin: 0 0 1.5rem;
+  padding: 0;
+  counter-reset: step;
+}
+.article__body ol.steps li {
+  counter-increment: step;
+  position: relative;
+  padding: 0 0 1rem 2.4rem;
+  margin: 0;
+  font-size: .95rem;
+  color: var(--tx-2);
+}
+.article__body ol.steps li::before {
+  content: counter(step);
+  position: absolute; left: 0; top: -.1rem;
+  width: 1.6rem; height: 1.6rem;
+  border-radius: 50%;
+  background: var(--red); color: #fff;
+  font-family: var(--f-body);
+  font-size: .76rem; font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+}
+.article__body ol.steps li strong { color: var(--tx); }
+
+@media (max-width: 600px) {
+  .prime-grid { grid-template-columns: 1fr; }
+}
+
 /* Bande CTA de fin */
 .article__cta {
   margin-top: 3rem;

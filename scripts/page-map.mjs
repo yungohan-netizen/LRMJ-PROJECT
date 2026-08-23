@@ -16,6 +16,7 @@ export const PAGE_GROUPS = [
   { key: 'gardecorps',  fr: '/garde-corps-fer-forge',               nl: '/nl/smeedijzeren-balustrade',             en: '/en/wrought-iron-railing' },
   { key: 'verriere',    fr: '/verriere-sur-mesure',                 nl: '/nl/serre-veranda-op-maat',               en: '/en/steel-windows-brussels' },
   { key: 'restauration',fr: '/restauration-balustrade-fonte',       nl: '/nl/restauratie-gietijzeren-balustrade',  en: '/en/cast-iron-balustrade-restoration' },
+  { key: 'prime',       fr: '/prime-facade-bruxelles',              nl: '/nl/gevelpremie-brussel',                 en: '/en/brussels-facade-grant' },
   { key: 'mentions',    fr: '/mentions-legales',                    nl: '/nl/juridische-vermeldingen',             en: '/en/legal-notice' },
   { key: 'confidentialite', fr: '/confidentialite',                 nl: '/nl/privacybeleid',                       en: '/en/privacy-policy' },
 ];
