@@ -103,7 +103,7 @@ const META = {
   nl: {
     home: {
       title: 'Smeedijzer op maat | Poorten &amp; leuningen | LRMJ Project',
-      desc: 'Ambachtelijke smederij in Opwijk: smeedijzeren poorten, balustrades, stalen ramen en luifels op maat. Gratis offerte binnen 48 uur.',
+      desc: 'Ambachtelijke smederij in Schaarbeek: smeedijzeren poorten, balustrades, stalen ramen en luifels op maat. Gratis offerte binnen 48 uur.',
       ogTitle: 'LRMJ Project | Smeedwerk op maat',
       ogDesc: 'Poorten, balustrades, serres, luifels. Atelier in België.',
     },
