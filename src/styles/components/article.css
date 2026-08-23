@@ -43,8 +43,11 @@
   text-wrap: pretty;
 }
 .article__body strong { color: var(--tx); font-weight: 500; }
-.article__body a { color: var(--red); text-decoration: none; border-bottom: 1px solid rgba(var(--red-rgb), .35); transition: border-color .25s var(--ease); }
-.article__body a:hover { border-color: var(--red); }
+/* Liens de corps de texte. Exclut .btn : sinon cette règle (plus spécifique
+   que .btn--red) repeignait le libellé des boutons en rouge — donc rouge sur
+   rouge, invisible, sur le CTA de bas de page de toutes les pages article. */
+.article__body a:not(.btn) { color: var(--red); text-decoration: none; border-bottom: 1px solid rgba(var(--red-rgb), .35); transition: border-color .25s var(--ease); }
+.article__body a:not(.btn):hover { border-color: var(--red); }
 .article__body ul { list-style: none; margin: 0 0 1.25rem; padding: 0; }
 .article__body ul li {
   position: relative; padding-left: 1.4rem;
