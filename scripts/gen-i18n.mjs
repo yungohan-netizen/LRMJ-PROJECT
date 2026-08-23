@@ -45,13 +45,13 @@ const LITERALS = {
     'Garde-corps de balcon en fer forgé à volutes restauré, vu depuis le balcon':
       'Gerestaureerde smeedijzeren balkonleuning met krullen, gezien vanaf het balkon',
     'Ville de Bruxelles': 'Stad Brussel',
+    'geo.placename" content="Bruxelles"': 'geo.placename" content="Brussel"',
     // Adresse structuree et zones desservies : noms localises, sinon la page NL
     // declare une adresse et un pays en francais.
     '"addressLocality": "Schaerbeek"': '"addressLocality": "Schaarbeek"',
     '"addressRegion": "Bruxelles-Capitale"': '"addressRegion": "Brussels Hoofdstedelijk Gewest"',
     '{ "@type": "City", "name": "Bruxelles" }': '{ "@type": "City", "name": "Brussel" }',
-    '{ "@type": "AdministrativeArea", "name": "Brabant flamand" }': '{ "@type": "AdministrativeArea", "name": "Vlaams-Brabant" }',
-    '{ "@type": "AdministrativeArea", "name": "Belgique" }': '{ "@type": "AdministrativeArea", "name": "België" }',
+    '{ "@type": "Country", "name": "Belgique" }': '{ "@type": "Country", "name": "België" }',
     'LRMJ Project | Accueil': 'LRMJ Project | Home',
     'LRMJ Project | Ferronnerie artisanale': 'LRMJ Project | Ambachtelijke smederij',
     'Basculer entre mode clair et sombre': 'Wisselen tussen lichte en donkere modus',
@@ -86,12 +86,12 @@ const LITERALS = {
     'Garde-corps de balcon en fer forgé à volutes restauré, vu depuis le balcon':
       'Restored scrolled wrought-iron balcony railing, seen from the balcony',
     'Ville de Bruxelles': 'City of Brussels',
+    'geo.placename" content="Bruxelles"': 'geo.placename" content="Brussels"',
     // Adresse structuree et zones desservies : noms localises, sinon la page EN
     // declare une adresse et un pays en francais.
     '"addressRegion": "Bruxelles-Capitale"': '"addressRegion": "Brussels-Capital"',
     '{ "@type": "City", "name": "Bruxelles" }': '{ "@type": "City", "name": "Brussels" }',
-    '{ "@type": "AdministrativeArea", "name": "Brabant flamand" }': '{ "@type": "AdministrativeArea", "name": "Flemish Brabant" }',
-    '{ "@type": "AdministrativeArea", "name": "Belgique" }': '{ "@type": "AdministrativeArea", "name": "Belgium" }',
+    '{ "@type": "Country", "name": "Belgique" }': '{ "@type": "Country", "name": "Belgium" }',
     'LRMJ Project | Accueil': 'LRMJ Project | Home',
     'LRMJ Project | Ferronnerie artisanale': 'LRMJ Project | Artisan Ironwork',
     'Basculer entre mode clair et sombre': 'Toggle light and dark mode',
@@ -116,7 +116,7 @@ const META = {
   nl: {
     home: {
       title: 'Smeedijzer op maat | Poorten &amp; leuningen | LRMJ Project',
-      desc: 'Ambachtelijke smederij in Schaarbeek: smeedijzeren poorten, balustrades, stalen ramen en luifels op maat. Gratis offerte binnen 48 uur.',
+      desc: 'Ambachtelijke smederij in Brussel: smeedijzeren poorten, balustrades, stalen ramen en luifels op maat. Gratis offerte binnen 48 uur.',
       ogTitle: 'LRMJ Project | Smeedwerk op maat',
       ogDesc: 'Poorten, balustrades, serres, luifels. Atelier in België.',
     },

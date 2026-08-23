@@ -13,7 +13,7 @@ export const translations = {
     'nav.cta':          'Devis Gratuit',
     'nav.phone.aria':   '0475 39 99 09',
     /* Hero */
-    'hero.eyebrow':     'Atelier de ferronnerie · Bruxelles & Brabant flamand',
+    'hero.eyebrow':     'Atelier de ferronnerie · Bruxelles · Toute la Belgique',
     'hero.title':       'Portails, garde-corps, verrières.<br><em>Forgés pour durer.</em>',
     'hero.cta2':        'Voir les réalisations',
     'hero.scroll':      'Découvrir',
@@ -26,7 +26,7 @@ export const translations = {
     'pledges.3.t':      'Devis en 48 heures',
     'pledges.3.d':      'Visite sur place, prise de mesures et devis détaillé, gratuits et sans engagement.',
     'pledges.4.t':      'Depuis 2011',
-    'pledges.4.d':      'Au service des particuliers et du patrimoine, de Bruxelles au Brabant flamand.',
+    'pledges.4.d':      'Au service des particuliers et du patrimoine, à Bruxelles et partout en Belgique.',
     /* Réalisations */
     'real.eyebrow':     'Réalisations',
     'real.title':       'Le Travail<br><em>Parle Pour Lui-Même</em>',
@@ -180,7 +180,7 @@ export const translations = {
     'nav.cta':          'Gratis offerte',
     'nav.phone.aria':   '0475 39 99 09',
     /* Hero */
-    'hero.eyebrow':     'Smeedatelier · Brussel & Vlaams-Brabant',
+    'hero.eyebrow':     'Smeedatelier · Brussel · Heel België',
     'hero.title':       'Poorten, leuningen, serres.<br><em>Gesmeed om te duren.</em>',
     'hero.cta2':        'Bekijk de realisaties',
     'hero.scroll':      'Ontdekken',
@@ -193,7 +193,7 @@ export const translations = {
     'pledges.3.t':      'Offerte binnen 48 uur',
     'pledges.3.d':      'Plaatsbezoek, opmeting en gedetailleerde offerte, gratis en vrijblijvend.',
     'pledges.4.t':      'Sinds 2011',
-    'pledges.4.d':      'Ten dienste van particulieren en erfgoed, van Brussel tot Vlaams-Brabant.',
+    'pledges.4.d':      'Ten dienste van particulieren en erfgoed, in Brussel en overal in België.',
     /* Réalisations */
     'real.eyebrow':     'Realisaties',
     'real.title':       'Het werk<br><em>spreekt voor zichzelf</em>',
@@ -347,7 +347,7 @@ export const translations = {
     'nav.cta':          'Free Quote',
     'nav.phone.aria':   '0475 39 99 09',
     /* Hero */
-    'hero.eyebrow':     'Ironwork Workshop · Brussels & Flemish Brabant',
+    'hero.eyebrow':     'Ironwork Workshop · Brussels · All of Belgium',
     'hero.title':       'Gates, railings, glass partitions.<br><em>Forged to last.</em>',
     'hero.cta2':        'View our projects',
     'hero.scroll':      'Discover',
@@ -360,7 +360,7 @@ export const translations = {
     'pledges.3.t':      'Quote within 48 hours',
     'pledges.3.d':      'On-site visit, measurements and a detailed quote, free and with no obligation.',
     'pledges.4.t':      'Since 2011',
-    'pledges.4.d':      'Serving homeowners and heritage buildings, from Brussels to Flemish Brabant.',
+    'pledges.4.d':      'Serving homeowners and heritage buildings, in Brussels and across Belgium.',
     /* Réalisations */
     'real.eyebrow':     'Projects',
     'real.title':       'The Work<br><em>Speaks For Itself</em>',
