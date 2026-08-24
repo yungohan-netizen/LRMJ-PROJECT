@@ -109,3 +109,16 @@ html[data-theme="dark"] .svc-card:hover {
   .svc-card--feat { grid-column:1; }
   .svc-card:not(.svc-card--feat):last-child { grid-column:1; }
 }
+
+/* Le titre de carte est un lien vers la page du service. Il hérite de la
+   couleur : le soulignement rouge au survol de la carte suffit à signaler
+   l'interaction, déjà géré par .svc-card:hover .svc-title::after. */
+.svc-title a {
+  color: inherit;
+  text-decoration: none;
+}
+.svc-title a:focus-visible {
+  outline: 2px solid var(--red);
+  outline-offset: 3px;
+  border-radius: 2px;
+}

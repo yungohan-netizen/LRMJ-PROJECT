@@ -23,6 +23,15 @@ export function initHero() {
   const hero = document.querySelector('.hero');
   const content = document.querySelector('.hero__content');
   const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Mouvement reduit : on coupe aussi la video de fond, pas seulement le
+  // parallaxe. Une boucle video permanente est precisement le genre
+  // d'animation que ce reglage demande d'eviter ; le poster reste affiche.
+  if (reduced && video) {
+    video.removeAttribute('autoplay');
+    video.pause();
+  }
+
   if (!hero || reduced) return;
 
   let ticking = false;

@@ -152,3 +152,17 @@ html[data-theme="dark"] .about-img { box-shadow: 0 24px 60px rgba(0,0,0,.5); }
   .about-hl-grid { grid-template-columns: 1fr; }
   .about-dropcap { font-size: 3rem; }
 }
+
+/* Lien de la section À propos vers la page métier. Discret : c'est un
+   prolongement de lecture, pas un appel à l'action concurrent du devis. */
+.about-link {
+  display: inline-flex; align-items: center; gap: .5rem;
+  margin-top: 1.25rem;
+  font-size: .9rem; letter-spacing: .02em;
+  color: var(--tx); text-decoration: none;
+  border-bottom: 1px solid rgba(var(--tx-rgb), .3);
+  padding-bottom: 2px;
+  transition: border-color .25s var(--ease), gap .25s var(--ease);
+}
+.about-link:hover { border-color: var(--red); gap: .75rem; }
+.about-link__ico { color: var(--red); }
