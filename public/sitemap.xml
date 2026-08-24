@@ -1143,6 +1143,30 @@
     <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Restauration%20Garde-Corps.jpg</image:loc></image:image>
   </url>
   <url>
+    <loc>https://lrmj-project.be/prix-portail-fer-forge</loc>
+    <lastmod>2026-08-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr-BE" href="https://lrmj-project.be/prix-portail-fer-forge" />
+    <xhtml:link rel="alternate" hreflang="nl-BE" href="https://lrmj-project.be/nl/prijs-smeedijzeren-poort" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://lrmj-project.be/en/wrought-iron-gate-cost" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lrmj-project.be/prix-portail-fer-forge" />
+  </url>
+  <url>
+    <loc>https://lrmj-project.be/nl/prijs-smeedijzeren-poort</loc>
+    <lastmod>2026-08-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr-BE" href="https://lrmj-project.be/prix-portail-fer-forge" />
+    <xhtml:link rel="alternate" hreflang="nl-BE" href="https://lrmj-project.be/nl/prijs-smeedijzeren-poort" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://lrmj-project.be/en/wrought-iron-gate-cost" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lrmj-project.be/prix-portail-fer-forge" />
+  </url>
+  <url>
+    <loc>https://lrmj-project.be/en/wrought-iron-gate-cost</loc>
+    <lastmod>2026-08-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr-BE" href="https://lrmj-project.be/prix-portail-fer-forge" />
+    <xhtml:link rel="alternate" hreflang="nl-BE" href="https://lrmj-project.be/nl/prijs-smeedijzeren-poort" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://lrmj-project.be/en/wrought-iron-gate-cost" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lrmj-project.be/prix-portail-fer-forge" />
+  </url>
+  <url>
     <loc>https://lrmj-project.be/prime-facade-bruxelles</loc>
     <lastmod>2026-08-23</lastmod>
     <xhtml:link rel="alternate" hreflang="fr-BE" href="https://lrmj-project.be/prime-facade-bruxelles" />
