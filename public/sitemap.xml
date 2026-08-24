@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://lrmj-project.be/</loc>
     <lastmod>2026-08-24</lastmod>
@@ -8,6 +9,89 @@
     <xhtml:link rel="alternate" hreflang="nl-BE" href="https://lrmj-project.be/nl/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://lrmj-project.be/en/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://lrmj-project.be/" />
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Portail%20Plein%20Acier%20Gris.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Portillon%20Jardin%20Fer%20Forg%C3%A9%20Volutes%20Zoom%20In.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Portillon%20Jardin%20Fer%20Forg%C3%A9%20Volutes.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Portillon%20Jardin%20Fer%20Forg%C3%A9%20Volutes%20Atelier.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Portillon%20Jardin%20Fer%20Forg%C3%A9%20Volutes%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte%20Fer%20Forg%C3%A9%20Ancien%20Blanc%20Apr%C3%A8s.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte%20Fer%20Forg%C3%A9%20Ancien%20Blanc%20Avant.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Fer%20Forg%C3%A9.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Ballustrade%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Ballustrade%203.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Verre%20Lumineux%20Terrasse.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Terrasse%20M%C3%A9tal%20Suspendu%20Avant.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Terrasse%20M%C3%A9tal%20Suspendu.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Verre%20Lumineux%20Terrasse%20Avant.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Int%C3%A9rieur%20Central.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20G%C3%A9om%C3%A9trique%20Laiton%20Dor%C3%A9.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20G%C3%A9om%C3%A9trique%20Laiton%20Dor%C3%A9%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Ballustrade%204.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Restauration%20Garde-Corps.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Restauration%20Garde-Corps%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Ballustrade%205.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Restauration%20Garde-Corps%203.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Balcon.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Balcon%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Fen%C3%AAtre%20G%C3%A9om%C3%A9trique.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Ballustrade%20Fer%20Forg%C3%A9.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Ballustrade%20Fer%20Forg%C3%A9%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Serre%20Ancienne%20Acier%20Verre%20Orangerie%203.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Serre%20Ancienne%20Acier%20Verre%20Orangerie%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%207.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Miroir%20Coulissant%20Cadre%20M%C3%A9tal.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%20Apr%C3%A8s.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Miroir%20Coulissant%20Cadre%20M%C3%A9tal%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie_Vitr%C3%A9e_Acier_Double_Vitrage_xsjob4.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%201.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%20avant.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte%20Vitr%C3%A9e%20Acier%20Coulissante.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%20Pivot.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%203.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%20Bureau%20Professionnel.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%204.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%205.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Verri%C3%A8re%20Bureau%20%20Style%20Loft%20Industriel.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Puits_de_Lumi%C3%A8re_Plafond_Verre_01_seivqt.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Pose_Verri%C3%A8re_Chantier_R%C3%A9novation_07_ycgetb.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Coulissante_Verre_D%C3%A9poli_06_rcuiyk.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Pose_Verri%C3%A8re_Chantier_R%C3%A9novation_01_xjlbml.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_42_endxy1.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_40_lodh70.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_38_vgduav.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_37_u31m1a.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_36_vb18cf.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_33_evs4eq.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_30_coz9eq.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_29_xacklt.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_28_sdwvl3.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_21_pgcuth.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_15_hznud1.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_09_kzacym.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_04_cmtbkv.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Atelier_09_aurgi5.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Coulissante_Verre_D%C3%A9poli_21_vtaoyc.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Coulissante_Verre_D%C3%A9poli_19_pggdw2.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Verri%C3%A8re_S%C3%A9paration_Cuisine_Salon_03_ychipt.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie_Vitr%C3%A9e_Acier_Coulissante_05_znag7h.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie_Vitr%C3%A9e_Acier_Coulissante_02_wqzkum.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Auvent_Porte_d_Entr%C3%A9e_Classique_03_rv0mof.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Pergola_Terrasse_Acier_Pergola_02_ytr4yn.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Pergola_Terrasse_Acier_Pergola_01_sphcxw.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Marquise_Porte_d_Entr%C3%A9e_Verre_Fer_Forg%C3%A9_01_gw5hcy.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Marquise_Porte_d_Entr%C3%A9e_Verre_Fer_Forg%C3%A9_02_vkkk1o.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Marquise_Porte_d_Entr%C3%A9e_Verre_Fer_Forg%C3%A9_04_zspadc.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Escalier%20M%C3%A9tal%20Limon%20Central.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Escalier_M%C3%A9tal_Limon_Central_Marche_202605252315_fyzzfy.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Escalier%20M%C3%A9tal%20Limon%20Ext%C3%A9rieur.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Escalier%20M%C3%A9tal%20Limon%20Ext%C3%A9rieur%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Escalier%20M%C3%A9tal%20Limon%20Central%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Structure_Lit_Mezzanine_Acier_Brut_202605252345_u1mssu.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie_Vitr%C3%A9e_Acier_Coulissante_06.jpeg_202605252312_mxoizg.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Am%C3%A9nagement_Sous_Escalier_Verre_Acier_202605252346_luevee.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie_Vitr%C3%A9e_Acier_Coulissante_05.jpeg_202605252310_zn4qcj.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Am%C3%A9nagement_Sous_Escalier_Verre_Acier_01_f1vpch.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://lrmj-project.be/nl/</loc>
@@ -16,6 +100,89 @@
     <xhtml:link rel="alternate" hreflang="nl-BE" href="https://lrmj-project.be/nl/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://lrmj-project.be/en/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://lrmj-project.be/" />
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Portail%20Plein%20Acier%20Gris.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Portillon%20Jardin%20Fer%20Forg%C3%A9%20Volutes%20Zoom%20In.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Portillon%20Jardin%20Fer%20Forg%C3%A9%20Volutes.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Portillon%20Jardin%20Fer%20Forg%C3%A9%20Volutes%20Atelier.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Portillon%20Jardin%20Fer%20Forg%C3%A9%20Volutes%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte%20Fer%20Forg%C3%A9%20Ancien%20Blanc%20Apr%C3%A8s.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte%20Fer%20Forg%C3%A9%20Ancien%20Blanc%20Avant.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Fer%20Forg%C3%A9.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Ballustrade%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Ballustrade%203.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Verre%20Lumineux%20Terrasse.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Terrasse%20M%C3%A9tal%20Suspendu%20Avant.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Terrasse%20M%C3%A9tal%20Suspendu.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Verre%20Lumineux%20Terrasse%20Avant.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Int%C3%A9rieur%20Central.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20G%C3%A9om%C3%A9trique%20Laiton%20Dor%C3%A9.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20G%C3%A9om%C3%A9trique%20Laiton%20Dor%C3%A9%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Ballustrade%204.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Restauration%20Garde-Corps.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Restauration%20Garde-Corps%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Ballustrade%205.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Restauration%20Garde-Corps%203.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Balcon.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Balcon%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Fen%C3%AAtre%20G%C3%A9om%C3%A9trique.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Ballustrade%20Fer%20Forg%C3%A9.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Ballustrade%20Fer%20Forg%C3%A9%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Serre%20Ancienne%20Acier%20Verre%20Orangerie%203.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Serre%20Ancienne%20Acier%20Verre%20Orangerie%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%207.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Miroir%20Coulissant%20Cadre%20M%C3%A9tal.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%20Apr%C3%A8s.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Miroir%20Coulissant%20Cadre%20M%C3%A9tal%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie_Vitr%C3%A9e_Acier_Double_Vitrage_xsjob4.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%201.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%20avant.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte%20Vitr%C3%A9e%20Acier%20Coulissante.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%20Pivot.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%203.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%20Bureau%20Professionnel.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%204.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%205.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Verri%C3%A8re%20Bureau%20%20Style%20Loft%20Industriel.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Puits_de_Lumi%C3%A8re_Plafond_Verre_01_seivqt.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Pose_Verri%C3%A8re_Chantier_R%C3%A9novation_07_ycgetb.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Coulissante_Verre_D%C3%A9poli_06_rcuiyk.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Pose_Verri%C3%A8re_Chantier_R%C3%A9novation_01_xjlbml.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_42_endxy1.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_40_lodh70.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_38_vgduav.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_37_u31m1a.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_36_vb18cf.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_33_evs4eq.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_30_coz9eq.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_29_xacklt.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_28_sdwvl3.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_21_pgcuth.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_15_hznud1.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_09_kzacym.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_04_cmtbkv.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Atelier_09_aurgi5.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Coulissante_Verre_D%C3%A9poli_21_vtaoyc.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Coulissante_Verre_D%C3%A9poli_19_pggdw2.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Verri%C3%A8re_S%C3%A9paration_Cuisine_Salon_03_ychipt.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie_Vitr%C3%A9e_Acier_Coulissante_05_znag7h.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie_Vitr%C3%A9e_Acier_Coulissante_02_wqzkum.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Auvent_Porte_d_Entr%C3%A9e_Classique_03_rv0mof.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Pergola_Terrasse_Acier_Pergola_02_ytr4yn.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Pergola_Terrasse_Acier_Pergola_01_sphcxw.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Marquise_Porte_d_Entr%C3%A9e_Verre_Fer_Forg%C3%A9_01_gw5hcy.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Marquise_Porte_d_Entr%C3%A9e_Verre_Fer_Forg%C3%A9_02_vkkk1o.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Marquise_Porte_d_Entr%C3%A9e_Verre_Fer_Forg%C3%A9_04_zspadc.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Escalier%20M%C3%A9tal%20Limon%20Central.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Escalier_M%C3%A9tal_Limon_Central_Marche_202605252315_fyzzfy.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Escalier%20M%C3%A9tal%20Limon%20Ext%C3%A9rieur.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Escalier%20M%C3%A9tal%20Limon%20Ext%C3%A9rieur%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Escalier%20M%C3%A9tal%20Limon%20Central%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Structure_Lit_Mezzanine_Acier_Brut_202605252345_u1mssu.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie_Vitr%C3%A9e_Acier_Coulissante_06.jpeg_202605252312_mxoizg.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Am%C3%A9nagement_Sous_Escalier_Verre_Acier_202605252346_luevee.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie_Vitr%C3%A9e_Acier_Coulissante_05.jpeg_202605252310_zn4qcj.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Am%C3%A9nagement_Sous_Escalier_Verre_Acier_01_f1vpch.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://lrmj-project.be/en/</loc>
@@ -24,6 +191,89 @@
     <xhtml:link rel="alternate" hreflang="nl-BE" href="https://lrmj-project.be/nl/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://lrmj-project.be/en/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://lrmj-project.be/" />
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Portail%20Plein%20Acier%20Gris.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Portillon%20Jardin%20Fer%20Forg%C3%A9%20Volutes%20Zoom%20In.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Portillon%20Jardin%20Fer%20Forg%C3%A9%20Volutes.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Portillon%20Jardin%20Fer%20Forg%C3%A9%20Volutes%20Atelier.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Portillon%20Jardin%20Fer%20Forg%C3%A9%20Volutes%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte%20Fer%20Forg%C3%A9%20Ancien%20Blanc%20Apr%C3%A8s.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte%20Fer%20Forg%C3%A9%20Ancien%20Blanc%20Avant.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Fer%20Forg%C3%A9.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Ballustrade%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Ballustrade%203.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Verre%20Lumineux%20Terrasse.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Terrasse%20M%C3%A9tal%20Suspendu%20Avant.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Terrasse%20M%C3%A9tal%20Suspendu.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Verre%20Lumineux%20Terrasse%20Avant.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Int%C3%A9rieur%20Central.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20G%C3%A9om%C3%A9trique%20Laiton%20Dor%C3%A9.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20G%C3%A9om%C3%A9trique%20Laiton%20Dor%C3%A9%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Ballustrade%204.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Restauration%20Garde-Corps.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Restauration%20Garde-Corps%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Ballustrade%205.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Restauration%20Garde-Corps%203.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Balcon.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Balcon%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Fen%C3%AAtre%20G%C3%A9om%C3%A9trique.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Ballustrade%20Fer%20Forg%C3%A9.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Ballustrade%20Fer%20Forg%C3%A9%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Serre%20Ancienne%20Acier%20Verre%20Orangerie%203.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Serre%20Ancienne%20Acier%20Verre%20Orangerie%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%207.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Miroir%20Coulissant%20Cadre%20M%C3%A9tal.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%20Apr%C3%A8s.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Miroir%20Coulissant%20Cadre%20M%C3%A9tal%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie_Vitr%C3%A9e_Acier_Double_Vitrage_xsjob4.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%201.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%20avant.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte%20Vitr%C3%A9e%20Acier%20Coulissante.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%20Pivot.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%203.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%20Bureau%20Professionnel.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%204.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%205.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Verri%C3%A8re%20Bureau%20%20Style%20Loft%20Industriel.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Puits_de_Lumi%C3%A8re_Plafond_Verre_01_seivqt.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Pose_Verri%C3%A8re_Chantier_R%C3%A9novation_07_ycgetb.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Coulissante_Verre_D%C3%A9poli_06_rcuiyk.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Pose_Verri%C3%A8re_Chantier_R%C3%A9novation_01_xjlbml.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_42_endxy1.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_40_lodh70.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_38_vgduav.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_37_u31m1a.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_36_vb18cf.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_33_evs4eq.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_30_coz9eq.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_29_xacklt.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_28_sdwvl3.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_21_pgcuth.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_15_hznud1.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_09_kzacym.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_04_cmtbkv.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Atelier_09_aurgi5.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Coulissante_Verre_D%C3%A9poli_21_vtaoyc.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Coulissante_Verre_D%C3%A9poli_19_pggdw2.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Verri%C3%A8re_S%C3%A9paration_Cuisine_Salon_03_ychipt.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie_Vitr%C3%A9e_Acier_Coulissante_05_znag7h.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie_Vitr%C3%A9e_Acier_Coulissante_02_wqzkum.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Auvent_Porte_d_Entr%C3%A9e_Classique_03_rv0mof.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Pergola_Terrasse_Acier_Pergola_02_ytr4yn.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Pergola_Terrasse_Acier_Pergola_01_sphcxw.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Marquise_Porte_d_Entr%C3%A9e_Verre_Fer_Forg%C3%A9_01_gw5hcy.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Marquise_Porte_d_Entr%C3%A9e_Verre_Fer_Forg%C3%A9_02_vkkk1o.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Marquise_Porte_d_Entr%C3%A9e_Verre_Fer_Forg%C3%A9_04_zspadc.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Escalier%20M%C3%A9tal%20Limon%20Central.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Escalier_M%C3%A9tal_Limon_Central_Marche_202605252315_fyzzfy.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Escalier%20M%C3%A9tal%20Limon%20Ext%C3%A9rieur.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Escalier%20M%C3%A9tal%20Limon%20Ext%C3%A9rieur%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Escalier%20M%C3%A9tal%20Limon%20Central%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Structure_Lit_Mezzanine_Acier_Brut_202605252345_u1mssu.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie_Vitr%C3%A9e_Acier_Coulissante_06.jpeg_202605252312_mxoizg.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Am%C3%A9nagement_Sous_Escalier_Verre_Acier_202605252346_luevee.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie_Vitr%C3%A9e_Acier_Coulissante_05.jpeg_202605252310_zn4qcj.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Am%C3%A9nagement_Sous_Escalier_Verre_Acier_01_f1vpch.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://lrmj-project.be/portfolio</loc>
@@ -32,6 +282,89 @@
     <xhtml:link rel="alternate" hreflang="nl-BE" href="https://lrmj-project.be/nl/portfolio" />
     <xhtml:link rel="alternate" hreflang="en" href="https://lrmj-project.be/en/portfolio" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://lrmj-project.be/portfolio" />
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Portail%20Plein%20Acier%20Gris.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Portillon%20Jardin%20Fer%20Forg%C3%A9%20Volutes%20Zoom%20In.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Portillon%20Jardin%20Fer%20Forg%C3%A9%20Volutes.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Portillon%20Jardin%20Fer%20Forg%C3%A9%20Volutes%20Atelier.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Portillon%20Jardin%20Fer%20Forg%C3%A9%20Volutes%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte%20Fer%20Forg%C3%A9%20Ancien%20Blanc%20Apr%C3%A8s.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte%20Fer%20Forg%C3%A9%20Ancien%20Blanc%20Avant.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Fer%20Forg%C3%A9.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Ballustrade%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Ballustrade%203.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Verre%20Lumineux%20Terrasse.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Terrasse%20M%C3%A9tal%20Suspendu%20Avant.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Terrasse%20M%C3%A9tal%20Suspendu.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Verre%20Lumineux%20Terrasse%20Avant.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Int%C3%A9rieur%20Central.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20G%C3%A9om%C3%A9trique%20Laiton%20Dor%C3%A9.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20G%C3%A9om%C3%A9trique%20Laiton%20Dor%C3%A9%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Ballustrade%204.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Restauration%20Garde-Corps.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Restauration%20Garde-Corps%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Ballustrade%205.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Restauration%20Garde-Corps%203.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Balcon.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Balcon%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Fen%C3%AAtre%20G%C3%A9om%C3%A9trique.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Ballustrade%20Fer%20Forg%C3%A9.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Ballustrade%20Fer%20Forg%C3%A9%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Serre%20Ancienne%20Acier%20Verre%20Orangerie%203.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Serre%20Ancienne%20Acier%20Verre%20Orangerie%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%207.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Miroir%20Coulissant%20Cadre%20M%C3%A9tal.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%20Apr%C3%A8s.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Miroir%20Coulissant%20Cadre%20M%C3%A9tal%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie_Vitr%C3%A9e_Acier_Double_Vitrage_xsjob4.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%201.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%20avant.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte%20Vitr%C3%A9e%20Acier%20Coulissante.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%20Pivot.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%203.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%20Bureau%20Professionnel.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%204.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%205.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Verri%C3%A8re%20Bureau%20%20Style%20Loft%20Industriel.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Puits_de_Lumi%C3%A8re_Plafond_Verre_01_seivqt.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Pose_Verri%C3%A8re_Chantier_R%C3%A9novation_07_ycgetb.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Coulissante_Verre_D%C3%A9poli_06_rcuiyk.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Pose_Verri%C3%A8re_Chantier_R%C3%A9novation_01_xjlbml.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_42_endxy1.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_40_lodh70.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_38_vgduav.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_37_u31m1a.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_36_vb18cf.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_33_evs4eq.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_30_coz9eq.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_29_xacklt.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_28_sdwvl3.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_21_pgcuth.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_15_hznud1.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_09_kzacym.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_04_cmtbkv.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Atelier_09_aurgi5.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Coulissante_Verre_D%C3%A9poli_21_vtaoyc.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Coulissante_Verre_D%C3%A9poli_19_pggdw2.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Verri%C3%A8re_S%C3%A9paration_Cuisine_Salon_03_ychipt.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie_Vitr%C3%A9e_Acier_Coulissante_05_znag7h.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie_Vitr%C3%A9e_Acier_Coulissante_02_wqzkum.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Auvent_Porte_d_Entr%C3%A9e_Classique_03_rv0mof.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Pergola_Terrasse_Acier_Pergola_02_ytr4yn.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Pergola_Terrasse_Acier_Pergola_01_sphcxw.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Marquise_Porte_d_Entr%C3%A9e_Verre_Fer_Forg%C3%A9_01_gw5hcy.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Marquise_Porte_d_Entr%C3%A9e_Verre_Fer_Forg%C3%A9_02_vkkk1o.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Marquise_Porte_d_Entr%C3%A9e_Verre_Fer_Forg%C3%A9_04_zspadc.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Escalier%20M%C3%A9tal%20Limon%20Central.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Escalier_M%C3%A9tal_Limon_Central_Marche_202605252315_fyzzfy.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Escalier%20M%C3%A9tal%20Limon%20Ext%C3%A9rieur.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Escalier%20M%C3%A9tal%20Limon%20Ext%C3%A9rieur%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Escalier%20M%C3%A9tal%20Limon%20Central%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Structure_Lit_Mezzanine_Acier_Brut_202605252345_u1mssu.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie_Vitr%C3%A9e_Acier_Coulissante_06.jpeg_202605252312_mxoizg.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Am%C3%A9nagement_Sous_Escalier_Verre_Acier_202605252346_luevee.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie_Vitr%C3%A9e_Acier_Coulissante_05.jpeg_202605252310_zn4qcj.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Am%C3%A9nagement_Sous_Escalier_Verre_Acier_01_f1vpch.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://lrmj-project.be/nl/portfolio</loc>
@@ -40,6 +373,89 @@
     <xhtml:link rel="alternate" hreflang="nl-BE" href="https://lrmj-project.be/nl/portfolio" />
     <xhtml:link rel="alternate" hreflang="en" href="https://lrmj-project.be/en/portfolio" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://lrmj-project.be/portfolio" />
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Portail%20Plein%20Acier%20Gris.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Portillon%20Jardin%20Fer%20Forg%C3%A9%20Volutes%20Zoom%20In.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Portillon%20Jardin%20Fer%20Forg%C3%A9%20Volutes.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Portillon%20Jardin%20Fer%20Forg%C3%A9%20Volutes%20Atelier.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Portillon%20Jardin%20Fer%20Forg%C3%A9%20Volutes%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte%20Fer%20Forg%C3%A9%20Ancien%20Blanc%20Apr%C3%A8s.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte%20Fer%20Forg%C3%A9%20Ancien%20Blanc%20Avant.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Fer%20Forg%C3%A9.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Ballustrade%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Ballustrade%203.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Verre%20Lumineux%20Terrasse.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Terrasse%20M%C3%A9tal%20Suspendu%20Avant.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Terrasse%20M%C3%A9tal%20Suspendu.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Verre%20Lumineux%20Terrasse%20Avant.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Int%C3%A9rieur%20Central.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20G%C3%A9om%C3%A9trique%20Laiton%20Dor%C3%A9.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20G%C3%A9om%C3%A9trique%20Laiton%20Dor%C3%A9%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Ballustrade%204.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Restauration%20Garde-Corps.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Restauration%20Garde-Corps%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Ballustrade%205.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Restauration%20Garde-Corps%203.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Balcon.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Balcon%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Fen%C3%AAtre%20G%C3%A9om%C3%A9trique.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Ballustrade%20Fer%20Forg%C3%A9.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Ballustrade%20Fer%20Forg%C3%A9%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Serre%20Ancienne%20Acier%20Verre%20Orangerie%203.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Serre%20Ancienne%20Acier%20Verre%20Orangerie%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%207.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Miroir%20Coulissant%20Cadre%20M%C3%A9tal.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%20Apr%C3%A8s.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Miroir%20Coulissant%20Cadre%20M%C3%A9tal%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie_Vitr%C3%A9e_Acier_Double_Vitrage_xsjob4.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%201.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%20avant.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte%20Vitr%C3%A9e%20Acier%20Coulissante.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%20Pivot.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%203.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%20Bureau%20Professionnel.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%204.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%205.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Verri%C3%A8re%20Bureau%20%20Style%20Loft%20Industriel.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Puits_de_Lumi%C3%A8re_Plafond_Verre_01_seivqt.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Pose_Verri%C3%A8re_Chantier_R%C3%A9novation_07_ycgetb.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Coulissante_Verre_D%C3%A9poli_06_rcuiyk.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Pose_Verri%C3%A8re_Chantier_R%C3%A9novation_01_xjlbml.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_42_endxy1.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_40_lodh70.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_38_vgduav.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_37_u31m1a.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_36_vb18cf.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_33_evs4eq.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_30_coz9eq.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_29_xacklt.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_28_sdwvl3.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_21_pgcuth.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_15_hznud1.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_09_kzacym.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_04_cmtbkv.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Atelier_09_aurgi5.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Coulissante_Verre_D%C3%A9poli_21_vtaoyc.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Coulissante_Verre_D%C3%A9poli_19_pggdw2.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Verri%C3%A8re_S%C3%A9paration_Cuisine_Salon_03_ychipt.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie_Vitr%C3%A9e_Acier_Coulissante_05_znag7h.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie_Vitr%C3%A9e_Acier_Coulissante_02_wqzkum.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Auvent_Porte_d_Entr%C3%A9e_Classique_03_rv0mof.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Pergola_Terrasse_Acier_Pergola_02_ytr4yn.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Pergola_Terrasse_Acier_Pergola_01_sphcxw.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Marquise_Porte_d_Entr%C3%A9e_Verre_Fer_Forg%C3%A9_01_gw5hcy.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Marquise_Porte_d_Entr%C3%A9e_Verre_Fer_Forg%C3%A9_02_vkkk1o.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Marquise_Porte_d_Entr%C3%A9e_Verre_Fer_Forg%C3%A9_04_zspadc.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Escalier%20M%C3%A9tal%20Limon%20Central.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Escalier_M%C3%A9tal_Limon_Central_Marche_202605252315_fyzzfy.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Escalier%20M%C3%A9tal%20Limon%20Ext%C3%A9rieur.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Escalier%20M%C3%A9tal%20Limon%20Ext%C3%A9rieur%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Escalier%20M%C3%A9tal%20Limon%20Central%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Structure_Lit_Mezzanine_Acier_Brut_202605252345_u1mssu.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie_Vitr%C3%A9e_Acier_Coulissante_06.jpeg_202605252312_mxoizg.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Am%C3%A9nagement_Sous_Escalier_Verre_Acier_202605252346_luevee.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie_Vitr%C3%A9e_Acier_Coulissante_05.jpeg_202605252310_zn4qcj.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Am%C3%A9nagement_Sous_Escalier_Verre_Acier_01_f1vpch.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://lrmj-project.be/en/portfolio</loc>
@@ -48,6 +464,89 @@
     <xhtml:link rel="alternate" hreflang="nl-BE" href="https://lrmj-project.be/nl/portfolio" />
     <xhtml:link rel="alternate" hreflang="en" href="https://lrmj-project.be/en/portfolio" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://lrmj-project.be/portfolio" />
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Portail%20Plein%20Acier%20Gris.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Portillon%20Jardin%20Fer%20Forg%C3%A9%20Volutes%20Zoom%20In.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Portillon%20Jardin%20Fer%20Forg%C3%A9%20Volutes.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Portillon%20Jardin%20Fer%20Forg%C3%A9%20Volutes%20Atelier.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Portillon%20Jardin%20Fer%20Forg%C3%A9%20Volutes%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte%20Fer%20Forg%C3%A9%20Ancien%20Blanc%20Apr%C3%A8s.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte%20Fer%20Forg%C3%A9%20Ancien%20Blanc%20Avant.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Fer%20Forg%C3%A9.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Ballustrade%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Ballustrade%203.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Verre%20Lumineux%20Terrasse.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Terrasse%20M%C3%A9tal%20Suspendu%20Avant.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Terrasse%20M%C3%A9tal%20Suspendu.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Verre%20Lumineux%20Terrasse%20Avant.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Int%C3%A9rieur%20Central.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20G%C3%A9om%C3%A9trique%20Laiton%20Dor%C3%A9.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20G%C3%A9om%C3%A9trique%20Laiton%20Dor%C3%A9%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Ballustrade%204.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Restauration%20Garde-Corps.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Restauration%20Garde-Corps%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Ballustrade%205.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Restauration%20Garde-Corps%203.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Balcon.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Balcon%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Fen%C3%AAtre%20G%C3%A9om%C3%A9trique.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Ballustrade%20Fer%20Forg%C3%A9.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Ballustrade%20Fer%20Forg%C3%A9%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Serre%20Ancienne%20Acier%20Verre%20Orangerie%203.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Serre%20Ancienne%20Acier%20Verre%20Orangerie%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%207.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Miroir%20Coulissant%20Cadre%20M%C3%A9tal.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%20Apr%C3%A8s.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Miroir%20Coulissant%20Cadre%20M%C3%A9tal%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie_Vitr%C3%A9e_Acier_Double_Vitrage_xsjob4.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%201.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%20avant.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte%20Vitr%C3%A9e%20Acier%20Coulissante.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%20Pivot.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%203.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%20Bureau%20Professionnel.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%204.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%205.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Verri%C3%A8re%20Bureau%20%20Style%20Loft%20Industriel.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Puits_de_Lumi%C3%A8re_Plafond_Verre_01_seivqt.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Pose_Verri%C3%A8re_Chantier_R%C3%A9novation_07_ycgetb.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Coulissante_Verre_D%C3%A9poli_06_rcuiyk.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Pose_Verri%C3%A8re_Chantier_R%C3%A9novation_01_xjlbml.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_42_endxy1.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_40_lodh70.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_38_vgduav.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_37_u31m1a.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_36_vb18cf.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_33_evs4eq.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_30_coz9eq.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_29_xacklt.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_28_sdwvl3.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_21_pgcuth.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_15_hznud1.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_09_kzacym.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_04_cmtbkv.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Atelier_09_aurgi5.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Coulissante_Verre_D%C3%A9poli_21_vtaoyc.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Coulissante_Verre_D%C3%A9poli_19_pggdw2.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Verri%C3%A8re_S%C3%A9paration_Cuisine_Salon_03_ychipt.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie_Vitr%C3%A9e_Acier_Coulissante_05_znag7h.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie_Vitr%C3%A9e_Acier_Coulissante_02_wqzkum.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Auvent_Porte_d_Entr%C3%A9e_Classique_03_rv0mof.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Pergola_Terrasse_Acier_Pergola_02_ytr4yn.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Pergola_Terrasse_Acier_Pergola_01_sphcxw.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Marquise_Porte_d_Entr%C3%A9e_Verre_Fer_Forg%C3%A9_01_gw5hcy.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Marquise_Porte_d_Entr%C3%A9e_Verre_Fer_Forg%C3%A9_02_vkkk1o.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Marquise_Porte_d_Entr%C3%A9e_Verre_Fer_Forg%C3%A9_04_zspadc.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Escalier%20M%C3%A9tal%20Limon%20Central.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Escalier_M%C3%A9tal_Limon_Central_Marche_202605252315_fyzzfy.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Escalier%20M%C3%A9tal%20Limon%20Ext%C3%A9rieur.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Escalier%20M%C3%A9tal%20Limon%20Ext%C3%A9rieur%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Escalier%20M%C3%A9tal%20Limon%20Central%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Structure_Lit_Mezzanine_Acier_Brut_202605252345_u1mssu.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie_Vitr%C3%A9e_Acier_Coulissante_06.jpeg_202605252312_mxoizg.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Am%C3%A9nagement_Sous_Escalier_Verre_Acier_202605252346_luevee.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie_Vitr%C3%A9e_Acier_Coulissante_05.jpeg_202605252310_zn4qcj.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Am%C3%A9nagement_Sous_Escalier_Verre_Acier_01_f1vpch.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://lrmj-project.be/ferronnier-bruxelles</loc>
@@ -56,6 +555,93 @@
     <xhtml:link rel="alternate" hreflang="nl-BE" href="https://lrmj-project.be/nl/smid-brussel" />
     <xhtml:link rel="alternate" hreflang="en" href="https://lrmj-project.be/en/blacksmith-brussels" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://lrmj-project.be/ferronnier-bruxelles" />
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Portail%20Plein%20Acier%20Gris.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Portillon%20Jardin%20Fer%20Forg%C3%A9%20Volutes%20Zoom%20In.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Portillon%20Jardin%20Fer%20Forg%C3%A9%20Volutes.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Portillon%20Jardin%20Fer%20Forg%C3%A9%20Volutes%20Atelier.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Portillon%20Jardin%20Fer%20Forg%C3%A9%20Volutes%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte%20Fer%20Forg%C3%A9%20Ancien%20Blanc%20Apr%C3%A8s.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte%20Fer%20Forg%C3%A9%20Ancien%20Blanc%20Avant.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Fer%20Forg%C3%A9.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Ballustrade%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Ballustrade%203.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Verre%20Lumineux%20Terrasse.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Terrasse%20M%C3%A9tal%20Suspendu%20Avant.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Terrasse%20M%C3%A9tal%20Suspendu.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Verre%20Lumineux%20Terrasse%20Avant.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Int%C3%A9rieur%20Central.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20G%C3%A9om%C3%A9trique%20Laiton%20Dor%C3%A9.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20G%C3%A9om%C3%A9trique%20Laiton%20Dor%C3%A9%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Ballustrade%204.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Restauration%20Garde-Corps.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Restauration%20Garde-Corps%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Ballustrade%205.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Restauration%20Garde-Corps%203.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Balcon.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Balcon%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Fen%C3%AAtre%20G%C3%A9om%C3%A9trique.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Ballustrade%20Fer%20Forg%C3%A9.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Ballustrade%20Fer%20Forg%C3%A9%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Serre%20Ancienne%20Acier%20Verre%20Orangerie%203.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Serre%20Ancienne%20Acier%20Verre%20Orangerie%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%207.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Miroir%20Coulissant%20Cadre%20M%C3%A9tal.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%20Apr%C3%A8s.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Miroir%20Coulissant%20Cadre%20M%C3%A9tal%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie_Vitr%C3%A9e_Acier_Double_Vitrage_xsjob4.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%201.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%20avant.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte%20Vitr%C3%A9e%20Acier%20Coulissante.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%20Pivot.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%203.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%20Bureau%20Professionnel.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%204.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%205.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Verri%C3%A8re%20Bureau%20%20Style%20Loft%20Industriel.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Puits_de_Lumi%C3%A8re_Plafond_Verre_01_seivqt.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Pose_Verri%C3%A8re_Chantier_R%C3%A9novation_07_ycgetb.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Coulissante_Verre_D%C3%A9poli_06_rcuiyk.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Pose_Verri%C3%A8re_Chantier_R%C3%A9novation_01_xjlbml.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_42_endxy1.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_40_lodh70.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_38_vgduav.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_37_u31m1a.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_36_vb18cf.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_33_evs4eq.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_30_coz9eq.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_29_xacklt.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_28_sdwvl3.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_21_pgcuth.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_15_hznud1.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_09_kzacym.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_04_cmtbkv.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Atelier_09_aurgi5.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Coulissante_Verre_D%C3%A9poli_21_vtaoyc.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Coulissante_Verre_D%C3%A9poli_19_pggdw2.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Verri%C3%A8re_S%C3%A9paration_Cuisine_Salon_03_ychipt.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie_Vitr%C3%A9e_Acier_Coulissante_05_znag7h.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie_Vitr%C3%A9e_Acier_Coulissante_02_wqzkum.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Auvent_Porte_d_Entr%C3%A9e_Classique_03_rv0mof.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Pergola_Terrasse_Acier_Pergola_02_ytr4yn.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Pergola_Terrasse_Acier_Pergola_01_sphcxw.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Marquise_Porte_d_Entr%C3%A9e_Verre_Fer_Forg%C3%A9_01_gw5hcy.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Marquise_Porte_d_Entr%C3%A9e_Verre_Fer_Forg%C3%A9_02_vkkk1o.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Marquise_Porte_d_Entr%C3%A9e_Verre_Fer_Forg%C3%A9_04_zspadc.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Escalier%20M%C3%A9tal%20Limon%20Central.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Escalier_M%C3%A9tal_Limon_Central_Marche_202605252315_fyzzfy.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Escalier%20M%C3%A9tal%20Limon%20Ext%C3%A9rieur.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Escalier%20M%C3%A9tal%20Limon%20Ext%C3%A9rieur%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Escalier%20M%C3%A9tal%20Limon%20Central%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Structure_Lit_Mezzanine_Acier_Brut_202605252345_u1mssu.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie_Vitr%C3%A9e_Acier_Coulissante_06.jpeg_202605252312_mxoizg.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Am%C3%A9nagement_Sous_Escalier_Verre_Acier_202605252346_luevee.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie_Vitr%C3%A9e_Acier_Coulissante_05.jpeg_202605252310_zn4qcj.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Am%C3%A9nagement_Sous_Escalier_Verre_Acier_01_f1vpch.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Artisan%20Ferronnier%20Atelier%20Fabrication%205.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Artisan%20Ferronnier%20Atelier%20Fabrication%2006.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Artisan%20Ferronnier%20Atelier%20Fabrication%2001.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Artisan_Ferronnier_Atelier_Fabrication_04_mzq2mn.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://lrmj-project.be/nl/smid-brussel</loc>
@@ -64,6 +650,93 @@
     <xhtml:link rel="alternate" hreflang="nl-BE" href="https://lrmj-project.be/nl/smid-brussel" />
     <xhtml:link rel="alternate" hreflang="en" href="https://lrmj-project.be/en/blacksmith-brussels" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://lrmj-project.be/ferronnier-bruxelles" />
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Portail%20Plein%20Acier%20Gris.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Portillon%20Jardin%20Fer%20Forg%C3%A9%20Volutes%20Zoom%20In.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Portillon%20Jardin%20Fer%20Forg%C3%A9%20Volutes.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Portillon%20Jardin%20Fer%20Forg%C3%A9%20Volutes%20Atelier.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Portillon%20Jardin%20Fer%20Forg%C3%A9%20Volutes%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte%20Fer%20Forg%C3%A9%20Ancien%20Blanc%20Apr%C3%A8s.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte%20Fer%20Forg%C3%A9%20Ancien%20Blanc%20Avant.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Fer%20Forg%C3%A9.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Ballustrade%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Ballustrade%203.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Verre%20Lumineux%20Terrasse.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Terrasse%20M%C3%A9tal%20Suspendu%20Avant.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Terrasse%20M%C3%A9tal%20Suspendu.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Verre%20Lumineux%20Terrasse%20Avant.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Int%C3%A9rieur%20Central.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20G%C3%A9om%C3%A9trique%20Laiton%20Dor%C3%A9.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20G%C3%A9om%C3%A9trique%20Laiton%20Dor%C3%A9%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Ballustrade%204.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Restauration%20Garde-Corps.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Restauration%20Garde-Corps%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Ballustrade%205.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Restauration%20Garde-Corps%203.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Balcon.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Balcon%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Fen%C3%AAtre%20G%C3%A9om%C3%A9trique.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Ballustrade%20Fer%20Forg%C3%A9.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Ballustrade%20Fer%20Forg%C3%A9%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Serre%20Ancienne%20Acier%20Verre%20Orangerie%203.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Serre%20Ancienne%20Acier%20Verre%20Orangerie%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%207.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Miroir%20Coulissant%20Cadre%20M%C3%A9tal.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%20Apr%C3%A8s.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Miroir%20Coulissant%20Cadre%20M%C3%A9tal%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie_Vitr%C3%A9e_Acier_Double_Vitrage_xsjob4.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%201.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%20avant.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte%20Vitr%C3%A9e%20Acier%20Coulissante.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%20Pivot.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%203.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%20Bureau%20Professionnel.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%204.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%205.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Verri%C3%A8re%20Bureau%20%20Style%20Loft%20Industriel.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Puits_de_Lumi%C3%A8re_Plafond_Verre_01_seivqt.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Pose_Verri%C3%A8re_Chantier_R%C3%A9novation_07_ycgetb.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Coulissante_Verre_D%C3%A9poli_06_rcuiyk.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Pose_Verri%C3%A8re_Chantier_R%C3%A9novation_01_xjlbml.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_42_endxy1.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_40_lodh70.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_38_vgduav.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_37_u31m1a.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_36_vb18cf.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_33_evs4eq.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_30_coz9eq.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_29_xacklt.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_28_sdwvl3.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_21_pgcuth.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_15_hznud1.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_09_kzacym.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_04_cmtbkv.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Atelier_09_aurgi5.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Coulissante_Verre_D%C3%A9poli_21_vtaoyc.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Coulissante_Verre_D%C3%A9poli_19_pggdw2.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Verri%C3%A8re_S%C3%A9paration_Cuisine_Salon_03_ychipt.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie_Vitr%C3%A9e_Acier_Coulissante_05_znag7h.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie_Vitr%C3%A9e_Acier_Coulissante_02_wqzkum.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Auvent_Porte_d_Entr%C3%A9e_Classique_03_rv0mof.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Pergola_Terrasse_Acier_Pergola_02_ytr4yn.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Pergola_Terrasse_Acier_Pergola_01_sphcxw.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Marquise_Porte_d_Entr%C3%A9e_Verre_Fer_Forg%C3%A9_01_gw5hcy.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Marquise_Porte_d_Entr%C3%A9e_Verre_Fer_Forg%C3%A9_02_vkkk1o.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Marquise_Porte_d_Entr%C3%A9e_Verre_Fer_Forg%C3%A9_04_zspadc.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Escalier%20M%C3%A9tal%20Limon%20Central.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Escalier_M%C3%A9tal_Limon_Central_Marche_202605252315_fyzzfy.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Escalier%20M%C3%A9tal%20Limon%20Ext%C3%A9rieur.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Escalier%20M%C3%A9tal%20Limon%20Ext%C3%A9rieur%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Escalier%20M%C3%A9tal%20Limon%20Central%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Structure_Lit_Mezzanine_Acier_Brut_202605252345_u1mssu.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie_Vitr%C3%A9e_Acier_Coulissante_06.jpeg_202605252312_mxoizg.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Am%C3%A9nagement_Sous_Escalier_Verre_Acier_202605252346_luevee.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie_Vitr%C3%A9e_Acier_Coulissante_05.jpeg_202605252310_zn4qcj.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Am%C3%A9nagement_Sous_Escalier_Verre_Acier_01_f1vpch.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Artisan%20Ferronnier%20Atelier%20Fabrication%205.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Artisan%20Ferronnier%20Atelier%20Fabrication%2006.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Artisan%20Ferronnier%20Atelier%20Fabrication%2001.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Artisan_Ferronnier_Atelier_Fabrication_04_mzq2mn.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://lrmj-project.be/en/blacksmith-brussels</loc>
@@ -72,6 +745,93 @@
     <xhtml:link rel="alternate" hreflang="nl-BE" href="https://lrmj-project.be/nl/smid-brussel" />
     <xhtml:link rel="alternate" hreflang="en" href="https://lrmj-project.be/en/blacksmith-brussels" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://lrmj-project.be/ferronnier-bruxelles" />
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Portail%20Plein%20Acier%20Gris.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Portillon%20Jardin%20Fer%20Forg%C3%A9%20Volutes%20Zoom%20In.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Portillon%20Jardin%20Fer%20Forg%C3%A9%20Volutes.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Portillon%20Jardin%20Fer%20Forg%C3%A9%20Volutes%20Atelier.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Portillon%20Jardin%20Fer%20Forg%C3%A9%20Volutes%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte%20Fer%20Forg%C3%A9%20Ancien%20Blanc%20Apr%C3%A8s.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte%20Fer%20Forg%C3%A9%20Ancien%20Blanc%20Avant.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Fer%20Forg%C3%A9.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Ballustrade%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Ballustrade%203.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Verre%20Lumineux%20Terrasse.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Terrasse%20M%C3%A9tal%20Suspendu%20Avant.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Terrasse%20M%C3%A9tal%20Suspendu.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Verre%20Lumineux%20Terrasse%20Avant.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Int%C3%A9rieur%20Central.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20G%C3%A9om%C3%A9trique%20Laiton%20Dor%C3%A9.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20G%C3%A9om%C3%A9trique%20Laiton%20Dor%C3%A9%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Ballustrade%204.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Restauration%20Garde-Corps.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Restauration%20Garde-Corps%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Ballustrade%205.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Restauration%20Garde-Corps%203.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Balcon.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Balcon%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Fen%C3%AAtre%20G%C3%A9om%C3%A9trique.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Ballustrade%20Fer%20Forg%C3%A9.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Ballustrade%20Fer%20Forg%C3%A9%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Serre%20Ancienne%20Acier%20Verre%20Orangerie%203.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Serre%20Ancienne%20Acier%20Verre%20Orangerie%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%207.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Miroir%20Coulissant%20Cadre%20M%C3%A9tal.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%20Apr%C3%A8s.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Miroir%20Coulissant%20Cadre%20M%C3%A9tal%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie_Vitr%C3%A9e_Acier_Double_Vitrage_xsjob4.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%201.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%20avant.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte%20Vitr%C3%A9e%20Acier%20Coulissante.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%20Pivot.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%203.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%20Bureau%20Professionnel.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%204.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%205.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Verri%C3%A8re%20Bureau%20%20Style%20Loft%20Industriel.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Puits_de_Lumi%C3%A8re_Plafond_Verre_01_seivqt.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Pose_Verri%C3%A8re_Chantier_R%C3%A9novation_07_ycgetb.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Coulissante_Verre_D%C3%A9poli_06_rcuiyk.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Pose_Verri%C3%A8re_Chantier_R%C3%A9novation_01_xjlbml.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_42_endxy1.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_40_lodh70.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_38_vgduav.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_37_u31m1a.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_36_vb18cf.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_33_evs4eq.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_30_coz9eq.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_29_xacklt.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_28_sdwvl3.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_21_pgcuth.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_15_hznud1.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_09_kzacym.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_04_cmtbkv.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Atelier_09_aurgi5.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Coulissante_Verre_D%C3%A9poli_21_vtaoyc.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Coulissante_Verre_D%C3%A9poli_19_pggdw2.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Verri%C3%A8re_S%C3%A9paration_Cuisine_Salon_03_ychipt.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie_Vitr%C3%A9e_Acier_Coulissante_05_znag7h.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie_Vitr%C3%A9e_Acier_Coulissante_02_wqzkum.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Auvent_Porte_d_Entr%C3%A9e_Classique_03_rv0mof.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Pergola_Terrasse_Acier_Pergola_02_ytr4yn.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Pergola_Terrasse_Acier_Pergola_01_sphcxw.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Marquise_Porte_d_Entr%C3%A9e_Verre_Fer_Forg%C3%A9_01_gw5hcy.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Marquise_Porte_d_Entr%C3%A9e_Verre_Fer_Forg%C3%A9_02_vkkk1o.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Marquise_Porte_d_Entr%C3%A9e_Verre_Fer_Forg%C3%A9_04_zspadc.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Escalier%20M%C3%A9tal%20Limon%20Central.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Escalier_M%C3%A9tal_Limon_Central_Marche_202605252315_fyzzfy.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Escalier%20M%C3%A9tal%20Limon%20Ext%C3%A9rieur.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Escalier%20M%C3%A9tal%20Limon%20Ext%C3%A9rieur%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Escalier%20M%C3%A9tal%20Limon%20Central%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Structure_Lit_Mezzanine_Acier_Brut_202605252345_u1mssu.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie_Vitr%C3%A9e_Acier_Coulissante_06.jpeg_202605252312_mxoizg.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Am%C3%A9nagement_Sous_Escalier_Verre_Acier_202605252346_luevee.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie_Vitr%C3%A9e_Acier_Coulissante_05.jpeg_202605252310_zn4qcj.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Am%C3%A9nagement_Sous_Escalier_Verre_Acier_01_f1vpch.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Artisan%20Ferronnier%20Atelier%20Fabrication%205.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Artisan%20Ferronnier%20Atelier%20Fabrication%2006.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Artisan%20Ferronnier%20Atelier%20Fabrication%2001.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Artisan_Ferronnier_Atelier_Fabrication_04_mzq2mn.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://lrmj-project.be/portail-fer-forge</loc>
@@ -80,6 +840,13 @@
     <xhtml:link rel="alternate" hreflang="nl-BE" href="https://lrmj-project.be/nl/smeedijzeren-poort" />
     <xhtml:link rel="alternate" hreflang="en" href="https://lrmj-project.be/en/wrought-iron-gate" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://lrmj-project.be/portail-fer-forge" />
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Portail%20Plein%20Acier%20Gris.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Portillon%20Jardin%20Fer%20Forg%C3%A9%20Volutes%20Zoom%20In.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Portillon%20Jardin%20Fer%20Forg%C3%A9%20Volutes.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Portillon%20Jardin%20Fer%20Forg%C3%A9%20Volutes%20Atelier.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Portillon%20Jardin%20Fer%20Forg%C3%A9%20Volutes%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte%20Fer%20Forg%C3%A9%20Ancien%20Blanc%20Apr%C3%A8s.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte%20Fer%20Forg%C3%A9%20Ancien%20Blanc%20Avant.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://lrmj-project.be/nl/smeedijzeren-poort</loc>
@@ -88,6 +855,13 @@
     <xhtml:link rel="alternate" hreflang="nl-BE" href="https://lrmj-project.be/nl/smeedijzeren-poort" />
     <xhtml:link rel="alternate" hreflang="en" href="https://lrmj-project.be/en/wrought-iron-gate" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://lrmj-project.be/portail-fer-forge" />
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Portail%20Plein%20Acier%20Gris.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Portillon%20Jardin%20Fer%20Forg%C3%A9%20Volutes%20Zoom%20In.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Portillon%20Jardin%20Fer%20Forg%C3%A9%20Volutes.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Portillon%20Jardin%20Fer%20Forg%C3%A9%20Volutes%20Atelier.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Portillon%20Jardin%20Fer%20Forg%C3%A9%20Volutes%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte%20Fer%20Forg%C3%A9%20Ancien%20Blanc%20Apr%C3%A8s.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte%20Fer%20Forg%C3%A9%20Ancien%20Blanc%20Avant.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://lrmj-project.be/en/wrought-iron-gate</loc>
@@ -96,6 +870,13 @@
     <xhtml:link rel="alternate" hreflang="nl-BE" href="https://lrmj-project.be/nl/smeedijzeren-poort" />
     <xhtml:link rel="alternate" hreflang="en" href="https://lrmj-project.be/en/wrought-iron-gate" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://lrmj-project.be/portail-fer-forge" />
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Portail%20Plein%20Acier%20Gris.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Portillon%20Jardin%20Fer%20Forg%C3%A9%20Volutes%20Zoom%20In.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Portillon%20Jardin%20Fer%20Forg%C3%A9%20Volutes.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Portillon%20Jardin%20Fer%20Forg%C3%A9%20Volutes%20Atelier.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Portillon%20Jardin%20Fer%20Forg%C3%A9%20Volutes%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte%20Fer%20Forg%C3%A9%20Ancien%20Blanc%20Apr%C3%A8s.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte%20Fer%20Forg%C3%A9%20Ancien%20Blanc%20Avant.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://lrmj-project.be/garde-corps-fer-forge</loc>
@@ -104,6 +885,26 @@
     <xhtml:link rel="alternate" hreflang="nl-BE" href="https://lrmj-project.be/nl/smeedijzeren-balustrade" />
     <xhtml:link rel="alternate" hreflang="en" href="https://lrmj-project.be/en/wrought-iron-railing" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://lrmj-project.be/garde-corps-fer-forge" />
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Fer%20Forg%C3%A9.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Ballustrade%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Ballustrade%203.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Verre%20Lumineux%20Terrasse.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Terrasse%20M%C3%A9tal%20Suspendu%20Avant.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Terrasse%20M%C3%A9tal%20Suspendu.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Verre%20Lumineux%20Terrasse%20Avant.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Int%C3%A9rieur%20Central.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20G%C3%A9om%C3%A9trique%20Laiton%20Dor%C3%A9.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20G%C3%A9om%C3%A9trique%20Laiton%20Dor%C3%A9%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Ballustrade%204.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Restauration%20Garde-Corps.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Restauration%20Garde-Corps%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Ballustrade%205.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Restauration%20Garde-Corps%203.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Balcon.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Balcon%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Fen%C3%AAtre%20G%C3%A9om%C3%A9trique.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Ballustrade%20Fer%20Forg%C3%A9.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Ballustrade%20Fer%20Forg%C3%A9%202.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://lrmj-project.be/nl/smeedijzeren-balustrade</loc>
@@ -112,6 +913,26 @@
     <xhtml:link rel="alternate" hreflang="nl-BE" href="https://lrmj-project.be/nl/smeedijzeren-balustrade" />
     <xhtml:link rel="alternate" hreflang="en" href="https://lrmj-project.be/en/wrought-iron-railing" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://lrmj-project.be/garde-corps-fer-forge" />
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Fer%20Forg%C3%A9.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Ballustrade%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Ballustrade%203.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Verre%20Lumineux%20Terrasse.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Terrasse%20M%C3%A9tal%20Suspendu%20Avant.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Terrasse%20M%C3%A9tal%20Suspendu.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Verre%20Lumineux%20Terrasse%20Avant.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Int%C3%A9rieur%20Central.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20G%C3%A9om%C3%A9trique%20Laiton%20Dor%C3%A9.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20G%C3%A9om%C3%A9trique%20Laiton%20Dor%C3%A9%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Ballustrade%204.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Restauration%20Garde-Corps.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Restauration%20Garde-Corps%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Ballustrade%205.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Restauration%20Garde-Corps%203.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Balcon.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Balcon%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Fen%C3%AAtre%20G%C3%A9om%C3%A9trique.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Ballustrade%20Fer%20Forg%C3%A9.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Ballustrade%20Fer%20Forg%C3%A9%202.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://lrmj-project.be/en/wrought-iron-railing</loc>
@@ -120,6 +941,26 @@
     <xhtml:link rel="alternate" hreflang="nl-BE" href="https://lrmj-project.be/nl/smeedijzeren-balustrade" />
     <xhtml:link rel="alternate" hreflang="en" href="https://lrmj-project.be/en/wrought-iron-railing" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://lrmj-project.be/garde-corps-fer-forge" />
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Fer%20Forg%C3%A9.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Ballustrade%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Ballustrade%203.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Verre%20Lumineux%20Terrasse.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Terrasse%20M%C3%A9tal%20Suspendu%20Avant.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Terrasse%20M%C3%A9tal%20Suspendu.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Verre%20Lumineux%20Terrasse%20Avant.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Int%C3%A9rieur%20Central.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20G%C3%A9om%C3%A9trique%20Laiton%20Dor%C3%A9.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20G%C3%A9om%C3%A9trique%20Laiton%20Dor%C3%A9%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Ballustrade%204.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Restauration%20Garde-Corps.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Restauration%20Garde-Corps%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Ballustrade%205.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Restauration%20Garde-Corps%203.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Balcon.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Balcon%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Fen%C3%AAtre%20G%C3%A9om%C3%A9trique.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Ballustrade%20Fer%20Forg%C3%A9.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Ballustrade%20Fer%20Forg%C3%A9%202.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://lrmj-project.be/verriere-sur-mesure</loc>
@@ -128,6 +969,46 @@
     <xhtml:link rel="alternate" hreflang="nl-BE" href="https://lrmj-project.be/nl/serre-veranda-op-maat" />
     <xhtml:link rel="alternate" hreflang="en" href="https://lrmj-project.be/en/steel-windows-brussels" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://lrmj-project.be/verriere-sur-mesure" />
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Serre%20Ancienne%20Acier%20Verre%20Orangerie%203.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Serre%20Ancienne%20Acier%20Verre%20Orangerie%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%207.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Miroir%20Coulissant%20Cadre%20M%C3%A9tal.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%20Apr%C3%A8s.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Miroir%20Coulissant%20Cadre%20M%C3%A9tal%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie_Vitr%C3%A9e_Acier_Double_Vitrage_xsjob4.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%201.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%20avant.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte%20Vitr%C3%A9e%20Acier%20Coulissante.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%20Pivot.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%203.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%20Bureau%20Professionnel.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%204.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%205.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Verri%C3%A8re%20Bureau%20%20Style%20Loft%20Industriel.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Puits_de_Lumi%C3%A8re_Plafond_Verre_01_seivqt.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Pose_Verri%C3%A8re_Chantier_R%C3%A9novation_07_ycgetb.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Coulissante_Verre_D%C3%A9poli_06_rcuiyk.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Pose_Verri%C3%A8re_Chantier_R%C3%A9novation_01_xjlbml.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_42_endxy1.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_40_lodh70.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_38_vgduav.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_37_u31m1a.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_36_vb18cf.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_33_evs4eq.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_30_coz9eq.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_29_xacklt.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_28_sdwvl3.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_21_pgcuth.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_15_hznud1.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_09_kzacym.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_04_cmtbkv.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Atelier_09_aurgi5.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Coulissante_Verre_D%C3%A9poli_21_vtaoyc.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Coulissante_Verre_D%C3%A9poli_19_pggdw2.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Verri%C3%A8re_S%C3%A9paration_Cuisine_Salon_03_ychipt.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie_Vitr%C3%A9e_Acier_Coulissante_05_znag7h.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie_Vitr%C3%A9e_Acier_Coulissante_02_wqzkum.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://lrmj-project.be/nl/serre-veranda-op-maat</loc>
@@ -136,6 +1017,46 @@
     <xhtml:link rel="alternate" hreflang="nl-BE" href="https://lrmj-project.be/nl/serre-veranda-op-maat" />
     <xhtml:link rel="alternate" hreflang="en" href="https://lrmj-project.be/en/steel-windows-brussels" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://lrmj-project.be/verriere-sur-mesure" />
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Serre%20Ancienne%20Acier%20Verre%20Orangerie%203.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Serre%20Ancienne%20Acier%20Verre%20Orangerie%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%207.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Miroir%20Coulissant%20Cadre%20M%C3%A9tal.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%20Apr%C3%A8s.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Miroir%20Coulissant%20Cadre%20M%C3%A9tal%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie_Vitr%C3%A9e_Acier_Double_Vitrage_xsjob4.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%201.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%20avant.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte%20Vitr%C3%A9e%20Acier%20Coulissante.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%20Pivot.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%203.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%20Bureau%20Professionnel.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%204.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%205.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Verri%C3%A8re%20Bureau%20%20Style%20Loft%20Industriel.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Puits_de_Lumi%C3%A8re_Plafond_Verre_01_seivqt.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Pose_Verri%C3%A8re_Chantier_R%C3%A9novation_07_ycgetb.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Coulissante_Verre_D%C3%A9poli_06_rcuiyk.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Pose_Verri%C3%A8re_Chantier_R%C3%A9novation_01_xjlbml.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_42_endxy1.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_40_lodh70.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_38_vgduav.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_37_u31m1a.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_36_vb18cf.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_33_evs4eq.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_30_coz9eq.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_29_xacklt.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_28_sdwvl3.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_21_pgcuth.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_15_hznud1.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_09_kzacym.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_04_cmtbkv.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Atelier_09_aurgi5.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Coulissante_Verre_D%C3%A9poli_21_vtaoyc.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Coulissante_Verre_D%C3%A9poli_19_pggdw2.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Verri%C3%A8re_S%C3%A9paration_Cuisine_Salon_03_ychipt.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie_Vitr%C3%A9e_Acier_Coulissante_05_znag7h.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie_Vitr%C3%A9e_Acier_Coulissante_02_wqzkum.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://lrmj-project.be/en/steel-windows-brussels</loc>
@@ -144,6 +1065,46 @@
     <xhtml:link rel="alternate" hreflang="nl-BE" href="https://lrmj-project.be/nl/serre-veranda-op-maat" />
     <xhtml:link rel="alternate" hreflang="en" href="https://lrmj-project.be/en/steel-windows-brussels" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://lrmj-project.be/verriere-sur-mesure" />
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Serre%20Ancienne%20Acier%20Verre%20Orangerie%203.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Serre%20Ancienne%20Acier%20Verre%20Orangerie%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%207.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Miroir%20Coulissant%20Cadre%20M%C3%A9tal.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%20Apr%C3%A8s.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Miroir%20Coulissant%20Cadre%20M%C3%A9tal%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie_Vitr%C3%A9e_Acier_Double_Vitrage_xsjob4.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%201.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%20avant.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte%20Vitr%C3%A9e%20Acier%20Coulissante.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%20Pivot.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%203.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%20Bureau%20Professionnel.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%204.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie%20Vitr%C3%A9e%20Acier%205.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Verri%C3%A8re%20Bureau%20%20Style%20Loft%20Industriel.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Puits_de_Lumi%C3%A8re_Plafond_Verre_01_seivqt.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Pose_Verri%C3%A8re_Chantier_R%C3%A9novation_07_ycgetb.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Coulissante_Verre_D%C3%A9poli_06_rcuiyk.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Pose_Verri%C3%A8re_Chantier_R%C3%A9novation_01_xjlbml.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_42_endxy1.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_40_lodh70.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_38_vgduav.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_37_u31m1a.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_36_vb18cf.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_33_evs4eq.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_30_coz9eq.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_29_xacklt.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_28_sdwvl3.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_21_pgcuth.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_15_hznud1.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_09_kzacym.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Pivot_04_cmtbkv.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Vitr%C3%A9e_Acier_Atelier_09_aurgi5.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Coulissante_Verre_D%C3%A9poli_21_vtaoyc.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Porte_Coulissante_Verre_D%C3%A9poli_19_pggdw2.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Verri%C3%A8re_S%C3%A9paration_Cuisine_Salon_03_ychipt.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie_Vitr%C3%A9e_Acier_Coulissante_05_znag7h.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Baie_Vitr%C3%A9e_Acier_Coulissante_02_wqzkum.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://lrmj-project.be/restauration-balustrade-fonte</loc>
@@ -152,6 +1113,10 @@
     <xhtml:link rel="alternate" hreflang="nl-BE" href="https://lrmj-project.be/nl/restauratie-gietijzeren-balustrade" />
     <xhtml:link rel="alternate" hreflang="en" href="https://lrmj-project.be/en/cast-iron-balustrade-restoration" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://lrmj-project.be/restauration-balustrade-fonte" />
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Restauration%20Garde-Corps%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Restauration%20Garde-Corps%203.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Ballustrade%204.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Restauration%20Garde-Corps.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://lrmj-project.be/nl/restauratie-gietijzeren-balustrade</loc>
@@ -160,6 +1125,10 @@
     <xhtml:link rel="alternate" hreflang="nl-BE" href="https://lrmj-project.be/nl/restauratie-gietijzeren-balustrade" />
     <xhtml:link rel="alternate" hreflang="en" href="https://lrmj-project.be/en/cast-iron-balustrade-restoration" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://lrmj-project.be/restauration-balustrade-fonte" />
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Restauration%20Garde-Corps%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Restauration%20Garde-Corps%203.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Ballustrade%204.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Restauration%20Garde-Corps.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://lrmj-project.be/en/cast-iron-balustrade-restoration</loc>
@@ -168,6 +1137,10 @@
     <xhtml:link rel="alternate" hreflang="nl-BE" href="https://lrmj-project.be/nl/restauratie-gietijzeren-balustrade" />
     <xhtml:link rel="alternate" hreflang="en" href="https://lrmj-project.be/en/cast-iron-balustrade-restoration" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://lrmj-project.be/restauration-balustrade-fonte" />
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Restauration%20Garde-Corps%202.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Restauration%20Garde-Corps%203.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Garde-corps%20Ballustrade%204.jpg</image:loc></image:image>
+    <image:image><image:loc>https://res.cloudinary.com/dbugcatig/image/upload/f_auto,q_auto,c_limit,w_1600/Restauration%20Garde-Corps.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://lrmj-project.be/prime-facade-bruxelles</loc>

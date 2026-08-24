@@ -1,0 +1,713 @@
+{
+ "generated": "2026-08-24",
+ "folders": {
+  "portails": [
+   {
+    "id": "Portail Plein Acier Gris",
+    "w": 741,
+    "h": 1330,
+    "f": "jpg"
+   },
+   {
+    "id": "Portillon Jardin Fer Forgé Volutes Zoom In",
+    "w": 1376,
+    "h": 768,
+    "f": "jpg",
+    "tags": [
+     "Featured",
+     "Portails Et Clotures"
+    ]
+   },
+   {
+    "id": "Portillon Jardin Fer Forgé Volutes",
+    "w": 1500,
+    "h": 2000,
+    "f": "jpg",
+    "tags": [
+     "Featured",
+     "Portails Et Clotures"
+    ]
+   },
+   {
+    "id": "Portillon Jardin Fer Forgé Volutes Atelier",
+    "w": 1500,
+    "h": 2000,
+    "f": "jpg",
+    "tags": [
+     "Portails Et Clotures"
+    ]
+   },
+   {
+    "id": "Portillon Jardin Fer Forgé Volutes 2",
+    "w": 1500,
+    "h": 2000,
+    "f": "jpg",
+    "tags": [
+     "Portails Et Clotures"
+    ]
+   },
+   {
+    "id": "Porte Fer Forgé Ancien Blanc Après",
+    "w": 450,
+    "h": 600,
+    "f": "jpg",
+    "tags": [
+     "Portails Et Clotures"
+    ]
+   },
+   {
+    "id": "Porte Fer Forgé Ancien Blanc Avant",
+    "w": 335,
+    "h": 600,
+    "f": "jpg",
+    "tags": [
+     "Portails Et Clotures"
+    ]
+   }
+  ],
+  "gardecorps": [
+   {
+    "id": "Garde-corps Fer Forgé",
+    "w": 288,
+    "h": 516,
+    "f": "jpg"
+   },
+   {
+    "id": "Garde-corps Ballustrade 2",
+    "w": 1164,
+    "h": 869,
+    "f": "jpg",
+    "tags": [
+     "Featured",
+     "Garde-Corps"
+    ]
+   },
+   {
+    "id": "Garde-corps Ballustrade 3",
+    "w": 882,
+    "h": 1186,
+    "f": "jpg",
+    "tags": [
+     "Featured",
+     "Garde-Corps"
+    ]
+   },
+   {
+    "id": "Garde-corps Verre Lumineux Terrasse",
+    "w": 768,
+    "h": 1376,
+    "f": "jpg",
+    "tags": [
+     "Garde-Corps"
+    ]
+   },
+   {
+    "id": "Garde-corps Terrasse Métal Suspendu Avant",
+    "w": 1500,
+    "h": 2000,
+    "f": "jpg",
+    "tags": [
+     "Garde-Corps"
+    ]
+   },
+   {
+    "id": "Garde-corps Terrasse Métal Suspendu",
+    "w": 2000,
+    "h": 1500,
+    "f": "jpg",
+    "tags": [
+     "Garde-Corps"
+    ]
+   },
+   {
+    "id": "Garde-corps Verre Lumineux Terrasse Avant",
+    "w": 901,
+    "h": 1600,
+    "f": "jpg",
+    "tags": [
+     "Garde-Corps"
+    ]
+   },
+   {
+    "id": "Garde-corps Intérieur Central",
+    "w": 1440,
+    "h": 1920,
+    "f": "jpg",
+    "tags": [
+     "Garde-Corps"
+    ]
+   },
+   {
+    "id": "Garde-corps Géométrique Laiton Doré",
+    "w": 1542,
+    "h": 2047,
+    "f": "jpg",
+    "tags": [
+     "Garde-Corps"
+    ]
+   },
+   {
+    "id": "Garde-corps Géométrique Laiton Doré 2",
+    "w": 1542,
+    "h": 2047,
+    "f": "jpg",
+    "tags": [
+     "Garde-Corps"
+    ]
+   },
+   {
+    "id": "Garde-corps Ballustrade 4",
+    "w": 720,
+    "h": 960,
+    "f": "jpg",
+    "tags": [
+     "Garde-Corps"
+    ]
+   },
+   {
+    "id": "Restauration Garde-Corps",
+    "w": 720,
+    "h": 960,
+    "f": "jpg",
+    "tags": [
+     "Garde-Corps"
+    ]
+   },
+   {
+    "id": "Restauration Garde-Corps 2",
+    "w": 1542,
+    "h": 2047,
+    "f": "jpg",
+    "tags": [
+     "Garde-Corps"
+    ]
+   },
+   {
+    "id": "Garde-corps Ballustrade 5",
+    "w": 1542,
+    "h": 2047,
+    "f": "jpg",
+    "tags": [
+     "Garde-Corps"
+    ]
+   },
+   {
+    "id": "Restauration Garde-Corps 3",
+    "w": 1542,
+    "h": 2047,
+    "f": "jpg",
+    "tags": [
+     "Garde-Corps"
+    ]
+   },
+   {
+    "id": "Garde-corps Balcon",
+    "w": 1536,
+    "h": 2048,
+    "f": "jpg"
+   },
+   {
+    "id": "Garde-corps Balcon 2",
+    "w": 1542,
+    "h": 2047,
+    "f": "jpg"
+   },
+   {
+    "id": "Garde-corps Fenêtre Géométrique",
+    "w": 335,
+    "h": 600,
+    "f": "jpg"
+   },
+   {
+    "id": "Garde-corps Ballustrade Fer Forgé",
+    "w": 335,
+    "h": 600,
+    "f": "jpg"
+   },
+   {
+    "id": "Garde-corps Ballustrade Fer Forgé 2",
+    "w": 600,
+    "h": 338,
+    "f": "jpg"
+   }
+  ],
+  "verrieres": [
+   {
+    "id": "Serre Ancienne Acier Verre Orangerie 3",
+    "w": 2048,
+    "h": 1542,
+    "f": "jpg",
+    "tags": [
+     "Verrières"
+    ]
+   },
+   {
+    "id": "Serre Ancienne Acier Verre Orangerie 2",
+    "w": 1542,
+    "h": 2047,
+    "f": "jpg",
+    "tags": [
+     "Verrières"
+    ]
+   },
+   {
+    "id": "Baie Vitrée Acier 7",
+    "w": 896,
+    "h": 1200,
+    "f": "jpg"
+   },
+   {
+    "id": "Miroir Coulissant Cadre Métal",
+    "w": 896,
+    "h": 1200,
+    "f": "jpg",
+    "tags": [
+     "Baies Vitrees"
+    ]
+   },
+   {
+    "id": "Baie Vitrée Acier Après",
+    "w": 896,
+    "h": 1200,
+    "f": "jpg",
+    "tags": [
+     "Baies Vitrees"
+    ]
+   },
+   {
+    "id": "Miroir Coulissant Cadre Métal 2",
+    "w": 896,
+    "h": 1200,
+    "f": "jpg",
+    "tags": [
+     "Baies Vitrees"
+    ]
+   },
+   {
+    "id": "Baie_Vitrée_Acier_Double_Vitrage_xsjob4",
+    "w": 896,
+    "h": 1200,
+    "f": "jpg",
+    "tags": [
+     "Baies Vitrees"
+    ]
+   },
+   {
+    "id": "Baie Vitrée Acier 1",
+    "w": 896,
+    "h": 1200,
+    "f": "jpg",
+    "tags": [
+     "Baies Vitrees"
+    ]
+   },
+   {
+    "id": "Baie Vitrée Acier avant",
+    "w": 1536,
+    "h": 2048,
+    "f": "jpg",
+    "tags": [
+     "Baies Vitrees"
+    ]
+   },
+   {
+    "id": "Baie Vitrée Acier 2",
+    "w": 923,
+    "h": 2048,
+    "f": "jpg",
+    "tags": [
+     "Verrières"
+    ]
+   },
+   {
+    "id": "Porte Vitrée Acier Coulissante",
+    "w": 1500,
+    "h": 2000,
+    "f": "jpg",
+    "tags": [
+     "Verrières"
+    ]
+   },
+   {
+    "id": "Baie Vitrée Acier Pivot",
+    "w": 1200,
+    "h": 1600,
+    "f": "jpg",
+    "tags": [
+     "Verrières"
+    ]
+   },
+   {
+    "id": "Baie Vitrée Acier 3",
+    "w": 330,
+    "h": 600,
+    "f": "jpg",
+    "tags": [
+     "Verrières"
+    ]
+   },
+   {
+    "id": "Baie Vitrée Acier Bureau Professionnel",
+    "w": 1536,
+    "h": 2048,
+    "f": "jpg",
+    "tags": [
+     "Verrières"
+    ]
+   },
+   {
+    "id": "Baie Vitrée Acier 4",
+    "w": 1500,
+    "h": 2000,
+    "f": "jpg",
+    "tags": [
+     "Verrières"
+    ]
+   },
+   {
+    "id": "Baie Vitrée Acier 5",
+    "w": 330,
+    "h": 600,
+    "f": "jpg",
+    "tags": [
+     "Verrières"
+    ]
+   },
+   {
+    "id": "Verrière Bureau  Style Loft Industriel",
+    "w": 1500,
+    "h": 2000,
+    "f": "jpg",
+    "tags": [
+     "Verrières"
+    ]
+   },
+   {
+    "id": "Puits_de_Lumière_Plafond_Verre_01_seivqt",
+    "w": 1542,
+    "h": 2047,
+    "f": "jpg"
+   },
+   {
+    "id": "Pose_Verrière_Chantier_Rénovation_07_ycgetb",
+    "w": 1500,
+    "h": 2000,
+    "f": "jpg"
+   },
+   {
+    "id": "Porte_Coulissante_Verre_Dépoli_06_rcuiyk",
+    "w": 338,
+    "h": 600,
+    "f": "jpg"
+   },
+   {
+    "id": "Pose_Verrière_Chantier_Rénovation_01_xjlbml",
+    "w": 450,
+    "h": 600,
+    "f": "jpg"
+   },
+   {
+    "id": "Porte_Vitrée_Acier_Pivot_42_endxy1",
+    "w": 1536,
+    "h": 2048,
+    "f": "jpg"
+   },
+   {
+    "id": "Porte_Vitrée_Acier_Pivot_40_lodh70",
+    "w": 1600,
+    "h": 1200,
+    "f": "jpg"
+   },
+   {
+    "id": "Porte_Vitrée_Acier_Pivot_38_vgduav",
+    "w": 1500,
+    "h": 2000,
+    "f": "jpg"
+   },
+   {
+    "id": "Porte_Vitrée_Acier_Pivot_37_u31m1a",
+    "w": 1500,
+    "h": 2000,
+    "f": "jpg"
+   },
+   {
+    "id": "Porte_Vitrée_Acier_Pivot_36_vb18cf",
+    "w": 1500,
+    "h": 2000,
+    "f": "jpg"
+   },
+   {
+    "id": "Porte_Vitrée_Acier_Pivot_33_evs4eq",
+    "w": 1500,
+    "h": 2000,
+    "f": "jpg"
+   },
+   {
+    "id": "Porte_Vitrée_Acier_Pivot_30_coz9eq",
+    "w": 1153,
+    "h": 2048,
+    "f": "jpg"
+   },
+   {
+    "id": "Porte_Vitrée_Acier_Pivot_29_xacklt",
+    "w": 1153,
+    "h": 2048,
+    "f": "jpg"
+   },
+   {
+    "id": "Porte_Vitrée_Acier_Pivot_28_sdwvl3",
+    "w": 1500,
+    "h": 2000,
+    "f": "jpg"
+   },
+   {
+    "id": "Porte_Vitrée_Acier_Pivot_21_pgcuth",
+    "w": 450,
+    "h": 600,
+    "f": "jpg"
+   },
+   {
+    "id": "Porte_Vitrée_Acier_Pivot_15_hznud1",
+    "w": 450,
+    "h": 600,
+    "f": "jpg"
+   },
+   {
+    "id": "Porte_Vitrée_Acier_Pivot_09_kzacym",
+    "w": 330,
+    "h": 600,
+    "f": "jpg"
+   },
+   {
+    "id": "Porte_Vitrée_Acier_Pivot_04_cmtbkv",
+    "w": 330,
+    "h": 600,
+    "f": "jpg"
+   },
+   {
+    "id": "Porte_Vitrée_Acier_Atelier_09_aurgi5",
+    "w": 1500,
+    "h": 2000,
+    "f": "jpg"
+   },
+   {
+    "id": "Porte_Coulissante_Verre_Dépoli_21_vtaoyc",
+    "w": 1536,
+    "h": 2048,
+    "f": "jpg"
+   },
+   {
+    "id": "Porte_Coulissante_Verre_Dépoli_19_pggdw2",
+    "w": 1153,
+    "h": 2048,
+    "f": "jpg"
+   },
+   {
+    "id": "Verrière_Séparation_Cuisine_Salon_03_ychipt",
+    "w": 1500,
+    "h": 2000,
+    "f": "jpg"
+   },
+   {
+    "id": "Baie_Vitrée_Acier_Coulissante_05_znag7h",
+    "w": 1500,
+    "h": 2000,
+    "f": "jpg",
+    "tags": [
+     "Baies Vitrees"
+    ]
+   },
+   {
+    "id": "Baie_Vitrée_Acier_Coulissante_02_wqzkum",
+    "w": 1500,
+    "h": 2000,
+    "f": "jpg",
+    "tags": [
+     "Baies Vitrees"
+    ]
+   }
+  ],
+  "marquises": [
+   {
+    "id": "Auvent_Porte_d_Entrée_Classique_03_rv0mof",
+    "w": 1739,
+    "h": 996,
+    "f": "jpg",
+    "tags": [
+     "Verrières"
+    ]
+   },
+   {
+    "id": "Pergola_Terrasse_Acier_Pergola_02_ytr4yn",
+    "w": 1804,
+    "h": 1016,
+    "f": "jpg",
+    "tags": [
+     "Featured",
+     "Marquises"
+    ]
+   },
+   {
+    "id": "Pergola_Terrasse_Acier_Pergola_01_sphcxw",
+    "w": 1153,
+    "h": 2048,
+    "f": "jpg",
+    "tags": [
+     "Marquises"
+    ]
+   },
+   {
+    "id": "Marquise_Porte_d_Entrée_Verre_Fer_Forgé_01_gw5hcy",
+    "w": 1153,
+    "h": 2048,
+    "f": "jpg",
+    "tags": [
+     "Marquises"
+    ]
+   },
+   {
+    "id": "Marquise_Porte_d_Entrée_Verre_Fer_Forgé_02_vkkk1o",
+    "w": 1153,
+    "h": 2048,
+    "f": "jpg",
+    "tags": [
+     "Marquises"
+    ]
+   },
+   {
+    "id": "Marquise_Porte_d_Entrée_Verre_Fer_Forgé_04_zspadc",
+    "w": 536,
+    "h": 960,
+    "f": "jpg",
+    "tags": [
+     "Marquises"
+    ]
+   }
+  ],
+  "escaliers": [
+   {
+    "id": "Escalier Métal Limon Central",
+    "w": 1671,
+    "h": 1671,
+    "f": "jpg",
+    "tags": [
+     "Escaliers"
+    ]
+   },
+   {
+    "id": "Escalier_Métal_Limon_Central_Marche_202605252315_fyzzfy",
+    "w": 896,
+    "h": 1200,
+    "f": "jpg",
+    "tags": [
+     "Escaliers"
+    ]
+   },
+   {
+    "id": "Escalier Métal Limon Extérieur",
+    "w": 2048,
+    "h": 1542,
+    "f": "jpg",
+    "tags": [
+     "Escaliers"
+    ]
+   },
+   {
+    "id": "Escalier Métal Limon Extérieur 2",
+    "w": 1542,
+    "h": 2047,
+    "f": "jpg",
+    "tags": [
+     "Escaliers"
+    ]
+   },
+   {
+    "id": "Escalier Métal Limon Central 2",
+    "w": 1728,
+    "h": 1728,
+    "f": "jpg",
+    "tags": [
+     "Escaliers"
+    ]
+   }
+  ],
+  "meubles": [
+   {
+    "id": "Structure_Lit_Mezzanine_Acier_Brut_202605252345_u1mssu",
+    "w": 896,
+    "h": 1200,
+    "f": "jpg"
+   },
+   {
+    "id": "Baie_Vitrée_Acier_Coulissante_06.jpeg_202605252312_mxoizg",
+    "w": 896,
+    "h": 1200,
+    "f": "jpg",
+    "tags": [
+     "Featured",
+     "Meubles-Déco"
+    ]
+   },
+   {
+    "id": "Aménagement_Sous_Escalier_Verre_Acier_202605252346_luevee",
+    "w": 896,
+    "h": 1200,
+    "f": "jpg"
+   },
+   {
+    "id": "Baie_Vitrée_Acier_Coulissante_05.jpeg_202605252310_zn4qcj",
+    "w": 896,
+    "h": 1200,
+    "f": "jpg"
+   },
+   {
+    "id": "Aménagement_Sous_Escalier_Verre_Acier_01_f1vpch",
+    "w": 1500,
+    "h": 2000,
+    "f": "jpg",
+    "tags": [
+     "Meubles-Déco"
+    ]
+   }
+  ],
+  "atelier": [
+   {
+    "id": "Artisan Ferronnier Atelier Fabrication 5",
+    "w": 1500,
+    "h": 2000,
+    "f": "jpg",
+    "tags": [
+     "Atelier"
+    ]
+   },
+   {
+    "id": "Artisan Ferronnier Atelier Fabrication 06",
+    "w": 1500,
+    "h": 2000,
+    "f": "jpg",
+    "tags": [
+     "Atelier",
+     "Featured"
+    ]
+   },
+   {
+    "id": "Artisan Ferronnier Atelier Fabrication 01",
+    "w": 450,
+    "h": 600,
+    "f": "jpg",
+    "tags": [
+     "Atelier"
+    ]
+   },
+   {
+    "id": "Artisan_Ferronnier_Atelier_Fabrication_04_mzq2mn",
+    "w": 450,
+    "h": 600,
+    "f": "jpg",
+    "tags": [
+     "Atelier"
+    ]
+   }
+  ]
+ }
+}
