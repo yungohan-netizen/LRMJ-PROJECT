@@ -213,3 +213,28 @@ html[data-theme="dark"] .theme-toggle__moon { opacity: 0; transform: rotate(90de
 .nav__mobile-bottom { margin-top: auto; padding-top: 2rem; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: flex-end; }
 .nav__mobile-phone { font-size: .85rem; color: var(--tx-3); letter-spacing: .08em; text-decoration: none; }
 .nav__mobile-cta { font-size: .78rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--red); text-decoration: none; }
+
+/* Cibles tactiles — WCAG 2.2 AA (2.5.8 : 24x24 px minimum).
+   Mesuré sur mobile : les boutons de langue faisaient 27x17 et la flèche de
+   retour 11x17. On étend la zone cliquable par un pseudo-élément plutôt que
+   par du padding : la surface tactile passe à ~33 px de haut sans toucher au
+   rendu ni à l'alignement de la barre. */
+.lang-toggle__btn,
+.nav__back {
+  position: relative;
+}
+/* Les trois boutons de langue ne sont separes que d'un trait de 1 px :
+   les elargir lateralement ferait chevaucher leurs zones tactiles et
+   provoquerait des erreurs de tap. Leur largeur (27-28 px) passe deja le
+   critere ; on n'etend donc que la hauteur. */
+.lang-toggle__btn::after {
+  content: '';
+  position: absolute;
+  inset: -8px 0;
+}
+/* La fleche de retour est isolee : elle peut s'etendre dans les deux sens. */
+.nav__back::after {
+  content: '';
+  position: absolute;
+  inset: -8px -7px;
+}
