@@ -2,26 +2,17 @@ User-agent: *
 Allow: /
 Disallow: /api/
 
-# Crawlers IA : autorisés volontairement.
-# L'atelier cherche à être trouvé et cité — y compris dans les réponses de
-# ChatGPT, Perplexity, Claude et des AI Overviews de Google. Les bloquer
-# protégerait le contenu d'un usage en entraînement, mais supprimerait aussi
-# les citations, qui sont ici le but recherché.
-# Google-Extended ne concerne que l'usage IA : le blocer n'empêcherait pas
-# l'indexation classique, mais retirerait le site des AI Overviews.
-User-agent: GPTBot
-Allow: /
-
-User-agent: OAI-SearchBot
-Allow: /
-
-User-agent: ClaudeBot
-Allow: /
-
-User-agent: PerplexityBot
-Allow: /
-
-User-agent: Google-Extended
-Allow: /
-
 Sitemap: https://lrmj-project.be/sitemap.xml
+
+# Crawlers IA : ne rien déclarer ici.
+#
+# Cloudflare injecte son propre bloc « Managed content » AVANT ce fichier et
+# applique Disallow: / à GPTBot, ClaudeBot, Google-Extended, CCBot, Bytespider,
+# Amazonbot, Applebot-Extended et meta-externalagent, avec la politique
+# Content-Signal search=yes, ai-train=no, use=reference.
+#
+# Y ajouter des « Allow » produisait deux groupes contradictoires pour le même
+# agent dans le fichier servi — comportement indéfini selon les crawlers.
+# Le réglage se fait dans le tableau de bord Cloudflare (AI Crawl Control),
+# pas ici. Voir les notes de session : autoriser ces robots est la décision
+# à prendre si l'on veut être cité dans les réponses IA.
