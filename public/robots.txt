@@ -2,4 +2,26 @@ User-agent: *
 Allow: /
 Disallow: /api/
 
+# Crawlers IA : autorisés volontairement.
+# L'atelier cherche à être trouvé et cité — y compris dans les réponses de
+# ChatGPT, Perplexity, Claude et des AI Overviews de Google. Les bloquer
+# protégerait le contenu d'un usage en entraînement, mais supprimerait aussi
+# les citations, qui sont ici le but recherché.
+# Google-Extended ne concerne que l'usage IA : le blocer n'empêcherait pas
+# l'indexation classique, mais retirerait le site des AI Overviews.
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
 Sitemap: https://lrmj-project.be/sitemap.xml
