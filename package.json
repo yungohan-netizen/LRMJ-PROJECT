@@ -10,6 +10,7 @@
     "build": "node scripts/gen-i18n.mjs && node scripts/gen-sitemap.mjs && vite build && node scripts/stamp-dates.mjs",
     "gen:sitemap": "node scripts/gen-sitemap.mjs",
     "snapshot:gallery": "node scripts/snapshot-gallery.mjs",
+    "snapshot:dates": "node scripts/gen-dates.mjs",
     "preview": "vite preview --port 4173"
   },
   "devDependencies": {

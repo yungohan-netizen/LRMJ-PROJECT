@@ -22,7 +22,6 @@
  */
 import fs from 'fs';
 import path from 'path';
-import { execFileSync } from 'child_process';
 import { fileURLToPath } from 'url';
 import { BASE, PAGE_GROUPS, fileForPath } from './page-map.mjs';
 
@@ -63,15 +62,19 @@ const IMAGES_FOR = {
 };
 
 /* --- Dates -------------------------------------------------------------- */
-/** Date du dernier commit touchant le fichier ; repli sur le mtime disque. */
-function lastmod(rel) {
-  try {
-    const out = execFileSync('git', ['log', '-1', '--format=%cs', '--', rel],
-                             { cwd: ROOT, encoding: 'utf8' }).trim();
-    if (out) return out;
-  } catch { /* dépôt absent ou fichier non suivi */ }
-  return fs.statSync(path.join(ROOT, rel)).mtime.toISOString().slice(0, 10);
+/* Les dates viennent de src/data/page-dates.json (npm run snapshot:dates).
+   On n'interroge pas git ici : Cloudflare Pages clone sans historique, et le
+   repli sur un mtime datait toutes les pages de l'heure du build — ce qui
+   annoncait a Google que le site entier changeait a chaque deploiement. */
+let PAGE_DATES = {};
+try {
+  PAGE_DATES = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/page-dates.json'), 'utf8'));
+} catch {
+  console.warn('  page-dates.json absent : sitemap sans <lastmod>.');
 }
+
+/** Date de derniere modification connue, ou null (on omet alors <lastmod>). */
+const lastmod = rel => PAGE_DATES[rel]?.modified?.slice(0, 10) || null;
 
 const isNoIndex = rel => {
   const abs = path.join(ROOT, rel);
@@ -89,14 +92,14 @@ for (const group of PAGE_GROUPS) {
 
   // Une seule date pour tout le groupe : les trois versions sont générées
   // ensemble, les dater séparément suggérerait des mises à jour distinctes.
-  const date = LANGS.map(l => lastmod(files[l])).sort().pop();
+  const date = LANGS.map(l => lastmod(files[l])).filter(Boolean).sort().pop() || null;
   const photos = (IMAGES_FOR[group.key]?.() || []).filter(a => a && a.id && a.f);
 
   for (const lang of LANGS) {
     const lines = [
       '  <url>',
       `    <loc>${esc(BASE + group[lang])}</loc>`,
-      `    <lastmod>${date}</lastmod>`,
+      ...(date ? [`    <lastmod>${date}</lastmod>`] : []),
       ...LANGS.map(l =>
         `    <xhtml:link rel="alternate" hreflang="${HREFLANG[l]}" href="${esc(BASE + group[l])}" />`),
       `    <xhtml:link rel="alternate" hreflang="x-default" href="${esc(BASE + group.fr)}" />`,
